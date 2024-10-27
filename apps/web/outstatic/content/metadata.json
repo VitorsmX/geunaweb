@@ -1,24 +1,6 @@
 {
-  "commit": "3d97229d52548de87877fdd25b6927d611a4808e",
-  "generated": "Sun, 27 Oct 2024 19:19:13 GMT",
+  "commit": "3f38ba39d5d1ae5273cface90e756a1fbe4dc917",
+  "generated": "2024-10-27T19:24:18.897Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "ebfe1503ef0c0bb7eff0bb741a57bc09471ae953",
-        "hash": "4222013843",
-        "path": "/outstatic/content/postagens/teste.md"
-      },
-      "author": {
-        "name": "Vitor Sousa Mesquita",
-        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
-      },
-      "collection": "postagens",
-      "coverImage": "/images/geu_logo-k2OD.png",
-      "description": "descrição de teste",
-      "publishedAt": "2024-10-27T18:54:22.671Z",
-      "slug": "teste",
-      "status": "published",
-      "title": "TESTE"
-    }
   ]
 }
