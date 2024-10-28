@@ -1,6 +1,6 @@
 {
-  "commit": "d0f773afb505be7dfd93d0818d51eaffb5c6b505",
-  "generated": "Mon, 28 Oct 2024 22:26:00 GMT",
+  "commit": "3555ba70ad89edb4801d9cf2b4c7c4486298a844",
+  "generated": "2024-10-28T22:28:31.639Z",
   "metadata": [
     {
       "__outstatic": {
@@ -76,24 +76,6 @@
     },
     {
       "__outstatic": {
-        "commit": "4f754199eed1406f40abf8ea6da7053633c2193e",
-        "hash": "3952519071",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "collection": "pages",
-      "coverImage": "/images/banner-logo-geu-UzOD.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
-    },
-    {
-      "__outstatic": {
         "commit": "2e51fd974e0c2306e038368fbb0884a59a8173af",
         "hash": "2627148824",
         "path": "outstatic/content/pages/doe.md"
@@ -109,6 +91,24 @@
       "slug": "doe",
       "status": "published",
       "title": "DOE"
+    },
+    {
+      "__outstatic": {
+        "commit": "3555ba70ad89edb4801d9cf2b4c7c4486298a844",
+        "hash": "3379479714",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "/images/banner-logo-geu-UzOD.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
     }
   ]
 }
