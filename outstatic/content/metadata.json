@@ -1,6 +1,6 @@
 {
-  "commit": "95d7e3014073e3624732d4b5315755f93357229e",
-  "generated": "2024-10-28T20:02:00.758Z",
+  "commit": "cd71cca24dd061838ca29ec3940ae8cd0ba6026a",
+  "generated": "2024-10-28T20:02:36.951Z",
   "metadata": [
     {
       "__outstatic": {
@@ -76,8 +76,8 @@
     },
     {
       "__outstatic": {
-        "commit": "95d7e3014073e3624732d4b5315755f93357229e",
-        "hash": "1975949391",
+        "commit": "cd71cca24dd061838ca29ec3940ae8cd0ba6026a",
+        "hash": "4149069659",
         "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
       },
       "author": {
@@ -85,7 +85,7 @@
         "picture": "/images/andre-gxNj.jpg"
       },
       "collection": "biblioteca",
-      "coverImage": "",
+      "coverImage": "/images/9788573289442-QzNj.jpg",
       "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
       "publishedAt": "2024-10-28T19:18:17.461Z",
       "slug": "livro-nosso-lar",

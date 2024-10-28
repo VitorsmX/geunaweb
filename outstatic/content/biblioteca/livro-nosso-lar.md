@@ -6,7 +6,7 @@ author:
   picture: '/images/andre-gxNj.jpg'
 slug: 'livro-nosso-lar'
 description: 'Livro: Nosso lar de André Luiz por Chico Xavier'
-coverImage: ''
+coverImage: '/images/9788573289442-QzNj.jpg'
 publishedAt: '2024-10-28T19:18:17.461Z'
 ---
 
