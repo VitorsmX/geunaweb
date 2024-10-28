@@ -1,6 +1,6 @@
 {
-  "commit": "c2f17eaf364d9cddcaad719bd0bd6b0a54354976",
-  "generated": "2024-10-28T18:34:05.893Z",
+  "commit": "1d5ba5854335d52cb55b7b77cb680964c2e8817d",
+  "generated": "2024-10-28T19:10:50.001Z",
   "metadata": [
     {
       "__outstatic": {
@@ -37,6 +37,24 @@
       "slug": "about",
       "status": "published",
       "title": "Sobre Nós"
+    },
+    {
+      "__outstatic": {
+        "commit": "1d5ba5854335d52cb55b7b77cb680964c2e8817d",
+        "hash": "3988048869",
+        "path": "outstatic/content/postagens/espiritismo-novos-tempos-novos-meios.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/pexels-pixabay-267350-QxOD.jpg",
+      "description": "",
+      "publishedAt": "2024-10-28T18:38:01.259Z",
+      "slug": "espiritismo-novos-tempos-novos-meios",
+      "status": "published",
+      "title": "Espiritismo: Novos tempos, novos meios"
     }
   ]
 }
