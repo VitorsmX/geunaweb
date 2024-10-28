@@ -1,6 +1,6 @@
 {
-  "commit": "1d5ba5854335d52cb55b7b77cb680964c2e8817d",
-  "generated": "2024-10-28T19:10:50.001Z",
+  "commit": "aca175e5d482bc9e06bb773e1fc757ee354b8004",
+  "generated": "2024-10-28T20:19:15.091Z",
   "metadata": [
     {
       "__outstatic": {
@@ -55,6 +55,60 @@
       "slug": "espiritismo-novos-tempos-novos-meios",
       "status": "published",
       "title": "Espiritismo: Novos tempos, novos meios"
+    },
+    {
+      "__outstatic": {
+        "commit": "f33465350f28621da39bc200524b3b53d02d8cbb",
+        "hash": "3835927260",
+        "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "collection": "projetos-sociais",
+      "coverImage": "/images/image-section-geu-MzOD.jpg",
+      "description": "",
+      "publishedAt": "2024-10-28T19:11:11.747Z",
+      "slug": "sopa-fraterna",
+      "status": "published",
+      "title": "Sopa Fraterna"
+    },
+    {
+      "__outstatic": {
+        "commit": "5d648c6fd53cb3d2d6345b7e43bc7916240379f1",
+        "hash": "4149069659",
+        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
+      },
+      "author": {
+        "name": "André Luiz",
+        "picture": "/images/andre-gxNj.jpg"
+      },
+      "collection": "biblioteca",
+      "coverImage": "/images/9788573289442-QzNj.jpg",
+      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
+      "publishedAt": "2024-10-28T19:18:17.461Z",
+      "slug": "livro-nosso-lar",
+      "status": "published",
+      "title": "LIVRO: Nosso Lar"
+    },
+    {
+      "__outstatic": {
+        "commit": "aca175e5d482bc9e06bb773e1fc757ee354b8004",
+        "hash": "2627148824",
+        "path": "outstatic/content/pages/doe.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
+      "description": "página de doações",
+      "publishedAt": "2024-10-28T19:50:46.304Z",
+      "slug": "doe",
+      "status": "published",
+      "title": "DOE"
     }
   ]
 }
