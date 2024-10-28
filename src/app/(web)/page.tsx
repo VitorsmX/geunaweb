@@ -18,7 +18,7 @@ export default async function Index() {
           <ContentGrid
             title="Postagens Recentes"
             items={allPosts}
-            collection="posts"
+            collection="postagens"
             priority
             viewAll
           />

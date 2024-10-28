@@ -3,6 +3,7 @@ import { getCollections, load } from "outstatic/server";
 import { MobileMenu } from "./mobile-menu";
 import { ThemeToggle } from "./theme-toggle";
 import { buttonVariants } from "./ui/button";
+import Image from "next/image";
 
 export type MenuProps = {
   pages: {
@@ -21,9 +22,15 @@ const Header = async () => {
       <nav className="max-w-6xl mx-auto w-full layout flex items-center justify-between">
         <Link
           href="/"
-          className="hover:text-slate-900 hover:dark:text-blue-200 px-5 underline-offset-2 font-semibold transition-all hover:scale-105"
+          className="hover:text-slate-900 hover:dark:text-blue-200 px-5 underline-offset-2 font-semibold transition-all hover:scale-105 flex items-center"
         >
-          Andre Vitorio
+          <Image
+            src={"/images/logo-geu.png"}
+            alt="Logo Geu"
+            width={40}
+            height={40}
+          />
+          <span className="ml-2">Grupo Espírita União (Página Oficial)</span>
         </Link>
         <ul className="hidden md:flex items-center justify-between space-x-3 text-xs md:space-x-4 md:text-base">
           {pages.map(({ title, slug }) => (
