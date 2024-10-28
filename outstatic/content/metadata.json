@@ -1,6 +1,6 @@
 {
-  "commit": "046529efff9fd4da4f4c708a3313668ce9808915",
-  "generated": "2024-10-28T16:45:49.710Z",
+  "commit": "2bb889deead2218b3fca8e0b5d0cff103e7fe4ef",
+  "generated": "2024-10-28T16:48:09.236Z",
   "metadata": [
     {
       "__outstatic": {
@@ -29,24 +29,6 @@
         }
       ],
       "title": "Add a free CMS to your Next.js website with Outstatic"
-    },
-    {
-      "__outstatic": {
-        "commit": "f3e175682602bb23a7c841eb41c42b1ba6be3536",
-        "hash": "3879113971",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "collection": "pages",
-      "coverImage": "/images/hero-bg-geu.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
     },
     {
       "__outstatic": {
@@ -179,6 +161,24 @@
       "slug": "about",
       "status": "published",
       "title": "Sobre Nós"
+    },
+    {
+      "__outstatic": {
+        "commit": "2bb889deead2218b3fca8e0b5d0cff103e7fe4ef",
+        "hash": "97949255",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "/images/hero-bg-geu.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
     }
   ]
 }
