@@ -1,6 +1,6 @@
 {
-  "commit": "5975de52628c418530f0559ca9f431590f6e7dc9",
-  "generated": "2024-10-28T18:34:01.198Z",
+  "commit": "c2f17eaf364d9cddcaad719bd0bd6b0a54354976",
+  "generated": "2024-10-28T18:34:05.893Z",
   "metadata": [
     {
       "__outstatic": {
@@ -37,60 +37,6 @@
       "slug": "about",
       "status": "published",
       "title": "Sobre Nós"
-    },
-    {
-      "__outstatic": {
-        "commit": "9a3b0185df6ff19a3ba522ec073a07d55131b497",
-        "hash": "2814254856",
-        "path": "outstatic/content/projects/pacy-premium-design.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "/images/e6b70073-0b98-435e-9577-a285d3f431fa-I3MD.png",
-      "description": "Pacy provides high quality design engineering as a subscription.",
-      "publishedAt": "2024-01-10T06:26:04.000Z",
-      "slug": "pacy-premium-design",
-      "status": "published",
-      "title": "Pacy - Premium Design"
-    },
-    {
-      "__outstatic": {
-        "commit": "9dcf0172a2ecbf2fc49795c8122644bfb510d2a0",
-        "hash": "3054560019",
-        "path": "outstatic/content/projects/outstatic-the-cms-for-nextjs.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "/images/outstatic-screenshot-Y0ND.png",
-      "description": "Outstatic is an Open Source CMS that offers a user-friendly interface for managing and organizing website content.",
-      "publishedAt": "2024-01-20T01:53:49.631Z",
-      "slug": "outstatic-the-cms-for-nextjs",
-      "status": "published",
-      "title": "Outstatic - The CMS for Next.js"
-    },
-    {
-      "__outstatic": {
-        "commit": "70f53378cbe8e23e9e155748f6102aa28a8a4067",
-        "hash": "3240539151",
-        "path": "outstatic/content/projects/outsidesimulator.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "/images/outside-simulator-I5MD.webp",
-      "description": "Escape to the Outdoors, Virtually.",
-      "publishedAt": "2024-01-08T06:11:26.000Z",
-      "slug": "outsidesimulator",
-      "status": "published",
-      "title": "OutsideSimulator.com"
     }
   ]
 }
