@@ -68,7 +68,7 @@ async function getData({ params }: Params) {
   const db = await load();
 
   const post = await db
-    .find<Post>({ collection: "posts", slug: params.slug }, [
+    .find<Post>({ collection: "postagens", slug: params.slug }, [
       "title",
       "publishedAt",
       "description",
@@ -93,6 +93,6 @@ async function getData({ params }: Params) {
 }
 
 export async function generateStaticParams() {
-  const posts = getDocumentSlugs("posts");
+  const posts = getDocumentSlugs("postagens");
   return posts.map((slug) => ({ slug }));
 }

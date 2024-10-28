@@ -23,8 +23,8 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
 
   if (!doc) {
     return {
-      title: `All ${moreDocs.collection}`,
-      description: `All ${moreDocs.collection}`
+      title: `Você está em: ${moreDocs.collection}`,
+      description: `Você está em: ${moreDocs.collection}`
     }
   }
 
@@ -197,7 +197,7 @@ export async function generateStaticParams() {
   const items = await db
     .find(
       {
-        $nor: [{ collection: 'posts' }, { collection: 'pages', slug: 'home' }],
+        $nor: [{ collection: 'postagens' }, { collection: 'pages', slug: 'home' }],
         status: 'published'
       },
       ['collection', 'slug']

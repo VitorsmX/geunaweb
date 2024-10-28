@@ -53,7 +53,7 @@ async function getData() {
 
   // get all posts. Example of fetching a specific collection
   const allPosts = await db
-    .find({ collection: 'posts', status: 'published' }, [
+    .find({ collection: 'postagens', status: 'published' }, [
       'title',
       'publishedAt',
       'slug',
@@ -70,7 +70,7 @@ async function getData() {
     .find(
       {
         // $nor is an operator that means "not or"
-        $nor: [{ collection: 'posts' }, { collection: 'pages' }],
+        $nor: [{ collection: 'postagens' }, { collection: 'pages' }],
         status: 'published'
       },
       [
