@@ -6,12 +6,14 @@ author:
   picture: '/images/logo-geu.png'
 slug: 'home'
 description: 'Site Oficial do Grupo Espírita União, livros espíritas e programação.'
-coverImage: '/images/hero-bg-geu-Q0Nz.jpg'
+coverImage: '/images/banner-logo-geu-U2Nj.jpg'
 publishedAt: '2022-03-17T05:35:07.322Z'
 ---
 
 ## **Somos o Grupo Espírita União!**
 
-## *Livros Espíritas, Projetos Sociais e Muita Divulgação do Espiritismo.*
+> ### *Livros Espíritas, Projetos Sociais e Muita Divulgação do Espiritismo.*
 
-Somos um Grupo Espírita de Capanema que tem o objetivo a divulgação e prática do espiritismo. Saiba mais [sobre nós](/about), nossos [projetos](/projects), [livros espíritas](/books) ou siga-nos no [Instagram](https://www.instagram.com/geu.grupo_espirita_uniao/).
+Somos um Grupo Espírita de Capanema que tem o objetivo a divulgação e prática do espiritismo. Saiba mais sobre nós, nossos projetos, livros espíritas ou siga-nos no Instagram.
+
+![](/images/banner-geu-czOD.jpg)

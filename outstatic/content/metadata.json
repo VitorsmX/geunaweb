@@ -1,25 +1,7 @@
 {
-  "commit": "aca175e5d482bc9e06bb773e1fc757ee354b8004",
-  "generated": "2024-10-28T20:19:15.091Z",
+  "commit": "144df67596f818af772938c25547b699820ee9b7",
+  "generated": "2024-10-28T22:07:23.783Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "76eeef686ac7db70a704e51a01f08ae6e3fdc68a",
-        "hash": "368887124",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "collection": "pages",
-      "coverImage": "/images/hero-bg-geu-Q0Nz.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
-    },
     {
       "__outstatic": {
         "commit": "f9d4c701f1b9773575472e97687bb92555b28d47",
@@ -109,6 +91,42 @@
       "slug": "doe",
       "status": "published",
       "title": "DOE"
+    },
+    {
+      "__outstatic": {
+        "commit": "1ed5e17b684223f77bcdba3d82924d4faac932fe",
+        "hash": "3692882961",
+        "path": "outstatic/content/pages/sobre.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "/images/20230816_122947_0000-E0Nz.png",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "sobre",
+      "status": "published",
+      "title": "Sobre Nós"
+    },
+    {
+      "__outstatic": {
+        "commit": "144df67596f818af772938c25547b699820ee9b7",
+        "hash": "561179531",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "/images/banner-logo-geu-U2Nj.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
     }
   ]
 }
