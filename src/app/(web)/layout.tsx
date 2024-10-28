@@ -7,32 +7,32 @@ import "@/styles/index.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://outstatic.com"),
+  metadataBase: new URL("https://geunaweb.vercel.app"),
   title: {
-    default: "Andre Vitorio - Design. Develop. Deploy.",
-    template: "%s | Andre Vitorio",
+    default: "Grupo Espírita União - Espiritismo na Web",
+    template: "%s | GEU",
   },
   description:
-    "Design engineer from Maceió, Brazil. I write about web development, software engineering, and more.",
+    "Livros Espíritas, Projetos Sociais e Muita Divulgação do Espiritismo.",
   openGraph: {
-    title: "Andre Vitorio - Design. Develop. Deploy.",
+    title: "Grupo Espírita União - Espiritismo na Web.",
     description:
-      "Design engineer from Maceió, Brazil. I write about web development, software engineering, and more.",
+      "Livros Espíritas, Projetos Sociais e Muita Divulgação do Espiritismo.",
     url: absoluteUrl("/"),
-    siteName: "AndreVitorio.com",
+    siteName: "geunaweb.vercel.app",
     images: [
       {
-        url: ogUrl("Andre Vitorio - Design. Develop. Deploy."),
+        url: ogUrl("Livros Espíritas, Projetos Sociais e Muita Divulgação do Espiritismo."),
         width: 1200,
         height: 630,
       },
     ],
-    locale: "en_US",
+    locale: "pt_BR",
     type: "website",
   },
   icons: {
-    icon: [{ url: "/favicon/favicon-32x32.png" }],
-    apple: [{ url: "/favicon/apple-touch-icon.png" }],
+    icon: [{ url: "/favicon/logo-geu.png" }],
+    apple: [{ url: "/favicon/logo-geu.png" }],
   },
 };
 

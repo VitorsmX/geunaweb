@@ -16,7 +16,7 @@ export default async function Index() {
       <div className="animate-fade-in delay-1000 opacity-0 duration-500">
         {allPosts.length > 0 && (
           <ContentGrid
-            title="posts"
+            title="Postagens Recentes"
             items={allPosts}
             collection="posts"
             priority
