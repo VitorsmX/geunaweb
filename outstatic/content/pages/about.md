@@ -6,13 +6,15 @@ author:
   picture: '/images/logo-geu.png'
 slug: 'about'
 description: 'Somos um Grupo Espírita que trabalha com amor acima de tudo.'
-coverImage: ''
+coverImage: '/images/20230816_122947_0000-E0Nz.png'
 publishedAt: '2023-12-28T18:49:02.348Z'
 ---
 
 # Grupo Espírita União (GEU)
 
 Fundado em **15 de agosto de 1994**, o Grupo Espírita União é um reflexo do amor que Jesus nos ensinou. 💖
+
+![Imagem da Frente do Grupo Espírita União com os seus voluntários](/images/image-section-geu-QyOT.jpg)
 
 ## Nossas Atividades
 
@@ -21,7 +23,7 @@ Desde o início, o GEU se comprometeu a viver o evangelho em todas as suas açõ
 - **Preparo da Sopa:** Não se trata apenas de alimento físico, mas também espiritual. 🍲
 - **Evangelização de Crianças e Adolescentes:** Trabalhamos com as futuras gerações da pátria do evangelho. 🌱
 - **Atendimento Fraterno:** Oferecemos uma palavra amiga ou um abraço acolhedor aos irmãos que precisam.
-- **Bazar de Roupas:** Nossas roupas não apenas aquecem o corpo, mas também alimentam a alma. 
+- **Bazar de Roupas:** Nossas roupas não apenas aquecem o corpo, mas também alimentam a alma.
 
 ## Nossa Trajetória
 

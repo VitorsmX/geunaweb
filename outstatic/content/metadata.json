@@ -1,42 +1,24 @@
 {
-  "commit": "5f6a88320da27c4d284996d498842939ad1d8d19",
-  "generated": "Sun, 11 Feb 2024 21:48:22 GMT",
+  "commit": "9427608ec804a89f88215cccdba2859be1574d8e",
+  "generated": "Mon, 28 Oct 2024 16:59:29 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "375ca4629d57e6f05cb7f61debb7e258bf3947d4",
-        "hash": "2477969654",
+        "commit": "76eeef686ac7db70a704e51a01f08ae6e3fdc68a",
+        "hash": "368887124",
         "path": "outstatic/content/pages/home.md"
       },
       "author": {
-        "name": "Andre Vitorio",
-        "picture": ""
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
       },
       "collection": "pages",
-      "coverImage": "",
-      "description": "This is my blog.",
+      "coverImage": "/images/hero-bg-geu-Q0Nz.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
       "publishedAt": "2022-03-17T05:35:07.322Z",
       "slug": "home",
       "status": "published",
-      "title": "Home"
-    },
-    {
-      "__outstatic": {
-        "commit": "9637bcf0d7aa912e22e9e0031dd679244f9c9527",
-        "hash": "2309931423",
-        "path": "outstatic/content/pages/about.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "I'm Andre, a product developer and designer from Maceió, Brazil",
-      "publishedAt": "2023-12-28T18:49:02.348Z",
-      "slug": "about",
-      "status": "published",
-      "title": "About Me"
+      "title": "Inicio"
     },
     {
       "__outstatic": {
@@ -65,6 +47,24 @@
         }
       ],
       "title": "Add a free CMS to your Next.js website with Outstatic"
+    },
+    {
+      "__outstatic": {
+        "commit": "f9d4c701f1b9773575472e97687bb92555b28d47",
+        "hash": "547683842",
+        "path": "outstatic/content/pages/about.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "/images/20230816_122947_0000-E0Nz.png",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "about",
+      "status": "published",
+      "title": "Sobre Nós"
     },
     {
       "__outstatic": {
@@ -122,8 +122,8 @@
     },
     {
       "__outstatic": {
-        "commit": "fec3e47bc674c17926b8f31c8c8e26a003764b11",
-        "hash": "243385259",
+        "commit": "f0521e738471b1b2b3ad2814dfa2f2e7a35c9201",
+        "hash": "4134932838",
         "path": "outstatic/content/posts/welcome-to-outstatic.md"
       },
       "author": {

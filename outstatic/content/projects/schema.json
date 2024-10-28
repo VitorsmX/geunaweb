@@ -1,0 +1,13 @@
+{
+  "title": "projects",
+  "type": "object",
+  "properties": {
+    "projetos": {
+      "required": true,
+      "description": "Veja alguns de nossos projetos sociais",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Projetos"
+    }
+  }
+}
