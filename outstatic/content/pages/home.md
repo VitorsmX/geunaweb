@@ -14,6 +14,6 @@ publishedAt: '2022-03-17T05:35:07.322Z'
 
 > ### *Livros Espíritas, Projetos Sociais e Muita Divulgação do Espiritismo.*
 
-Somos um Grupo Espírita de Capanema que tem o objetivo a divulgação e prática do espiritismo. Saiba mais sobre nós, nossos projetos, livros espíritas ou siga-nos no Instagram.
+Somos um Grupo Espírita de Capanema que tem o objetivo a divulgação e prática do espiritismo. Saiba mais [sobre nós](/sobre), [nossos projetos](/projetos-sociais), [livros espíritas](/biblioteca) ou siga-nos no [Instagram](https://www.instagram.com/geu.grupo_espirita_uniao/).
 
-![](/images/banner-geu-I3OD.jpg)
+![](/images/banner-geu-Y2OD.jpg)
