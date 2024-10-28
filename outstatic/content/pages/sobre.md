@@ -4,7 +4,7 @@ status: 'published'
 author:
   name: 'Grupo Espírita União'
   picture: '/images/logo-geu.png'
-slug: 'about'
+slug: 'sobre'
 description: 'Somos um Grupo Espírita que trabalha com amor acima de tudo.'
 coverImage: '/images/20230816_122947_0000-E0Nz.png'
 publishedAt: '2023-12-28T18:49:02.348Z'
