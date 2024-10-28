@@ -1,6 +1,6 @@
 {
-  "commit": "f33465350f28621da39bc200524b3b53d02d8cbb",
-  "generated": "2024-10-28T19:33:57.573Z",
+  "commit": "95d7e3014073e3624732d4b5315755f93357229e",
+  "generated": "2024-10-28T20:02:00.758Z",
   "metadata": [
     {
       "__outstatic": {
@@ -73,6 +73,24 @@
       "slug": "sopa-fraterna",
       "status": "published",
       "title": "Sopa Fraterna"
+    },
+    {
+      "__outstatic": {
+        "commit": "95d7e3014073e3624732d4b5315755f93357229e",
+        "hash": "1975949391",
+        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
+      },
+      "author": {
+        "name": "André Luiz",
+        "picture": "/images/andre-gxNj.jpg"
+      },
+      "collection": "biblioteca",
+      "coverImage": "",
+      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
+      "publishedAt": "2024-10-28T19:18:17.461Z",
+      "slug": "livro-nosso-lar",
+      "status": "published",
+      "title": "LIVRO: Nosso Lar"
     }
   ]
 }
