@@ -63,7 +63,7 @@ export default async function Document(params: Params) {
       <div className="pt-24 mb-16 animate-fade-up opacity-0">
         {docs.length > 0 && (
           <ContentGrid
-            title={`All ${collection}`}
+            title={`Você está em: ${collection}`}
             items={docs}
             collection={collection}
           />
@@ -95,7 +95,7 @@ export default async function Document(params: Params) {
       <div className="mb-16">
         {moreDocs.length > 0 && (
           <ContentGrid
-            title={`More ${doc.collection}`}
+            title={`Mais ${doc.collection}`}
             items={moreDocs}
             collection={doc.collection}
           />
