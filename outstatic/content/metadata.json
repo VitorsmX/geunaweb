@@ -1,6 +1,6 @@
 {
-  "commit": "144df67596f818af772938c25547b699820ee9b7",
-  "generated": "2024-10-28T22:07:23.783Z",
+  "commit": "1142b30abed82d4ef575d81f2a96c7e2fe66265a",
+  "generated": "2024-10-28T22:18:01.888Z",
   "metadata": [
     {
       "__outstatic": {
@@ -94,7 +94,25 @@
     },
     {
       "__outstatic": {
-        "commit": "1ed5e17b684223f77bcdba3d82924d4faac932fe",
+        "commit": "144df67596f818af772938c25547b699820ee9b7",
+        "hash": "3952519071",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "/images/banner-logo-geu-UzOD.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "1142b30abed82d4ef575d81f2a96c7e2fe66265a",
         "hash": "3692882961",
         "path": "outstatic/content/pages/sobre.md"
       },
@@ -109,24 +127,6 @@
       "slug": "sobre",
       "status": "published",
       "title": "Sobre Nós"
-    },
-    {
-      "__outstatic": {
-        "commit": "144df67596f818af772938c25547b699820ee9b7",
-        "hash": "561179531",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "collection": "pages",
-      "coverImage": "/images/banner-logo-geu-U2Nj.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
     }
   ]
 }
