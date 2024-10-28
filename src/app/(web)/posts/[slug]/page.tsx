@@ -31,7 +31,7 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
       title: post.title,
       description: post.description,
       type: "article",
-      url: absoluteUrl(`/posts/${post.slug}`),
+      url: absoluteUrl(`/postagens/${post.slug}`),
       images: [
         {
           url: ogUrl(post?.coverImage || `/api/og?title=${post.title}`),
