@@ -75,6 +75,7 @@ export default async function Document(params: Params) {
   if (doc.collection === 'pages') {
     return (
       <article className="mb-32 py-24">
+        <DocHero {...doc} />
         <div className="prose md:prose-xl prose-outstatic animate-fade-up opacity-0">
           <MDXComponent content={doc.content} />
         </div>
