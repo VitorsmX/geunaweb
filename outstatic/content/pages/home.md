@@ -1,17 +1,17 @@
 ---
-title: "Home"
+title: "Inicio"
 status: "published"
 author:
-  name: "Andre Vitorio"
-  picture: ""
+  name: "Grupo Espírita União"
+  picture: "/images/logo-geu.png"
 slug: "home"
-description: "This is my blog."
-coverImage: ""
+description: "Site Oficial do Grupo Espírita União, livros espíritas e programação."
+coverImage: "/images/hero-bg-geu.jpg"
 publishedAt: "2022-03-17T05:35:07.322Z"
 ---
 
-## Hello!
+## Somos o Grupo Espírita União!
 
-# I'm Andre, nice to meet you.
+# Livros Espíritas, Projetos Sociais e Muita Divulgação do Espiritismo.
 
-I'm a lead design engineer from Brazil 🇧🇷 with a focus on SaaS & Media businesses. Learn more [about me](/about), my [projects](/projects) or follow me on [𝕏](https://twitter.com/AndreVitorio).
+Somos um Grupo Espírita de Capanema que tem o objetivo a divulgação e prática do espiritismo. Saiba mais [sobre nós](/about), nossos [projetos](/projects), [livros espíritas](/books) ou siga-nos no [Instagram](https://www.instagram.com/geu.grupo_espirita_uniao/).

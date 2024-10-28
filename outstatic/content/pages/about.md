@@ -1,35 +1,40 @@
 ---
-title: 'About Me'
+title: 'Sobre Nós'
 status: 'published'
 author:
-  name: 'Andre Vitorio'
-  picture: 'https://avatars.githubusercontent.com/u/1417109?v=4'
+  name: 'Grupo Espírita União'
+  picture: '/images/logo-geu.png'
 slug: 'about'
-description: 'I''m Andre, a product developer and designer from Maceió, Brazil'
+description: 'Somos um Grupo Espírita que trabalha com amor acima de tudo.'
 coverImage: ''
 publishedAt: '2023-12-28T18:49:02.348Z'
 ---
 
-## Hey, I'm Andre! 👋
+# Grupo Espírita União (GEU)
 
-🤖 Product Developer & Designer\
-🇧🇷 From Maceió, Brazil\
-🌟 Completed web projects for over [50 clients](https://www.upwork.com/freelancers/andrevitorio)
+Fundado em **15 de agosto de 1994**, o Grupo Espírita União é um reflexo do amor que Jesus nos ensinou. 💖
 
-### Some personal projects I built 👨🏻‍💻
+## Nossas Atividades
 
-✍️ CMS for Static Websites - [Outstatic](https://outstatic.com)\
-🎨 Unlimited Design - [Pacy](https://pacy.co/)\
-🚶🏻‍♀️ Taking you for a walk - [Outside Simulator](https://outsidesimulator.com/)\
-🌐 Helping you find the perfect domain - [Namelazy](https://namelazy.com)
+Desde o início, o GEU se comprometeu a viver o evangelho em todas as suas ações. Confira algumas de nossas iniciativas:
 
-### Tech I use 🎛️
+- **Preparo da Sopa:** Não se trata apenas de alimento físico, mas também espiritual. 🍲
+- **Evangelização de Crianças e Adolescentes:** Trabalhamos com as futuras gerações da pátria do evangelho. 🌱
+- **Atendimento Fraterno:** Oferecemos uma palavra amiga ou um abraço acolhedor aos irmãos que precisam.
+- **Bazar de Roupas:** Nossas roupas não apenas aquecem o corpo, mas também alimentam a alma. 
 
-```javascript
-React, Next.js, TailwindCSS, WebGL, ThreeJS, PHP, MySQL, WordPress, OpenAI APIs, Node.js, Docker, Git, AWS, GraphQL, TypeScript, Sass, Jest, Python, Ruby on Rails, MongoDB, React Native, Figma, Adobe Photoshop, Adobe After Effects...
-```
+## Nossa Trajetória
 
-### How to reach me 📫
+Ao longo do tempo, o GEU cresceu tanto em estrutura física quanto em nossa grande família. Com um aumento no número de trabalhadores e na quantidade de pessoas assistidas, seguimos unidos em direção ao amor cristão que nos move e sustenta. 🙏
 
-🐧 [X](https://twitter.com/andrevitorio)\
-💼 [LinkedIn](https://www.linkedin.com/in/andrevitorio)
+---
+
+### Conteúdos Adicionais
+
+Disponibilizamos **e-books espíritas** e artigos sobre espiritismo em nosso blog, para que você possa se aprofundar ainda mais nesse aprendizado.
+
+---
+
+### Siga-nos nas Redes Sociais
+
+Fique por dentro das nossas atividades e novidades! Siga-nos no Instagram: [@geu.grupo_espirita_uniao](https://www.instagram.com/geu.grupo_espirita_uniao/) 📲
