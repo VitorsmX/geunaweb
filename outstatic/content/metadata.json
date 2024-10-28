@@ -1,6 +1,6 @@
 {
-  "commit": "144df67596f818af772938c25547b699820ee9b7",
-  "generated": "2024-10-28T22:17:29.945Z",
+  "commit": "1142b30abed82d4ef575d81f2a96c7e2fe66265a",
+  "generated": "2024-10-28T22:18:01.888Z",
   "metadata": [
     {
       "__outstatic": {
@@ -94,24 +94,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1ed5e17b684223f77bcdba3d82924d4faac932fe",
-        "hash": "3692882961",
-        "path": "outstatic/content/pages/sobre.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "collection": "pages",
-      "coverImage": "/images/20230816_122947_0000-E0Nz.png",
-      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
-      "publishedAt": "2023-12-28T18:49:02.348Z",
-      "slug": "sobre",
-      "status": "published",
-      "title": "Sobre Nós"
-    },
-    {
-      "__outstatic": {
         "commit": "144df67596f818af772938c25547b699820ee9b7",
         "hash": "3952519071",
         "path": "outstatic/content/pages/home.md"
@@ -127,6 +109,24 @@
       "slug": "home",
       "status": "published",
       "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "1142b30abed82d4ef575d81f2a96c7e2fe66265a",
+        "hash": "3692882961",
+        "path": "outstatic/content/pages/sobre.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "/images/20230816_122947_0000-E0Nz.png",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "sobre",
+      "status": "published",
+      "title": "Sobre Nós"
     }
   ]
 }
