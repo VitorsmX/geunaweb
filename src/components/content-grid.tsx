@@ -27,12 +27,12 @@ const ContentGrid = ({
     <section id={collection} className="mb-24">
       <div className="flex gap-4 md:gap-6 items-end">
         <h2 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight capitalize">
-          {title}
+          {title === "projects" ? "Projetos" : title}
         </h2>
         {viewAll ? (
           <Button asChild variant="outline" className="hidden md:flex">
             <Link href={`/${collection}`} className="gap-2">
-              View all <ArrowRight size={16} />
+              Ver Todos <ArrowRight size={16} />
             </Link>
           </Button>
         ) : null}
@@ -77,7 +77,7 @@ const ContentGrid = ({
       {viewAll ? (
         <Button asChild variant="secondary" className="md:hidden w-full mt-4">
           <Link href={`/${collection}`} className="gap-2">
-            View all {title}
+            Ver Todos {title}
             <ArrowRight size={16} />
           </Link>
         </Button>
