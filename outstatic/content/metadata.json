@@ -1,6 +1,6 @@
 {
-  "commit": "1d5ba5854335d52cb55b7b77cb680964c2e8817d",
-  "generated": "2024-10-28T19:10:50.001Z",
+  "commit": "f33465350f28621da39bc200524b3b53d02d8cbb",
+  "generated": "2024-10-28T19:33:57.573Z",
   "metadata": [
     {
       "__outstatic": {
@@ -55,6 +55,24 @@
       "slug": "espiritismo-novos-tempos-novos-meios",
       "status": "published",
       "title": "Espiritismo: Novos tempos, novos meios"
+    },
+    {
+      "__outstatic": {
+        "commit": "f33465350f28621da39bc200524b3b53d02d8cbb",
+        "hash": "3835927260",
+        "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "collection": "projetos-sociais",
+      "coverImage": "/images/image-section-geu-MzOD.jpg",
+      "description": "",
+      "publishedAt": "2024-10-28T19:11:11.747Z",
+      "slug": "sopa-fraterna",
+      "status": "published",
+      "title": "Sopa Fraterna"
     }
   ]
 }
