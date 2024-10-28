@@ -1,6 +1,6 @@
 {
-  "commit": "5d648c6fd53cb3d2d6345b7e43bc7916240379f1",
-  "generated": "2024-10-28T20:03:52.279Z",
+  "commit": "cf22dda8c1f7f260b7eabea96bd17daa49ee677c",
+  "generated": "2024-10-28T20:17:39.274Z",
   "metadata": [
     {
       "__outstatic": {
@@ -91,6 +91,24 @@
       "slug": "livro-nosso-lar",
       "status": "published",
       "title": "LIVRO: Nosso Lar"
+    },
+    {
+      "__outstatic": {
+        "commit": "cf22dda8c1f7f260b7eabea96bd17daa49ee677c",
+        "hash": "2627148824",
+        "path": "outstatic/content/pages/doe.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
+      "description": "página de doações",
+      "publishedAt": "2024-10-28T19:50:46.304Z",
+      "slug": "doe",
+      "status": "published",
+      "title": "DOE"
     }
   ]
 }
