@@ -1,6 +1,6 @@
 {
-  "commit": "cf22dda8c1f7f260b7eabea96bd17daa49ee677c",
-  "generated": "2024-10-28T20:17:39.274Z",
+  "commit": "aca175e5d482bc9e06bb773e1fc757ee354b8004",
+  "generated": "2024-10-28T20:19:15.091Z",
   "metadata": [
     {
       "__outstatic": {
@@ -94,7 +94,7 @@
     },
     {
       "__outstatic": {
-        "commit": "cf22dda8c1f7f260b7eabea96bd17daa49ee677c",
+        "commit": "aca175e5d482bc9e06bb773e1fc757ee354b8004",
         "hash": "2627148824",
         "path": "outstatic/content/pages/doe.md"
       },
