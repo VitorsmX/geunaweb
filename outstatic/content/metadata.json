@@ -1,43 +1,7 @@
 {
-  "commit": "5f6a88320da27c4d284996d498842939ad1d8d19",
-  "generated": "Sun, 11 Feb 2024 21:48:22 GMT",
+  "commit": "1830cc765846a1b20d1fc510566716d55bed6b87",
+  "generated": "Mon, 28 Oct 2024 16:39:58 GMT",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "375ca4629d57e6f05cb7f61debb7e258bf3947d4",
-        "hash": "2477969654",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": ""
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "This is my blog.",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Home"
-    },
-    {
-      "__outstatic": {
-        "commit": "9637bcf0d7aa912e22e9e0031dd679244f9c9527",
-        "hash": "2309931423",
-        "path": "outstatic/content/pages/about.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "I'm Andre, a product developer and designer from Maceió, Brazil",
-      "publishedAt": "2023-12-28T18:49:02.348Z",
-      "slug": "about",
-      "status": "published",
-      "title": "About Me"
-    },
     {
       "__outstatic": {
         "commit": "056337c6ec4b1a28f693f8068e1a116eaef5f7e7",
@@ -65,6 +29,42 @@
         }
       ],
       "title": "Add a free CMS to your Next.js website with Outstatic"
+    },
+    {
+      "__outstatic": {
+        "commit": "f3e175682602bb23a7c841eb41c42b1ba6be3536",
+        "hash": "3879113971",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "/images/hero-bg-geu.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "202e717ae280a3f8c92247949cc71bbff1bca0a8",
+        "hash": "1220656264",
+        "path": "outstatic/content/pages/about.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "about",
+      "status": "published",
+      "title": "Sobre Nós"
     },
     {
       "__outstatic": {
@@ -122,34 +122,6 @@
     },
     {
       "__outstatic": {
-        "commit": "fec3e47bc674c17926b8f31c8c8e26a003764b11",
-        "hash": "243385259",
-        "path": "outstatic/content/posts/welcome-to-outstatic.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/welcome-to-outstatic-g3Mz.png",
-      "description": "Thank you for choosing Outstatic to create your website! We look forward to helping you every step of the way.",
-      "publishedAt": "2024-02-10T01:41:03.484Z",
-      "slug": "welcome-to-outstatic",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Outstatic",
-          "value": "outstatic"
-        },
-        {
-          "label": "NextJs",
-          "value": "nextJs"
-        }
-      ],
-      "title": "Welcome to Outstatic!"
-    },
-    {
-      "__outstatic": {
         "commit": "556f38c12082dda8bded724747fe6ccfe6a13051",
         "hash": "1352934563",
         "path": "outstatic/content/posts/the-next-steps-for-outstatic.md"
@@ -179,6 +151,34 @@
         }
       ],
       "title": "Far Out - The Next Steps for Outstatic "
+    },
+    {
+      "__outstatic": {
+        "commit": "f0521e738471b1b2b3ad2814dfa2f2e7a35c9201",
+        "hash": "4134932838",
+        "path": "outstatic/content/posts/welcome-to-outstatic.md"
+      },
+      "author": {
+        "name": "Andre Vitorio",
+        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/welcome-to-outstatic-g3Mz.png",
+      "description": "Thank you for choosing Outstatic to create your website! We look forward to helping you every step of the way.",
+      "publishedAt": "2024-02-10T01:41:03.484Z",
+      "slug": "welcome-to-outstatic",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Outstatic",
+          "value": "outstatic"
+        },
+        {
+          "label": "NextJs",
+          "value": "nextJs"
+        }
+      ],
+      "title": "Welcome to Outstatic!"
     }
   ]
 }
