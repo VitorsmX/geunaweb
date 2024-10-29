@@ -29,6 +29,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Sinopse"
+    },
+    "linkParaComprar": {
+      "required": false,
+      "description": "Link Do Website que vende o livro",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Link Para Comprar"
     }
   }
 }
