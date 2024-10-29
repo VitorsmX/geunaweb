@@ -50,6 +50,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Imagem do Livro"
+    },
+    "quantidadeDePaginas": {
+      "required": false,
+      "description": "Quantidade de Páginas",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Quantidade de paginas"
     }
   }
 }
