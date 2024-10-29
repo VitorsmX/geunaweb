@@ -57,6 +57,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Quantidade de paginas"
+    },
+    "precoNaInternet": {
+      "required": false,
+      "description": "Preço na internet",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Preco na Internet"
     }
   }
 }
