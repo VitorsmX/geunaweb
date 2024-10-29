@@ -1,25 +1,7 @@
 {
-  "commit": "d23260f83c2ba77efd2e87ebe02ae1bc129f06ea",
-  "generated": "2024-10-28T22:31:48.184Z",
+  "commit": "45db6636fc2c19b3ab2938640b9b724bd3050532",
+  "generated": "2024-10-29T17:11:49.773Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "36ee22a1d34c7cdf5f21f87cb9265936a25db58a",
-        "hash": "4149069659",
-        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
-      },
-      "author": {
-        "name": "André Luiz",
-        "picture": "/images/andre-gxNj.jpg"
-      },
-      "collection": "biblioteca",
-      "coverImage": "/images/9788573289442-QzNj.jpg",
-      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
-      "publishedAt": "2024-10-28T19:18:17.461Z",
-      "slug": "livro-nosso-lar",
-      "status": "published",
-      "title": "LIVRO: Nosso Lar"
-    },
     {
       "__outstatic": {
         "commit": "10a890acb7f408fe8b8a20cad681579f861e0806",
@@ -109,6 +91,33 @@
       "slug": "home",
       "status": "published",
       "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "45db6636fc2c19b3ab2938640b9b724bd3050532",
+        "hash": "3337662076",
+        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
+      },
+      "author": {
+        "name": "André Luiz",
+        "picture": "/images/andre-gxNj.jpg"
+      },
+      "autorDesencarnado": "André Luiz",
+      "autorEncarnado": "Francisco Cândido Chico Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/9788573289442-QzNj.jpg",
+      "dataDaPublicacao": "1944",
+      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
+      "imagemDoLivro": "",
+      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
+      "linkParaComprar": "https://www.febeditora.com.br/nosso-lar",
+      "precoNaInternet": "42,00",
+      "publishedAt": "2024-10-28T19:18:17.461Z",
+      "quantidadeDePaginas": "320",
+      "sinopse": "",
+      "slug": "livro-nosso-lar",
+      "status": "published",
+      "title": "LIVRO: Nosso Lar"
     }
   ]
 }

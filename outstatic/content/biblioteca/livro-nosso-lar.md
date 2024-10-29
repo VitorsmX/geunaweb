@@ -7,6 +7,15 @@ author:
 slug: 'livro-nosso-lar'
 description: 'Livro: Nosso lar de André Luiz por Chico Xavier'
 coverImage: '/images/9788573289442-QzNj.jpg'
+autorEncarnado: 'Francisco Cândido Chico Xavier'
+autorDesencarnado: 'André Luiz'
+dataDaPublicacao: '1944'
+sinopse: ''
+linkParaComprar: 'https://www.febeditora.com.br/nosso-lar'
+linkDoLivroEmPdf: 'https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf'
+imagemDoLivro: ''
+quantidadeDePaginas: '320'
+precoNaInternet: '42,00'
 publishedAt: '2024-10-28T19:18:17.461Z'
 ---
 
