@@ -21,8 +21,6 @@ const BookCard = ({ book }: { book: any }) => {
         return null;
     }
 
-    console.log(book)
-
   return (
     <div className="max-w-lg mx-auto my-4 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01]">
       <img
