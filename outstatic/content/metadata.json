@@ -1,6 +1,6 @@
 {
-  "commit": "7cb13369b2735a2c48b9d2542dec4a4d9c0d41ca",
-  "generated": "2024-10-29T19:04:10.943Z",
+  "commit": "bd67b176d7990fa7269095178cab1388308a9006",
+  "generated": "2024-10-29T19:04:55.729Z",
   "metadata": [
     {
       "__outstatic": {
@@ -121,8 +121,8 @@
     },
     {
       "__outstatic": {
-        "commit": "7cb13369b2735a2c48b9d2542dec4a4d9c0d41ca",
-        "hash": "2752497171",
+        "commit": "bd67b176d7990fa7269095178cab1388308a9006",
+        "hash": "2847517694",
         "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
       },
       "author": {

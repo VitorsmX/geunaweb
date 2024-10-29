@@ -19,8 +19,8 @@ precoNaInternet: '37,50'
 publishedAt: '2024-10-29T18:36:11.539Z'
 ---
 
-Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. 
+Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra.
 
-![](/images/9786555706376-YwOT.jpg)
+![](/images/9786555706376-k2NT.jpg)
 
 Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!
