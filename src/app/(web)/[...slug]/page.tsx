@@ -1,3 +1,5 @@
+import BookCard from '@/components/BookCard'
+import BooksSection from '@/components/booksSection'
 import ContentGrid from '@/components/content-grid'
 import DocHero from '@/components/doc-hero'
 import MDXComponent from '@/components/mdx/mdx-component'
@@ -8,6 +10,17 @@ import { notFound } from 'next/navigation'
 import { OstDocument } from 'outstatic'
 import { getCollections, load } from 'outstatic/server'
 
+type Book = {
+  tags?: { value: string; label: string }[];
+  autorEncarnado: string;
+  autorDesencarnado: string;
+  dataDaPublicacao: string;
+  sinopse: string;
+  linkParaComprar: string;
+  imagemDoLivro: string;
+  quantidadeDePaginas: string;
+  precoNaInternet: string;
+} & OstDocument;
 type Document = {
   tags: { value: string; label: string }[]
 } & OstDocument
@@ -58,13 +71,19 @@ export default async function Document(params: Params) {
   const { doc, moreDocs } = await getData(params)
 
   if (!doc) {
-    const { docs, collection } = moreDocs
+    const { docs, collection, books } = moreDocs
     return (
       <div className="pt-24 mb-16 animate-fade-up opacity-0">
-        {docs.length > 0 && (
+        {docs.length > 0 && params.params.slug[0] !== 'biblioteca' ? (
           <ContentGrid
             title={`Você está em: ${collection}`}
             items={docs}
+            collection={collection}
+          />
+        ) : (
+          <BooksSection
+            title={`Bem vindo a ${collection} Virtual GEU`}
+            books={books as unknown as Book[]}
             collection={collection}
           />
         )}
@@ -83,12 +102,17 @@ export default async function Document(params: Params) {
     )
   }
 
+  console.log(moreDocs)
+
   return (
     <>
       <article className="mb-32">
         <DocHero {...doc} />
         <div className="max-w-2xl mx-auto">
           <div className="prose prose-outstatic">
+            {doc.collection === 'biblioteca' && (
+              <BookCard book={doc.books} />
+            )}
             <MDXComponent content={doc.content} />
           </div>
         </div>
@@ -125,13 +149,16 @@ async function getData({ params }: Params) {
         .sort({ publishedAt: -1 })
         .toArray()
 
+        const books = await db.find({ collection: 'biblioteca' }, ['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet']).sort({ publishedAt: -1 }).toArray()
+
       // if we have docs, we are on a collection archive
       if (docs.length) {
         return {
           doc: undefined,
           moreDocs: {
             docs,
-            collection
+            collection,
+            books
           }
         }
       }
@@ -163,6 +190,8 @@ async function getData({ params }: Params) {
 
   const content = await MDXServer(doc.content)
 
+  const books = collection === 'biblioteca' ? await db.find({collection: 'biblioteca', slug: params.slug[1], status: 'published'},['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet']).first() : []
+
   const moreDocs =
     collection === 'pages'
       ? []
@@ -181,9 +210,10 @@ async function getData({ params }: Params) {
   return {
     doc: {
       ...doc,
-      content
+      content,
+      books
     },
-    moreDocs
+    moreDocs,
   }
 }
 
