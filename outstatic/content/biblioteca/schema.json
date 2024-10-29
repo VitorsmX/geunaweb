@@ -1,0 +1,13 @@
+{
+  "title": "biblioteca",
+  "type": "object",
+  "properties": {
+    "autorEncarnado": {
+      "required": false,
+      "description": "Autor Encarnado (Livro)",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Autor Encarnado"
+    }
+  }
+}
