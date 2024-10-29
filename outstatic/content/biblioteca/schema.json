@@ -36,6 +36,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Link Para Comprar"
+    },
+    "linkDoLivroEmPdf": {
+      "required": false,
+      "description": "Link do Livro em PDF Para Download",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Link do Livro em PDF"
     }
   }
 }
