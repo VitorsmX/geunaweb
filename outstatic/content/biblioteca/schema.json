@@ -15,6 +15,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Autor Desencarnado"
+    },
+    "dataDaPublicacao": {
+      "required": false,
+      "description": "Data de Publicação do Livro",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Data da Publicacao"
     }
   }
 }
