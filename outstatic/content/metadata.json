@@ -1,6 +1,6 @@
 {
-  "commit": "3f534251ba15e3fb7d4b6dcc243fdfbd8da8dbfb",
-  "generated": "2024-10-29T18:54:02.936Z",
+  "commit": "7cb13369b2735a2c48b9d2542dec4a4d9c0d41ca",
+  "generated": "2024-10-29T19:04:10.943Z",
   "metadata": [
     {
       "__outstatic": {
@@ -118,6 +118,33 @@
       "slug": "livro-nosso-lar",
       "status": "published",
       "title": "LIVRO: Nosso Lar"
+    },
+    {
+      "__outstatic": {
+        "commit": "7cb13369b2735a2c48b9d2542dec4a4d9c0d41ca",
+        "hash": "2752497171",
+        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
+      },
+      "author": {
+        "name": "Miriam Dusi",
+        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
+      },
+      "autorDesencarnado": "Miriam Dusi",
+      "autorEncarnado": "Miriam Dusi",
+      "collection": "biblioteca",
+      "coverImage": "/images/9786555706376-AzMT.jpg",
+      "dataDaPublicacao": "2024",
+      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
+      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://www.febeditora.com.br/a-grande-viagem2",
+      "precoNaInternet": "37,50",
+      "publishedAt": "2024-10-29T18:36:11.539Z",
+      "quantidadeDePaginas": "80",
+      "sinopse": "",
+      "slug": "livro-a-grande-viagem",
+      "status": "published",
+      "title": "LIVRO: A grande viagem"
     }
   ]
 }
