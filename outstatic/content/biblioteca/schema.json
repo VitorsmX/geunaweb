@@ -43,6 +43,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Link do Livro em PDF"
+    },
+    "imagemDoLivro": {
+      "required": false,
+      "description": "Imagem do Livro (CAPA)",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Imagem do Livro"
     }
   }
 }
