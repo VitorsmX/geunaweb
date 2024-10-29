@@ -102,8 +102,6 @@ export default async function Document(params: Params) {
     )
   }
 
-  console.log(moreDocs)
-
   return (
     <>
       <article className="mb-32">
