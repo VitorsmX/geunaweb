@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Autor Encarnado"
+    },
+    "autorDesencarnado": {
+      "required": false,
+      "description": "Autor Desencarnado (Livro)",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Autor Desencarnado"
     }
   }
 }
