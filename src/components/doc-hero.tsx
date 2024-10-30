@@ -14,7 +14,7 @@ export default function DocHero(doc: Doc) {
           alt={doc.title}
           src={doc.coverImage || `/api/og?title=${doc.title}`}
           fill
-          className="object-cover object-center rounded-md border"
+          className="object-contain object-center rounded-md border"
           priority
         />
       </div>
@@ -32,7 +32,7 @@ export default function DocHero(doc: Doc) {
         {doc.title}
       </h1>
       <div className="hidden md:block md:mb-12 text-slate-600 dark:text-slate-400">
-        Written on <DateFormatter dateString={doc.publishedAt} /> by{" "}
+        Escrito em <DateFormatter dateString={doc.publishedAt} /> por{" "}
         {doc?.author?.name || ""}.
       </div>
       <hr className="border-gray-200 mt-10 mb-10" />
