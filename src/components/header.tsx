@@ -18,7 +18,7 @@ const Header = async () => {
   const { pages, collections } = data;
 
   return (
-    <header className="py-4 fixed bottom-0 border-t md:bottom-auto md:top-0 w-full z-20 border-b bg-background">
+    <header className="py-4 fixed border-t md:bottom-auto md:top-0 w-full z-20 border-b bg-background">
       <nav className="max-w-6xl mx-auto w-full layout flex items-center justify-between">
         <Link
           href="/"

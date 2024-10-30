@@ -25,7 +25,7 @@ export const MobileMenu = ({ pages, collections }: MenuProps) => {
           </div>
         </DrawerTrigger>
         <DrawerContent>
-          <ul className="flex flex-col gap-2 pt-2  px-4">
+          <ul className="flex flex-col gap-2 pt-2 px-4">
             {pages.map(({ title, slug }) => (
               <li key={slug}>
                 <Link
