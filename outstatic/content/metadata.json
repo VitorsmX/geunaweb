@@ -1,6 +1,6 @@
 {
-  "commit": "bd67b176d7990fa7269095178cab1388308a9006",
-  "generated": "2024-10-29T19:05:19.008Z",
+  "commit": "a5f474bc33386a188b8085d44d178b89131d4308",
+  "generated": "2024-10-30T17:53:24.343Z",
   "metadata": [
     {
       "__outstatic": {
@@ -76,24 +76,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d23260f83c2ba77efd2e87ebe02ae1bc129f06ea",
-        "hash": "2602535019",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "collection": "pages",
-      "coverImage": "/images/banner-logo-geu-UzOD.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
-    },
-    {
-      "__outstatic": {
         "commit": "3f534251ba15e3fb7d4b6dcc243fdfbd8da8dbfb",
         "hash": "3337662076",
         "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
@@ -145,6 +127,25 @@
       "slug": "livro-a-grande-viagem",
       "status": "published",
       "title": "LIVRO: A grande viagem"
+    },
+    {
+      "__outstatic": {
+        "commit": "a5f474bc33386a188b8085d44d178b89131d4308",
+        "hash": "3660447303",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "https://geunaweb.vercel.app/api/outstatic/images/banner-geu-Y2OD.jpg",
+      "collection": "pages",
+      "coverImage": "/images/banner-logo-geu-UzOD.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
     }
   ]
 }
