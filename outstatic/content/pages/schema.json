@@ -1,0 +1,13 @@
+{
+  "title": "pages",
+  "type": "object",
+  "properties": {
+    "bannerImagem": {
+      "required": false,
+      "description": "Banner para a página de início",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Banner Imagem"
+    }
+  }
+}
