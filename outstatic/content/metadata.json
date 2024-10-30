@@ -1,6 +1,6 @@
 {
   "commit": "a5f474bc33386a188b8085d44d178b89131d4308",
-  "generated": "2024-10-30T17:53:24.343Z",
+  "generated": "2024-10-30T18:13:06.049Z",
   "metadata": [
     {
       "__outstatic": {
@@ -131,14 +131,14 @@
     {
       "__outstatic": {
         "commit": "a5f474bc33386a188b8085d44d178b89131d4308",
-        "hash": "3660447303",
+        "hash": "1222013507",
         "path": "outstatic/content/pages/home.md"
       },
       "author": {
         "name": "Grupo Espírita União",
         "picture": "/images/logo-geu.png"
       },
-      "bannerImagem": "https://geunaweb.vercel.app/api/outstatic/images/banner-geu-Y2OD.jpg",
+      "bannerImagem": "https://i.imgur.com/gZrhVpE.jpeg",
       "collection": "pages",
       "coverImage": "/images/banner-logo-geu-UzOD.jpg",
       "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",

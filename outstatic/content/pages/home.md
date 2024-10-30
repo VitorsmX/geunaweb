@@ -7,7 +7,7 @@ author:
 slug: 'home'
 description: 'Site Oficial do Grupo Espírita União, livros espíritas e programação.'
 coverImage: '/images/banner-logo-geu-UzOD.jpg'
-bannerImagem: 'https://geunaweb.vercel.app/api/outstatic/images/banner-geu-Y2OD.jpg'
+bannerImagem: 'https://i.imgur.com/gZrhVpE.jpeg'
 publishedAt: '2022-03-17T05:35:07.322Z'
 ---
 
