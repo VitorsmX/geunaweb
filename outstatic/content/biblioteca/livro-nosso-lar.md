@@ -16,6 +16,7 @@ linkDoLivroEmPdf: 'https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chi
 imagemDoLivro: ''
 quantidadeDePaginas: '320'
 precoNaInternet: '42,00'
+linkParaSolicitar: 'https://wa.link/4v0tbn'
 publishedAt: '2024-10-28T19:18:17.461Z'
 ---
 

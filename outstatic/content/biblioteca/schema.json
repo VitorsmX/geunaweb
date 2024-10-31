@@ -64,6 +64,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Preco na Internet"
+    },
+    "linkParaSolicitar": {
+      "required": false,
+      "description": "Insira o Link para solicitar o livro (Whatsapp, formulário, etc...)",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "LinkParaSolicitar"
     }
   }
 }

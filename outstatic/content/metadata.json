@@ -1,6 +1,6 @@
 {
-  "commit": "d9e6caef1f7e8121de55733fa9a1339fa391c56d",
-  "generated": "2024-10-31T14:08:44.940Z",
+  "commit": "1bf3f932e814cfec89a4177ef8c420b2120d64ac",
+  "generated": "2024-10-31T16:24:20.122Z",
   "metadata": [
     {
       "__outstatic": {
@@ -76,33 +76,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3f534251ba15e3fb7d4b6dcc243fdfbd8da8dbfb",
-        "hash": "3337662076",
-        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
-      },
-      "author": {
-        "name": "André Luiz",
-        "picture": "/images/andre-gxNj.jpg"
-      },
-      "autorDesencarnado": "André Luiz",
-      "autorEncarnado": "Francisco Cândido Chico Xavier",
-      "collection": "biblioteca",
-      "coverImage": "/images/9788573289442-QzNj.jpg",
-      "dataDaPublicacao": "1944",
-      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
-      "imagemDoLivro": "",
-      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
-      "linkParaComprar": "https://www.febeditora.com.br/nosso-lar",
-      "precoNaInternet": "42,00",
-      "publishedAt": "2024-10-28T19:18:17.461Z",
-      "quantidadeDePaginas": "320",
-      "sinopse": "",
-      "slug": "livro-nosso-lar",
-      "status": "published",
-      "title": "LIVRO: Nosso Lar"
-    },
-    {
-      "__outstatic": {
         "commit": "bd67b176d7990fa7269095178cab1388308a9006",
         "hash": "761173139",
         "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
@@ -147,6 +120,34 @@
       "slug": "home",
       "status": "published",
       "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "1bf3f932e814cfec89a4177ef8c420b2120d64ac",
+        "hash": "514435868",
+        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
+      },
+      "author": {
+        "name": "André Luiz",
+        "picture": "/images/andre-gxNj.jpg"
+      },
+      "autorDesencarnado": "André Luiz",
+      "autorEncarnado": "Francisco Cândido Chico Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/9788573289442-QzNj.jpg",
+      "dataDaPublicacao": "1944",
+      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
+      "imagemDoLivro": "",
+      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
+      "linkParaComprar": "https://www.febeditora.com.br/nosso-lar",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "42,00",
+      "publishedAt": "2024-10-28T19:18:17.461Z",
+      "quantidadeDePaginas": "320",
+      "sinopse": "",
+      "slug": "livro-nosso-lar",
+      "status": "published",
+      "title": "LIVRO: Nosso Lar"
     }
   ]
 }
