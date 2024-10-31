@@ -189,7 +189,7 @@ async function getData({ params }: Params) {
 
   const content = await MDXServer(doc.content)
 
-  const books = collection === 'biblioteca' ? await db.find({collection: 'biblioteca', slug: params.slug[1], status: 'published'},['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet']).first() : []
+  const books = collection === 'biblioteca' ? await db.find({collection: 'biblioteca', slug: params.slug[1], status: 'published'},['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet', 'linkParaSolicitar']).first() : []
 
   const moreDocs =
     collection === 'pages'
