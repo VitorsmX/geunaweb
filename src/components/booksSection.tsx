@@ -27,6 +27,27 @@ type Props = {
   viewAll?: boolean;
 };
 
+const translateKeys = (key: string) => {
+  switch (key) {
+    case "title":
+      return "Título";
+    case "description":
+      return "Descrição";
+    case "autorEncarnado":
+      return "Autor Encarnado";
+    case "autorDesencarnado":
+      return "Autor Desencarnado";
+    case "dataDaPublicacao":
+      return "Data da Publicação";
+    case "precoNaInternet":
+      return "Preço na Internet";
+    case "quantidadeDePaginas":
+      return "Quantidade de Páginas";
+    default:
+      return key;
+  }
+}
+
 const BooksSection = ({
   title = "More",
   books,
@@ -110,7 +131,7 @@ const BooksSection = ({
                 onChange={() => handleKeyChange(key)}
                 className="mr-2"
               />
-              {key}
+              {translateKeys(key)}
             </label>
           ))}
         </div>
