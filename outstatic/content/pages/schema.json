@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Banner Imagem"
+    },
+    "instagram": {
+      "required": false,
+      "description": "Link do Instagram",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Instagram"
     }
   }
 }
