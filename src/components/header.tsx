@@ -18,7 +18,7 @@ const Header = async () => {
   const { pages, collections } = data;
 
   return (
-    <header className="py-4 fixed border-t md:bottom-auto md:top-0 w-full z-20 border-b bg-background">
+    <header className="py-4 fixed border-t md:bottom-auto md:top-0 w-full z-20 border-b bg-gradient-to-r from-[#e7e7e7] via-[#e5e6e9] to-[#ffffffe8]">
       <nav className="max-w-6xl mx-auto w-full layout flex items-center justify-between">
         <Link
           href="/"
@@ -30,7 +30,7 @@ const Header = async () => {
             width={40}
             height={40}
           />
-          <span className="ml-2">Grupo Espírita União (Página Oficial)</span>
+          <span className="ml-2 text-zinc-900">Grupo Espírita União (Página Oficial)</span>
         </Link>
         <ul className="hidden md:flex items-center justify-between space-x-3 text-xs md:space-x-4 md:text-base">
           {pages.map(({ title, slug }) => (
@@ -39,7 +39,7 @@ const Header = async () => {
                 href={`/${slug}`}
                 className={
                   buttonVariants({ variant: "ghost", size: "sm" }) +
-                  " capitalize"
+                  " capitalize text-zinc-900"
                 }
               >
                 {title}
@@ -52,7 +52,7 @@ const Header = async () => {
                 href={`/${collection}`}
                 className={
                   buttonVariants({ variant: "ghost", size: "sm" }) +
-                  " capitalize"
+                  " capitalize text-zinc-900"
                 }
               >
                 {collection}

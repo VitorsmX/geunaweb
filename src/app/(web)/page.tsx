@@ -1,5 +1,6 @@
 import ContentGrid from "@/components/content-grid";
 import markdownToHtml from "@/lib/markdownToHtml";
+import { InstagramIcon } from "lucide-react";
 import Image from "next/image";
 import { load } from "outstatic/server";
 
@@ -7,27 +8,41 @@ export default async function Index() {
   const { content, allPosts, otherCollections, otherPageElements } =
     await getData();
 
-  const { bannerImagem }: any = otherPageElements.find(
+  const { bannerImagem, coverImage, instagram }: any = otherPageElements.find(
     ({ slug }) => slug === "home"
   );
 
   return (
     <>
-      <div className="flex flex-col w-full h-full overflow-hidden mb-16 md:mb-28">
-        <div className="w-full h-auto mx-0 z-0 absolute top-0 right-0 left-0 max-sm:bottom-[60%] max-md:bottom-[67%] max-lg:bottom-[54%] max-xl:bottom-[58%] bottom-[56%] pb-96 sm:pb-56">
+      <div className="flex flex-col w-full h-full overflow-hidden mb-16 md:mb-28 bg-gradient-to-b from-[#6d9fd85d] via-[#5694da60] to-[#3070b870]">
+        <div className="w-full h-auto mx-0 z-0 top-0 flex justify-center items-center">
           <Image
-            src={bannerImagem}
-            alt="Logo Geu"
+            src={coverImage ? coverImage : bannerImagem}
+            alt="Banner Geu"
             width={2000}
             height={1000}
             className="h-full object-cover"
           />
         </div>
-        <section className="mb-16 md:min-h-[calc(100vh-256px)] items-center flex z-10 backdrop-blur-sm bg-[#00000040] p-4 rounded-sm">
+        <section className="mb-16 md:min-h-[calc(100vh-256px)] items-center flex z-10 backdrop-blur-lg bg-[#294b7210] p-4 rounded-b-lg gap-x-8">
           <div
             className="prose lg:prose-2xl home-intro prose-outstatic home-hero-fade"
             dangerouslySetInnerHTML={{ __html: content }}
           />
+          {instagram && (
+            <div className="flex flex-col justify-center items-center gap-y-2 self-start bg-[#2fff0556] py-3 px-3 sm:px-6 rounded-lg">
+              <p className="text-center text-xl font-semibold mb-2 sm:mb-8 underline underline-offset-2">Redes Sociais</p>
+              <a
+                className="flex items-center gap-2 mx-auto mt-8 mb-4 md:mb-0 md:mt-0"
+                href={instagram}
+                target="_blank"
+                title="Instagram"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon width={50} height={50} className="max-sm:w-8 max-sm:h-8" />
+              </a>
+            </div>
+          )}
         </section>
       </div>
       <div className="animate-fade-in delay-1000 opacity-0 duration-500">
@@ -66,7 +81,13 @@ async function getData() {
     .first();
 
   const otherPageElements = await db
-    .find({ collection: "pages" }, ["bannerImagem", "slug", "collection"])
+    .find({ collection: "pages" }, [
+      "bannerImagem",
+      "slug",
+      "collection",
+      "coverImage",
+      "instagram",
+    ])
     .toArray();
 
   // convert markdown to html

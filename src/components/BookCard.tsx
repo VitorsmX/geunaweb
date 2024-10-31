@@ -22,7 +22,7 @@ const BookCard = ({ book }: { book: any }) => {
     }
 
   return (
-    <div className="max-w-lg mx-auto my-4 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01]">
+    <div className="max-w-lg mx-auto my-4 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff21]">
       <img
         src={book.coverImage}
         alt={book.title}
