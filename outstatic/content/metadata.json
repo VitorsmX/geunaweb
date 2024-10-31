@@ -1,6 +1,6 @@
 {
-  "commit": "4b64f8892799fdfa98f719d76276bd3c4ad4f8da",
-  "generated": "2024-10-31T13:54:12.727Z",
+  "commit": "e492d4b6f079758b05b1b3ea0401cf0322bc11e6",
+  "generated": "2024-10-31T14:03:30.663Z",
   "metadata": [
     {
       "__outstatic": {
@@ -130,17 +130,17 @@
     },
     {
       "__outstatic": {
-        "commit": "4b64f8892799fdfa98f719d76276bd3c4ad4f8da",
-        "hash": "1680823286",
+        "commit": "e492d4b6f079758b05b1b3ea0401cf0322bc11e6",
+        "hash": "831131906",
         "path": "outstatic/content/pages/home.md"
       },
       "author": {
         "name": "Grupo Espírita União",
         "picture": "/images/logo-geu.png"
       },
-      "bannerImagem": "https://i.imgur.com/929vCrd.jpeg",
+      "bannerImagem": "https://i.imgur.com/6jOHpVH.jpeg",
       "collection": "pages",
-      "coverImage": "/images/hero-bg-geu-v2-E5NT.jpg",
+      "coverImage": "/images/hero-bg-geu-v3-Y2Nj.jpg",
       "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
       "publishedAt": "2022-03-17T05:35:07.322Z",
       "slug": "home",
