@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-BR" translate="no" suppressHydrationWarning>
       <body className="relative pb-56 md:pb-36 min-h-screen bg-gradient-to-b from-[#e9edf1a8] via-[#e6e7e979] to-[#ffffff65]">
         <ThemeProvider
           attribute="class"
