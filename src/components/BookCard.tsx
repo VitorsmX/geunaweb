@@ -34,7 +34,7 @@ const BookCard = ({ book }: { book: any }) => {
         <p className="text-gray-600 mt-1">Autor Desencarnado: {book.autorDesencarnado}</p>
         <p className="text-gray-500 mt-2">Publicado em: {book.dataDaPublicacao}</p>
         <p className="text-gray-700 mt-4">{book.description}</p>
-        <p className="text-xl font-semibold mt-4">Preço: R$ {book.precoNaInternet}</p>
+        <p className="text-xl font-semibold text-gray-600 mt-4">Preço: R$ {book.precoNaInternet}</p>
         <p className="text-sm text-gray-500 mt-2">Páginas: {book.quantidadeDePaginas}</p>
         <div className="flex gap-x-2 mt-6">
           {book.linkParaComprar && <a
