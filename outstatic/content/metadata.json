@@ -1,6 +1,6 @@
 {
-  "commit": "1bf3f932e814cfec89a4177ef8c420b2120d64ac",
-  "generated": "2024-10-31T16:24:20.122Z",
+  "commit": "c9233cb8f0968a6cf330c1d59b0f58523e7dd9e3",
+  "generated": "2024-10-31T16:34:41.532Z",
   "metadata": [
     {
       "__outstatic": {
@@ -123,7 +123,7 @@
     },
     {
       "__outstatic": {
-        "commit": "1bf3f932e814cfec89a4177ef8c420b2120d64ac",
+        "commit": "c9233cb8f0968a6cf330c1d59b0f58523e7dd9e3",
         "hash": "514435868",
         "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
       },
