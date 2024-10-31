@@ -1,6 +1,6 @@
 {
-  "commit": "e492d4b6f079758b05b1b3ea0401cf0322bc11e6",
-  "generated": "2024-10-31T14:03:30.663Z",
+  "commit": "d9e6caef1f7e8121de55733fa9a1339fa391c56d",
+  "generated": "2024-10-31T14:08:44.940Z",
   "metadata": [
     {
       "__outstatic": {
@@ -130,8 +130,8 @@
     },
     {
       "__outstatic": {
-        "commit": "e492d4b6f079758b05b1b3ea0401cf0322bc11e6",
-        "hash": "831131906",
+        "commit": "d9e6caef1f7e8121de55733fa9a1339fa391c56d",
+        "hash": "2673103446",
         "path": "outstatic/content/pages/home.md"
       },
       "author": {
@@ -142,6 +142,7 @@
       "collection": "pages",
       "coverImage": "/images/hero-bg-geu-v3-Y2Nj.jpg",
       "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
       "publishedAt": "2022-03-17T05:35:07.322Z",
       "slug": "home",
       "status": "published",
