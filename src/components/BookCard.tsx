@@ -14,6 +14,7 @@ type Book = {
     quantidadeDePaginas: string;
     precoNaInternet: string;
     linkDoLivroEmPdf: string;
+    linkParaSolicitar: string;
   } & OstDocument;
 
 const BookCard = ({ book }: { book: any }) => {
@@ -30,18 +31,18 @@ const BookCard = ({ book }: { book: any }) => {
       />
       <div className="p-6 bg-white">
         <h2 className="text-2xl font-bold text-gray-800">{book.title}</h2>
-        <p className="text-gray-600 mt-1">Autor Encarnado: {book.autorEncarnado}</p>
-        <p className="text-gray-600 mt-1">Autor Desencarnado: {book.autorDesencarnado}</p>
-        <p className="text-gray-500 mt-2">Publicado em: {book.dataDaPublicacao}</p>
-        <p className="text-gray-700 mt-4">{book.description}</p>
-        <p className="text-xl font-semibold text-gray-600 mt-4">Preço: R$ {book.precoNaInternet}</p>
-        <p className="text-sm text-gray-500 mt-2">Páginas: {book.quantidadeDePaginas}</p>
+        <p className="text-gray-800 mt-1">Autor Encarnado: {book.autorEncarnado}</p>
+        <p className="text-gray-800 mt-1">Autor Desencarnado: {book.autorDesencarnado}</p>
+        <p className="text-gray-800 mt-2">Publicado em: {book.dataDaPublicacao}</p>
+        <p className="text-gray-800 mt-4">{book.description}</p>
+        <p className="text-xl font-semibold text-gray-800 mt-4">Preço: R$ {book.precoNaInternet}</p>
+        <p className="text-sm text-gray-700 mt-2">Páginas: {book.quantidadeDePaginas}</p>
         <div className="flex gap-x-2 mt-6">
           {book.linkParaComprar && <a
             href={book.linkParaComprar}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
           >
             Comprar
           </a>}
@@ -49,9 +50,17 @@ const BookCard = ({ book }: { book: any }) => {
             href={book.linkDoLivroEmPdf}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
           >
             Baixar
+          </a>}
+          {book.linkParaSolicitar && <a
+            href={book.linkParaSolicitar}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+          >
+            Solicitar
           </a>}
         </div>
       </div>

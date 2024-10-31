@@ -20,6 +20,7 @@ type Book = {
   imagemDoLivro: string;
   quantidadeDePaginas: string;
   precoNaInternet: string;
+  linkParaSolicitar: string;
 } & OstDocument;
 type Document = {
   tags: { value: string; label: string }[]
@@ -147,7 +148,7 @@ async function getData({ params }: Params) {
         .sort({ publishedAt: -1 })
         .toArray()
 
-        const books = await db.find({ collection: 'biblioteca' }, ['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet']).sort({ publishedAt: -1 }).toArray()
+        const books = await db.find({ collection: 'biblioteca' }, ['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet', 'linkParaSolicitar']).sort({ publishedAt: -1 }).toArray()
 
       // if we have docs, we are on a collection archive
       if (docs.length) {
