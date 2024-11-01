@@ -46,7 +46,7 @@ const Header = async () => {
               </Link>
             </li>
           ))}
-          {collections.map((collection) => (
+          {collections.filter(e => e !== "galeriaitens").map((collection) => (
             <li key={collection}>
               <Link
                 href={`/${collection}`}
