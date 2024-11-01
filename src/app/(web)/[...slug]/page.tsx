@@ -2,7 +2,9 @@ import BookCard from '@/components/BookCard'
 import BooksSection from '@/components/booksSection'
 import ContentGrid from '@/components/content-grid'
 import DocHero from '@/components/doc-hero'
+import Galery from '@/components/galery'
 import MDXComponent from '@/components/mdx/mdx-component'
+import MediaCard from '@/components/mediaCard'
 import MDXServer from '@/lib/mdx-server'
 import { absoluteUrl, ogUrl } from '@/lib/utils'
 import { Metadata } from 'next'
@@ -23,7 +25,7 @@ type Book = {
   linkParaSolicitar: string;
 } & OstDocument;
 type Document = {
-  tags: { value: string; label: string }[]
+  tags: { value: string; label: string }[],
 } & OstDocument
 
 interface Params {
@@ -93,12 +95,21 @@ export default async function Document(params: Params) {
   }
 
   if (doc.collection === 'pages') {
+    console.log(doc.itensGalery.map(e => e))
+    const titleGalery = `${doc.itensGalery.length > 1 ? 'Temos mais de ' : 'Temos '} ${doc.itensGalery.length > 1 ? doc.itensGalery.length - 1 : "um"} registro de ${doc.itensGalery.length > 1 ? 'Eventos' : 'Evento'} para compartilhar com você`
     return (
-      <article className="mb-32 py-24">
+      <article className="mb-32 py-8">
         <DocHero {...doc} />
-        <div className="prose md:prose-xl prose-outstatic animate-fade-up opacity-0">
+        <div className="prose md:prose-xl prose-outstatic animate-fade-up opacity-0 my-10">
           <MDXComponent content={doc.content} />
         </div>
+        {doc.itensGalery.length > 0 && (
+          <Galery
+            title={titleGalery}
+            items={doc.itensGalery}
+            collection={"galeriaitens"}
+          />
+        )}
       </article>
     )
   }
@@ -113,6 +124,11 @@ export default async function Document(params: Params) {
               <BookCard book={doc.books} />
             )}
             <MDXComponent content={doc.content} />
+            {
+              doc.collection === 'galeriaitens' && (
+                <MediaCard slug={doc.slug} />
+              )
+            }
           </div>
         </div>
       </article>
@@ -190,6 +206,11 @@ async function getData({ params }: Params) {
   const content = await MDXServer(doc.content)
 
   const books = collection === 'biblioteca' ? await db.find({collection: 'biblioteca', slug: params.slug[1], status: 'published'},['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet', 'linkParaSolicitar']).first() : []
+  
+  const itensGalery = slug === 'galeria-geu' ? await db.find({collection: 'galeriaitens', status: 'published'}, ['title', 'slug', 'coverImage', 'description', 'date']).toArray() : []
+
+  console.log("Itens server: ", itensGalery)
+
 
   const moreDocs =
     collection === 'pages'
@@ -210,7 +231,8 @@ async function getData({ params }: Params) {
     doc: {
       ...doc,
       content,
-      books
+      books,
+      itensGalery
     },
     moreDocs,
   }

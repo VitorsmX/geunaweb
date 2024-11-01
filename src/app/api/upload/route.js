@@ -12,11 +12,16 @@ cloudinary.v2.config({
 
 // Função para lidar com o upload
 export async function POST(req) {
+  const { slug } = req.nextUrl.searchParams; // Obter o slug da query string
   const formData = await req.formData();
   const file = formData.get("file");
 
   if (!file) {
     return NextResponse.json({ error: "No file provided" }, { status: 400 });
+  }
+
+  if (!slug) {
+    return NextResponse.json({ error: "No slug provided" }, { status: 400 });
   }
 
   // Caminho da pasta temporária
@@ -38,9 +43,10 @@ export async function POST(req) {
 
   try {
     const result = await cloudinary.v2.uploader.upload(tempPath, {
-      asset_folder: "geunaweb",
+      folder: `geunaweb/${slug}`, // Criar a pasta com o slug
       resource_type: "auto"
     });
+
     // Remover o arquivo temporário
     fs.unlinkSync(tempPath);
 
