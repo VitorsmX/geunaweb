@@ -48,7 +48,6 @@ export async function POST(req) {
     const result = await cloudinary.v2.uploader.upload(tempPath, {
       folder: `geunaweb/${slug}`, // Criar a pasta com o slug
       resource_type: "auto",
-      use_asset_folder_as_public_id_prefix: true,
     });
 
     // Remover o arquivo temporário

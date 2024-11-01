@@ -7,14 +7,11 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-export async function DELETE(request: Request) {
-  const url = new URL(request.url);
-  
-  // Obter o parâmetro "slug"
-  const public_id = url.searchParams.get("public_id") as string; // Obter o slug da query string
+export async function DELETE(request: Request, { params }: { params: { public_id: string } }) {
+  const { public_id } = params;
 
   try {
-    const result = await cloudinary.uploader.destroy(public_id);
+    const result = await cloudinary.uploader.destroy(public_id, { invalidate: true });
 
     if (result.result !== "ok") {
       return NextResponse.json({ message: "Failed to delete file" }, { status: 400 });

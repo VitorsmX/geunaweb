@@ -105,8 +105,10 @@ const UploadComponent: React.FC = () => {
       return;
     }
     
+    const publicIdWithoutPath = public_id.replace(/^.*\//, '');
+
     try {
-      const response = await fetch(`/api/delete/gallery?public_id=${public_id}`, {
+      const response = await fetch(`/api/delete/${publicIdWithoutPath}`, {
         method: "DELETE",
       });
 
