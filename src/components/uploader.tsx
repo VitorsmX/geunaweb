@@ -104,11 +104,9 @@ const UploadComponent: React.FC = () => {
       setMessage("Arquivo já excluído.");
       return;
     }
-    
-    const publicIdWithoutPath = public_id.replace(/^.*\//, '');
 
     try {
-      const response = await fetch(`/api/delete/${publicIdWithoutPath}`, {
+      const response = await fetch(`/api/delete/${public_id}`, {
         method: "DELETE",
       });
 
