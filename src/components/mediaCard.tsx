@@ -32,7 +32,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
   return (
     <div className="container mx-auto my-8">
       {message && <p className="text-red-500 text-center">{message}</p>}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-6 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {mediaItems.map((item) => (
           <div
             key={item.public_id}
@@ -50,10 +50,6 @@ const MediaCard = ({ slug }: { slug: string }) => {
                 Seu navegador não suporta vídeos.
               </video>
             ) : null}
-            <div className="p-6 bg-white">
-              <h3 className="text-xl font-semibold text-gray-800">Arquivo: {item.public_id}</h3>
-              <p className="text-gray-800 mt-2">Tipo: {item.type}</p>
-            </div>
           </div>
         ))}
       </div>
