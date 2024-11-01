@@ -14,6 +14,7 @@ interface FileItem {
   url: string;
   public_id: string;
   type: string;
+  name: string;
 }
 
 const UploadComponent: React.FC = () => {
@@ -88,7 +89,7 @@ const UploadComponent: React.FC = () => {
       const data = await response.json();
       setFiles((prevFiles) => [
         ...prevFiles,
-        { url: data.secure_url, public_id: data.public_id, type: file.type },
+        { url: data.secure_url, public_id: data.public_id, type: file.type, name: file.name },
       ]);
       setMessage("Upload bem-sucedido!");
       setFile(null);
@@ -164,7 +165,7 @@ const UploadComponent: React.FC = () => {
               </video>
             ) : null}
             <button
-              onClick={() => handleDelete(item.public_id)}
+              onClick={() => handleDelete(item.name)}
               className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition duration-200"
             >
               Excluir
