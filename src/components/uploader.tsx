@@ -100,12 +100,6 @@ const UploadComponent: React.FC = () => {
   };
 
   const handleDelete = async (public_id: string) => {
-    const existingFile = files.find((file) => file.public_id === public_id);
-    if (!existingFile) {
-      setMessage("Arquivo já excluído.");
-      return;
-    }
-
     try {
       const response = await fetch(`/api/delete/${public_id}`, {
         method: "DELETE",
