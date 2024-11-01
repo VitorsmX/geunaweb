@@ -1,25 +1,36 @@
-import { NextResponse } from "next/server";
-import { v2 as cloudinary } from "cloudinary";
+// src/app/api/delete/[public_id]/route.ts
 
-cloudinary.config({
+import { NextRequest, NextResponse } from "next/server";
+import cloudinary from "cloudinary";
+
+// Configurar o Cloudinary
+cloudinary.v2.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-export async function DELETE(request: Request, { params }: { params: { public_id: string } }) {
+// Função para lidar com a exclusão
+export async function DELETE(req: NextRequest, { params }: { params: { public_id: string } }) {
   const { public_id } = params;
 
+  if (!public_id) {
+    return NextResponse.json({ error: "No public_id provided" }, { status: 400 });
+  }
+
   try {
-    const result = await cloudinary.uploader.destroy(public_id, { invalidate: true });
+    // Excluindo o arquivo no Cloudinary
+    const result = await cloudinary.v2.uploader.destroy(public_id, {
+      resource_type: "auto",
+    });
 
-    if (result.result !== "ok") {
-      return NextResponse.json({ message: "Failed to delete file" }, { status: 400 });
+    if (result.result === "ok") {
+      return NextResponse.json({ message: "File deleted successfully." });
+    } else {
+      return NextResponse.json({ error: "File deletion failed." }, { status: 500 });
     }
-
-    return NextResponse.json({ message: "File deleted successfully" });
   } catch (error) {
-    console.error("Error deleting file:", error);
-    return NextResponse.error();
+    console.error("Cloudinary deletion error:", error);
+    return NextResponse.json({ error: "Deletion from Cloudinary failed" }, { status: 500 });
   }
 }
