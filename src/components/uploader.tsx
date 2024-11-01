@@ -148,8 +148,10 @@ const UploadComponent: React.FC = () => {
       )}
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+        {files.length === 0 && <p className="text-center">Nenhum arquivo carregado.</p>}
         {files.map((item) => (
           <div key={item.public_id} className="relative overflow-hidden border rounded-md shadow-md">
+            {item.name}
             {item.type.startsWith("image/") ? (
               <img src={item.url} alt="Uploaded" className="w-full h-32 object-cover" />
             ) : item.type.startsWith("video/") ? (
