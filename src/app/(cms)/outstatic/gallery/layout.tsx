@@ -20,7 +20,7 @@ export default function GalleryLayout({
   }, []);
 
   if (!session) {
-    return null; // ou um loader
+    return <p>Não Autorizado</p>; // ou um loader
   }
 
   return (
