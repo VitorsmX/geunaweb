@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import cloudinary from "cloudinary";
+import fs from "fs";
+import path from "path";
 
 // Configurar o Cloudinary
 cloudinary.v2.config({
@@ -13,7 +15,7 @@ export async function POST(req) {
   const url = new URL(req.url);
   
   // Obter o parâmetro "slug"
-  const slug = url.searchParams.get("slug");
+  const slug = url.searchParams.get("slug"); // Obter o slug da query string
   const formData = await req.formData();
   const file = formData.get("file");
 
@@ -25,29 +27,37 @@ export async function POST(req) {
     return NextResponse.json({ error: "No slug provided" }, { status: 400 });
   }
 
+  // Caminho da pasta temporária
+  const uploadsDir = path.join(process.cwd(), "uploads");
+
+  // Verificar se a pasta existe, se não, criar
+  if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir);
+  }
+
+  // Criar um caminho para o arquivo
+  const tempPath = path.join(uploadsDir, file.name);
+
   // Criar um buffer para o arquivo
   const buffer = Buffer.from(await file.arrayBuffer());
 
+  // Salvar o arquivo temporariamente
+  fs.writeFileSync(tempPath, buffer);
+
   try {
-    const result = await cloudinary.v2.uploader.upload_stream({
-      folder: `geunaweb/${slug}`,
+    const result = await cloudinary.v2.uploader.upload(tempPath, {
+      folder: `geunaweb/${slug}`, // Criar a pasta com o slug
       resource_type: "auto",
-    }, (error, result) => {
-      if (error) {
-        console.error("Cloudinary upload error:", error);
-        return NextResponse.json({ error: "Upload to Cloudinary failed" }, { status: 500 });
-      }
-      // Retornar a resposta com a URL e o public_id
-      return NextResponse.json({
-        secure_url: result.secure_url,
-        public_id: result.public_id,
-      });
+      use_asset_folder_as_public_id_prefix: true,
     });
 
-    // Enviar o buffer diretamente para o Cloudinary
-    const stream = cloudinary.v2.uploader.upload_stream(result);
-    stream.end(buffer);
+    // Remover o arquivo temporário
+    fs.unlinkSync(tempPath);
 
+    return NextResponse.json({
+      secure_url: result.secure_url,
+      public_id: result.public_id,
+    });
   } catch (error) {
     console.error("Cloudinary upload error:", error);
     return NextResponse.json({ error: "Upload to Cloudinary failed" }, { status: 500 });
