@@ -99,9 +99,9 @@ const UploadComponent: React.FC = () => {
     }
   };
 
-  const handleDelete = async (public_id: string) => {
+  const handleDelete = async (name: string, public_id: string) => {
     try {
-      const response = await fetch(`/api/delete/${public_id}`, {
+      const response = await fetch(`/api/delete/${name}`, {
         method: "DELETE",
       });
 
@@ -159,7 +159,7 @@ const UploadComponent: React.FC = () => {
               </video>
             ) : null}
             <button
-              onClick={() => handleDelete(item.name)}
+              onClick={() => handleDelete(item.name, item.public_id)}
               className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition duration-200"
             >
               Excluir
