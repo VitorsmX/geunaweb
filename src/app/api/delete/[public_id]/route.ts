@@ -20,9 +20,7 @@ export async function DELETE(req: NextRequest, { params }: { params: { public_id
 
   try {
     // Excluindo o arquivo no Cloudinary
-    const result = await cloudinary.v2.uploader.destroy(public_id, {
-      resource_type: "auto",
-    });
+    const result = await cloudinary.v2.uploader.destroy(public_id);
 
     if (result.result === "ok") {
       return NextResponse.json({ message: "File deleted successfully." });
