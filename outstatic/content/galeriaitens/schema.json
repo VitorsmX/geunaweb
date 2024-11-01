@@ -1,0 +1,13 @@
+{
+  "title": "galeriaitens",
+  "type": "object",
+  "properties": {
+    "date": {
+      "required": false,
+      "description": "Data Do Evento",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "date"
+    }
+  }
+}
