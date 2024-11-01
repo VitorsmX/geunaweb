@@ -1,6 +1,6 @@
 {
-  "commit": "703068f5b4026e95698b991f452e048ab9d1e41e",
-  "generated": "2024-11-01T17:00:55.746Z",
+  "commit": "172abd4ce04c1f8040150df3fbde77f4a6bd544b",
+  "generated": "2024-11-01T17:08:20.988Z",
   "metadata": [
     {
       "__outstatic": {
@@ -148,6 +148,26 @@
       "slug": "livro-nosso-lar",
       "status": "published",
       "title": "LIVRO: Nosso Lar"
+    },
+    {
+      "__outstatic": {
+        "commit": "172abd4ce04c1f8040150df3fbde77f4a6bd544b",
+        "hash": "1044181199",
+        "path": "outstatic/content/pages/galeria-geu.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-M3NT.png"
+      },
+      "bannerImagem": "https://i.imgur.com/D7V7Jfu.jpeg",
+      "collection": "pages",
+      "coverImage": "/images/banner-geu-M5MD.jpg",
+      "description": "Galeria de fotos e vídeos do GEU - Palestras, Eventos, Reuniões, Estudos, Espiritismo",
+      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
+      "publishedAt": "2024-11-01T16:43:29.514Z",
+      "slug": "galeria-geu",
+      "status": "published",
+      "title": "Galeria GEU"
     }
   ]
 }
