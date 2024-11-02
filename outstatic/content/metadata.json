@@ -1,24 +1,98 @@
 {
-  "commit": "e5a0b139a0d4cf87a4c6219170d74be9b0129759",
-  "generated": "2024-11-01T18:19:40.803Z",
+  "commit": "1e1ca43fcfd76bfa548d71fe14352888a22ced63",
+  "generated": "Sat, 02 Nov 2024 01:38:42 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "10a890acb7f408fe8b8a20cad681579f861e0806",
-        "hash": "3692882961",
-        "path": "outstatic/content/pages/sobre.md"
+        "commit": "2e51fd974e0c2306e038368fbb0884a59a8173af",
+        "hash": "2627148824",
+        "path": "outstatic/content/pages/doe.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
+      "description": "página de doações",
+      "publishedAt": "2024-10-28T19:50:46.304Z",
+      "slug": "doe",
+      "status": "published",
+      "title": "DOE"
+    },
+    {
+      "__outstatic": {
+        "commit": "877819fdce748ff70851bf9b1608cdbe00699364",
+        "hash": "1587874454",
+        "path": "outstatic/content/galeriaitens/natal-geu-2023.md"
       },
       "author": {
         "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
+        "picture": "/images/geu_logo-A1NT.png"
       },
-      "collection": "pages",
-      "coverImage": "/images/20230816_122947_0000-E0Nz.png",
-      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
-      "publishedAt": "2023-12-28T18:49:02.348Z",
-      "slug": "sobre",
+      "collection": "galeriaitens",
+      "coverImage": "/images/img_20221219_124103_628-I4ND.jpg",
+      "date": "2023",
+      "description": "fotos e vídeos de nosso natal de 2023 do Grupo Espírita União",
+      "publishedAt": "2024-11-01T17:06:06.484Z",
+      "slug": "natal-geu-2023",
       "status": "published",
-      "title": "Sobre Nós"
+      "title": "Natal GEU 2023"
+    },
+    {
+      "__outstatic": {
+        "commit": "73853f4fd986845ef3cba976b73670fb689eab52",
+        "hash": "514435868",
+        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
+      },
+      "author": {
+        "name": "André Luiz",
+        "picture": "/images/andre-gxNj.jpg"
+      },
+      "autorDesencarnado": "André Luiz",
+      "autorEncarnado": "Francisco Cândido Chico Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/9788573289442-QzNj.jpg",
+      "dataDaPublicacao": "1944",
+      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
+      "imagemDoLivro": "",
+      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
+      "linkParaComprar": "https://www.febeditora.com.br/nosso-lar",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "42,00",
+      "publishedAt": "2024-10-28T19:18:17.461Z",
+      "quantidadeDePaginas": "320",
+      "sinopse": "",
+      "slug": "livro-nosso-lar",
+      "status": "published",
+      "title": "LIVRO: Nosso Lar"
+    },
+    {
+      "__outstatic": {
+        "commit": "4f246e55c729067b25a344e72bf93b505d0d9020",
+        "hash": "761173139",
+        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
+      },
+      "author": {
+        "name": "Miriam Dusi",
+        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
+      },
+      "autorDesencarnado": "Miriam Dusi",
+      "autorEncarnado": "Miriam Dusi",
+      "collection": "biblioteca",
+      "coverImage": "/images/9786555706376-AzMT.jpg",
+      "dataDaPublicacao": "2024",
+      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
+      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://www.febeditora.com.br/a-grande-viagem2",
+      "precoNaInternet": "37,50",
+      "publishedAt": "2024-10-29T18:36:11.539Z",
+      "quantidadeDePaginas": "80",
+      "sinopse": "",
+      "slug": "livro-a-grande-viagem",
+      "status": "published",
+      "title": "LIVRO: A grande viagem"
     },
     {
       "__outstatic": {
@@ -58,52 +132,25 @@
     },
     {
       "__outstatic": {
-        "commit": "2e51fd974e0c2306e038368fbb0884a59a8173af",
-        "hash": "2627148824",
-        "path": "outstatic/content/pages/doe.md"
+        "commit": "10a890acb7f408fe8b8a20cad681579f861e0806",
+        "hash": "3692882961",
+        "path": "outstatic/content/pages/sobre.md"
       },
       "author": {
-        "name": "Vitor Sousa Mesquita",
-        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
       },
       "collection": "pages",
-      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
-      "description": "página de doações",
-      "publishedAt": "2024-10-28T19:50:46.304Z",
-      "slug": "doe",
+      "coverImage": "/images/20230816_122947_0000-E0Nz.png",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "sobre",
       "status": "published",
-      "title": "DOE"
+      "title": "Sobre Nós"
     },
     {
       "__outstatic": {
-        "commit": "bd67b176d7990fa7269095178cab1388308a9006",
-        "hash": "761173139",
-        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
-      },
-      "author": {
-        "name": "Miriam Dusi",
-        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
-      },
-      "autorDesencarnado": "Miriam Dusi",
-      "autorEncarnado": "Miriam Dusi",
-      "collection": "biblioteca",
-      "coverImage": "/images/9786555706376-AzMT.jpg",
-      "dataDaPublicacao": "2024",
-      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
-      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
-      "linkDoLivroEmPdf": "",
-      "linkParaComprar": "https://www.febeditora.com.br/a-grande-viagem2",
-      "precoNaInternet": "37,50",
-      "publishedAt": "2024-10-29T18:36:11.539Z",
-      "quantidadeDePaginas": "80",
-      "sinopse": "",
-      "slug": "livro-a-grande-viagem",
-      "status": "published",
-      "title": "LIVRO: A grande viagem"
-    },
-    {
-      "__outstatic": {
-        "commit": "d9e6caef1f7e8121de55733fa9a1339fa391c56d",
+        "commit": "262da7b6265c4546fdcac15b454befea39d6f621",
         "hash": "2673103446",
         "path": "outstatic/content/pages/home.md"
       },
@@ -123,35 +170,7 @@
     },
     {
       "__outstatic": {
-        "commit": "c9233cb8f0968a6cf330c1d59b0f58523e7dd9e3",
-        "hash": "514435868",
-        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
-      },
-      "author": {
-        "name": "André Luiz",
-        "picture": "/images/andre-gxNj.jpg"
-      },
-      "autorDesencarnado": "André Luiz",
-      "autorEncarnado": "Francisco Cândido Chico Xavier",
-      "collection": "biblioteca",
-      "coverImage": "/images/9788573289442-QzNj.jpg",
-      "dataDaPublicacao": "1944",
-      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
-      "imagemDoLivro": "",
-      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
-      "linkParaComprar": "https://www.febeditora.com.br/nosso-lar",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "42,00",
-      "publishedAt": "2024-10-28T19:18:17.461Z",
-      "quantidadeDePaginas": "320",
-      "sinopse": "",
-      "slug": "livro-nosso-lar",
-      "status": "published",
-      "title": "LIVRO: Nosso Lar"
-    },
-    {
-      "__outstatic": {
-        "commit": "172abd4ce04c1f8040150df3fbde77f4a6bd544b",
+        "commit": "87e5b3237ef4c9195cca15f0b934b5c1795b2b33",
         "hash": "1044181199",
         "path": "outstatic/content/pages/galeria-geu.md"
       },
@@ -168,25 +187,6 @@
       "slug": "galeria-geu",
       "status": "published",
       "title": "Galeria GEU"
-    },
-    {
-      "__outstatic": {
-        "commit": "e5a0b139a0d4cf87a4c6219170d74be9b0129759",
-        "hash": "1587874454",
-        "path": "outstatic/content/galeriaitens/natal-geu-2023.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/geu_logo-A1NT.png"
-      },
-      "collection": "galeriaitens",
-      "coverImage": "/images/img_20221219_124103_628-I4ND.jpg",
-      "date": "2023",
-      "description": "fotos e vídeos de nosso natal de 2023 do Grupo Espírita União",
-      "publishedAt": "2024-11-01T17:06:06.484Z",
-      "slug": "natal-geu-2023",
-      "status": "published",
-      "title": "Natal GEU 2023"
     }
   ]
 }
