@@ -17,6 +17,7 @@ export async function GET(req: Request, { params }: { params: { slug: string } }
       type: 'upload',
       prefix: `geunaweb/${slug}/`, // Prefixo da pasta específica
       max_results: 600, // Limitar resultados, ajuste conforme necessário
+      resource_type: "auto",
     });
 
     const files = result.resources.map((resource: any) => ({
