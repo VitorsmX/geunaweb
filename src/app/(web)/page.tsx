@@ -14,7 +14,7 @@ export default async function Index() {
 
   return (
     <>
-      <div className="flex flex-col w-full h-full overflow-hidden mb-16 md:mb-28 bg-gradient-to-b from-[#6d9fd85d] via-[#5694da60] to-[#3070b870]">
+      <div className="flex flex-col w-full h-full overflow-hidden mb-16 md:mb-28 bg-gradient-to-b from-[#9cbde45d] via-[#75a5dd60] to-[#0a7cff4d]">
         <div className="w-full h-auto mx-0 z-0 top-0 flex justify-center items-center">
           <Image
             src={coverImage ? coverImage : bannerImagem}
