@@ -45,10 +45,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
                 className="w-full h-fit object-cover"
               />
             ) : (
-              <video controls className="w-full h-fit object-cover">
-                <source src={item.url} type={item.type} />
-                Seu navegador não suporta vídeos.
-              </video>
+              <video src={item.url} controls className="w-full h-fit object-cover" />
             )}
           </div>
         ))}
