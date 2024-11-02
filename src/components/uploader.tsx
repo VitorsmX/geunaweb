@@ -100,12 +100,17 @@ const UploadComponent: React.FC = () => {
   };
 
   const handleDelete = async (name: string, public_id: string) => {
-    const id = public_id.match(/\/api\/delete\/.*\/.*\/(.*)/);
+    const extractId = (id: string) => {
+      return id.split('/').pop(); // Divide a string por '/' e pega o último elemento
+    };
+
+    const extractedId = extractId(public_id);
+    console.log(extractedId);
     try {
       const response = await fetch(`/api/delete/${public_id}`, {
         method: "DELETE",
       });
-      await fetch(`/api/delete/${id?.[0]}`, {
+      await fetch(`/api/delete/${extractedId}`, {
         method: "DELETE",
       });
 
