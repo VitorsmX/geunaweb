@@ -12,6 +12,7 @@
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
     "@vercel/og": "^0.6.1",
+    "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
     "cloudinary": "^2.5.1",
     "clsx": "^2.0.0",

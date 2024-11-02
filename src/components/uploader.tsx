@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 interface GalleryItem {
   title: string;
@@ -21,17 +22,15 @@ const UploadComponent: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [message, setMessage] = useState<string>("");
   const [files, setFiles] = useState<FileItem[]>([]);
-  const [galleryItems, setGalleryItems] = useState<any[]>([]);
+  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
   const [selectedSlug, setSelectedSlug] = useState<string>("");
 
   useEffect(() => {
     const fetchFiles = async () => {
+      if (!selectedSlug) return;
       try {
-        if (!selectedSlug) return;
-        const response = await fetch(`/api/files/${selectedSlug}`);
-        if (!response.ok) throw new Error("Failed to fetch files");
-        const data: FileItem[] = await response.json();
-        setFiles(data);
+        const response = await axios.get(`/api/files/${selectedSlug}`);
+        setFiles(response.data);
       } catch (error) {
         console.error("Error fetching files:", error);
         setMessage("Failed to load files.");
@@ -44,11 +43,8 @@ const UploadComponent: React.FC = () => {
   useEffect(() => {
     const fetchGalleryItems = async () => {
       try {
-        const response = await fetch("/api/galleryItems");
-        if (!response.ok) throw new Error("Failed to fetch gallery items");
-
-        const items: GalleryItem[] = await response.json();
-        setGalleryItems(items);
+        const response = await axios.get("/api/galleryItems");
+        setGalleryItems(response.data);
       } catch (error) {
         console.error("Error fetching gallery items:", error);
         setMessage("Falha ao carregar itens da galeria.");
@@ -77,19 +73,15 @@ const UploadComponent: React.FC = () => {
         return;
       }
 
-      const response = await fetch(`/api/upload?slug=${selectedSlug}`, {
-        method: "POST",
-        body: formData,
+      const response = await axios.post(`/api/upload?slug=${selectedSlug}`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       });
 
-      if (!response.ok) {
-        throw new Error(`Upload failed: ${response.statusText}`);
-      }
-
-      const data = await response.json();
       setFiles((prevFiles) => [
         ...prevFiles,
-        { url: data.secure_url, public_id: data.public_id, type: file.type, name: file.name },
+        { url: response.data.secure_url, public_id: response.data.public_id, type: file.type, name: file.name },
       ]);
       setMessage("Upload bem-sucedido!");
       setFile(null);
@@ -101,18 +93,14 @@ const UploadComponent: React.FC = () => {
 
   const handleDelete = async (public_id: string) => {
     try {
-      const response = await fetch('/api/delete', {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ public_id }), // Enviando a public_id no body
+      const response = await axios.delete('/api/delete/remove', {
+        data: { public_id }, // Enviando a public_id no body
       });
-  
-      if (!response.ok) {
+
+      if (response.status !== 200) {
         throw new Error("Deletion failed");
       }
-  
+
       setFiles((prevFiles) => prevFiles.filter((file) => file.public_id !== public_id));
       setMessage("Arquivo excluído com sucesso.");
     } catch (error) {
@@ -120,7 +108,6 @@ const UploadComponent: React.FC = () => {
       setMessage("Falha na exclusão.");
     }
   };
-  
 
   return (
     <div className="max-w-full mx-auto bg-white rounded-lg shadow-md p-6 mt-10 transition-transform transform hover:scale-105">
