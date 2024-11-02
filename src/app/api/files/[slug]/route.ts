@@ -19,11 +19,27 @@ export async function GET(req: Request, { params }: { params: { slug: string } }
       max_results: 600, // Limitar resultados, ajuste conforme necessário
     });
 
-    const files = result.resources.map((resource: any) => ({
-      url: resource.secure_url,
-      public_id: resource.public_id,
-      type: resource.resource_type === 'image' ? 'image/' + resource.format : 'video/' + resource.format,
-    }));
+    console.log(result);
+
+    const files = result.resources.map((resource: any) => {
+      let type;
+      switch (resource.resource_type) {
+        case 'image':
+          type = 'image/' + resource.format;
+          break;
+        case 'video':
+          type = 'video/' + resource.format;
+          break;
+        default:
+          type = 'application/octet-stream'; // Para outros tipos não tratados
+      }
+
+      return {
+        url: resource.secure_url,
+        public_id: resource.public_id,
+        type,
+      };
+    });
 
     // Verificar se a pasta está vazia e excluir se necessário
     if (files.length === 0) {
