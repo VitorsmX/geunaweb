@@ -11,16 +11,16 @@ cloudinary.v2.config({
 });
 
 // Função para lidar com a exclusão
-export async function DELETE(req: NextRequest, { params }: { params: { name: string } }) {
-  const { name } = params;
+export async function DELETE(req: NextRequest, { params }: { params: { public_id: string } }) {
+  const { public_id } = params;
 
-  if (!name) {
+  if (!public_id) {
     return NextResponse.json({ error: "No public_id provided" }, { status: 400 });
   }
 
   try {
     // Excluindo o arquivo no Cloudinary
-    const result = await cloudinary.v2.uploader.destroy(name);
+    const result = await cloudinary.v2.uploader.destroy(public_id);
 
     if (result.result === "ok") {
       return NextResponse.json({ message: "File deleted successfully." });
