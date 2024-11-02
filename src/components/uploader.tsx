@@ -99,25 +99,20 @@ const UploadComponent: React.FC = () => {
     }
   };
 
-  const handleDelete = async (name: string, public_id: string) => {
-    const extractId = (id: string) => {
-      return id.split('/').pop(); // Divide a string por '/' e pega o último elemento
-    };
-
-    const extractedId = extractId(public_id);
-    console.log(extractedId);
+  const handleDelete = async (public_id: string) => {
     try {
-      const response = await fetch(`/api/delete/${public_id}`, {
-        method: "DELETE",
+      const response = await fetch('/api/delete', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ public_id }), // Enviando a public_id no body
       });
-      await fetch(`/api/delete/${extractedId}`, {
-        method: "DELETE",
-      });
-
+  
       if (!response.ok) {
         throw new Error("Deletion failed");
       }
-
+  
       setFiles((prevFiles) => prevFiles.filter((file) => file.public_id !== public_id));
       setMessage("Arquivo excluído com sucesso.");
     } catch (error) {
@@ -125,6 +120,7 @@ const UploadComponent: React.FC = () => {
       setMessage("Falha na exclusão.");
     }
   };
+  
 
   return (
     <div className="max-w-full mx-auto bg-white rounded-lg shadow-md p-6 mt-10 transition-transform transform hover:scale-105">
@@ -170,7 +166,7 @@ const UploadComponent: React.FC = () => {
               </video>
             ) : null}
             <button
-              onClick={() => handleDelete(item.name, item.public_id)}
+              onClick={() => handleDelete(item.public_id)}
               className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition duration-200"
             >
               Excluir
