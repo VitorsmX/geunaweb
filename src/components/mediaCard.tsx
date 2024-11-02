@@ -44,12 +44,12 @@ const MediaCard = ({ slug }: { slug: string }) => {
                 alt="Media"
                 className="w-full h-fit object-cover"
               />
-            ) : item.type.startsWith("video/") ? (
+            ) : (
               <video controls className="w-full h-fit object-cover">
                 <source src={item.url} type={item.type} />
                 Seu navegador não suporta vídeos.
               </video>
-            ) : null}
+            )}
           </div>
         ))}
       </div>
