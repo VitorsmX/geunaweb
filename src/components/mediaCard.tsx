@@ -29,6 +29,8 @@ const MediaCard = ({ slug }: { slug: string }) => {
     fetchMediaItems();
   }, [slug]);
 
+  console.log(mediaItems.map(e => e))
+
   return (
     <div className="container mx-auto my-8">
       {message && <p className="text-red-500 text-center">{message}</p>}
