@@ -55,7 +55,7 @@ export default async function Index() {
             viewAll
           />
         )}
-        {Object.keys(otherCollections).map((collection) => {
+        {Object.keys(otherCollections).filter((c) => c !== "galeriaitens").map((collection) => {
           if (!collection.length) return null;
           return (
             <ContentGrid

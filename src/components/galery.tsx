@@ -77,20 +77,20 @@ const Galery = ({
       />
 
       <div className="embla mt-4" ref={emblaRef}>
-        <div className="embla__container flex gap-x-4 gap-y-3">
+        <div className="embla__container grid grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-3">
           {filteredItems.map((item) => (
             <div className="embla__slide w-full max-w-sm bg-[#b3e9ff40]" key={item.slug}>
               <Link href={`/${collection}/${item.slug}`}>
-                <div className={`cursor-pointer border rounded-md scale-100 hover:scale-[1.02] active:scale-[0.97] transition duration-100 overflow-hidden h-full max-h-[400px]`}>
+                <div className={`cursor-pointer border rounded-md scale-100 hover:scale-[1.02] active:scale-[0.97] transition duration-100 overflow-hidden h-full max-h-[550px]`}>
                   <Image
                     src={item.coverImage || `/api/og?title=${item.title}`}
                     alt=""
                     className="border-b md:h-[180px] object-center"
                     width={430}
                     height={180}
-                    sizes="(min-width: 768px) 347px, 192px"
+                    sizes="(min-width: 768px) 300px, 192px"
                     priority={priority && items.indexOf(item) <= 2}
-                    style={{ objectFit: collection === "biblioteca" ? "contain" : "cover" }}
+                    style={{ objectFit: "contain"}}
                   />
                   <div className="p-4">
                     {Array.isArray(item?.tags) && item.tags.map(({ label }) => (

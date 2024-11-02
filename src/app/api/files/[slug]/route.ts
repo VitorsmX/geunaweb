@@ -12,16 +12,27 @@ export async function GET(req: Request, { params }: { params: { slug: string } }
   const { slug } = params;
 
   try {
-    // Obter arquivos da pasta específica
-    const result = await cloudinary.api.resources({
+    // Obter imagens da pasta específica
+    const imageResult = await cloudinary.api.resources({
       type: 'upload',
       prefix: `geunaweb/${slug}/`, // Prefixo da pasta específica
-      max_results: 600, // Limitar resultados, ajuste conforme necessário
+      max_results: 300, // Limitar resultados de imagens
+      resource_type: 'image', // Buscar apenas imagens
     });
 
-    console.log(result);
+    // Obter vídeos da pasta específica
+    const videoResult = await cloudinary.api.resources({
+      type: 'upload',
+      prefix: `geunaweb/${slug}/`, // Prefixo da pasta específica
+      max_results: 300, // Limitar resultados de vídeos
+      resource_type: 'video', // Buscar apenas vídeos
+    });
 
-    const files = result.resources.map((resource: any) => {
+    console.log(videoResult)
+
+    const results = [...imageResult.resources, ...videoResult.resources];
+
+    const files = results.map((resource: any) => {
       let type;
       switch (resource.resource_type) {
         case 'image':

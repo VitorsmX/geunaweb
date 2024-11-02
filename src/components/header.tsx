@@ -46,7 +46,7 @@ const Header = async () => {
               </Link>
             </li>
           ))}
-          {collections.filter(e => e !== "galeriaitens").map((collection) => (
+          {collections.map((collection) => (
             <li key={collection}>
               <Link
                 href={`/${collection}`}
@@ -83,7 +83,7 @@ async function getData() {
     .toArray();
 
   const collections = getCollections().filter(
-    (collection) => collection !== "pages"
+    (collection) => (collection !== "pages" && collection !== "galeriaitens")
   );
 
   return {
