@@ -70,10 +70,10 @@ const MediaCard = ({ slug }: { slug: string }) => {
 
       {selectedMedia && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative bg-white p-4 rounded-lg shadow-lg max-w-4xl w-full mx-4 md:mx-auto overflow-y-auto h-full md:h-auto">
+          <div className="relative bg-white p-4 rounded-lg shadow-lg max-w-4xl w-full mx-4 md:mx-auto overflow-y-auto h-fit md:h-auto py-7 px-3">
             <button
               onClick={closeModal}
-              className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-2"
+              className="absolute top-3 right-3 bg-red-600 text-white rounded-full px-4 py-2"
             >
               X
             </button>
