@@ -5,6 +5,7 @@ import { useEffect, useState, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import React from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 type MediaItem = {
   url: string;
@@ -16,7 +17,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
   const [mediaItems, setMediaItems] = useState<MediaItem[]>([]);
   const [message, setMessage] = useState<string>('');
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
-  const [emblaRef, embla] = useEmblaCarousel({ loop: true });
+  const [emblaRef, embla] = useEmblaCarousel({ loop: true, skipSnaps: false });
 
   useEffect(() => {
     const fetchMediaItems = async () => {
@@ -41,6 +42,31 @@ const MediaCard = ({ slug }: { slug: string }) => {
   const closeModal = useCallback(() => {
     setSelectedMedia(null);
   }, []);
+
+  const scrollPrev = useCallback(() => {
+    if (embla) embla.scrollPrev();
+  }, [embla]);
+
+  const scrollNext = useCallback(() => {
+    if (embla) embla.scrollNext();
+  }, [embla]);
+
+  const onSelect = useCallback(() => {
+    if (!embla) return;
+    embla.slideNodes().forEach((slideNode, index) => {
+      if (embla.selectedScrollSnap() === index) {
+        slideNode.classList.add('is-selected');
+      } else {
+        slideNode.classList.remove('is-selected');
+      }
+    });
+  }, [embla]);
+
+  useEffect(() => {
+    if (!embla) return;
+    embla.on('select', onSelect);
+    onSelect();
+  }, [embla, onSelect]);
 
   return (
     <div className="container min-w-[75vw] sm:min-w-full mx-0 my-5">
@@ -77,6 +103,25 @@ const MediaCard = ({ slug }: { slug: string }) => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="embla__arrows">
+        <button className="embla__prev" onClick={scrollPrev}>
+          <ChevronLeft />
+        </button>
+        <button className="embla__next" onClick={scrollNext}>
+          <ChevronRight />
+        </button>
+      </div>
+
+      <div className="embla__dots">
+        {mediaItems.map((_, index) => (
+          <button
+            key={index}
+            className="embla__dot"
+            onClick={() => embla && embla.scrollTo(index)}
+          />
+        ))}
       </div>
 
       {selectedMedia && (
