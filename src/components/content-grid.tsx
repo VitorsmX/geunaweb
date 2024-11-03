@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import useEmblaCarousel from 'embla-carousel-react'
+import useEmblaCarousel from 'embla-carousel-react';
 import { OstDocument } from "outstatic";
 
 type Item = {
@@ -19,7 +19,7 @@ type Props = {
   viewAll?: boolean;
 };
 
-const ContentGrid = ({
+const ContentGrid = React.memo(({
   title = "More",
   items,
   collection,
@@ -52,12 +52,13 @@ const ContentGrid = ({
                   <Image
                     src={item.coverImage || `/api/og?title=${item.title}`}
                     alt=""
-                    className="border-b md:h-[180px] object-center"
+                    className="border-b object-center"
                     width={430}
                     height={180}
                     sizes="(min-width: 768px) 347px, 192px"
                     priority={priority && items.indexOf(item) <= 2}
-                    style={{ objectFit: collection === "biblioteca" ? "contain" : "cover" }}
+                    style={{ objectFit: collection === "biblioteca" ? "contain" : "cover", maxHeight: "180px" }}
+                    loading="lazy"
                   />
                   <div className="p-4">
                     {Array.isArray(item?.tags) && item.tags.map(({ label }) => (
@@ -92,6 +93,6 @@ const ContentGrid = ({
       )}
     </section>
   );
-};
+});
 
 export default ContentGrid;

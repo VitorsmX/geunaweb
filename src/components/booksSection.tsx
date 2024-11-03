@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -31,23 +31,23 @@ type Props = {
 const translateKeys = (key: string) => {
   switch (key) {
     case "title":
-      return "Título";
+      return "Título";
     case "description":
-      return "Descrição";
+      return "Descrição";
     case "autorEncarnado":
       return "Autor Encarnado";
     case "autorDesencarnado":
       return "Autor Desencarnado";
     case "dataDaPublicacao":
-      return "Data da Publicação";
+      return "Data da Publicação";
     case "precoNaInternet":
-      return "Preço na Internet";
+      return "Preço na Internet";
     case "quantidadeDePaginas":
-      return "Quantidade de Páginas";
+      return "Quantidade de Páginas";
     default:
       return key;
   }
-}
+};
 
 const BooksSection = ({
   title = "More",
@@ -67,28 +67,35 @@ const BooksSection = ({
     "precoNaInternet",
     "quantidadeDePaginas",
   ]);
+  const [visibleBooks, setVisibleBooks] = useState(5);
 
-  const handleKeyChange = (key: string) => {
-    setSearchKeys((prevKeys) =>
-      prevKeys.includes(key)
-        ? prevKeys.filter((k) => k !== key)
-        : [...prevKeys, key]
-    );
-  };
+  const fuse = useMemo(() => {
+    return new Fuse(books, {
+      keys: searchKeys,
+      threshold: 0.4,
+    });
+  }, [books, searchKeys]);
 
   useEffect(() => {
-    if (books && searchTerm) {
-      const fuse = new Fuse(books, {
-        keys: searchKeys,
-        threshold: 0.3,
-      });
-
+    if (searchTerm) {
       const results = fuse.search(searchTerm);
       setFilteredResults(results.map((result) => result.item));
     } else {
       setFilteredResults(books);
     }
-  }, [searchTerm, books, searchKeys]);
+  }, [searchTerm, books, fuse]);
+
+  const handleLoadMore = useCallback(() => {
+    setVisibleBooks((prev) => prev + 5);
+  }, []);
+
+  const handleKeyChange = useCallback((key: string) => {
+    setSearchKeys((prevKeys) =>
+      prevKeys.includes(key)
+        ? prevKeys.filter((k) => k !== key)
+        : [...prevKeys, key]
+    );
+  }, []);
 
   return (
     <section id={collection} className="mb-24">
@@ -139,83 +146,47 @@ const BooksSection = ({
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 sm:gap-x-4 lg:gap-x-8 gap-y-5 sm:gap-y-6 lg:gap-y-8 mt-4 md:mt-8 gap-x-10">
-        {filteredResults.length > 0 ? (
-          filteredResults.map((item, id) => (
-            <Link key={item.slug} href={`/${collection}/${item.slug}`}>
-              <div className="cursor-pointer border rounded-md scale-100 hover:scale-[1.02] active:scale-[0.97] transition duration-100 overflow-hidden h-5/6 md:h-4/5 lg:h-5/6 w-fit m-5 bg-[#ffffff45]">
-                <Image
-                  src={item.coverImage || `/api/og?title=${item.title}`}
-                  alt=""
-                  className="border-b md:h-[180px] object-cover object-center"
-                  width={430}
-                  height={180}
-                  sizes="(min-width: 768px) 347px, 192px"
-                  priority={priority && id <= 2}
-                />
-                <div className="p-4">
-                  {Array.isArray(item?.tags) &&
-                    item.tags.map(({ label }) => (
-                      <span
-                        key={label}
-                        className="inline-block bg-gray-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2 mb-4"
-                      >
-                        {label}
-                      </span>
-                    ))}
-                  <h3 className="text-lg mb-2 leading-snug font-bold hover:underline">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed mb-4 h-1/2 max-h-3 hover:max-h-20 hover:overflow-y-scroll">
-                    {item.description}
-                  </p>
-                </div>
+        {filteredResults.slice(0, visibleBooks).map((item, id) => (
+          <Link key={item.slug} href={`/${collection}/${item.slug}`}>
+            <div className="cursor-pointer border rounded-md scale-100 hover:scale-[1.02] active:scale-[0.97] transition duration-100 overflow-hidden h-5/6 md:h-4/5 lg:h-5/6 w-fit m-5 bg-[#ffffff45]">
+              <Image
+                src={item.coverImage || `/api/og?title=${item.title}`}
+                alt=""
+                className="border-b md:h-[180px] object-cover object-center"
+                width={430}
+                height={180}
+                sizes="(min-width: 768px) 347px, 192px"
+                priority={priority && id <= 2}
+              />
+              <div className="p-4">
+                {Array.isArray(item?.tags) &&
+                  item.tags.map(({ label }) => (
+                    <span
+                      key={label}
+                      className="inline-block bg-gray-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2 mb-4"
+                    >
+                      {label}
+                    </span>
+                  ))}
+                <h3 className="text-lg mb-2 leading-snug font-bold hover:underline">
+                  {item.title}
+                </h3>
+                <p className="text-sm leading-relaxed mb-4 h-1/2 max-h-3 hover:max-h-20 hover:overflow-y-scroll">
+                  {item.description}
+                </p>
               </div>
-            </Link>
-          ))
-        ) : (
-          books.map((item, id) => (
-            <Link key={item.slug} href={`/${collection}/${item.slug}`}>
-              <div className="cursor-pointer border rounded-md scale-100 hover:scale-[1.02] active:scale-[0.97] transition duration-100 overflow-hidden h-5/6 md:h-4/5 lg:h-5/6 w-fit m-5">
-                <Image
-                  src={item.coverImage || `/api/og?title=${item.title}`}
-                  alt=""
-                  className="border-b md:h-[180px] object-cover object-center"
-                  width={430}
-                  height={180}
-                  sizes="(min-width: 768px) 347px, 192px"
-                  priority={priority && id <= 2}
-                />
-                <div className="p-4">
-                  {Array.isArray(item?.tags) &&
-                    item.tags.map(({ label }) => (
-                      <span
-                        key={label}
-                        className="inline-block bg-gray-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2 mb-4"
-                      >
-                        {label}
-                      </span>
-                    ))}
-                  <h3 className="text-lg mb-2 leading-snug font-bold hover:underline">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed mb-4 h-1/2 max-h-3 hover:max-h-20 hover:overflow-y-scroll">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          ))
-        )}
+            </div>
+          </Link>
+        ))}
       </div>
 
-      {viewAll ? (
-        <Button asChild variant="secondary" className="md:hidden w-full mt-4">
-          <Link href={`/${collection}`} className="gap-2">
-            Ver Todos {title}
-            <ArrowRight size={16} />
-          </Link>
-        </Button>
-      ) : null}
+      {visibleBooks < filteredResults.length && (
+        <div className="flex justify-center mt-4">
+          <Button onClick={handleLoadMore}>
+            Carregar Mais
+          </Button>
+        </div>
+      )}
     </section>
   );
 };

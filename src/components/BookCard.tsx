@@ -1,6 +1,8 @@
 // app/components/BookCard.js
 'use client';
 
+import React from 'react';
+import Image from 'next/image';
 import { OstDocument } from 'outstatic';
 
 type Book = {
@@ -17,55 +19,65 @@ type Book = {
     linkParaSolicitar: string;
   } & OstDocument;
 
-const BookCard = ({ book }: { book: any }) => {
-    if(!book) {
+const BookCard = React.memo(({ book }: { book: Book }) => {
+    if (!book) {
         return null;
     }
 
-  return (
-    <div className="max-w-lg mx-auto my-4 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff21]">
-      <img
-        src={book.coverImage}
-        alt={book.title}
-        className="w-full h-fit object-cover"
-      />
-      <div className="p-6 bg-white">
-        <h2 className="text-2xl font-bold text-gray-800">{book.title}</h2>
-        <p className="text-gray-800 mt-1">Autor Encarnado: {book.autorEncarnado}</p>
-        <p className="text-gray-800 mt-1">Autor Desencarnado: {book.autorDesencarnado}</p>
-        <p className="text-gray-800 mt-2">Publicado em: {book.dataDaPublicacao}</p>
-        <p className="text-gray-800 mt-4">{book.description}</p>
-        <p className="text-xl font-semibold text-gray-800 mt-4">Preço: R$ {book.precoNaInternet}</p>
-        <p className="text-sm text-gray-700 mt-2">Páginas: {book.quantidadeDePaginas}</p>
-        <div className="flex gap-x-2 mt-6">
-          {book.linkParaComprar && <a
-            href={book.linkParaComprar}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
-          >
-            Comprar
-          </a>}
-          {book.linkDoLivroEmPdf && <a
-            href={book.linkDoLivroEmPdf}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
-          >
-            Baixar
-          </a>}
-          {book.linkParaSolicitar && <a
-            href={book.linkParaSolicitar}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
-          >
-            Solicitar
-          </a>}
+    return (
+        <div className="max-w-lg mx-auto my-4 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff21]">
+            <Image
+                src={book.imagemDoLivro}
+                alt={book.title}
+                className="w-full h-fit object-cover"
+                width={500}
+                height={300}
+                placeholder="blur"
+                blurDataURL="data:image/svg+xml;base64,..."
+            />
+            <div className="p-4 bg-white">
+                <h2 className="text-xl font-bold text-gray-800">{book.title}</h2>
+                <p className="text-gray-800 mt-1">Autor Encarnado: {book.autorEncarnado}</p>
+                <p className="text-gray-800 mt-1">Autor Desencarnado: {book.autorDesencarnado}</p>
+                <p className="text-gray-800 mt-2">Publicado em: {book.dataDaPublicacao}</p>
+                <p className="text-gray-800 mt-2">{book.sinopse}</p>
+                <p className="text-xl font-semibold text-gray-800 mt-2">Preço: R$ {book.precoNaInternet}</p>
+                <p className="text-sm text-gray-700 mt-2">Páginas: {book.quantidadeDePaginas}</p>
+                <div className="flex gap-x-2 mt-4">
+                    {book.linkParaComprar && (
+                        <a
+                            href={book.linkParaComprar}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                        >
+                            Comprar
+                        </a>
+                    )}
+                    {book.linkDoLivroEmPdf && (
+                        <a
+                            href={book.linkDoLivroEmPdf}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                        >
+                            Baixar
+                        </a>
+                    )}
+                    {book.linkParaSolicitar && (
+                        <a
+                            href={book.linkParaSolicitar}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                        >
+                            Solicitar
+                        </a>
+                    )}
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
-};
+    );
+});
 
 export default BookCard;
