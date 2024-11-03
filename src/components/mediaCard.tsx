@@ -47,7 +47,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
             key={item.public_id}
             className="flex flex-col gap-y-0 justify-evenly max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff36] py-2 px-1 h-fit my-0 w-full min-w-[350px] sm:min-w-[320px]"
           >
-            <div className='my-0'>
+            <div className='my-0 w-fit h-fit max-w-full max-h-full'>
             {item.type.startsWith("image/") ? (
               <img
                 src={item.url}
