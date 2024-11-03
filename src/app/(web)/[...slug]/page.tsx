@@ -95,7 +95,6 @@ export default async function Document(params: Params) {
   }
 
   if (doc.collection === 'pages') {
-    console.log(doc.itensGalery.map(e => e))
     const titleGalery = `${doc.itensGalery.length > 1 ? 'Temos mais de ' : 'Temos '} ${doc.itensGalery.length > 1 ? doc.itensGalery.length - 1 : "um"} registro de ${doc.itensGalery.length > 1 ? 'Eventos' : 'Evento'} para compartilhar com você`
     return (
       <article className="mb-32 py-8">

@@ -77,9 +77,9 @@ const Galery = ({
       />
 
       <div className="embla mt-4" ref={emblaRef}>
-        <div className="embla__container grid grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-3">
+        <div className="embla__container grid grid-cols-2 md:grid-cols-5 gap-x-5 gap-y-3">
           {filteredItems.map((item) => (
-            <div className="embla__slide w-full max-w-sm bg-[#b3e9ff40]" key={item.slug}>
+            <div className="embla__slide w-full max-w-md bg-[#b3e9ff40]" key={item.slug}>
               <Link href={`/${collection}/${item.slug}`}>
                 <div className={`cursor-pointer border rounded-md scale-100 hover:scale-[1.02] active:scale-[0.97] transition duration-100 overflow-hidden h-full max-h-[550px]`}>
                   <Image
