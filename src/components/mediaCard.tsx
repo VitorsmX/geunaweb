@@ -39,13 +39,13 @@ const MediaCard = ({ slug }: { slug: string }) => {
   };
 
   return (
-    <div className="container mx-auto my-5">
+    <div className="container min-w-[80vw] mx-auto my-5">
       {message && <p className="text-red-500 text-center">{message}</p>}
-      <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3 justify-evenly">
+      <div className="grid grid-cols-1 grid-rows-4 sm:grid-rows-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3 sm:gap-x-14 justify-evenly">
         {mediaItems.map((item) => (
           <div
             key={item.public_id}
-            className="flex flex-col gap-y-0 justify-evenly max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff36] py-2 px-1 h-fit my-0 w-full min-w-[350px] sm:min-w-[320px]"
+            className="flex flex-col gap-y-0 justify-evenly max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff36] py-2 px-1 h-fit my-0 w-full min-w-[270px] sm:min-w-[250px]"
           >
             <div className='my-0 w-fit h-fit max-w-full max-h-full'>
             {item.type.startsWith("image/") ? (
