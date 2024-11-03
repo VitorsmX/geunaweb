@@ -152,7 +152,7 @@ const BooksSection = ({
               <Image
                 src={item.coverImage || `/api/og?title=${item.title}`}
                 alt=""
-                className="border-b md:h-[180px] object-cover object-center"
+                className="border-b md:h-[180px] object-contain object-center"
                 width={430}
                 height={180}
                 sizes="(min-width: 768px) 347px, 192px"
