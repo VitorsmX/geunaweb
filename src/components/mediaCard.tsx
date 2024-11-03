@@ -69,10 +69,10 @@ const MediaCard = ({ slug }: { slug: string }) => {
   }, [embla, onSelect]);
 
   return (
-    <div className="container min-w-[75vw] sm:min-w-[65vw] mx-0 my-5">
+    <div className="container min-w-[75vw] sm:min-w-[60vw] md:-ml-10 my-5">
       {message && <p className="text-red-500 text-center">{message}</p>}
       <div className="embla" ref={emblaRef}>
-        <div className="embla__container">
+        <div className="embla__container gap-x-3">
           {mediaItems.map((item) => (
             <div
               key={item.public_id}
