@@ -27,7 +27,7 @@ const BookCard = React.memo(({ book }: { book: Book }) => {
     return (
         <div className="max-w-lg mx-auto my-4 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff21]">
             <Image
-                src={book.imagemDoLivro}
+                src={book.imagemDoLivro && book.imagemDoLivro.length > 5 ? `${book.imagemDoLivro}` : `${book.coverImage}`}
                 alt={book.title}
                 className="w-full h-fit object-cover"
                 width={500}
