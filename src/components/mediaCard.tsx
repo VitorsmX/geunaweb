@@ -1,7 +1,10 @@
 // app/components/MediaCard.js
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Image from 'next/image';
+import React from 'react';
 
 type MediaItem = {
   url: string;
@@ -13,6 +16,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
   const [mediaItems, setMediaItems] = useState<MediaItem[]>([]);
   const [message, setMessage] = useState<string>('');
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
+  const [emblaRef, embla] = useEmblaCarousel({ loop: true });
 
   useEffect(() => {
     const fetchMediaItems = async () => {
@@ -30,42 +34,49 @@ const MediaCard = ({ slug }: { slug: string }) => {
     fetchMediaItems();
   }, [slug]);
 
-  const openModal = (media: MediaItem) => {
+  const openModal = useCallback((media: MediaItem) => {
     setSelectedMedia(media);
-  };
+  }, []);
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setSelectedMedia(null);
-  };
+  }, []);
 
   return (
-    <div className="container min-w-[80vw] mx-auto my-5">
+    <div className="container min-w-[75vw] sm:min-w-full mx-0 my-5">
       {message && <p className="text-red-500 text-center">{message}</p>}
-      <div className="grid grid-cols-1 grid-rows-4 sm:grid-rows-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3 sm:gap-x-14 justify-evenly">
-        {mediaItems.map((item) => (
-          <div
-            key={item.public_id}
-            className="flex flex-col gap-y-0 justify-evenly max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff36] py-2 px-1 h-fit my-0 w-full min-w-[270px] sm:min-w-[250px]"
-          >
-            <div className='my-0 w-fit h-fit max-w-full max-h-full'>
-            {item.type.startsWith("image/") ? (
-              <img
-                src={item.url}
-                alt="Media"
-                className="w-full h-fit object-cover"
-              />
-            ) : (
-              <video src={item.url} controls className="w-full h-fit object-cover" />
-            )}
-            </div>
-            <button
-              onClick={() => openModal(item)}
-              className="w-full h-fit mt-1 py-2 scale-75 bg-blue-500 text-white rounded-lg"
+      <div className="embla" ref={emblaRef}>
+        <div className="embla__container">
+          {mediaItems.map((item) => (
+            <div
+              key={item.public_id}
+              className="embla__slide flex flex-col gap-y-0 justify-evenly max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff36] py-2 px-1 h-fit my-0 w-full min-w-[270px] sm:min-w-[250px]"
             >
-              Ver Mídia
-            </button>
-          </div>
-        ))}
+              <div className='my-0 w-fit h-fit max-w-full max-h-full'>
+                {item.type.startsWith("image/") ? (
+                  <Image
+                    src={item.url}
+                    alt="Media"
+                    className="w-full h-fit object-cover"
+                    width={500}
+                    height={300}
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,..."
+                    loading="lazy"
+                  />
+                ) : (
+                  <video src={item.url} controls className="w-full h-fit object-cover" />
+                )}
+              </div>
+              <button
+                onClick={() => openModal(item)}
+                className="w-full h-fit mt-1 py-2 scale-75 bg-blue-500 text-white rounded-lg"
+              >
+                Ver Mídia
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
 
       {selectedMedia && (
@@ -78,10 +89,15 @@ const MediaCard = ({ slug }: { slug: string }) => {
               X
             </button>
             {selectedMedia.type.startsWith("image/") ? (
-              <img
+              <Image
                 src={selectedMedia.url}
                 alt="Media"
                 className="w-full h-auto object-contain max-h-[87vh]"
+                width={1200}
+                height={800}
+                placeholder="blur"
+                blurDataURL="data:image/svg+xml;base64,..."
+                loading="lazy"
               />
             ) : (
               <video src={selectedMedia.url} controls className="w-full h-auto max-h-[85vh] object-contain" />
@@ -93,4 +109,4 @@ const MediaCard = ({ slug }: { slug: string }) => {
   );
 };
 
-export default MediaCard;
+export default React.memo(MediaCard);

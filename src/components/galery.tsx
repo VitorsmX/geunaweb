@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useCallback, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -33,24 +33,24 @@ const Galery = ({
   const [filteredItems, setFilteredItems] = useState<Item[]>(items);
 
   // Configuração do Fuse.js para busca
-  const fuse = new Fuse(items, {
-    keys: ['title', 'description', 'tags.label', 'date'],
+  const fuse = useMemo(() => new Fuse(items, {
+    keys: ['title', 'description'],
     includeScore: true,
-    threshold: 0.3, // Ajuste a sensibilidade da busca
-  });
+    threshold: 0.2,
+  }), [items]);
 
   // Função de busca
-  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearch = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
     const term = event.target.value;
     setSearchTerm(term);
-    
+
     if (term) {
       const results = fuse.search(term);
       setFilteredItems(results.map(result => result.item));
     } else {
       setFilteredItems(items);
     }
-  };
+  }, [fuse, items]);
 
   return (
     <section id={collection} className="mb-24">
@@ -91,6 +91,7 @@ const Galery = ({
                     sizes="(min-width: 768px) 300px, 192px"
                     priority={priority && items.indexOf(item) <= 2}
                     style={{ objectFit: "contain"}}
+                    loading="lazy"
                   />
                   <div className="p-4">
                     {Array.isArray(item?.tags) && item.tags.map(({ label }) => (
@@ -128,4 +129,4 @@ const Galery = ({
   );
 };
 
-export default Galery;
+export default React.memo(Galery);
