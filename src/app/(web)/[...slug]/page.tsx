@@ -120,6 +120,7 @@ export default async function Document(params: Params) {
         <div className="max-w-2xl mx-auto">
           <div className="prose prose-outstatic">
             {doc.collection === 'biblioteca' && (
+              /*@ts-ignore*/
               <BookCard book={doc.books} />
             )}
             <MDXComponent content={doc.content} />
