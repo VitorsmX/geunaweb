@@ -1,6 +1,6 @@
 {
-  "commit": "f8dcc0e5fe64f0ee89d456d9f9f2b6e97fcf9861",
-  "generated": "2024-11-04T20:34:32.947Z",
+  "commit": "93ba761bea378872f720d2511a5e72787e8b6354",
+  "generated": "2024-11-04T20:50:13.202Z",
   "metadata": [
     {
       "__outstatic": {
@@ -132,26 +132,6 @@
     },
     {
       "__outstatic": {
-        "commit": "87e5b3237ef4c9195cca15f0b934b5c1795b2b33",
-        "hash": "1044181199",
-        "path": "outstatic/content/pages/galeria-geu.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/geu_logo-M3NT.png"
-      },
-      "bannerImagem": "https://i.imgur.com/D7V7Jfu.jpeg",
-      "collection": "pages",
-      "coverImage": "/images/banner-geu-M5MD.jpg",
-      "description": "Galeria de fotos e vídeos do GEU - Palestras, Eventos, Reuniões, Estudos, Espiritismo",
-      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
-      "publishedAt": "2024-11-01T16:43:29.514Z",
-      "slug": "galeria-geu",
-      "status": "published",
-      "title": "Galeria GEU"
-    },
-    {
-      "__outstatic": {
         "commit": "89098f4c1e9093162782532e40052198bda80416",
         "hash": "705630062",
         "path": "outstatic/content/postagens/postagem-inaugural.md"
@@ -205,6 +185,26 @@
       "slug": "home",
       "status": "published",
       "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "93ba761bea378872f720d2511a5e72787e8b6354",
+        "hash": "1529815669",
+        "path": "outstatic/content/pages/galeria-geu.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-M3NT.png"
+      },
+      "bannerImagem": "https://i.imgur.com/Z3LmWOn.jpeg",
+      "collection": "pages",
+      "coverImage": "/images/galeria-section-geu-UyNT.jpg",
+      "description": "Galeria de fotos e vídeos do GEU - Palestras, Eventos, Reuniões, Estudos, Espiritismo",
+      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
+      "publishedAt": "2024-11-01T16:43:29.514Z",
+      "slug": "galeria-geu",
+      "status": "published",
+      "title": "Galeria GEU"
     }
   ]
 }
