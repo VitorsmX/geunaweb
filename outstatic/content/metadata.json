@@ -1,25 +1,7 @@
 {
-  "commit": "35989cc3a506f2bbd32c7784498279b9d03b60a7",
-  "generated": "2024-11-04T21:30:51.843Z",
+  "commit": "d2c34114144b19596e3f1d31c8c2cbacb7cb68aa",
+  "generated": "2024-11-04T21:39:21.797Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "2e51fd974e0c2306e038368fbb0884a59a8173af",
-        "hash": "2627148824",
-        "path": "outstatic/content/pages/doe.md"
-      },
-      "author": {
-        "name": "Vitor Sousa Mesquita",
-        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
-      },
-      "collection": "pages",
-      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
-      "description": "página de doações",
-      "publishedAt": "2024-10-28T19:50:46.304Z",
-      "slug": "doe",
-      "status": "published",
-      "title": "DOE"
-    },
     {
       "__outstatic": {
         "commit": "73853f4fd986845ef3cba976b73670fb689eab52",
@@ -205,6 +187,26 @@
       "slug": "sopa-fraterna",
       "status": "published",
       "title": "Sopa Fraterna"
+    },
+    {
+      "__outstatic": {
+        "commit": "d2c34114144b19596e3f1d31c8c2cbacb7cb68aa",
+        "hash": "3818557127",
+        "path": "outstatic/content/pages/doe.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "bannerImagem": "",
+      "collection": "pages",
+      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
+      "description": "página de doações",
+      "instagram": "",
+      "publishedAt": "2024-10-28T19:50:46.304Z",
+      "slug": "doe",
+      "status": "published",
+      "title": "DOE"
     }
   ]
 }
