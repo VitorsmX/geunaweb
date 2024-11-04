@@ -1,6 +1,6 @@
 {
-  "commit": "2021850b13a74e446955cc8c1962bc02610b9de8",
-  "generated": "2024-11-04T20:10:20.351Z",
+  "commit": "39c40adc88c42b21e2d5b40cb9273d333dc8ab2d",
+  "generated": "2024-11-04T20:32:38.256Z",
   "metadata": [
     {
       "__outstatic": {
@@ -190,8 +190,8 @@
     },
     {
       "__outstatic": {
-        "commit": "2021850b13a74e446955cc8c1962bc02610b9de8",
-        "hash": "490445071",
+        "commit": "39c40adc88c42b21e2d5b40cb9273d333dc8ab2d",
+        "hash": "448236785",
         "path": "outstatic/content/postagens/proposito-do-grupo-espirita-uniao.md"
       },
       "author": {
@@ -199,7 +199,7 @@
         "picture": "/images/geu_logo-kyND.png"
       },
       "collection": "postagens",
-      "coverImage": "/images/foto-origem-geu-I2MD.jpeg",
+      "coverImage": "/images/fachada-A3ND.jpg",
       "description": "Nosso propósito e uma breve homenagem à um grande homem",
       "publishedAt": "2024-11-04T19:40:54.446Z",
       "slug": "proposito-do-grupo-espirita-uniao",

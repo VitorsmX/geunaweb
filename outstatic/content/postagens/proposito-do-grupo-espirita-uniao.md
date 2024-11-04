@@ -6,7 +6,7 @@ author:
   picture: '/images/geu_logo-kyND.png'
 slug: 'proposito-do-grupo-espirita-uniao'
 description: 'Nosso propósito e uma breve homenagem à um grande homem'
-coverImage: '/images/foto-origem-geu-I2MD.jpeg'
+coverImage: '/images/fachada-A3ND.jpg'
 publishedAt: '2024-11-04T19:40:54.446Z'
 ---
 
