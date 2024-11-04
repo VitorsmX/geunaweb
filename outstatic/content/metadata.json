@@ -1,6 +1,6 @@
 {
-  "commit": "89098f4c1e9093162782532e40052198bda80416",
-  "generated": "2024-11-04T19:58:29.711Z",
+  "commit": "2021850b13a74e446955cc8c1962bc02610b9de8",
+  "generated": "2024-11-04T20:10:20.351Z",
   "metadata": [
     {
       "__outstatic": {
@@ -187,6 +187,24 @@
       "slug": "postagem-inaugural",
       "status": "published",
       "title": "Novo Portal do Grupo Espírita União!"
+    },
+    {
+      "__outstatic": {
+        "commit": "2021850b13a74e446955cc8c1962bc02610b9de8",
+        "hash": "490445071",
+        "path": "outstatic/content/postagens/proposito-do-grupo-espirita-uniao.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-kyND.png"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/foto-origem-geu-I2MD.jpeg",
+      "description": "Nosso propósito e uma breve homenagem à um grande homem",
+      "publishedAt": "2024-11-04T19:40:54.446Z",
+      "slug": "proposito-do-grupo-espirita-uniao",
+      "status": "published",
+      "title": "Propósito do Grupo Espírita União 🎯"
     }
   ]
 }
