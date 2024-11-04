@@ -1,6 +1,6 @@
 {
-  "commit": "80002ca4c63e892f902714a578622f253b1805da",
-  "generated": "2024-11-04T20:52:23.768Z",
+  "commit": "35989cc3a506f2bbd32c7784498279b9d03b60a7",
+  "generated": "2024-11-04T21:30:51.843Z",
   "metadata": [
     {
       "__outstatic": {
@@ -74,24 +74,6 @@
       "slug": "livro-a-grande-viagem",
       "status": "published",
       "title": "LIVRO: A grande viagem"
-    },
-    {
-      "__outstatic": {
-        "commit": "6cdf09b364d0f089989ab01c42c0a3dc33c1879e",
-        "hash": "3835927260",
-        "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
-      },
-      "author": {
-        "name": "Vitor Sousa Mesquita",
-        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
-      },
-      "collection": "projetos-sociais",
-      "coverImage": "/images/image-section-geu-MzOD.jpg",
-      "description": "",
-      "publishedAt": "2024-10-28T19:11:11.747Z",
-      "slug": "sopa-fraterna",
-      "status": "published",
-      "title": "Sopa Fraterna"
     },
     {
       "__outstatic": {
@@ -205,6 +187,24 @@
       "slug": "natal-geu-2023",
       "status": "published",
       "title": "Natal GEU 2022"
+    },
+    {
+      "__outstatic": {
+        "commit": "35989cc3a506f2bbd32c7784498279b9d03b60a7",
+        "hash": "3510087793",
+        "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-M2Nz.png"
+      },
+      "collection": "projetos-sociais",
+      "coverImage": "/images/sopa-geu-banner-k2Nz.jpg",
+      "description": "Conheça um pouco mais sobre a SOPA FRATERNO DO GEU, vamos nos voluntariar?",
+      "publishedAt": "2024-10-28T19:11:11.747Z",
+      "slug": "sopa-fraterna",
+      "status": "published",
+      "title": "Sopa Fraterna"
     }
   ]
 }
