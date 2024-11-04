@@ -1,6 +1,6 @@
 {
-  "commit": "39c40adc88c42b21e2d5b40cb9273d333dc8ab2d",
-  "generated": "2024-11-04T20:32:38.256Z",
+  "commit": "f8dcc0e5fe64f0ee89d456d9f9f2b6e97fcf9861",
+  "generated": "2024-11-04T20:34:32.947Z",
   "metadata": [
     {
       "__outstatic": {
@@ -132,26 +132,6 @@
     },
     {
       "__outstatic": {
-        "commit": "262da7b6265c4546fdcac15b454befea39d6f621",
-        "hash": "2673103446",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "bannerImagem": "https://i.imgur.com/6jOHpVH.jpeg",
-      "collection": "pages",
-      "coverImage": "/images/hero-bg-geu-v3-Y2Nj.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
-    },
-    {
-      "__outstatic": {
         "commit": "87e5b3237ef4c9195cca15f0b934b5c1795b2b33",
         "hash": "1044181199",
         "path": "outstatic/content/pages/galeria-geu.md"
@@ -205,6 +185,26 @@
       "slug": "proposito-do-grupo-espirita-uniao",
       "status": "published",
       "title": "Propósito do Grupo Espírita União 🎯"
+    },
+    {
+      "__outstatic": {
+        "commit": "f8dcc0e5fe64f0ee89d456d9f9f2b6e97fcf9861",
+        "hash": "4040260374",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "https://i.imgur.com/6jOHpVH.jpeg",
+      "collection": "pages",
+      "coverImage": "/images/hero-bg-geu-v3-Y2Nj.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
     }
   ]
 }
