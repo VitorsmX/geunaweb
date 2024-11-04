@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://geunaweb.vercel.app"),
   title: {
     default: "Espiritismo na Web - Grupo Espírita União",
-    template: "%s | GEU",
+    template: "%s | Seção do website do Grupo Espírita União",
   },
   description:
     "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
         url: "https://geunaweb.vercel.app/images/ogimagegeu.jpg",
         width: 1640,
         height: 856,
-        alt: "Imagem representando o Grupo Espírita União 1",
+        alt: "Imagem representando o Grupo Espírita União maior (Modo Paisagem)",
       },
       {
         url: "https://geunaweb.vercel.app/images/ogimagegeu.jpg",
         width: 1600,
         height: 800,
-        alt: "Imagem representando o Grupo Espírita União 2",
+        alt: "Imagem representando o Grupo Espírita União menor (Modo Paisagem)",
       },
       {
         url: "https://geunaweb.vercel.app/images/ogimagegeumenor.jpg",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     description:
       "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
     images: [
-      "https://geunaweb.vercel.app/images/ogimagegeu1.jpg",
-      "https://geunaweb.vercel.app/images/ogimagegeu2.jpg",
-      "https://geunaweb.vercel.app/images/ogimagegeu3.jpg"
+      "https://geunaweb.vercel.app/images/ogimagegeu.jpg",
+      "https://geunaweb.vercel.app/images/ogimagegeu.jpg",
+      "https://geunaweb.vercel.app/images/ogimagegeumenor.jpg"
     ],
   },
   icons: {
