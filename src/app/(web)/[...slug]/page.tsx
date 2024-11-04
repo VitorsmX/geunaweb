@@ -39,10 +39,39 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
 
   if (!doc) {
     return {
-      title: `Você está em: ${moreDocs.collection}`,
-      description: `Você está em: ${moreDocs.collection}`
+      title: `${moreDocs.collection} - Grupo Espírita União`,
+      description: `Exibição da página: ${moreDocs.collection}`,
+      openGraph: {
+        title: `${moreDocs.collection} - Grupo Espírita União`,
+        description: `Exibição da página: ${moreDocs.collection}`,
+        type: 'article',
+        locale: "pt_BR",
+        images: [
+            {
+              url: `${moreDocs?.docs[0].coverImage ? `${moreDocs?.docs[0].coverImage}` : moreDocs?.books[0]?.coverImage}`,
+              width: 1640,
+              height: 856,
+              alt: `${moreDocs.docs[0].title ? `${moreDocs.docs[0].title}` : moreDocs.books[0]?.title}`
+            },
+            {
+              url: `${moreDocs?.docs[0].coverImage ? `${moreDocs?.docs[0].coverImage}` : moreDocs?.books[0]?.coverImage}`,
+              width: 1600,
+              height: 800,
+              alt: `${moreDocs.docs[0].title ? `${moreDocs.docs[0].title}` : moreDocs.books[0]?.title}`
+            },
+            {
+              url: `${moreDocs?.docs[0].coverImage ? `${moreDocs?.docs[0].coverImage}` : moreDocs?.books[0]?.coverImage}`,
+              width: 800,
+              height: 800,
+              alt: `${moreDocs.docs[0].title ? `${moreDocs.docs[0].title}` : moreDocs.books[0]?.title}`
+            }
+        ]
+      }
     }
   }
+
+  //@ts-ignore
+  const imageCoverSource = doc && doc.coverImage ? `${doc.coverImage}` : `${doc.itensGalery[0].coverImage}` ? `${doc.itensGalery[0].coverImage}` : `${doc.books[0].coverImage}`
 
   return {
     title: doc.title,
@@ -54,7 +83,7 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
       url: absoluteUrl(`/${doc.collection}/${doc.slug}`),
       images: [
         {
-          url: ogUrl(doc?.coverImage || `/api/og?title=${doc.title}`),
+          url: imageCoverSource,
           width: 1200,
           height: 630,
           alt: doc.title
@@ -65,7 +94,7 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
       card: 'summary_large_image',
       title: doc.title,
       description: doc.description,
-      images: ogUrl(doc?.coverImage || `/api/og?title=${doc.title}`)
+      images: imageCoverSource
     }
   }
 }

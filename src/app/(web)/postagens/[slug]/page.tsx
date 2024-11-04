@@ -34,9 +34,21 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
       url: absoluteUrl(`/postagens/${post.slug}`),
       images: [
         {
-          url: ogUrl(post?.coverImage || `/api/og?title=${post.title}`),
-          width: 1200,
-          height: 630,
+          url: `${post?.coverImage ? post.coverImage : ogUrl(`/api/og?title=${post.title}`)}`,
+          width: 1640,
+          height: 856,
+          alt: post.title,
+        },
+        {
+          url: `${post?.coverImage ? post.coverImage : ogUrl(`/api/og?title=${post.title}`)}`,
+          width: 1600,
+          height: 800,
+          alt: post.title,
+        },
+        {
+          url: `${post?.coverImage ? post.coverImage : ogUrl(`/api/og?title=${post.title}`)}`,
+          width: 800,
+          height: 800,
           alt: post.title,
         },
       ],
@@ -45,7 +57,7 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: ogUrl(post?.coverImage || `/api/og?title=${post.title}`),
+      images:  `${post?.coverImage ? post.coverImage : ogUrl(`/api/og?title=${post.title}`)}`,
     },
   };
 }
