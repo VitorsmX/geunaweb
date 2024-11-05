@@ -1,7 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  // Verifica se o cookie "_vercel_jwt" está presente
+  // Verifica o ambiente (produção ou desenvolvimento)
+  const isDevelopment = process.env.NODE_ENV === 'development';
+
+  // Se estiver em ambiente de desenvolvimento, permite todas as requisições
+  if (isDevelopment) {
+    return NextResponse.next();
+  }
+
+  // Caso contrário, verifica o cookie "_vercel_jwt"
   const vercelJwt = request.cookies.get('_vercel_jwt');
 
   // Se o cookie não estiver presente ou estiver vazio, bloqueia a requisição

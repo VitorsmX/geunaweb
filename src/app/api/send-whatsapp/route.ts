@@ -5,14 +5,6 @@ import { NextRequest, NextResponse } from 'next/server';
 // Esta função recebe os detalhes do livro do frontend
 export async function POST(request: NextRequest) {
   try {
-    // Verifique se a chave de API foi fornecida corretamente
-    const apiKey = request.headers.get('x-api-key');
-    const expectedApiKey = process.env.SECRET_API_KEY;
-
-    if (apiKey !== expectedApiKey) {
-      return NextResponse.json({ message: 'Chave de API inválida!' }, { status: 403 });
-    }
-
     // Obtenha os detalhes do livro da requisição
     const { bookDetails } = await request.json();
 
