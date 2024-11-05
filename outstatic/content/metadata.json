@@ -1,44 +1,7 @@
 {
-  "commit": "1e1ca43fcfd76bfa548d71fe14352888a22ced63",
-  "generated": "Sat, 02 Nov 2024 01:38:42 GMT",
+  "commit": "d2c34114144b19596e3f1d31c8c2cbacb7cb68aa",
+  "generated": "2024-11-04T21:39:21.797Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "2e51fd974e0c2306e038368fbb0884a59a8173af",
-        "hash": "2627148824",
-        "path": "outstatic/content/pages/doe.md"
-      },
-      "author": {
-        "name": "Vitor Sousa Mesquita",
-        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
-      },
-      "collection": "pages",
-      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
-      "description": "página de doações",
-      "publishedAt": "2024-10-28T19:50:46.304Z",
-      "slug": "doe",
-      "status": "published",
-      "title": "DOE"
-    },
-    {
-      "__outstatic": {
-        "commit": "877819fdce748ff70851bf9b1608cdbe00699364",
-        "hash": "1587874454",
-        "path": "outstatic/content/galeriaitens/natal-geu-2023.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/geu_logo-A1NT.png"
-      },
-      "collection": "galeriaitens",
-      "coverImage": "/images/img_20221219_124103_628-I4ND.jpg",
-      "date": "2023",
-      "description": "fotos e vídeos de nosso natal de 2023 do Grupo Espírita União",
-      "publishedAt": "2024-11-01T17:06:06.484Z",
-      "slug": "natal-geu-2023",
-      "status": "published",
-      "title": "Natal GEU 2023"
-    },
     {
       "__outstatic": {
         "commit": "73853f4fd986845ef3cba976b73670fb689eab52",
@@ -96,42 +59,6 @@
     },
     {
       "__outstatic": {
-        "commit": "6cdf09b364d0f089989ab01c42c0a3dc33c1879e",
-        "hash": "3835927260",
-        "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
-      },
-      "author": {
-        "name": "Vitor Sousa Mesquita",
-        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
-      },
-      "collection": "projetos-sociais",
-      "coverImage": "/images/image-section-geu-MzOD.jpg",
-      "description": "",
-      "publishedAt": "2024-10-28T19:11:11.747Z",
-      "slug": "sopa-fraterna",
-      "status": "published",
-      "title": "Sopa Fraterna"
-    },
-    {
-      "__outstatic": {
-        "commit": "93ae9643b296e4dc63ab6a172cddbe664134fde2",
-        "hash": "3988048869",
-        "path": "outstatic/content/postagens/espiritismo-novos-tempos-novos-meios.md"
-      },
-      "author": {
-        "name": "Vitor Sousa Mesquita",
-        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
-      },
-      "collection": "postagens",
-      "coverImage": "/images/pexels-pixabay-267350-QxOD.jpg",
-      "description": "",
-      "publishedAt": "2024-10-28T18:38:01.259Z",
-      "slug": "espiritismo-novos-tempos-novos-meios",
-      "status": "published",
-      "title": "Espiritismo: Novos tempos, novos meios"
-    },
-    {
-      "__outstatic": {
         "commit": "10a890acb7f408fe8b8a20cad681579f861e0806",
         "hash": "3692882961",
         "path": "outstatic/content/pages/sobre.md"
@@ -150,8 +77,44 @@
     },
     {
       "__outstatic": {
-        "commit": "262da7b6265c4546fdcac15b454befea39d6f621",
-        "hash": "2673103446",
+        "commit": "89098f4c1e9093162782532e40052198bda80416",
+        "hash": "705630062",
+        "path": "outstatic/content/postagens/postagem-inaugural.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-a1nt-g2Mj.png"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/foto-origem-geu-MxNj.jpeg",
+      "description": "Bem vindos a nossa primeira página na web - Estudos, Artigos, Palestras, Livros e Muito Mais...",
+      "publishedAt": "2024-10-28T18:38:01.259Z",
+      "slug": "postagem-inaugural",
+      "status": "published",
+      "title": "Novo Portal do Grupo Espírita União!"
+    },
+    {
+      "__outstatic": {
+        "commit": "39c40adc88c42b21e2d5b40cb9273d333dc8ab2d",
+        "hash": "448236785",
+        "path": "outstatic/content/postagens/proposito-do-grupo-espirita-uniao.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-kyND.png"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/fachada-A3ND.jpg",
+      "description": "Nosso propósito e uma breve homenagem à um grande homem",
+      "publishedAt": "2024-11-04T19:40:54.446Z",
+      "slug": "proposito-do-grupo-espirita-uniao",
+      "status": "published",
+      "title": "Propósito do Grupo Espírita União 🎯"
+    },
+    {
+      "__outstatic": {
+        "commit": "f8dcc0e5fe64f0ee89d456d9f9f2b6e97fcf9861",
+        "hash": "4040260374",
         "path": "outstatic/content/pages/home.md"
       },
       "author": {
@@ -170,23 +133,80 @@
     },
     {
       "__outstatic": {
-        "commit": "87e5b3237ef4c9195cca15f0b934b5c1795b2b33",
-        "hash": "1044181199",
+        "commit": "93ba761bea378872f720d2511a5e72787e8b6354",
+        "hash": "1529815669",
         "path": "outstatic/content/pages/galeria-geu.md"
       },
       "author": {
         "name": "Grupo Espírita União",
         "picture": "/images/geu_logo-M3NT.png"
       },
-      "bannerImagem": "https://i.imgur.com/D7V7Jfu.jpeg",
+      "bannerImagem": "https://i.imgur.com/Z3LmWOn.jpeg",
       "collection": "pages",
-      "coverImage": "/images/banner-geu-M5MD.jpg",
+      "coverImage": "/images/galeria-section-geu-UyNT.jpg",
       "description": "Galeria de fotos e vídeos do GEU - Palestras, Eventos, Reuniões, Estudos, Espiritismo",
       "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
       "publishedAt": "2024-11-01T16:43:29.514Z",
       "slug": "galeria-geu",
       "status": "published",
       "title": "Galeria GEU"
+    },
+    {
+      "__outstatic": {
+        "commit": "80002ca4c63e892f902714a578622f253b1805da",
+        "hash": "748250475",
+        "path": "outstatic/content/galeriaitens/natal-geu-2023.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-A1NT.png"
+      },
+      "collection": "galeriaitens",
+      "coverImage": "/images/img_20221219_124103_628-I4ND.jpg",
+      "date": "2022",
+      "description": "fotos e vídeos de nosso natal de 2023 do Grupo Espírita União",
+      "publishedAt": "2024-11-01T17:06:06.484Z",
+      "slug": "natal-geu-2023",
+      "status": "published",
+      "title": "Natal GEU 2022"
+    },
+    {
+      "__outstatic": {
+        "commit": "35989cc3a506f2bbd32c7784498279b9d03b60a7",
+        "hash": "3510087793",
+        "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-M2Nz.png"
+      },
+      "collection": "projetos-sociais",
+      "coverImage": "/images/sopa-geu-banner-k2Nz.jpg",
+      "description": "Conheça um pouco mais sobre a SOPA FRATERNO DO GEU, vamos nos voluntariar?",
+      "publishedAt": "2024-10-28T19:11:11.747Z",
+      "slug": "sopa-fraterna",
+      "status": "published",
+      "title": "Sopa Fraterna"
+    },
+    {
+      "__outstatic": {
+        "commit": "d2c34114144b19596e3f1d31c8c2cbacb7cb68aa",
+        "hash": "3818557127",
+        "path": "outstatic/content/pages/doe.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "bannerImagem": "",
+      "collection": "pages",
+      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
+      "description": "página de doações",
+      "instagram": "",
+      "publishedAt": "2024-10-28T19:50:46.304Z",
+      "slug": "doe",
+      "status": "published",
+      "title": "DOE"
     }
   ]
 }
