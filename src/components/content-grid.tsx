@@ -58,7 +58,6 @@ const ContentGrid = React.memo(({
                     sizes="(min-width: 768px) 347px, 192px"
                     priority={priority && items.indexOf(item) <= 2}
                     style={{ objectFit: collection === "biblioteca" ? "contain" : "cover", maxHeight: "180px" }}
-                    loading="lazy"
                   />
                   <div className="p-4">
                     {Array.isArray(item?.tags) && item.tags.map(({ label }) => (
