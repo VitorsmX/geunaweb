@@ -139,7 +139,7 @@ const UploadComponent: React.FC = () => {
         <p className="mt-4 text-center text-gray-700">{message}</p>
       )}
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-h-[86%] overflow-y-scroll">
         {files.length === 0 && <p className="text-center">Nenhum arquivo carregado.</p>}
         {files.map((item) => (
           <div key={item.public_id} className="relative overflow-hidden border rounded-md shadow-md">
