@@ -12,7 +12,7 @@ export async function GET() {
     const result = await cloudinary.api.resources({
       type: 'upload',
       prefix: 'geunaweb/', // Prefixo da sua pasta
-      max_results: 600, // Limitar resultados, ajuste conforme necessário
+      max_results: 65, // Limitar resultados, ajuste conforme necessário
     });
 
     const files = result.resources.map((resource: any) => ({

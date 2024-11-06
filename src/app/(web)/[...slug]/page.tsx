@@ -23,6 +23,7 @@ type Book = {
   quantidadeDePaginas: string;
   precoNaInternet: string;
   linkParaSolicitar: string;
+  isstock: boolean;
 } & OstDocument;
 type Document = {
   tags: { value: string; label: string }[],
@@ -205,7 +206,7 @@ async function getData({ params }: Params) {
         .sort({ publishedAt: -1 })
         .toArray()
 
-        const books = await db.find({ collection: 'biblioteca' }, ['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet', 'linkParaSolicitar']).sort({ publishedAt: -1 }).toArray()
+        const books = await db.find({ collection: 'biblioteca' }, ['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet', 'linkParaSolicitar', 'isstock']).sort({ publishedAt: -1 }).toArray()
 
       // if we have docs, we are on a collection archive
       if (docs.length) {
@@ -246,7 +247,7 @@ async function getData({ params }: Params) {
 
   const content = await MDXServer(doc.content)
 
-  const books = collection === 'biblioteca' ? await db.find({collection: 'biblioteca', slug: params.slug[1], status: 'published'},['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet', 'linkParaSolicitar']).first() : []
+  const books = collection === 'biblioteca' ? await db.find({collection: 'biblioteca', slug: params.slug[1], status: 'published'},['title', 'slug', 'coverImage', 'description','autorEncarnado', 'autorDesencarnado', 'dataDaPublicacao', 'sinopse', 'linkParaComprar', 'linkDoLivroEmPdf', 'imagemDoLivro', 'quantidadeDePaginas', 'precoNaInternet', 'linkParaSolicitar', 'isstock']).first() : []
   
   const itensGalery = slug === 'galeria-geu' ? await db.find({collection: 'galeriaitens', status: 'published'}, ['title', 'slug', 'coverImage', 'description', 'date']).toArray() : []
 

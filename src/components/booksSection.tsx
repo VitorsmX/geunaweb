@@ -18,6 +18,7 @@ type Book = {
   quantidadeDePaginas: string;
   precoNaInternet: string;
   linkParaSolicitar: string;
+  isstock: boolean;
 } & OstDocument;
 
 type Props = {

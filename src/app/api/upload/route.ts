@@ -2,6 +2,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import cloudinary from "cloudinary";
+import { Outstatic } from 'outstatic'
 
 // Configurar o Cloudinary
 cloudinary.v2.config({
@@ -16,6 +17,12 @@ export async function POST(req: NextRequest) {
   const slug = url.searchParams.get("slug");
   const formData = await req.formData();
   const fileEntry = formData.get("file");
+  const ostData = Outstatic()
+  const session = await ostData.then((data) => data.session)
+
+  if(!session) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 403 });
+  }
 
   if (!fileEntry || !(fileEntry instanceof File)) {
     return NextResponse.json({ error: "No valid file provided" }, { status: 400 });

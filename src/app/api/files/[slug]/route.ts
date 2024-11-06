@@ -16,7 +16,7 @@ export async function GET(req: Request, { params }: { params: { slug: string } }
     const imageResult = await cloudinary.api.resources({
       type: 'upload',
       prefix: `geunaweb/${slug}/`, // Prefixo da pasta específica
-      max_results: 300, // Limitar resultados de imagens
+      max_results: 65, // Limitar resultados de imagens
       resource_type: 'image', // Buscar apenas imagens
     });
 
@@ -24,7 +24,7 @@ export async function GET(req: Request, { params }: { params: { slug: string } }
     const videoResult = await cloudinary.api.resources({
       type: 'upload',
       prefix: `geunaweb/${slug}/`, // Prefixo da pasta específica
-      max_results: 300, // Limitar resultados de vídeos
+      max_results: 65, // Limitar resultados de vídeos
       resource_type: 'video', // Buscar apenas vídeos
     });
 

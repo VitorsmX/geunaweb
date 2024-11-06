@@ -1,24 +1,39 @@
 import { NextRequest, NextResponse } from 'next/server';
+const cookie = require("cookie");
 
 export function middleware(request: NextRequest) {
   // Verifica o ambiente (produção ou desenvolvimento)
   const isDevelopment = process.env.NODE_ENV === 'development';
+
+  // Recupera o domínio permitido a partir da variável de ambiente
+  const allowedOrigin = process.env.NEXT_PUBLIC_APP_URL || '';
 
   // Se estiver em ambiente de desenvolvimento, permite todas as requisições
   if (isDevelopment) {
     return NextResponse.next();
   }
 
-  // Caso contrário, verifica o cookie "_vercel_jwt"
-  const vercelJwt = request.cookies.get('_vercel_jwt');
+  // Recupera o cookie _vercel_jwt
+  const cookies = cookie.parse(request.headers.get('cookie') || '');
+  const vercelJwt = cookies['_vercel_jwt'];
+  
+  // Verifica a origem da requisição
+  const origin = request.headers.get('Origin');
 
-  // Se o cookie não estiver presente ou estiver vazio, bloqueia a requisição
-  if (!vercelJwt) {
-    return NextResponse.json({ message: 'Requisição não autorizada. Cookie _vercel_jwt ausente.' }, { status: 403 });
+  // Se a origem não for permitida, retorna 403
+  if ((origin && origin !== allowedOrigin) || !vercelJwt) {
+    return NextResponse.json({ message: 'Acesso proibido. Origem não permitida.' }, { status: 403 });
   }
 
-  // Se o cookie estiver presente, permite a requisição seguir
-  return NextResponse.next();
+  // Se o cookie estiver presente e a origem for permitida, permite a requisição seguir
+  const response = NextResponse.next();
+  
+  // Adiciona os cabeçalhos CORS para a resposta
+  response.headers.set('Access-Control-Allow-Origin', allowedOrigin);
+  response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+
+  return response;
 }
 
 // Configuração para aplicar o middleware apenas em rotas de API

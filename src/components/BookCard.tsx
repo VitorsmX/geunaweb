@@ -6,17 +6,18 @@ import axios from 'axios'; // Importando o axios
 import { OstDocument } from 'outstatic';
 
 type Book = {
-  tags?: { value: string; label: string }[];
-  autorEncarnado: string;
-  autorDesencarnado: string;
-  dataDaPublicacao: string;
-  sinopse: string;
-  linkParaComprar: string;
-  imagemDoLivro: string;
-  quantidadeDePaginas: string;
-  precoNaInternet: string;
-  linkDoLivroEmPdf: string;
+  tags?: { value: string; label: string }[]; 
+  autorEncarnado: string; 
+  autorDesencarnado: string; 
+  dataDaPublicacao: string; 
+  sinopse: string; 
+  linkParaComprar: string; 
+  imagemDoLivro: string; 
+  quantidadeDePaginas: string; 
+  precoNaInternet: string; 
+  linkDoLivroEmPdf: string; 
   linkParaSolicitar: string;
+  isstock: boolean; 
 } & OstDocument;
 
 const BookCard = React.memo(({ book }: { book: Book }) => {
@@ -34,11 +35,13 @@ const BookCard = React.memo(({ book }: { book: Book }) => {
           dataDaPublicacao: book.dataDaPublicacao,
           precoNaInternet: book.precoNaInternet,
           sinopse: book.sinopse,
+          isstock: book.isstock,
         },
       });
 
-      if (response.data.url) {
-        window.location.href = response.data.url; // Redireciona para o WhatsApp
+      if (response.data.url && response.data.isstock) {
+        let url = response.data.url ? response.data.url : book.linkParaSolicitar;
+        window.open(url, '_blank'); // Redireciona para o WhatsApp em outra aba
       } else {
         alert('Erro ao enviar a solicitação. Tente novamente.');
       }
@@ -73,7 +76,7 @@ const BookCard = React.memo(({ book }: { book: Book }) => {
               href={book.linkParaComprar}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 no-underline"
             >
               Comprar
             </a>
@@ -83,17 +86,25 @@ const BookCard = React.memo(({ book }: { book: Book }) => {
               href={book.linkDoLivroEmPdf}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 no-underline"
             >
               Baixar
             </a>
           )}
+          {book.isstock ?
           <button
             onClick={handleSolicitar}
-            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 font-semibold"
           >
             Solicitar
+          </button> : <button
+            onClick={() => alert('Livro indisponível para solicitação')}
+            disabled
+            className="inline-block bg-zinc-700 text-white px-4 py-2 rounded transition duration-300"
+          >
+            Livro Indisponível Para Solicitação
           </button>
+          }
         </div>
       </div>
     </div>

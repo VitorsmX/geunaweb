@@ -14,8 +14,12 @@ export async function POST(request: NextRequest) {
     // Substitua a URL do WhatsApp pela lógica para gerar o link
     const whatsappUrl = `https://api.whatsapp.com/send?phone=+5591996360055&text=${encodeURIComponent(whatsappMessage)}`;
 
+    if (!bookDetails.isstock) {
+      return NextResponse.json({ message: 'Livro sem estoque' }, { status: 400 });
+    }
+
     // Responda com a URL do WhatsApp
-    return NextResponse.json({ url: whatsappUrl });
+    return NextResponse.json({ url: whatsappUrl, isstock: bookDetails.isstock });
 
   } catch (error) {
     console.error('Erro ao enviar a solicitação:', error);
