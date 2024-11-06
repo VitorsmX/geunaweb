@@ -6,6 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useSession } from './SessionContext';
 
 type MediaItem = {
   url: string;
@@ -18,6 +19,16 @@ const MediaCard = ({ slug }: { slug: string }) => {
   const [message, setMessage] = useState<string>('');
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
   const [emblaRef, embla] = useEmblaCarousel({ loop: true, skipSnaps: false });
+
+  const { uuid } = useSession();
+
+  if(!uuid) {
+    return <>
+      <div className='absolute inset-0 w-full h-full flex items-center justify-center'>
+        <h1>Sessão Expirada (Recarregue o navegador)</h1>
+      </div>
+    </>
+  }
 
   useEffect(() => {
     const fetchMediaItems = async () => {
