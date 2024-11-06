@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/index.css";
 import { Metadata } from "next";
+import { SessionProvider } from "@/components/SessionContext"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://geunaweb.vercel.app"),
@@ -59,8 +60,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function RootLayout({
   children,
 }: {
@@ -69,19 +68,21 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" translate="no" suppressHydrationWarning>
       <body className="relative pb-56 md:pb-36 min-h-screen bg-gradient-to-b from-[#e9edf1a8] via-[#e6e7e979] to-[#ffffff65]">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          <div className="relative max-w-6xl mx-auto px-5 h-full pt-20 md:py-24">
-            {children}
-          </div>
-          <BuiltWithOutstatic fixed />
-          <Footer />
-        </ThemeProvider>
+        <SessionProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            <div className="relative max-w-6xl mx-auto px-5 h-full pt-20 md:py-24">
+              {children}
+            </div>
+            <BuiltWithOutstatic fixed />
+            <Footer />
+          </ThemeProvider>
+        </SessionProvider>
       </body>
     </html>
   );

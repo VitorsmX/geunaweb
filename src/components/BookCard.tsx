@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import axios from 'axios'; // Importando o axios
 import { OstDocument } from 'outstatic';
+import { useSession } from './SessionContext';
 
 type Book = {
   tags?: { value: string; label: string }[]; 
@@ -21,6 +22,17 @@ type Book = {
 } & OstDocument;
 
 const BookCard = React.memo(({ book }: { book: Book }) => {
+
+  const { uuid } = useSession();
+
+  if(!uuid) {
+    return <>
+      <div className='absolute inset-0 w-full h-full flex items-center justify-center'>
+        <h1>Sessão Expirada (Recarregue o navegador)</h1>
+      </div>
+    </>
+  }
+
   if (!book) {
     return null;
   }

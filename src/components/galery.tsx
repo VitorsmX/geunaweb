@@ -7,6 +7,7 @@ import Link from "next/link";
 import useEmblaCarousel from 'embla-carousel-react';
 import { OstDocument } from "outstatic";
 import Fuse from "fuse.js";
+import { useSession } from "./SessionContext";
 
 type Item = {
   tags?: { value: string; label: string }[];
@@ -28,9 +29,20 @@ const Galery = ({
   priority = false,
   viewAll = false,
 }: Props) => {
+
   const [emblaRef] = useEmblaCarousel({ loop: true });
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredItems, setFilteredItems] = useState<Item[]>(items);
+
+  const { uuid } = useSession();
+
+  if(!uuid) {
+    return <>
+      <div className='absolute inset-0 w-full h-full flex items-center justify-center'>
+        <h1>Sessão Expirada (Recarregue o navegador)</h1>
+      </div>
+    </>
+  }
 
   // Configuração do Fuse.js para busca
   const fuse = useMemo(() => new Fuse(items, {
