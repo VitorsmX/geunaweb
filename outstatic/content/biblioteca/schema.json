@@ -71,6 +71,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "LinkParaSolicitar"
+    },
+    "isstock": {
+      "required": false,
+      "description": "O Livro Deve estar Disponível Para Ser Solicitado?",
+      "fieldType": "Boolean",
+      "dataType": "boolean",
+      "title": "isstock"
     }
   }
 }
