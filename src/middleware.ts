@@ -1,42 +1,61 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Outstatic, Session } from "outstatic";
+import { Outstatic } from 'outstatic';
+import fs from 'fs';
+import path from 'path';
 
-// Classe para gerenciar a sessão
-class SessionManager {
-  private session: Session | null = null;
+// Caminho para armazenar a sessão temporária no servidor
+const TEMP_SESSION_PATH = path.join(process.cwd(), 'tmp', 'session.json');
 
-  // Método para carregar e definir a sessão
-  async loadSession() {
-    if (this.session === null) {
-      // Carrega a sessão de forma assíncrona
-      const ostData = await Outstatic();
-      this.session = ostData.session;
-    }
+// Função para carregar a sessão assíncrona e armazená-la no arquivo temporário
+async function loadAndSaveSession() {
+  const ostData = await Outstatic();
+  const session = ostData.session;
+
+  // Cria o diretório 'tmp' se não existir
+  if (!fs.existsSync(path.dirname(TEMP_SESSION_PATH))) {
+    fs.mkdirSync(path.dirname(TEMP_SESSION_PATH), { recursive: true });
   }
 
-  // Método para obter a sessão
-  getSession() {
-    return this.session;
-  }
+  // Salva a sessão em um arquivo JSON temporário
+  fs.writeFileSync(TEMP_SESSION_PATH, JSON.stringify(session), 'utf8');
+}
 
-  // Método para definir explicitamente a sessão
-  setSession(session: Session | null) {
-    this.session = session;
+// Função para ler a sessão armazenada no arquivo temporário
+function getSessionFromFile() {
+  if (fs.existsSync(TEMP_SESSION_PATH)) {
+    const sessionData = fs.readFileSync(TEMP_SESSION_PATH, 'utf8');
+    return JSON.parse(sessionData);
   }
+  return null;
+}
 
-  // Método para verificar se a sessão existe
-  hasSession() {
-    return this.session !== null;
+// Função para excluir o arquivo de sessão (remover após validação ou expiração)
+function deleteSessionFile() {
+  if (fs.existsSync(TEMP_SESSION_PATH)) {
+    fs.unlinkSync(TEMP_SESSION_PATH);
   }
 }
 
-// Instancia o gerenciador de sessão
+// Classe para gerenciar a sessão de forma síncrona
+class SessionManager {
+  getSession() {
+    return getSessionFromFile(); // Lê a sessão do arquivo temporário
+  }
+
+  hasSession() {
+    return fs.existsSync(TEMP_SESSION_PATH); // Verifica se o arquivo de sessão existe
+  }
+}
+
+// Instância do gerenciador de sessão
 const sessionManager = new SessionManager();
 
-// Middleware
-export async function middleware(request: NextRequest) {
-  // Carrega a sessão (assíncrono)
-  await sessionManager.loadSession();
+// Middleware (sincrônico)
+export function middleware(request: NextRequest) {
+  // Carrega e salva a sessão na primeira requisição, se necessário
+  if (!sessionManager.hasSession()) {
+    loadAndSaveSession(); // Carrega e salva a sessão no arquivo temporário
+  }
 
   // Verifica o ambiente (produção ou desenvolvimento)
   const isDevelopment = process.env.NODE_ENV === 'development';
@@ -65,11 +84,14 @@ export async function middleware(request: NextRequest) {
     if (!sessionManager.hasSession()) {
       return NextResponse.json({ message: 'Sessão expirada ou não encontrada.' }, { status: 401 });
     }
+
+    // (Opcional) Excluir a sessão após a validação (se necessário)
+    deleteSessionFile();
   }
 
   // Se a origem for permitida e a sessão (se necessário) estiver válida, permite a requisição seguir
   const response = NextResponse.next();
-  
+
   // Adiciona os cabeçalhos CORS para a resposta
   response.headers.set('Access-Control-Allow-Origin', allowedOrigin);
   response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
