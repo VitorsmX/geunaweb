@@ -1,6 +1,7 @@
 "use client";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
+import Loading from "./loading";
 
 // Função para gerar um UUID
 function generateUUID() {
@@ -38,7 +39,7 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
   }, []);
 
   if (!uuid) {
-    return <div>Loading...</div>; // Pode retornar um loading até a verificação estar completa
+    return <Loading/>; // Pode retornar um loading até a verificação estar completa
   }
 
   return (
