@@ -1,6 +1,6 @@
 {
-  "commit": "26a6e22fc47d39731dc6c997d16a926e03adc79a",
-  "generated": "2024-11-06T01:58:16.802Z",
+  "commit": "35c618fd920a39bfc6eddf205b4ee395ea35f37c",
+  "generated": "2024-11-06T21:29:28.968Z",
   "metadata": [
     {
       "__outstatic": {
@@ -162,26 +162,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d2c34114144b19596e3f1d31c8c2cbacb7cb68aa",
-        "hash": "3818557127",
-        "path": "outstatic/content/pages/doe.md"
-      },
-      "author": {
-        "name": "Vitor Sousa Mesquita",
-        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
-      },
-      "bannerImagem": "",
-      "collection": "pages",
-      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
-      "description": "página de doações",
-      "instagram": "",
-      "publishedAt": "2024-10-28T19:50:46.304Z",
-      "slug": "doe",
-      "status": "published",
-      "title": "DOE"
-    },
-    {
-      "__outstatic": {
         "commit": "26a6e22fc47d39731dc6c997d16a926e03adc79a",
         "hash": "2644744673",
         "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
@@ -208,6 +188,26 @@
       "slug": "livro-nosso-lar",
       "status": "published",
       "title": "LIVRO: Nosso Lar"
+    },
+    {
+      "__outstatic": {
+        "commit": "35c618fd920a39bfc6eddf205b4ee395ea35f37c",
+        "hash": "1512857992",
+        "path": "outstatic/content/pages/doe.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "bannerImagem": "",
+      "collection": "pages",
+      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
+      "description": "página de doações",
+      "instagram": "",
+      "publishedAt": "2024-10-28T19:50:46.304Z",
+      "slug": "doe",
+      "status": "published",
+      "title": "DOE"
     }
   ]
 }

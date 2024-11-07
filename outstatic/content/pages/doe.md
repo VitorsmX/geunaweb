@@ -16,11 +16,17 @@ publishedAt: '2024-10-28T19:50:46.304Z'
 
 ### Nós garantimos a segurança e confiabilidade das doações. Sua contribuição irá ajudar muitos na nossa caminhada! ❤️
 
-**Doe alimentos não perecíveis, roupas ou utensílios**: [Clique aqui para combinar doações](https://#) 🍲👗🏠
+**Doe alimentos não perecíveis, roupas ou utensílios**: [Clique aqui para combinar doações](https://wa.link/rv61jb) 🍲👗🏠
+
+OU
+
+Escaneie para entrar em contato direto pelo whatsapp:
+
+[![QRCODE para contato](/images/wa.link_rv61jb-UyMD.png)](https://wa.link/rv61jb)
 
 **Doe pelo PIX a quantia que preferir**:
 
-**CHAVE PIX**: `03796553000190` (CNPJ) 
+**CHAVE PIX**: `03796553000190` (CNPJ)
 
 **QR CODE**:
 
