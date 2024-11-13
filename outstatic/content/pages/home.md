@@ -6,7 +6,7 @@ author:
   picture: '/images/logo-geu.png'
 slug: 'home'
 description: 'Site Oficial do Grupo Espírita União, livros espíritas e programação.'
-coverImage: '/images/hero-bg-geu-v3-Y2Nj.jpg'
+coverImage: '/images/hero-bg-geu_20241113_144225_0000-E5Mj.jpg'
 bannerImagem: 'https://i.imgur.com/6jOHpVH.jpeg'
 instagram: 'https://www.instagram.com/geu.grupo_espirita_uniao/'
 publishedAt: '2022-03-17T05:35:07.322Z'
