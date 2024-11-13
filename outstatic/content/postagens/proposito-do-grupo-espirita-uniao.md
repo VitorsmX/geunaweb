@@ -22,7 +22,7 @@ O **Grupo Espírita União**, fundado em 15 de agosto de 1994, é fruto do amor 
 
 - **No atendimento fraterno** 🤗: aos irmãos que precisam de uma palavra ou de um abraço acolhedor.
 
-- **No bazar de roupas** 👚👕: que não só aquecem o corpo, mas também a alma.
+- **No bazar de roupas** 👚👕: ajuda ao próximo a se vestir com dignidade, atendendo fraternalmente quem nos procura.
 
 **Nesses** `30` **anos de existência** e caminhada, o GEU cresceu, em estrutura física e em família. Seja no aumento do número de trabalhadores, seja no aumento do número de pessoas assistidas pela casa. Somos uma [grande família](https://www.instagram.com/p/CmSfK_6rOra/) que, unida, caminha em direção ao amor cristão que nos move e nos sustenta. ❤️
 
