@@ -6,7 +6,9 @@ author:
   picture: '/images/logo-geu.png'
 slug: 'sobre'
 description: 'Somos um Grupo Espírita que trabalha com amor acima de tudo.'
-coverImage: '/images/20230816_122947_0000-E0Nz.png'
+coverImage: '/images/centro-esp-rita-terceira-revela--o-banner_20241113_150504_0000-k5OD.jpg'
+bannerImagem: ''
+instagram: ''
 publishedAt: '2023-12-28T18:49:02.348Z'
 ---
 

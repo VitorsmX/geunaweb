@@ -1,25 +1,7 @@
 {
-  "commit": "5e4926f0a6537d152e16a887b9e089a5c4e12b3a",
-  "generated": "2024-11-13T17:45:59.218Z",
+  "commit": "6195d0a23080a336d3179e68f21864b36bc62468",
+  "generated": "2024-11-13T18:06:20.547Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "10a890acb7f408fe8b8a20cad681579f861e0806",
-        "hash": "3692882961",
-        "path": "outstatic/content/pages/sobre.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "collection": "pages",
-      "coverImage": "/images/20230816_122947_0000-E0Nz.png",
-      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
-      "publishedAt": "2023-12-28T18:49:02.348Z",
-      "slug": "sobre",
-      "status": "published",
-      "title": "Sobre Nós"
-    },
     {
       "__outstatic": {
         "commit": "39c40adc88c42b21e2d5b40cb9273d333dc8ab2d",
@@ -297,6 +279,26 @@
       "slug": "home",
       "status": "published",
       "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "6195d0a23080a336d3179e68f21864b36bc62468",
+        "hash": "1839218202",
+        "path": "outstatic/content/pages/sobre.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "",
+      "collection": "pages",
+      "coverImage": "/images/centro-esp-rita-terceira-revela--o-banner_20241113_150504_0000-k5OD.jpg",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "instagram": "",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "sobre",
+      "status": "published",
+      "title": "Sobre Nós"
     }
   ]
 }
