@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import { SessionProvider } from "@/components/SessionContext"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://geunaweb.vercel.app"),
+  metadataBase: new URL("https://www.geuuniao.com.br"),
   title: {
     default: "Espiritismo na Web - Grupo Espírita União",
     template: "%s | Seção do website do Grupo Espírita União",
@@ -18,23 +18,23 @@ export const metadata: Metadata = {
     title: "Espiritismo na Web - Grupo Espírita União",
     description:
       "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
-    url: "https://geunaweb.vercel.app",
+    url: "https://www.geuuniao.com.br",
     siteName: "Grupo Espírita União",
     images: [
       {
-        url: "https://geunaweb.vercel.app/images/ogimagegeu.jpg",
+        url: "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
         width: 1640,
         height: 856,
         alt: "Imagem representando o Grupo Espírita União maior (Modo Paisagem)",
       },
       {
-        url: "https://geunaweb.vercel.app/images/ogimagegeu.jpg",
+        url: "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
         width: 1600,
         height: 800,
         alt: "Imagem representando o Grupo Espírita União menor (Modo Paisagem)",
       },
       {
-        url: "https://geunaweb.vercel.app/images/ogimagegeumenor.jpg",
+        url: "https://www.geuuniao.com.br/images/ogimagegeumenor.jpg",
         width: 800,
         height: 800,
         alt: "Imagem representando o Grupo Espírita União (Quadrada)",
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     description:
       "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
     images: [
-      "https://geunaweb.vercel.app/images/ogimagegeu.jpg",
-      "https://geunaweb.vercel.app/images/ogimagegeu.jpg",
-      "https://geunaweb.vercel.app/images/ogimagegeumenor.jpg"
+      "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
+      "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
+      "https://www.geuuniao.com.br/images/ogimagegeumenor.jpg"
     ],
   },
   icons: {
