@@ -1,6 +1,6 @@
 {
-  "commit": "3ade1109af783b31ef05d548c0a7e98aa0181031",
-  "generated": "2024-11-13T16:10:39.080Z",
+  "commit": "3ce093ae7fc80a62051d3443fdfaae29e97db0e9",
+  "generated": "2024-11-13T16:13:43.496Z",
   "metadata": [
     {
       "__outstatic": {
@@ -46,24 +46,6 @@
       "slug": "sobre",
       "status": "published",
       "title": "Sobre Nós"
-    },
-    {
-      "__outstatic": {
-        "commit": "89098f4c1e9093162782532e40052198bda80416",
-        "hash": "705630062",
-        "path": "outstatic/content/postagens/postagem-inaugural.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/geu_logo-a1nt-g2Mj.png"
-      },
-      "collection": "postagens",
-      "coverImage": "/images/foto-origem-geu-MxNj.jpeg",
-      "description": "Bem vindos a nossa primeira página na web - Estudos, Artigos, Palestras, Livros e Muito Mais...",
-      "publishedAt": "2024-10-28T18:38:01.259Z",
-      "slug": "postagem-inaugural",
-      "status": "published",
-      "title": "Novo Portal do Grupo Espírita União!"
     },
     {
       "__outstatic": {
@@ -208,6 +190,24 @@
       "slug": "sopa-fraterna",
       "status": "published",
       "title": "Sopa Fraterna"
+    },
+    {
+      "__outstatic": {
+        "commit": "3ce093ae7fc80a62051d3443fdfaae29e97db0e9",
+        "hash": "37297994",
+        "path": "outstatic/content/postagens/postagem-inaugural.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-a1nt-g2Mj.png"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/foto-origem-geu-MxNj.jpeg",
+      "description": "Bem vindos a nossa primeira página na web - Estudos, Artigos, Palestras, Livros e Muito Mais...",
+      "publishedAt": "2024-10-28T18:38:01.259Z",
+      "slug": "postagem-inaugural",
+      "status": "published",
+      "title": "Novo Portal do Grupo Espírita União!"
     }
   ]
 }
