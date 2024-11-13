@@ -1,6 +1,6 @@
 {
-  "commit": "ccc99bcb27e2b157a5771ca33f292a3dfb09fd7f",
-  "generated": "2024-11-13T17:01:57.993Z",
+  "commit": "89455f0ff6817ff312a4e581755f890161be801f",
+  "generated": "2024-11-13T17:45:16.770Z",
   "metadata": [
     {
       "__outstatic": {
@@ -282,8 +282,8 @@
     },
     {
       "__outstatic": {
-        "commit": "ccc99bcb27e2b157a5771ca33f292a3dfb09fd7f",
-        "hash": "2478213050",
+        "commit": "89455f0ff6817ff312a4e581755f890161be801f",
+        "hash": "2887519050",
         "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
       },
       "author": {

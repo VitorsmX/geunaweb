@@ -24,11 +24,7 @@ Ao longo de todos esses anos, tivemos muitos projetos, cursos profissionalizante
 
 No início, eram mais de 100 pessoas numa fila, visto a necessidade das pessoas que ali estavam, no conhecido bairro do CAIC, nomeado assim devido ao colégio do CAIC, que também pode ser chamado de bairro do Campinho.
 
-A sopa, vive até hoje, entre calços e percalços, com voluntários para pegar as doações vindas de açougues e fruteiras, bem como grandes comércios locais que nos ajudam com a doação de materiais como:
-
-- Macarrão
-- Temperos
-- Arroz
+A sopa, vive até hoje, com voluntários para pegar as doações vindas de açougues e fruteiras, bem como comércios locais que nos ajudam com a doação de materiais.
 
 A casa da sopa, originalmente com outro nome, foi nomeada de ***"Casa de Sopa Nilson Mesquita"****,* devido as imensas contribuições desta pessoa que nos honrou pela sua passagem de caridade em forma de trabalho incessante, mesmo quando, sofreu devido a complicações de uma doença grave, que não o impediu de, ir até os momentos críticos de sua vida no Centro que fundou para ajudar nem que fosse de modo menos físico que antes, ou seja, com trabalho intelectual.
 
