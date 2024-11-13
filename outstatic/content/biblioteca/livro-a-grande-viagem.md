@@ -1,5 +1,5 @@
 ---
-title: 'A grande viagem - Miriam Dusi'
+title: 'A Grande Viagem - Miriam Dusi'
 status: 'published'
 author:
   name: 'Miriam Dusi'
