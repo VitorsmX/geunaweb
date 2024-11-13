@@ -20,7 +20,7 @@ publishedAt: '2024-10-28T19:50:46.304Z'
 
 OU
 
-Escaneie para entrar em contato direto pelo whatsapp:
+Escaneie para entrar em contato direto pelo WhatsApp:
 
 [![QRCODE para contato](/images/wa.link_rv61jb-UyMD.png)](https://wa.link/rv61jb)
 
