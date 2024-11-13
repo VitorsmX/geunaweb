@@ -24,7 +24,7 @@ Ao longo de todos esses anos, tivemos muitos projetos, cursos profissionalizante
 
 No início, eram mais de 100 pessoas numa fila, visto a necessidade das pessoas que ali estavam, no conhecido bairro do CAIC, nomeado assim devido ao colégio do CAIC, que também pode ser chamado de bairro do Campinho.
 
-A sopa, vive até hoje, entre calços e percalços, com voluntários para pegar as doações vindas de açougues e fruteiras, bem como grandes comércios locais, como o Grupo Carlito que nos ajuda com a doação de materiais como:
+A sopa, vive até hoje, entre calços e percalços, com voluntários para pegar as doações vindas de açougues e fruteiras, bem como grandes comércios locais que nos ajudam com a doação de materiais como:
 
 - Macarrão
 - Temperos
