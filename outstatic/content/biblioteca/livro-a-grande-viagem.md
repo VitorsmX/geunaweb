@@ -1,5 +1,5 @@
 ---
-title: 'LIVRO: A grande viagem'
+title: 'A grande viagem - Miriam Dusi'
 status: 'published'
 author:
   name: 'Miriam Dusi'
@@ -16,6 +16,8 @@ linkDoLivroEmPdf: ''
 imagemDoLivro: 'https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg'
 quantidadeDePaginas: '80'
 precoNaInternet: '37,50'
+linkParaSolicitar: ''
+isstock: ''
 publishedAt: '2024-10-29T18:36:11.539Z'
 ---
 
