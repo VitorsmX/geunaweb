@@ -2,11 +2,11 @@
 author:
   name: 'Grupo Espírita União'
   picture: '/images/geu_logo-M2Nz.png'
-coverImage: '/images/sopa-geu-banner-k2Nz.jpg'
+coverImage: '/images/sopa-geu-banner-YxMT.jpg'
 title: 'Sopa Fraterna'
 status: 'published'
 slug: 'sopa-fraterna'
-description: 'Conheça um pouco mais sobre a SOPA FRATERNO DO GEU, vamos nos voluntariar?'
+description: 'Conheça um pouco mais sobre a SOPA FRATERNA DO GEU, vamos nos voluntariar?'
 publishedAt: '2024-10-28T19:11:11.747Z'
 ---
 
@@ -18,13 +18,13 @@ A Sopa Fraterna, que ocorre juntamente ao Atendimento Espiritual (Estudo do Evan
 
 É um dos mais característicos trabalhos sociais do GEU, seu início ocorreu em 15 de agosto de 1994, ou seja, junto com a fundação do Grupo, por Nilson Edson Mesquita Rodrigues e mais tarde, outros, como, Dona Rosária, Terezinha, Deusa.
 
-## **Mais do que uma Sopa** 
+## **Mais do que uma Sopa**
 
 Ao longo de todos esses anos, tivemos muitos projetos, cursos profissionalizantes, vendas de sorvete, mas uma coisa foi constante, a bendita sopa do GEU.
 
-No início, eram mais de 100 pessoas numa fila, vista a necessidade das pessoas que ali estavam, no conhecido bairro do CAIC, nomeado assim devido ao colégio do CAIC, que também pode ser chamado de bairro do Campinho.
+No início, eram mais de 100 pessoas numa fila, visto a necessidade das pessoas que ali estavam, no conhecido bairro do CAIC, nomeado assim devido ao colégio do CAIC, que também pode ser chamado de bairro do Campinho.
 
-A sopa, sobrevive até hoje, entre calços e percalços, com voluntários para pegar as doações vindas de açougues e fruteiras, bem como grandes comércios locais, como o Grupo Carlito que nos ajuda com a doação de materiais como:
+A sopa, vive até hoje, entre calços e percalços, com voluntários para pegar as doações vindas de açougues e fruteiras, bem como grandes comércios locais, como o Grupo Carlito que nos ajuda com a doação de materiais como:
 
 - Macarrão
 - Temperos

@@ -1,6 +1,6 @@
 {
-  "commit": "9de94b87ed035afa93a558230258c4c57caf1738",
-  "generated": "2024-11-13T16:06:51.327Z",
+  "commit": "3ade1109af783b31ef05d548c0a7e98aa0181031",
+  "generated": "2024-11-13T16:10:39.080Z",
   "metadata": [
     {
       "__outstatic": {
@@ -144,24 +144,6 @@
     },
     {
       "__outstatic": {
-        "commit": "35989cc3a506f2bbd32c7784498279b9d03b60a7",
-        "hash": "3510087793",
-        "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/geu_logo-M2Nz.png"
-      },
-      "collection": "projetos-sociais",
-      "coverImage": "/images/sopa-geu-banner-k2Nz.jpg",
-      "description": "Conheça um pouco mais sobre a SOPA FRATERNO DO GEU, vamos nos voluntariar?",
-      "publishedAt": "2024-10-28T19:11:11.747Z",
-      "slug": "sopa-fraterna",
-      "status": "published",
-      "title": "Sopa Fraterna"
-    },
-    {
-      "__outstatic": {
         "commit": "26a6e22fc47d39731dc6c997d16a926e03adc79a",
         "hash": "2644744673",
         "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
@@ -208,6 +190,24 @@
       "slug": "doe",
       "status": "published",
       "title": "DOE"
+    },
+    {
+      "__outstatic": {
+        "commit": "3ade1109af783b31ef05d548c0a7e98aa0181031",
+        "hash": "871264712",
+        "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-M2Nz.png"
+      },
+      "collection": "projetos-sociais",
+      "coverImage": "/images/sopa-geu-banner-YxMT.jpg",
+      "description": "Conheça um pouco mais sobre a SOPA FRATERNA DO GEU, vamos nos voluntariar?",
+      "publishedAt": "2024-10-28T19:11:11.747Z",
+      "slug": "sopa-fraterna",
+      "status": "published",
+      "title": "Sopa Fraterna"
     }
   ]
 }
