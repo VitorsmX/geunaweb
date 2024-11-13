@@ -1,6 +1,6 @@
 {
-  "commit": "3ce093ae7fc80a62051d3443fdfaae29e97db0e9",
-  "generated": "2024-11-13T16:13:43.496Z",
+  "commit": "23ab52d32a392a93ae134c71f530ae20b411aadc",
+  "generated": "2024-11-13T16:15:13.848Z",
   "metadata": [
     {
       "__outstatic": {
@@ -107,25 +107,6 @@
     },
     {
       "__outstatic": {
-        "commit": "80002ca4c63e892f902714a578622f253b1805da",
-        "hash": "748250475",
-        "path": "outstatic/content/galeriaitens/natal-geu-2023.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/geu_logo-A1NT.png"
-      },
-      "collection": "galeriaitens",
-      "coverImage": "/images/img_20221219_124103_628-I4ND.jpg",
-      "date": "2022",
-      "description": "fotos e vídeos de nosso natal de 2023 do Grupo Espírita União",
-      "publishedAt": "2024-11-01T17:06:06.484Z",
-      "slug": "natal-geu-2023",
-      "status": "published",
-      "title": "Natal GEU 2022"
-    },
-    {
-      "__outstatic": {
         "commit": "26a6e22fc47d39731dc6c997d16a926e03adc79a",
         "hash": "2644744673",
         "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
@@ -208,6 +189,25 @@
       "slug": "postagem-inaugural",
       "status": "published",
       "title": "Novo Portal do Grupo Espírita União!"
+    },
+    {
+      "__outstatic": {
+        "commit": "23ab52d32a392a93ae134c71f530ae20b411aadc",
+        "hash": "3341430238",
+        "path": "outstatic/content/galeriaitens/natal-geu-2022.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-A1NT.png"
+      },
+      "collection": "galeriaitens",
+      "coverImage": "/images/img_20221219_124103_628-I4ND.jpg",
+      "date": "2022",
+      "description": "fotos e vídeos de nosso natal de 2022 do Grupo Espírita União",
+      "publishedAt": "2024-11-01T17:06:06.484Z",
+      "slug": "natal-geu-2022",
+      "status": "published",
+      "title": "Natal GEU 2022"
     }
   ]
 }
