@@ -84,19 +84,19 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
       url: absoluteUrl(`/${doc.collection}/${doc.slug}`),
       images: [
         {
-          url: imageCoverSource || 'https://geunaweb.vercel.app/images/ogimagegeumenor.jpg',
+          url: imageCoverSource || 'https://www.geuuniao.com.br/images/ogimagegeumenor.jpg',
           width: 1640,
           height: 856,
           alt: doc.title
         },
         {
-          url: imageCoverSource || 'https://geunaweb.vercel.app/images/ogimagegeumenor.jpg',
+          url: imageCoverSource || 'https://www.geuuniao.com.br/images/ogimagegeumenor.jpg',
           width: 1600,
           height: 800,
           alt: doc.title
         },
         {
-          url: imageCoverSource || 'https://geunaweb.vercel.app/images/ogimagegeumenor.jpg',
+          url: imageCoverSource || 'https://www.geuuniao.com.br/images/ogimagegeumenor.jpg',
           width: 800,
           height: 800,
           alt: doc.title
