@@ -1,6 +1,6 @@
 {
   "commit": "9de94b87ed035afa93a558230258c4c57caf1738",
-  "generated": "2024-11-13T15:42:42.263Z",
+  "generated": "2024-11-13T16:06:51.327Z",
   "metadata": [
     {
       "__outstatic": {
@@ -192,7 +192,7 @@
     {
       "__outstatic": {
         "commit": "9de94b87ed035afa93a558230258c4c57caf1738",
-        "hash": "3741045772",
+        "hash": "3249514454",
         "path": "outstatic/content/pages/doe.md"
       },
       "author": {
@@ -201,8 +201,8 @@
       },
       "bannerImagem": "",
       "collection": "pages",
-      "coverImage": "/images/img_20230226_100230_881-E3MD.jpg",
-      "description": "página de doações",
+      "coverImage": "/images/doe-geu-banner-c0Nz.jpg",
+      "description": "página de doações do Grupo Espírita União",
       "instagram": "",
       "publishedAt": "2024-10-28T19:50:46.304Z",
       "slug": "doe",
