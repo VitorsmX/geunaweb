@@ -1,25 +1,7 @@
 {
-  "commit": "6195d0a23080a336d3179e68f21864b36bc62468",
-  "generated": "2024-11-13T18:06:20.547Z",
+  "commit": "f299c3691f37457427ad3fc474f953c98d436a73",
+  "generated": "2024-11-13T20:29:57.278Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "39c40adc88c42b21e2d5b40cb9273d333dc8ab2d",
-        "hash": "448236785",
-        "path": "outstatic/content/postagens/proposito-do-grupo-espirita-uniao.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/geu_logo-kyND.png"
-      },
-      "collection": "postagens",
-      "coverImage": "/images/fachada-A3ND.jpg",
-      "description": "Nosso propósito e uma breve homenagem à um grande homem",
-      "publishedAt": "2024-11-04T19:40:54.446Z",
-      "slug": "proposito-do-grupo-espirita-uniao",
-      "status": "published",
-      "title": "Propósito do Grupo Espírita União 🎯"
-    },
     {
       "__outstatic": {
         "commit": "93ba761bea378872f720d2511a5e72787e8b6354",
@@ -299,6 +281,24 @@
       "slug": "sobre",
       "status": "published",
       "title": "Sobre Nós"
+    },
+    {
+      "__outstatic": {
+        "commit": "f299c3691f37457427ad3fc474f953c98d436a73",
+        "hash": "2532347268",
+        "path": "outstatic/content/postagens/proposito-do-grupo-espirita-uniao.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-kyND.png"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/fachada-A3ND.jpg",
+      "description": "Nosso propósito e uma breve homenagem à um grande homem",
+      "publishedAt": "2024-11-04T19:40:54.446Z",
+      "slug": "proposito-do-grupo-espirita-uniao",
+      "status": "published",
+      "title": "Propósito do Grupo Espírita União 🎯"
     }
   ]
 }
