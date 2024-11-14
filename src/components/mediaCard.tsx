@@ -107,7 +107,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
               </div>
               <button
                 onClick={() => openModal(item)}
-                className="w-full h-fit mt-1 py-2 scale-75 bg-blue-500 text-white rounded-lg"
+                className="w-full h-fit mt-1 py-2 scale-75 bg-blue-600 font-buttons text-white rounded-lg"
               >
                 Ver Mídia
               </button>

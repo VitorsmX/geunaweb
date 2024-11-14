@@ -92,6 +92,12 @@ module.exports = {
         'fade-up': 'fade-up 0.3s ease-out forwards',
         'fade-in': 'fade-in ease-out forwards'
       },
+      fontFamily: {
+      'primary': ['Daniel', 'system-ui'],
+      'secondary': ['Timeless', 'system-ui'],
+      'buttons': ['Roboto', 'system-ui'],
+      'body': ['Linux-Libertine', 'system-ui'],
+      },
       typography: ({ theme }) => ({
         outstatic: {
           css: {
@@ -126,10 +132,10 @@ module.exports = {
             '--tw-prose-invert-pre-code': theme('colors.foreground'),
             '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
             '--tw-prose-invert-th-borders': theme('colors.foreground'),
-            '--tw-prose-invert-td-borders': theme('colors.foreground')
+            '--tw-prose-invert-td-borders': theme('colors.foreground'),
           }
         }
-      })
+      }),
     }
   },
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')]

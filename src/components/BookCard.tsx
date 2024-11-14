@@ -88,7 +88,7 @@ const BookCard = React.memo(({ book }: { book: Book }) => {
               href={book.linkParaComprar}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 no-underline"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 no-underline font-buttons"
             >
               Comprar
             </a>
@@ -98,7 +98,7 @@ const BookCard = React.memo(({ book }: { book: Book }) => {
               href={book.linkDoLivroEmPdf}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 no-underline"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 no-underline font-buttons"
             >
               Baixar
             </a>
@@ -112,7 +112,7 @@ const BookCard = React.memo(({ book }: { book: Book }) => {
           </button> : <button
             onClick={() => alert('Livro indisponível para solicitação')}
             disabled
-            className="inline-block bg-zinc-700 text-white px-4 py-2 rounded transition duration-300"
+            className="inline-block bg-zinc-700 text-white px-4 py-2 rounded transition duration-300 font-buttons text-xs"
           >
             Livro Indisponível Para Solicitação
           </button>
