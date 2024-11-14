@@ -1,6 +1,6 @@
 {
-  "commit": "15ca8dff0063cbff695fcd48a4f047303c12b814",
-  "generated": "Thu, 14 Nov 2024 00:19:11 GMT",
+  "commit": "22fcd0e8908524818a78a6f62bc3a4b2f6d43b94",
+  "generated": "2024-11-14T16:02:01.648Z",
   "metadata": [
     {
       "__outstatic": {
@@ -264,24 +264,6 @@
     },
     {
       "__outstatic": {
-        "commit": "b68adf16dea3498fcdf5919cb9df9459581ecde9",
-        "hash": "37297994",
-        "path": "outstatic/content/postagens/postagem-inaugural.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/geu_logo-a1nt-g2Mj.png"
-      },
-      "collection": "postagens",
-      "coverImage": "/images/foto-origem-geu-MxNj.jpeg",
-      "description": "Bem vindos a nossa primeira página na web - Estudos, Artigos, Palestras, Livros e Muito Mais...",
-      "publishedAt": "2024-10-28T18:38:01.259Z",
-      "slug": "postagem-inaugural",
-      "status": "published",
-      "title": "Novo Portal do Grupo Espírita União!"
-    },
-    {
-      "__outstatic": {
         "commit": "40ea845ad2f7798614914aa0d27877eab4d07390",
         "hash": "198086122",
         "path": "outstatic/content/pages/home.md"
@@ -299,6 +281,24 @@
       "slug": "home",
       "status": "published",
       "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "22fcd0e8908524818a78a6f62bc3a4b2f6d43b94",
+        "hash": "2960368833",
+        "path": "outstatic/content/postagens/postagem-inaugural.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/geu_logo-a1nt-g2Mj.png"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/foto-origem-geu-MxNj.jpeg",
+      "description": "Bem vindos a nossa primeira página na web - Estudos, Artigos, Palestras, Livros e Muito Mais...",
+      "publishedAt": "2024-10-28T18:38:01.259Z",
+      "slug": "postagem-inaugural",
+      "status": "published",
+      "title": "Novo Portal do Grupo Espírita União!"
     }
   ]
 }
