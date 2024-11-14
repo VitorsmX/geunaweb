@@ -30,11 +30,11 @@ Uma [pessoa](https://www.instagram.com/p/CmejLxurumO/?img_index=1) que nos forta
 
 DIVULGAMOS:
 
-1. [PALESTRAS](https://geunaweb.vercel.app/galeria-geu)
-2. [EVENTOS](https://geunaweb.vercel.app/galeria-geu)
-3. [ARRECADAÇÕES](https://geunaweb.vercel.app/doe)
-4. [LIVROS](https://geunaweb.vercel.app/biblioteca)
-5. [CONTEÚDO PARA QUEM QUER SABER MAIS SOBRE ESPIRITISMO!](https://geunaweb.vercel.app/postagens)
+1. [PALESTRAS](/galeria-geu)
+2. [EVENTOS](/galeria-geu)
+3. [ARRECADAÇÕES](/doe)
+4. [LIVROS](/biblioteca)
+5. [CONTEÚDO PARA QUEM QUER SABER MAIS SOBRE ESPIRITISMO!](/postagens)
 6. [MUITO MAIS...](https://www.instagram.com/geu.grupo_espirita_uniao/)
 
 Nos acompanhe em nossas próximas postagens!

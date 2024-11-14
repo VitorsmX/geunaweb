@@ -22,12 +22,8 @@ O **Grupo Espírita União**, fundado em 15 de agosto de 1994, é fruto do amor 
 
 - **No atendimento fraterno** 🤗: aos irmãos que precisam de uma palavra ou de um abraço acolhedor.
 
-- **No bazar de roupas** 👚👕: que não só aquecem o corpo, mas também a alma.
+- **No bazar de roupas** 👚👕: ajuda ao próximo a se vestir com dignidade, atendendo fraternalmente quem nos procura.
 
 **Nesses** `30` **anos de existência** e caminhada, o GEU cresceu, em estrutura física e em família. Seja no aumento do número de trabalhadores, seja no aumento do número de pessoas assistidas pela casa. Somos uma [grande família](https://www.instagram.com/p/CmSfK_6rOra/) que, unida, caminha em direção ao amor cristão que nos move e nos sustenta. ❤️
-
-Hoje, é mais um dia para celebrar a nossa história. Para lembrarmos da nossa caminhada e agradecermos por estarmos juntos. Um dia também para lembrarmos do nosso querido irmão e fundador, **Nilson Edson Mesquita Rodrigues**. Que foi, sem dúvidas, um incansável trabalhador da seara do Cristo. 🌟
-
-Nilson nos ensinou, com sua determinação e dedicação, que um sonho que se sonha só, é apenas um sonho, mas um sonho que se sonha junto, é realidade. Agradecemos pela feliz oportunidade de termos trabalhado juntos ao Nilson e por termos aprendido tanto sobre amor com ele. 🙏
 
 Agradecemos pela vida, em todas as suas formas, e confraternizamos juntos, lembrando, mais uma vez, que somente a caridade pode nos salvar e nos conduzir ao pai celestial. ✨
