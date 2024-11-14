@@ -25,7 +25,7 @@ Desde o início, o GEU se comprometeu a viver o evangelho em todas as suas açõ
 - **Preparo da Sopa:** Não se trata apenas de alimento físico, mas também espiritual. 🍲
 - **Evangelização de Crianças e Adolescentes:** Trabalhamos com as futuras gerações da pátria do evangelho. 🌱
 - **Atendimento Fraterno:** Oferecemos uma palavra amiga ou um abraço acolhedor aos irmãos que precisam.
-- **Bazar de Roupas:** Nossas roupas não apenas aquecem o corpo, mas também alimentam a alma.
+- **Bazar de Roupas:** Nossas roupas vestem de dignidade nossos irmãos.
 
 ## Nossa Trajetória
 

@@ -1,6 +1,6 @@
 {
-  "commit": "f299c3691f37457427ad3fc474f953c98d436a73",
-  "generated": "2024-11-13T20:31:49.613Z",
+  "commit": "588de9cd394078a9ce99e86521a37a9e546273c9",
+  "generated": "2024-11-14T00:18:59.143Z",
   "metadata": [
     {
       "__outstatic": {
@@ -264,26 +264,6 @@
     },
     {
       "__outstatic": {
-        "commit": "6195d0a23080a336d3179e68f21864b36bc62468",
-        "hash": "1839218202",
-        "path": "outstatic/content/pages/sobre.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "bannerImagem": "",
-      "collection": "pages",
-      "coverImage": "/images/centro-esp-rita-terceira-revela--o-banner_20241113_150504_0000-k5OD.jpg",
-      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
-      "instagram": "",
-      "publishedAt": "2023-12-28T18:49:02.348Z",
-      "slug": "sobre",
-      "status": "published",
-      "title": "Sobre Nós"
-    },
-    {
-      "__outstatic": {
         "commit": "f299c3691f37457427ad3fc474f953c98d436a73",
         "hash": "2304767489",
         "path": "outstatic/content/postagens/proposito-do-grupo-espirita-uniao.md"
@@ -299,6 +279,26 @@
       "slug": "proposito-do-grupo-espirita-uniao",
       "status": "published",
       "title": "Propósito do Grupo Espírita União 🎯"
+    },
+    {
+      "__outstatic": {
+        "commit": "588de9cd394078a9ce99e86521a37a9e546273c9",
+        "hash": "275592296",
+        "path": "outstatic/content/pages/sobre.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "",
+      "collection": "pages",
+      "coverImage": "/images/centro-esp-rita-terceira-revela--o-banner_20241113_150504_0000-k5OD.jpg",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "instagram": "",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "sobre",
+      "status": "published",
+      "title": "Sobre Nós"
     }
   ]
 }
