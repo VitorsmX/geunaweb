@@ -66,7 +66,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" translate="no" suppressHydrationWarning>
-      <body className="relative pb-56 md:pb-36 min-h-screen bg-gradient-to-b from-[#7ebbf3a8] via-[#79abf779] to-[#3695ee65]">
+      <body className="relative pb-56 md:pb-36 min-h-screen bg-gradient-to-b from-[#7ebbf3a8] via-[#79abf779] to-[#edf4ff40]">
         <SessionProvider>
           <ThemeProvider
             attribute="class"
