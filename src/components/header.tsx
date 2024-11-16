@@ -25,7 +25,7 @@ const Header = async () => {
           className="hover:text-slate-900 hover:dark:text-blue-200 px-5 underline-offset-2 font-semibold transition-all hover:scale-105 flex items-center"
         >
           <Image
-            src={"/images/logo-geu.png"}
+            src={"/images/logo-geu-transp.png"}
             alt="Logo Geu"
             width={40}
             height={40}
