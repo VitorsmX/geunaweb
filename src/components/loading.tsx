@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Loading() {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-50 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-[#00000040] bg-opacity-50 z-50">
       <div className="flex flex-col items-center justify-center space-y-4">
         <div className="animate-pulse">
           <Image
