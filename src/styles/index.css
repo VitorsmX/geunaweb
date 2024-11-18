@@ -26,7 +26,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    --bg-stripe-pattern: repeating-linear-gradient(45deg, transparent, transparent 76px, rgba(71, 191, 255, 0.1) 76px, rgba(71, 191, 255, 0.1) 152px);
+    --bg-stripe-pattern: repeating-linear-gradient(45deg, transparent, transparent 76px, rgba(71, 191, 255, 0.041) 76px, rgba(71, 191, 255, 0.034) 152px);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
