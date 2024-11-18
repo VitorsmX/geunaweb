@@ -1,6 +1,6 @@
 {
-  "commit": "8ac6bcc9fd14f760ff14c739a6da1b1af7beb271",
-  "generated": "2024-11-18T15:04:34.424Z",
+  "commit": "82b8b1a0528829766c667db5adb980abe6c814f8",
+  "generated": "2024-11-18T15:05:57.958Z",
   "metadata": [
     {
       "__outstatic": {
@@ -150,35 +150,6 @@
     },
     {
       "__outstatic": {
-        "commit": "44bc8dea86de6c12b8c2e282a24be31d2a896334",
-        "hash": "4031755336",
-        "path": "outstatic/content/biblioteca/mediunidade-estudo-e-pratica-programa-2.md"
-      },
-      "author": {
-        "name": "Marta Antunes de Moura",
-        "picture": "/images/marta-antunes-I4MT.png"
-      },
-      "autorDesencarnado": "",
-      "autorEncarnado": "Marta Antunes de Moura",
-      "collection": "biblioteca",
-      "coverImage": "/images/mediunidade-est-prat-2-AzND.jpg",
-      "dataDaPublicacao": "2019",
-      "description": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.",
-      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9788584850310.jpg?cccfc=2529d164",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://www.uemmg.org.br/sites/default/files/public/download/arquivo/mep_apostila_feb-ii.pdf",
-      "linkParaComprar": "https://www.febeditora.com.br/mediunidade--estudo-e-pratica---programa-ii-78644961",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "34,50",
-      "publishedAt": "2024-11-13T16:16:19.989Z",
-      "quantidadeDePaginas": "248",
-      "sinopse": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.  Totalmente revisado e atualizado, o material foi dividido em quatro partes: fundamentação espírita, prática mediúnica, atividade complementar e culminância do módulo. São roteiros de estudos teóricos, sugestões e avaliações para reuniões mediúnicas, além de exercícios relacionados a textos que se reportam a atitudes e ao comportamento do espírita. Um verdadeiro manual de conduta para todos aqueles que buscam a evolução do espírito e a expiação dos erros do passado.",
-      "slug": "mediunidade-estudo-e-pratica-programa-2",
-      "status": "published",
-      "title": "Mediunidade: estudo e prática - Programa II - Marta Antunes de Moura"
-    },
-    {
-      "__outstatic": {
         "commit": "471cfa963b69e58ec5861283ce26ad6dd0280fda",
         "hash": "1839218202",
         "path": "outstatic/content/pages/sobre.md"
@@ -299,6 +270,35 @@
       "slug": "ave-cristo-chico-xavier",
       "status": "published",
       "title": "Ave Cristo - Chico Xavier"
+    },
+    {
+      "__outstatic": {
+        "commit": "82b8b1a0528829766c667db5adb980abe6c814f8",
+        "hash": "1767742523",
+        "path": "outstatic/content/biblioteca/mediunidade-estudo-e-pratica-programa-2.md"
+      },
+      "author": {
+        "name": "Marta Antunes de Moura",
+        "picture": "/images/marta-antunes-I4MT.png"
+      },
+      "autorDesencarnado": "",
+      "autorEncarnado": "Marta Antunes de Moura",
+      "collection": "biblioteca",
+      "coverImage": "/images/mediunidade-est-prat-2-AzND.jpg",
+      "dataDaPublicacao": "2019",
+      "description": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.",
+      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9788584850310.jpg?cccfc=2529d164",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://www.uemmg.org.br/sites/default/files/public/download/arquivo/mep_apostila_feb-ii.pdf",
+      "linkParaComprar": "https://amzn.to/3ZbnyXp",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "34,50",
+      "publishedAt": "2024-11-13T16:16:19.989Z",
+      "quantidadeDePaginas": "248",
+      "sinopse": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.  Totalmente revisado e atualizado, o material foi dividido em quatro partes: fundamentação espírita, prática mediúnica, atividade complementar e culminância do módulo. São roteiros de estudos teóricos, sugestões e avaliações para reuniões mediúnicas, além de exercícios relacionados a textos que se reportam a atitudes e ao comportamento do espírita. Um verdadeiro manual de conduta para todos aqueles que buscam a evolução do espírito e a expiação dos erros do passado.",
+      "slug": "mediunidade-estudo-e-pratica-programa-2",
+      "status": "published",
+      "title": "Mediunidade: estudo e prática - Programa II - Marta Antunes de Moura"
     }
   ]
 }
