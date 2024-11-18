@@ -1,6 +1,6 @@
 {
-  "commit": "82b8b1a0528829766c667db5adb980abe6c814f8",
-  "generated": "2024-11-18T15:05:57.958Z",
+  "commit": "ea49709d4ef941117af147ccf16102f12a6071f9",
+  "generated": "2024-11-18T15:07:00.925Z",
   "metadata": [
     {
       "__outstatic": {
@@ -118,35 +118,6 @@
       "slug": "natal-geu-2022",
       "status": "published",
       "title": "Natal GEU 2022"
-    },
-    {
-      "__outstatic": {
-        "commit": "52b3e6a9c53af0f05146eb52b20315486ef03098",
-        "hash": "418934765",
-        "path": "outstatic/content/biblioteca/o-evangelho-segundo-o-espiritismo-allan-kardec.md"
-      },
-      "author": {
-        "name": "Allan Kardec",
-        "picture": "/images/kardec-imagem-gwND.png"
-      },
-      "autorDesencarnado": "Vários",
-      "autorEncarnado": "Hippolyte Léon Denizard Rivail",
-      "collection": "biblioteca",
-      "coverImage": "/images/81fortascll._sy425_-g2Nz.jpg",
-      "dataDaPublicacao": "1864",
-      "description": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
-      "imagemDoLivro": "https://m.media-amazon.com/images/I/81FoRtasClL._SY425_.jpg",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://febnet.org.br/wp-content/themes/portalfeb-grid/obras/evangelho-guillon.pdf",
-      "linkParaComprar": "https://www.amazon.com.br/Evangelho-Segundo-Espiritismo-Allan-Kardec/dp/8573413832",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "20,93",
-      "publishedAt": "2024-11-13T16:24:48.604Z",
-      "quantidadeDePaginas": "416",
-      "sinopse": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
-      "slug": "o-evangelho-segundo-o-espiritismo-allan-kardec",
-      "status": "published",
-      "title": "O Evangelho Segundo o Espiritismo - Allan Kardec"
     },
     {
       "__outstatic": {
@@ -299,6 +270,35 @@
       "slug": "mediunidade-estudo-e-pratica-programa-2",
       "status": "published",
       "title": "Mediunidade: estudo e prática - Programa II - Marta Antunes de Moura"
+    },
+    {
+      "__outstatic": {
+        "commit": "ea49709d4ef941117af147ccf16102f12a6071f9",
+        "hash": "1187455653",
+        "path": "outstatic/content/biblioteca/o-evangelho-segundo-o-espiritismo-allan-kardec.md"
+      },
+      "author": {
+        "name": "Allan Kardec",
+        "picture": "/images/kardec-imagem-gwND.png"
+      },
+      "autorDesencarnado": "Vários",
+      "autorEncarnado": "Hippolyte Léon Denizard Rivail",
+      "collection": "biblioteca",
+      "coverImage": "/images/81fortascll._sy425_-g2Nz.jpg",
+      "dataDaPublicacao": "1864",
+      "description": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
+      "imagemDoLivro": "https://m.media-amazon.com/images/I/81FoRtasClL._SY425_.jpg",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://febnet.org.br/wp-content/themes/portalfeb-grid/obras/evangelho-guillon.pdf",
+      "linkParaComprar": "https://amzn.to/3AII88n",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "20,93",
+      "publishedAt": "2024-11-13T16:24:48.604Z",
+      "quantidadeDePaginas": "416",
+      "sinopse": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
+      "slug": "o-evangelho-segundo-o-espiritismo-allan-kardec",
+      "status": "published",
+      "title": "O Evangelho Segundo o Espiritismo - Allan Kardec"
     }
   ]
 }
