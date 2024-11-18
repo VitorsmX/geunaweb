@@ -66,7 +66,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" translate="no" suppressHydrationWarning>
-      <body className="relative pb-56 md:pb-36 min-h-screen bg-circleWavePattern">
+      <body className="relative pb-56 md:pb-36 min-h-screen bg-stripePattern">
         <SessionProvider>
           <ThemeProvider
             attribute="class"
@@ -75,7 +75,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Header />
-            <div className="relative font-body max-w-6xl mx-auto px-5 h-full pt-20 md:py-24 backdrop-blur-lg">
+            <div className="relative font-body max-w-6xl mx-auto px-5 h-full pt-28 sm:pt-20 md:py-24 backdrop-blur-md rounded-md">
               {children}
             </div>
             <Footer />
