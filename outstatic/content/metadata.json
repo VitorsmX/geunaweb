@@ -1,94 +1,7 @@
 {
-  "commit": "22fcd0e8908524818a78a6f62bc3a4b2f6d43b94",
-  "generated": "2024-11-14T16:02:01.648Z",
+  "commit": "003d793281402281a0a4501e66d807e7d63b8f70",
+  "generated": "2024-11-18T15:10:20.688Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "032e55241a2de83dac5986e1f75f48c2198580b5",
-        "hash": "3550349133",
-        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
-      },
-      "author": {
-        "name": "André Luiz",
-        "picture": "/images/andre-gxNj.jpg"
-      },
-      "autorDesencarnado": "André Luiz",
-      "autorEncarnado": "Francisco Cândido Chico Xavier",
-      "collection": "biblioteca",
-      "coverImage": "/images/9788573289442-QzNj.jpg",
-      "dataDaPublicacao": "1944",
-      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
-      "imagemDoLivro": "",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
-      "linkParaComprar": "https://www.febeditora.com.br/nosso-lar",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "42,00",
-      "publishedAt": "2024-10-28T19:18:17.461Z",
-      "quantidadeDePaginas": "320",
-      "sinopse": "",
-      "slug": "livro-nosso-lar",
-      "status": "published",
-      "title": "Nosso Lar - Chico Xavier"
-    },
-    {
-      "__outstatic": {
-        "commit": "def4c1d11d398114ebd7b76262b6a92c8dd28145",
-        "hash": "2789085112",
-        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
-      },
-      "author": {
-        "name": "Miriam Dusi",
-        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
-      },
-      "autorDesencarnado": "Miriam Dusi",
-      "autorEncarnado": "Miriam Dusi",
-      "collection": "biblioteca",
-      "coverImage": "/images/9786555706376-AzMT.jpg",
-      "dataDaPublicacao": "2024",
-      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
-      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
-      "isstock": "",
-      "linkDoLivroEmPdf": "",
-      "linkParaComprar": "https://www.febeditora.com.br/a-grande-viagem2",
-      "linkParaSolicitar": "",
-      "precoNaInternet": "37,50",
-      "publishedAt": "2024-10-29T18:36:11.539Z",
-      "quantidadeDePaginas": "80",
-      "sinopse": "",
-      "slug": "livro-a-grande-viagem",
-      "status": "published",
-      "title": "A Grande Viagem - Miriam Dusi"
-    },
-    {
-      "__outstatic": {
-        "commit": "49742848e737122fd83cb982117c5579b24a7214",
-        "hash": "860121136",
-        "path": "outstatic/content/biblioteca/ave-cristo-chico-xavier.md"
-      },
-      "author": {
-        "name": "Emmanuel",
-        "picture": "/images/emmanuel-pseudosvg-ExMz.png"
-      },
-      "autorDesencarnado": "Emmanuel",
-      "autorEncarnado": "Francisco Cândido Xavier",
-      "collection": "biblioteca",
-      "coverImage": "/images/ave-cristo-Q4ND.jpg",
-      "dataDaPublicacao": "1966",
-      "description": "“Ave, Cristo! Os que vão viver para sempre te glorificam e saúdam!” A parceria entre o médium Francisco Cândido Xavier e o Espírito Emmanuel traz à luz a história de Quinto Varro e Taciano, almas ligadas por várias reencarnações que se reencontram no terceiro século do Cristianismo, na região controlada pelo Império Romano. Como exemplo de simplicidade, confiança e amor, os pioneiros da Boa Nova entregaram-se ao serviço do Cristo tendo como sustento apenas sua poderosa e inquebrantável fé. Uma comovente narrativa que mostra quanto pode realizar o verdadeiro amor em suas manifestações de solidariedade a bem das criaturas humanas.",
-      "imagemDoLivro": "https://boanova.fbitsstatic.net/img/p/ave-cristo-novo-projeto-62772/229627.jpg?w=420&h=420&v=no-change&qs=ignore",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://centroespiritachicoxavier.org.br/livros/050.pdf",
-      "linkParaComprar": "https://www.livrariaespirita.org.br/ave-cristo?srsltid=AfmBOorQGDsGwNggn4TJW-ewUrABixh3eRc-LirQHitf8R_p8eQOPYJ8",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "47,85",
-      "publishedAt": "2024-11-13T16:04:48.273Z",
-      "quantidadeDePaginas": "312",
-      "sinopse": "“Ave, Cristo! Os que vão viver para sempre te glorificam e saúdam!” A parceria entre o médium Francisco Cândido Xavier e o Espírito Emmanuel traz à luz a história de Quinto Varro e Taciano, almas ligadas por várias reencarnações que se reencontram no terceiro século do Cristianismo, na região controlada pelo Império Romano. Como exemplo de simplicidade, confiança e amor, os pioneiros da Boa Nova entregaram-se ao serviço do Cristo tendo como sustento apenas sua poderosa e inquebrantável fé. Uma comovente narrativa que mostra quanto pode realizar o verdadeiro amor em suas manifestações de solidariedade a bem das criaturas humanas.",
-      "slug": "ave-cristo-chico-xavier",
-      "status": "published",
-      "title": "Ave Cristo - Chico Xavier"
-    },
     {
       "__outstatic": {
         "commit": "5b7d9a3b4999be7af5f04cf081651648318ce179",
@@ -147,64 +60,6 @@
       "slug": "natal-geu-2022",
       "status": "published",
       "title": "Natal GEU 2022"
-    },
-    {
-      "__outstatic": {
-        "commit": "52b3e6a9c53af0f05146eb52b20315486ef03098",
-        "hash": "418934765",
-        "path": "outstatic/content/biblioteca/o-evangelho-segundo-o-espiritismo-allan-kardec.md"
-      },
-      "author": {
-        "name": "Allan Kardec",
-        "picture": "/images/kardec-imagem-gwND.png"
-      },
-      "autorDesencarnado": "Vários",
-      "autorEncarnado": "Hippolyte Léon Denizard Rivail",
-      "collection": "biblioteca",
-      "coverImage": "/images/81fortascll._sy425_-g2Nz.jpg",
-      "dataDaPublicacao": "1864",
-      "description": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
-      "imagemDoLivro": "https://m.media-amazon.com/images/I/81FoRtasClL._SY425_.jpg",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://febnet.org.br/wp-content/themes/portalfeb-grid/obras/evangelho-guillon.pdf",
-      "linkParaComprar": "https://www.amazon.com.br/Evangelho-Segundo-Espiritismo-Allan-Kardec/dp/8573413832",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "20,93",
-      "publishedAt": "2024-11-13T16:24:48.604Z",
-      "quantidadeDePaginas": "416",
-      "sinopse": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
-      "slug": "o-evangelho-segundo-o-espiritismo-allan-kardec",
-      "status": "published",
-      "title": "O Evangelho Segundo o Espiritismo - Allan Kardec"
-    },
-    {
-      "__outstatic": {
-        "commit": "44bc8dea86de6c12b8c2e282a24be31d2a896334",
-        "hash": "4031755336",
-        "path": "outstatic/content/biblioteca/mediunidade-estudo-e-pratica-programa-2.md"
-      },
-      "author": {
-        "name": "Marta Antunes de Moura",
-        "picture": "/images/marta-antunes-I4MT.png"
-      },
-      "autorDesencarnado": "",
-      "autorEncarnado": "Marta Antunes de Moura",
-      "collection": "biblioteca",
-      "coverImage": "/images/mediunidade-est-prat-2-AzND.jpg",
-      "dataDaPublicacao": "2019",
-      "description": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.",
-      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9788584850310.jpg?cccfc=2529d164",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://www.uemmg.org.br/sites/default/files/public/download/arquivo/mep_apostila_feb-ii.pdf",
-      "linkParaComprar": "https://www.febeditora.com.br/mediunidade--estudo-e-pratica---programa-ii-78644961",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "34,50",
-      "publishedAt": "2024-11-13T16:16:19.989Z",
-      "quantidadeDePaginas": "248",
-      "sinopse": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.  Totalmente revisado e atualizado, o material foi dividido em quatro partes: fundamentação espírita, prática mediúnica, atividade complementar e culminância do módulo. São roteiros de estudos teóricos, sugestões e avaliações para reuniões mediúnicas, além de exercícios relacionados a textos que se reportam a atitudes e ao comportamento do espírita. Um verdadeiro manual de conduta para todos aqueles que buscam a evolução do espírito e a expiação dos erros do passado.",
-      "slug": "mediunidade-estudo-e-pratica-programa-2",
-      "status": "published",
-      "title": "Mediunidade: estudo e prática - Programa II - Marta Antunes de Moura"
     },
     {
       "__outstatic": {
@@ -299,6 +154,151 @@
       "slug": "postagem-inaugural",
       "status": "published",
       "title": "Novo Portal do Grupo Espírita União!"
+    },
+    {
+      "__outstatic": {
+        "commit": "8ac6bcc9fd14f760ff14c739a6da1b1af7beb271",
+        "hash": "3321061396",
+        "path": "outstatic/content/biblioteca/ave-cristo-chico-xavier.md"
+      },
+      "author": {
+        "name": "Emmanuel",
+        "picture": "/images/emmanuel-pseudosvg-ExMz.png"
+      },
+      "autorDesencarnado": "Emmanuel",
+      "autorEncarnado": "Francisco Cândido Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/ave-cristo-Q4ND.jpg",
+      "dataDaPublicacao": "1966",
+      "description": "“Ave, Cristo! Os que vão viver para sempre te glorificam e saúdam!” A parceria entre o médium Francisco Cândido Xavier e o Espírito Emmanuel traz à luz a história de Quinto Varro e Taciano, almas ligadas por várias reencarnações que se reencontram no terceiro século do Cristianismo, na região controlada pelo Império Romano. Como exemplo de simplicidade, confiança e amor, os pioneiros da Boa Nova entregaram-se ao serviço do Cristo tendo como sustento apenas sua poderosa e inquebrantável fé. Uma comovente narrativa que mostra quanto pode realizar o verdadeiro amor em suas manifestações de solidariedade a bem das criaturas humanas.",
+      "imagemDoLivro": "https://boanova.fbitsstatic.net/img/p/ave-cristo-novo-projeto-62772/229627.jpg?w=420&h=420&v=no-change&qs=ignore",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://centroespiritachicoxavier.org.br/livros/050.pdf",
+      "linkParaComprar": "https://amzn.to/3CI56wJ",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "47,85",
+      "publishedAt": "2024-11-13T16:04:48.273Z",
+      "quantidadeDePaginas": "312",
+      "sinopse": "“Ave, Cristo! Os que vão viver para sempre te glorificam e saúdam!” A parceria entre o médium Francisco Cândido Xavier e o Espírito Emmanuel traz à luz a história de Quinto Varro e Taciano, almas ligadas por várias reencarnações que se reencontram no terceiro século do Cristianismo, na região controlada pelo Império Romano. Como exemplo de simplicidade, confiança e amor, os pioneiros da Boa Nova entregaram-se ao serviço do Cristo tendo como sustento apenas sua poderosa e inquebrantável fé. Uma comovente narrativa que mostra quanto pode realizar o verdadeiro amor em suas manifestações de solidariedade a bem das criaturas humanas.",
+      "slug": "ave-cristo-chico-xavier",
+      "status": "published",
+      "title": "Ave Cristo - Chico Xavier"
+    },
+    {
+      "__outstatic": {
+        "commit": "82b8b1a0528829766c667db5adb980abe6c814f8",
+        "hash": "1767742523",
+        "path": "outstatic/content/biblioteca/mediunidade-estudo-e-pratica-programa-2.md"
+      },
+      "author": {
+        "name": "Marta Antunes de Moura",
+        "picture": "/images/marta-antunes-I4MT.png"
+      },
+      "autorDesencarnado": "",
+      "autorEncarnado": "Marta Antunes de Moura",
+      "collection": "biblioteca",
+      "coverImage": "/images/mediunidade-est-prat-2-AzND.jpg",
+      "dataDaPublicacao": "2019",
+      "description": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.",
+      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9788584850310.jpg?cccfc=2529d164",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://www.uemmg.org.br/sites/default/files/public/download/arquivo/mep_apostila_feb-ii.pdf",
+      "linkParaComprar": "https://amzn.to/3ZbnyXp",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "34,50",
+      "publishedAt": "2024-11-13T16:16:19.989Z",
+      "quantidadeDePaginas": "248",
+      "sinopse": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.  Totalmente revisado e atualizado, o material foi dividido em quatro partes: fundamentação espírita, prática mediúnica, atividade complementar e culminância do módulo. São roteiros de estudos teóricos, sugestões e avaliações para reuniões mediúnicas, além de exercícios relacionados a textos que se reportam a atitudes e ao comportamento do espírita. Um verdadeiro manual de conduta para todos aqueles que buscam a evolução do espírito e a expiação dos erros do passado.",
+      "slug": "mediunidade-estudo-e-pratica-programa-2",
+      "status": "published",
+      "title": "Mediunidade: estudo e prática - Programa II - Marta Antunes de Moura"
+    },
+    {
+      "__outstatic": {
+        "commit": "ea49709d4ef941117af147ccf16102f12a6071f9",
+        "hash": "1187455653",
+        "path": "outstatic/content/biblioteca/o-evangelho-segundo-o-espiritismo-allan-kardec.md"
+      },
+      "author": {
+        "name": "Allan Kardec",
+        "picture": "/images/kardec-imagem-gwND.png"
+      },
+      "autorDesencarnado": "Vários",
+      "autorEncarnado": "Hippolyte Léon Denizard Rivail",
+      "collection": "biblioteca",
+      "coverImage": "/images/81fortascll._sy425_-g2Nz.jpg",
+      "dataDaPublicacao": "1864",
+      "description": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
+      "imagemDoLivro": "https://m.media-amazon.com/images/I/81FoRtasClL._SY425_.jpg",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://febnet.org.br/wp-content/themes/portalfeb-grid/obras/evangelho-guillon.pdf",
+      "linkParaComprar": "https://amzn.to/3AII88n",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "20,93",
+      "publishedAt": "2024-11-13T16:24:48.604Z",
+      "quantidadeDePaginas": "416",
+      "sinopse": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
+      "slug": "o-evangelho-segundo-o-espiritismo-allan-kardec",
+      "status": "published",
+      "title": "O Evangelho Segundo o Espiritismo - Allan Kardec"
+    },
+    {
+      "__outstatic": {
+        "commit": "8a04ca5cf6a698f802fc326683684d49b4f0c645",
+        "hash": "1116235598",
+        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
+      },
+      "author": {
+        "name": "Miriam Dusi",
+        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
+      },
+      "autorDesencarnado": "Miriam Dusi",
+      "autorEncarnado": "Miriam Dusi",
+      "collection": "biblioteca",
+      "coverImage": "/images/9786555706376-AzMT.jpg",
+      "dataDaPublicacao": "2024",
+      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
+      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
+      "isstock": "",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://amzn.to/3Og5AwW",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "37,50",
+      "publishedAt": "2024-11-18T18:36:11.000Z",
+      "quantidadeDePaginas": "80",
+      "sinopse": "",
+      "slug": "livro-a-grande-viagem",
+      "status": "published",
+      "title": "A Grande Viagem - Miriam Dusi"
+    },
+    {
+      "__outstatic": {
+        "commit": "003d793281402281a0a4501e66d807e7d63b8f70",
+        "hash": "1502673222",
+        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
+      },
+      "author": {
+        "name": "André Luiz",
+        "picture": "/images/andre-gxNj.jpg"
+      },
+      "autorDesencarnado": "André Luiz",
+      "autorEncarnado": "Francisco Cândido Chico Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/9788573289442-QzNj.jpg",
+      "dataDaPublicacao": "1944",
+      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
+      "imagemDoLivro": "",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
+      "linkParaComprar": "https://amzn.to/3ALR3Wx",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "42,00",
+      "publishedAt": "2024-10-28T19:18:17.461Z",
+      "quantidadeDePaginas": "320",
+      "sinopse": "",
+      "slug": "livro-nosso-lar",
+      "status": "published",
+      "title": "Nosso Lar - Chico Xavier"
     }
   ]
 }
