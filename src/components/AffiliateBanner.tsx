@@ -19,7 +19,7 @@ const AffiliateBanner = () => {
       {/* Botão fixo que abre o modal */}
       <button
         onClick={openModal}
-        className="fixed bottom-4 right-4 bg-teal-600 text-white py-2 px-4 rounded-full shadow-lg flex items-center space-x-2 hover:bg-teal-500 transition-all duration-300 ease-in-out z-40"
+        className="fixed bottom-4 right-4 bg-teal-600 text-white py-2 px-4 rounded-full shadow-lg flex items-center space-x-2 border border-green-900 hover:bg-teal-500 transition-all duration-300 ease-in-out z-40"
       >
         <span className="text-sm">Compre na Amazon e Ajude a Comunidade</span>
         <LucideHelpingHand />
