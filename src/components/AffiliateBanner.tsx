@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { LucideHelpingHand, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -8,11 +8,31 @@ const AffiliateBanner = () => {
   // Estado para controlar a visibilidade do modal
   const [isOpen, setIsOpen] = useState(false);
 
+  // Referência para o modal
+  const modalRef = useRef<HTMLDivElement>(null);
+  
   // Função para abrir o modal
   const openModal = () => setIsOpen(true);
 
   // Função para fechar o modal
   const closeModal = () => setIsOpen(false);
+
+  // Fechar o modal se o clique for fora dele
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        closeModal();
+      }
+    };
+
+    // Adiciona o evento de clique fora
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Remove o evento de clique fora ao desmontar o componente
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div>
@@ -28,10 +48,13 @@ const AffiliateBanner = () => {
       {/* Modal com conteúdo do banner */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white rounded-lg shadow-xl p-6 max-w-lg mx-4 w-full">
+          <div
+            ref={modalRef} // Refere-se ao modal
+            className="bg-white rounded-lg shadow-xl p-6 max-w-lg mx-4 w-full relative"
+          >
             <button
               onClick={closeModal}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              className="static top-2 right-2 text-gray-600 hover:text-gray-800"
             >
               <X size={24} />
             </button>
