@@ -1,6 +1,6 @@
 {
-  "commit": "ea49709d4ef941117af147ccf16102f12a6071f9",
-  "generated": "2024-11-18T15:07:00.925Z",
+  "commit": "8a04ca5cf6a698f802fc326683684d49b4f0c645",
+  "generated": "2024-11-18T15:09:14.719Z",
   "metadata": [
     {
       "__outstatic": {
@@ -30,35 +30,6 @@
       "slug": "livro-nosso-lar",
       "status": "published",
       "title": "Nosso Lar - Chico Xavier"
-    },
-    {
-      "__outstatic": {
-        "commit": "def4c1d11d398114ebd7b76262b6a92c8dd28145",
-        "hash": "2789085112",
-        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
-      },
-      "author": {
-        "name": "Miriam Dusi",
-        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
-      },
-      "autorDesencarnado": "Miriam Dusi",
-      "autorEncarnado": "Miriam Dusi",
-      "collection": "biblioteca",
-      "coverImage": "/images/9786555706376-AzMT.jpg",
-      "dataDaPublicacao": "2024",
-      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
-      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
-      "isstock": "",
-      "linkDoLivroEmPdf": "",
-      "linkParaComprar": "https://www.febeditora.com.br/a-grande-viagem2",
-      "linkParaSolicitar": "",
-      "precoNaInternet": "37,50",
-      "publishedAt": "2024-10-29T18:36:11.539Z",
-      "quantidadeDePaginas": "80",
-      "sinopse": "",
-      "slug": "livro-a-grande-viagem",
-      "status": "published",
-      "title": "A Grande Viagem - Miriam Dusi"
     },
     {
       "__outstatic": {
@@ -299,6 +270,35 @@
       "slug": "o-evangelho-segundo-o-espiritismo-allan-kardec",
       "status": "published",
       "title": "O Evangelho Segundo o Espiritismo - Allan Kardec"
+    },
+    {
+      "__outstatic": {
+        "commit": "8a04ca5cf6a698f802fc326683684d49b4f0c645",
+        "hash": "1116235598",
+        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
+      },
+      "author": {
+        "name": "Miriam Dusi",
+        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
+      },
+      "autorDesencarnado": "Miriam Dusi",
+      "autorEncarnado": "Miriam Dusi",
+      "collection": "biblioteca",
+      "coverImage": "/images/9786555706376-AzMT.jpg",
+      "dataDaPublicacao": "2024",
+      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
+      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
+      "isstock": "",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://amzn.to/3Og5AwW",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "37,50",
+      "publishedAt": "2024-11-18T18:36:11.000Z",
+      "quantidadeDePaginas": "80",
+      "sinopse": "",
+      "slug": "livro-a-grande-viagem",
+      "status": "published",
+      "title": "A Grande Viagem - Miriam Dusi"
     }
   ]
 }

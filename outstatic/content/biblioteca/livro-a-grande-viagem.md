@@ -11,14 +11,14 @@ autorEncarnado: 'Miriam Dusi'
 autorDesencarnado: 'Miriam Dusi'
 dataDaPublicacao: '2024'
 sinopse: ''
-linkParaComprar: 'https://www.febeditora.com.br/a-grande-viagem2'
+linkParaComprar: 'https://amzn.to/3Og5AwW'
 linkDoLivroEmPdf: ''
 imagemDoLivro: 'https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg'
 quantidadeDePaginas: '80'
 precoNaInternet: '37,50'
 linkParaSolicitar: ''
 isstock: ''
-publishedAt: '2024-10-29T18:36:11.539Z'
+publishedAt: '2024-11-18T18:36:11.000Z'
 ---
 
 Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra.
