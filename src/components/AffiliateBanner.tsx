@@ -73,7 +73,7 @@ const AffiliateBanner = () => {
               <a
                 href="https://amzn.to/3CvLBrj"
                 target="_blank"
-                className="inline-block text-lg font-bold py-3 px-8 bg-yellow-500 text-white rounded-lg transition-all duration-300 ease-in-out transform hover:bg-orange-500 hover:scale-110"
+                className="inline-block text-lg font-bold py-3 px-8 bg-yellow-500 text-white rounded-lg transition-all duration-300 ease-in-out transform hover:bg-orange-500 hover:scale-105"
               >
                 Compre na Amazon e Ajude Nossa Comunidade
               </a>
