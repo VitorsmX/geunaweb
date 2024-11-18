@@ -9,13 +9,13 @@ module.exports = {
       'https://www.geuuniao.com.br/sitemap-2.xml'
     ],
     policy: [
-      { userAgent: '*', disallow: ['/outstatic/*'] }
+      { userAgent: '*', disallow: ['/outstatic/*', '/api/*'] }
     ]
   },
   changefreq: 'daily',
   priority: 0.8,
   sitemapSize: 5000,
-  exclude: ['/outstatic/*'],
+  exclude: ['/outstatic/*', '/api/*'],
   generateIndexSitemap: false,
   autoLastmod: true,
   lastmodDate: true,
