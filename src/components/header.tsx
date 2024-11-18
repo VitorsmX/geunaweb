@@ -22,7 +22,7 @@ const Header = async () => {
       <nav className="max-w-6xl mx-auto w-full layout flex items-center justify-between">
         <Link
           href="/"
-          className="hover:text-slate-900 hover:dark:text-blue-200 px-5 underline-offset-2 font-semibold transition-all hover:scale-105 flex items-center duration-500 ease-in"
+          className="hover:text-slate-900 hover:dark:text-blue-200 px-5 underline-offset-2 font-semibold transition-all hover:scale-105 flex items-center duration-300 ease-in"
         >
           <Image
             src={"/images/logo-geu-transp.png"}
@@ -39,7 +39,7 @@ const Header = async () => {
                 href={`/${slug}`}
                 className={
                   buttonVariants({ variant: "ghost", size: "sm" }) +
-                  " capitalize text-zinc-900"
+                  " capitalize text-zinc-900 duration-200 transition-all hover:backdrop-blur-sm"
                 }
               >
                 {title}
@@ -52,7 +52,7 @@ const Header = async () => {
                 href={`/${collection}`}
                 className={
                   buttonVariants({ variant: "ghost", size: "sm" }) +
-                  " capitalize text-zinc-900"
+                  " capitalize text-zinc-900 duration-200 transition-all hover:backdrop-blur-sm"
                 }
               >
                 {collection}
