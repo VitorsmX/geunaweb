@@ -16,7 +16,7 @@ export default async function Index() {
   return (
     <>
       <div className="flex flex-col w-full h-full overflow-hidden mb-16 md:mb-28 bg-gradient-to-b from-[#cef1ff79] via-[#43c3ff60] to-[#0a91ff4d]">
-        <div className="w-full h-auto mx-0 z-0 top-0 flex justify-center items-center">
+        <div className="w-full h-auto mx-0 z-0 top-0 flex justify-center items-center hover:scale-[0.02]">
           <Image
             src={coverImage ? coverImage : bannerImagem}
             alt="Banner Geu"
@@ -68,7 +68,6 @@ export default async function Index() {
             />
           );
         })}
-        <AffiliateBanner/>
       </div>
     </>
   );
