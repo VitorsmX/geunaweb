@@ -28,7 +28,7 @@ export default function DocHero(doc: Doc) {
             </span>
           ))
         : null}
-      <h1 className="font-primary text-2xl font-bold md:text-4xl mb-2">
+      <h1 className="font-secondary text-2xl font-bold md:text-4xl mb-2">
         {doc.title}
       </h1>
       <div className="hidden md:block md:mb-12 text-slate-600 dark:text-slate-400">

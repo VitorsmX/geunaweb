@@ -18,11 +18,11 @@ const Header = async () => {
   const { pages, collections } = data;
 
   return (
-    <header className="py-4 fixed border-t md:bottom-auto md:top-0 w-full z-20 border-b bg-gradient-to-r from-[#84d7f8f8] via-[#579bf5] to-[#0084ffe8]">
+    <header className="py-4 fixed border-t md:bottom-auto md:top-0 w-full z-20 border-b bg-gradient-to-r from-[#84d7f8f8] via-[#579bf5ef] to-[#0084ffda]">
       <nav className="max-w-6xl mx-auto w-full layout flex items-center justify-between">
         <Link
           href="/"
-          className="hover:text-slate-900 hover:dark:text-blue-200 px-5 underline-offset-2 font-semibold transition-all hover:scale-105 flex items-center"
+          className="hover:text-slate-900 hover:dark:text-blue-200 px-5 underline-offset-2 font-semibold transition-all hover:scale-105 flex items-center duration-500 ease-in"
         >
           <Image
             src={"/images/logo-geu-transp.png"}

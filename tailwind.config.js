@@ -18,6 +18,9 @@ module.exports = {
       }
     },
     extend: {
+      backgroundImage: {
+        'circleWavePattern': 'var(--bg-circle-pattern)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
