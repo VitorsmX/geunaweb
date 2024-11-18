@@ -82,15 +82,16 @@ const BookCard = React.memo(({ book }: { book: Book }) => {
         <p className="text-gray-800 mt-2">{book.sinopse}</p>
         <p className="text-xl font-semibold text-gray-800 mt-2">Preço: R$ {book.precoNaInternet}</p>
         <p className="text-sm text-gray-700 mt-2">Páginas: {book.quantidadeDePaginas}</p>
+        <p className='text-xs mt-3 text-green-900 hover:scale-110 max-w-sm'>* Comprando por nosso site, seu dinheiro vai ser convertido em benefício de ações sociais e manutenção do GEU, sem acrescimos de preço para você</p>
         <div className="flex gap-x-2 mt-4">
           {book.linkParaComprar && (
             <a
               href={book.linkParaComprar}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 no-underline font-buttons"
+              className="flex flex-col gap-y-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition duration-500 no-underline font-buttons text-sm hover:scale-105"
             >
-              Comprar
+              <span>Comprar na Amazon</span>
             </a>
           )}
           {book.linkDoLivroEmPdf && (
