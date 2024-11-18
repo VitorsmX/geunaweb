@@ -75,7 +75,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Header />
-            <div className="relative font-body max-w-6xl mx-auto px-5 h-full pt-20 md:py-24 backdrop-blur-sm">
+            <div className="relative font-body max-w-6xl mx-auto px-5 h-full pt-20 md:py-24 backdrop-blur-lg">
               {children}
             </div>
             <Footer />
