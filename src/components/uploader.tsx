@@ -21,7 +21,8 @@ interface FileItem {
 const UploadComponent: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [message, setMessage] = useState<string>("");
-  const [files, setFiles] = useState<FileItem[]>([]);
+  const [files, setFiles] = useState<FileItem[]>([]); // Arquivos comuns
+  const [youtubeVideos, setYoutubeVideos] = useState<string[]>([]); // Vídeos do YouTube
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
   const [selectedSlug, setSelectedSlug] = useState<string>("");
   const [youtubeUrl, setYoutubeUrl] = useState<string>("");
@@ -32,12 +33,24 @@ const UploadComponent: React.FC = () => {
       if (!selectedSlug) return;
 
       try {
-        // Buscar arquivos da API, incluindo vídeos do YouTube
-        const response = await axios.get(`/api/files/youtube/${selectedSlug}`);
-        setFiles(response.data.videos);  // Supondo que a resposta seja algo como { videos: [...] }
+        // Buscar arquivos da API para o slug
+        const response = await axios.get(`/api/files/${selectedSlug}`);
+        if (response.data?.length) {
+          setFiles(response.data);
+        } else {
+          console.log("Nenhum arquivo encontrado para o slug.");
+        }
+
+        // Buscar vídeos do YouTube
+        const youtubeResponse = await axios.get(`/api/files/youtube/${selectedSlug}`);
+        if (youtubeResponse.data?.videos?.length) {
+          setYoutubeVideos(youtubeResponse.data.videos);
+        } else {
+          console.log("Nenhum vídeo do YouTube encontrado para o slug.");
+        }
       } catch (error) {
         console.error("Error fetching files:", error);
-        setMessage("Failed to load files.");
+        setMessage("Falha ao carregar mídias.");
       }
     };
 
@@ -73,9 +86,9 @@ const UploadComponent: React.FC = () => {
       return;
     }
 
-    // Verificar se o arquivo é muito grande (maior que 100MB)
+    // Verificar se o arquivo é muito grande (maior que 10MB)
     if (file) {
-      if (file.size > 100 * 1024) {  // 10MB
+      if (file.size > 10 * 1024 * 1024) {  // 10MB
         setMessage("O vídeo é maior que 10MB. Por favor, insira a URL do YouTube ou faça o upload de outro arquivo.");
         return;
       }
@@ -114,9 +127,9 @@ const UploadComponent: React.FC = () => {
           url: youtubeUrl,
         });
 
-        setFiles((prevFiles) => [
-          ...prevFiles,
-          { url: response.data.secure_url, public_id: youtubeUrl, type: "video", name: youtubeUrl },
+        setYoutubeVideos((prevVideos) => [
+          ...prevVideos,
+          youtubeUrl,
         ]);
         setMessage("Vídeo do YouTube inserido com sucesso!");
         setYoutubeUrl("");
@@ -138,7 +151,7 @@ const UploadComponent: React.FC = () => {
       });
 
       if (response.status === 200) {
-        setFiles((prevFiles) => prevFiles.filter((file) => file.public_id !== public_id));
+        setYoutubeVideos((prevVideos) => prevVideos.filter((video) => video !== public_id));
         setMessage("Vídeo excluído com sucesso.");
       } else {
         setMessage("Falha ao excluir o vídeo.");
@@ -169,7 +182,7 @@ const UploadComponent: React.FC = () => {
 
         {message.includes("10MB") && (
           <div>
-            <p className="text-red-500 text-sm">Vídeos maiores que 100MB não podem ser enviados. Você pode inserir uma URL do YouTube:</p>
+            <p className="text-red-500 text-sm">Vídeos maiores que 10MB não podem ser enviados. Você pode inserir uma URL do YouTube:</p>
             <input
               type="url"
               value={youtubeUrl}
@@ -191,29 +204,41 @@ const UploadComponent: React.FC = () => {
       {message && <p className="mt-4 text-center text-gray-700">{message}</p>}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-h-[86%] overflow-y-scroll">
-        {files.length === 0 && <p className="text-center">Nenhum arquivo carregado.</p>}
+        {/* Exibindo Arquivos Comuns */}
+        {files.length === 0 && youtubeVideos.length === 0 && <p className="text-center">Nenhum arquivo ou vídeo carregado.</p>}
+        
+        {/* Arquivos Comuns */}
         {files.map((item) => (
           <div key={item.public_id} className="relative overflow-hidden border rounded-md shadow-md">
             {item.name}
             {item.type.startsWith("image/") ? (
               <img src={item.url} alt="Uploaded" className="w-full h-32 object-cover" />
             ) : item.type.startsWith("video/") ? (
-              item.url.includes("youtube.com") || item.url.includes("youtu.be") ? (
-                <iframe
-                  className="w-full h-32 object-cover"
-                  src={`https://www.youtube.com/embed/${new URL(item.url).searchParams.get('v')}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              ) : (
-                <video controls className="w-full h-32 object-cover">
-                  <source src={item.url} type={item.type} />
-                  Seu navegador não suporta vídeos.
-                </video>
-              )
+              <video controls className="w-full h-32 object-cover">
+                <source src={item.url} type={item.type} />
+                Seu navegador não suporta vídeos.
+              </video>
             ) : null}
             <button
               onClick={() => handleDelete(item.public_id)}
+              className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition duration-200"
+            >
+              Excluir
+            </button>
+          </div>
+        ))}
+
+        {/* Vídeos do YouTube */}
+        {youtubeVideos.map((videoUrl, index) => (
+          <div key={index} className="relative overflow-hidden border rounded-md shadow-md">
+            <iframe
+              className="w-full h-32 object-cover"
+              src={`https://www.youtube.com/embed/${new URL(videoUrl).searchParams.get('v')}`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+            <button
+              onClick={() => handleDelete(videoUrl)}
               className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition duration-200"
             >
               Excluir
