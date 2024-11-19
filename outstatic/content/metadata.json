@@ -1,6 +1,6 @@
 {
-  "commit": "bab25f93821278bfd6fdefbf7309b32b173b307b",
-  "generated": "2024-11-19T19:46:17.078Z",
+  "commit": "0256a6f4f441b2138538f2f15153dbe8a9a85417",
+  "generated": "2024-11-19T19:54:45.986Z",
   "metadata": [
     {
       "__outstatic": {
@@ -386,6 +386,35 @@
       "slug": "o-livro-dos-mediuns-um",
       "status": "published",
       "title": "O Livro dos Médiuns: 14x21"
+    },
+    {
+      "__outstatic": {
+        "commit": "0256a6f4f441b2138538f2f15153dbe8a9a85417",
+        "hash": "3247095279",
+        "path": "outstatic/content/biblioteca/o-ceu-e-o-inferno-allan-kardec.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-YzNj.png"
+      },
+      "autorDesencarnado": "Vários",
+      "autorEncarnado": "Allan Kardec",
+      "collection": "biblioteca",
+      "coverImage": "/images/ceuinfer-M2OT.jpg",
+      "dataDaPublicacao": "1865",
+      "description": "Qual o destino do homem após a morte física? Quais as causas do temor da morte? Existem o Céu e o Inferno? A antiga crença nos anjos e demônios merece crédito? Como procede a Justiça Divina? Estas e outras questões correlatas são devidamente esclarecidas, na Primeira Parte desta obra, à luz da lógica e dos ensinamentos dos Espíritos.",
+      "imagemDoLivro": "",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://espirito.org.br/wp-content/uploads/2017/05/O-Ce%CC%81u-e-o-Inferno.pdf",
+      "linkParaComprar": "https://amzn.to/48ZPz7H",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "21,30",
+      "publishedAt": "2024-11-19T19:28:58.535Z",
+      "quantidadeDePaginas": "320",
+      "sinopse": "O céu e o inferno ou A justiça divina segundo o Espiritismo. Como afirmou Kardec, o título desta obra indica claramente o seu objetivo. A primeira parte contém o exame comparado das diversas crenças sobre o céu e o inferno, os anjos e os demônios, as penas e recompensas futuras. O dogma das penas eternas é encarado de maneira especial e refutado por argumentos tirados das leis da natureza. A segunda parte apresenta numerosos exemplos, sendo que de cada ponto jorra uma luz sobre a situação da alma após a morte, e a passagem, até então tão obscura e tão temida, da vida corporal à vida espiritual. É o guia do viajor, antes de entrar em país novo! Edição com sobrecapa plástica.",
+      "slug": "o-ceu-e-o-inferno-allan-kardec",
+      "status": "published",
+      "title": "O Céu e o Inferno - Allan Kardec"
     }
   ]
 }
