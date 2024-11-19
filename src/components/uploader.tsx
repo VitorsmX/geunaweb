@@ -88,8 +88,8 @@ const UploadComponent: React.FC = () => {
 
     // Verificar se o arquivo é muito grande (maior que 10MB)
     if (file) {
-      if (file.size > 10 * 1024 * 1024) {  // 10MB
-        setMessage("O vídeo é maior que 10MB. Por favor, insira a URL do YouTube ou faça o upload de outro arquivo.");
+      if (file.size >= 4.9 * 1024) {  // 5MB
+        setMessage("O vídeo é maior que 5MB. Por favor, insira a URL do YouTube ou faça o upload de outro arquivo.");
         return;
       }
 
@@ -180,7 +180,7 @@ const UploadComponent: React.FC = () => {
           className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
         />
 
-        {message.includes("10MB") && (
+        {message.includes("5MB") && (
           <div>
             <p className="text-red-500 text-sm">Vídeos maiores que 10MB não podem ser enviados. Você pode inserir uma URL do YouTube:</p>
             <input
