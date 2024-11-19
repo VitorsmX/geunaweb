@@ -1,6 +1,6 @@
 {
-  "commit": "0256a6f4f441b2138538f2f15153dbe8a9a85417",
-  "generated": "2024-11-19T19:54:45.986Z",
+  "commit": "77c4eddf762f24b8d976d432053051983f60a3ba",
+  "generated": "2024-11-19T20:01:42.899Z",
   "metadata": [
     {
       "__outstatic": {
@@ -415,6 +415,35 @@
       "slug": "o-ceu-e-o-inferno-allan-kardec",
       "status": "published",
       "title": "O Céu e o Inferno - Allan Kardec"
+    },
+    {
+      "__outstatic": {
+        "commit": "77c4eddf762f24b8d976d432053051983f60a3ba",
+        "hash": "1716616971",
+        "path": "outstatic/content/biblioteca/os-mensageiros-colecao-a-vida-no-mundo-espiritual-livro-2-andre-luiz.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-c0Nj.png"
+      },
+      "autorDesencarnado": "André Luiz",
+      "autorEncarnado": "Chico Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/mensageiros-Y4Mj.jpg",
+      "dataDaPublicacao": "2019",
+      "description": "Em Os mensageiros, o Espírito André Luiz relata experiências de Espíritos que reencarnaram com instruções específicas para atingir o aprimoramento pessoal, mas que nem sempre foram bem sucedidos em suas tarefas.",
+      "imagemDoLivro": "",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://amzn.to/4hPoN69",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "40,05",
+      "publishedAt": "2024-11-19T19:38:26.387Z",
+      "quantidadeDePaginas": "328",
+      "sinopse": "",
+      "slug": "os-mensageiros-colecao-a-vida-no-mundo-espiritual-livro-2-andre-luiz",
+      "status": "published",
+      "title": "Os Mensageiros: Coleção A vida no mundo espiritual - Livro 2 - André Luiz"
     }
   ]
 }
