@@ -1,6 +1,6 @@
 {
-  "commit": "e11a925d6278835e1c942887df86d7e7cbadacf6",
-  "generated": "2024-11-19T20:02:06.956Z",
+  "commit": "14eb263b92a2edc7442aa60b54651c96332bc61d",
+  "generated": "2024-11-19T20:16:31.259Z",
   "metadata": [
     {
       "__outstatic": {
@@ -444,6 +444,25 @@
       "slug": "os-mensageiros-colecao-a-vida-no-mundo-espiritual-livro-2-andre-luiz",
       "status": "published",
       "title": "Os Mensageiros: Coleção A vida no mundo espiritual - Livro 2 - André Luiz"
+    },
+    {
+      "__outstatic": {
+        "commit": "14eb263b92a2edc7442aa60b54651c96332bc61d",
+        "hash": "3454976329",
+        "path": "outstatic/content/galeriaitens/30-anos-aniversario-do-grupo-espirita-uniao.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-U4Mj.png"
+      },
+      "collection": "galeriaitens",
+      "coverImage": "/images/img-20240817-wa0085-UyMT.jpg",
+      "date": "17 de Agosto de 2024",
+      "description": "No dia 17 de Agosto de 2024, nos reunimos em fraternidade para comemorar 30 anos da fundação do Grupo Espírita União",
+      "publishedAt": "2024-11-19T19:45:41.029Z",
+      "slug": "30-anos-aniversario-do-grupo-espirita-uniao",
+      "status": "published",
+      "title": "30 ANOS - Aniversário do Grupo Espírita União"
     }
   ]
 }
