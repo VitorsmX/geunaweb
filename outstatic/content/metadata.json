@@ -1,6 +1,6 @@
 {
-  "commit": "55b3ff959b7e9b07c104ff4cf149558cd868daf0",
-  "generated": "2024-11-19T19:38:15.445Z",
+  "commit": "bab25f93821278bfd6fdefbf7309b32b173b307b",
+  "generated": "2024-11-19T19:46:17.078Z",
   "metadata": [
     {
       "__outstatic": {
@@ -357,6 +357,35 @@
       "slug": "o-livro-dos-espiritos-edicao-economica",
       "status": "published",
       "title": "O Livro dos Espíritos (Edição Econômica)"
+    },
+    {
+      "__outstatic": {
+        "commit": "bab25f93821278bfd6fdefbf7309b32b173b307b",
+        "hash": "2132419430",
+        "path": "outstatic/content/biblioteca/o-livro-dos-mediuns-um.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-I3OT.png"
+      },
+      "autorDesencarnado": "Vários",
+      "autorEncarnado": "Allan Kardec",
+      "collection": "biblioteca",
+      "coverImage": "/images/olivrodomediuns-k0MD.jpg",
+      "dataDaPublicacao": "1861",
+      "description": "Esta obra trata das manifestações espíritas e dos médiuns, portanto, da parte fenomênica do Espiritismo, e o caracteriza como ciência de observação que cuida das relações entre o mundo corpóreo e o mundo invisível ou espiritual. É um manual indispensável para todos aqueles que queiram participar das atividades mediúnicas, ou simplesmente queiram conhecer a natureza e os mecanismos da mediunidade. No final desta obra, há um Índice Analítico dos Assuntos, reunindo, em ordem alfabética, todos os verbetes que podem interessar aos estudiosos. Allan Kardec, quando redigiu seus livros, escreveu para o povo, em linguagem simples, e, sendo esta uma tradução literal, a linguagem simples original ficou preservada. Além disto, e principalmente, o tradutor respeitou a integridade do livro, que deve ser considerado sagrado, e não acrescentou nem sua opinião pessoal, nem notas de rodapé que não estavam no original.",
+      "imagemDoLivro": "https://m.media-amazon.com/images/I/61lxozKScgS._SY425_.jpg",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://espirito.org.br/wp-content/uploads/2017/05/O-Livro-dos-Me%CC%81diuns.pdf",
+      "linkParaComprar": "https://amzn.to/40TdvaK",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "11,67",
+      "publishedAt": "2024-11-19T19:20:28.629Z",
+      "quantidadeDePaginas": "368",
+      "sinopse": "É um manual indispensável para todos aqueles que queiram participar das atividades mediúnicas, ou simplesmente queiram conhecer a natureza e os mecanismos da mediunidade. No final desta obra, há um Índice Analítico dos Assuntos, reunindo, em ordem alfabética, todos os verbetes que podem interessar aos estudiosos. Allan Kardec, quando redigiu seus livros, escreveu para o povo, em linguagem simples, e, sendo esta uma tradução literal, a linguagem simples original ficou preservada. Além disto, e principalmente, o tradutor respeitou a integridade do livro, que deve ser considerado sagrado, e não acrescentou nem sua opinião pessoal, nem notas de rodapé que não estavam no original.",
+      "slug": "o-livro-dos-mediuns-um",
+      "status": "published",
+      "title": "O Livro dos Médiuns: 14x21"
     }
   ]
 }
