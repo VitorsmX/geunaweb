@@ -33,26 +33,34 @@ const MediaCard = ({ slug }: { slug: string }) => {
   useEffect(() => {
     const fetchMediaItems = async () => {
       try {
-        // Carrega os arquivos do servidor de acordo com o slug
+        // Carregar os arquivos do servidor de acordo com o slug
         const response = await fetch(`/api/files/${slug}`);
-        if (!response.ok) throw new Error('Failed to fetch media items');
-        const data: MediaItem[] = await response.json();
-        setMediaItems(data);
-
-        // Carregar os vídeos do YouTube (supondo que o arquivo JSON contém os links)
+        if (!response.ok) {
+          // Caso não haja arquivos ou pasta, ignore a falha
+          console.log("Nenhum arquivo encontrado ou erro ao buscar arquivos.");
+        } else {
+          const data: MediaItem[] = await response.json();
+          setMediaItems(data);
+        }
+  
+        // Carregar os vídeos do YouTube, ignorando se não houver vídeos ou a pasta não existir
         const youtubeResponse = await fetch(`/api/files/youtube/${slug}`);
-        if (!youtubeResponse.ok) throw new Error('Failed to fetch YouTube videos');
-        const youtubeData: { videos: string[] } = await youtubeResponse.json();
-        setYoutubeVideos(youtubeData.videos || []);
+        if (!youtubeResponse.ok) {
+          // Caso não haja vídeos do YouTube ou erro na resposta, ignore a falha
+          console.log("Nenhum vídeo do YouTube encontrado ou erro ao buscar vídeos.");
+        } else {
+          const youtubeData: { videos: string[] } = await youtubeResponse.json();
+          setYoutubeVideos(youtubeData.videos || []);
+        }
       } catch (error) {
         console.error('Error fetching media items:', error);
         setMessage('Falha ao carregar mídias.');
       }
     };
-
+  
     fetchMediaItems();
   }, [slug]);
-
+  
   const openModal = useCallback((media: MediaItem) => {
     setSelectedMedia(media);
   }, []);
