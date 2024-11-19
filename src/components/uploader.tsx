@@ -182,7 +182,7 @@ const UploadComponent: React.FC = () => {
 
         {message.includes("5MB") && (
           <div>
-            <p className="text-red-500 text-sm">Vídeos maiores que 10MB não podem ser enviados. Você pode inserir uma URL do YouTube:</p>
+            <p className="text-red-500 text-sm">Vídeos maiores que 5MB não podem ser enviados. Você pode inserir uma URL do YouTube:</p>
             <input
               type="url"
               value={youtubeUrl}
