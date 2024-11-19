@@ -1,6 +1,6 @@
 {
-  "commit": "003d793281402281a0a4501e66d807e7d63b8f70",
-  "generated": "2024-11-18T15:10:20.688Z",
+  "commit": "607da21b1ddadd60b086c9dc72e1fa015dafb928",
+  "generated": "2024-11-19T13:54:51.750Z",
   "metadata": [
     {
       "__outstatic": {
@@ -299,6 +299,35 @@
       "slug": "livro-nosso-lar",
       "status": "published",
       "title": "Nosso Lar - Chico Xavier"
+    },
+    {
+      "__outstatic": {
+        "commit": "607da21b1ddadd60b086c9dc72e1fa015dafb928",
+        "hash": "3884519989",
+        "path": "outstatic/content/biblioteca/estudando-nosso-lar-dr-inacio-ferreira-carlos-a-baccelli.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-I2Nz.png"
+      },
+      "autorDesencarnado": "Inácio Ferreira",
+      "autorEncarnado": "Carlos A. Baccelli",
+      "collection": "biblioteca",
+      "coverImage": "/images/estudando-nosso-lar-capa-livro-g4ND.jpg",
+      "dataDaPublicacao": "2020",
+      "description": "Neste livro, Dr. Inácio Ferreira trata de alguns dos temas que, de maneira magistral e inédita, são estudados por André Luiz na obra ´Nosso Lar´",
+      "imagemDoLivro": "https://m.media-amazon.com/images/I/51pOu4ij5hL._SY425_.jpg",
+      "isstock": "",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://amzn.to/3OchTdA",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "45,22 (Pode Ter Desconto na Amazon)",
+      "publishedAt": "2024-11-19T13:27:20.907Z",
+      "quantidadeDePaginas": "350",
+      "sinopse": "Neste livro, Dr. Inácio Ferreira trata de alguns dos temas que, de maneira magistral e inédita, são estudados por André Luiz na obra ´Nosso Lar´ - sem dúvida, depois de ´O Livro dos Espíritos´, o livro mais importante da bibliografia espírita! Você aprenderá como ´Nosso Lar´ deve ser estudado, a fim de conseguir atinar com as inúmeras revelações que ele contém sobre a vida no plano espiritual.",
+      "slug": "estudando-nosso-lar-dr-inacio-ferreira-carlos-a-baccelli",
+      "status": "published",
+      "title": "Estudando \"Nosso Lar\" - Dr. Inácio Ferreira & Carlos A. Baccelli"
     }
   ]
 }
