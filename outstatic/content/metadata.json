@@ -1,6 +1,6 @@
 {
-  "commit": "14eb263b92a2edc7442aa60b54651c96332bc61d",
-  "generated": "2024-11-19T20:16:31.259Z",
+  "commit": "8343d4b4b7e6b80c11f1b640bfea2bf44ffd8d49",
+  "generated": "2024-11-19T20:33:27.228Z",
   "metadata": [
     {
       "__outstatic": {
@@ -463,6 +463,25 @@
       "slug": "30-anos-aniversario-do-grupo-espirita-uniao",
       "status": "published",
       "title": "30 ANOS - Aniversário do Grupo Espírita União"
+    },
+    {
+      "__outstatic": {
+        "commit": "8343d4b4b7e6b80c11f1b640bfea2bf44ffd8d49",
+        "hash": "2316552884",
+        "path": "outstatic/content/galeriaitens/dia-das-criancas-de-2024.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-M2Nz.png"
+      },
+      "collection": "galeriaitens",
+      "coverImage": "/images/img-20241019-wa0038-Q5MT.jpg",
+      "date": "2024",
+      "description": "Neste dia tivemos a oportunidade de comemorar o dia das crianças com a comunidade, através de atividades lúdicas e divertidas, também houve distribuição de brinquedos",
+      "publishedAt": "2024-11-19T20:04:59.709Z",
+      "slug": "dia-das-criancas-de-2024",
+      "status": "published",
+      "title": "Dia das Crianças de 2024"
     }
   ]
 }
