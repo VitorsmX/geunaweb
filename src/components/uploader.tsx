@@ -265,6 +265,28 @@ const UploadComponent: React.FC = () => {
           <label className="text-sm">Enviar via YouTube</label>
         </div>
 
+        {isYoutubeUpload && (
+          <div>
+          <p className="text-red-500 text-sm">
+            Insira a URL do YouTube e selecione uma galeria para enviar o vídeo.
+          </p>
+          <input
+            type="url"
+            value={youtubeUrl}
+            onChange={(e) => setYoutubeUrl(e.target.value)}
+            className="border border-gray-300 rounded-md p-2 mt-2"
+            placeholder="Insira a URL do YouTube"
+          />
+          <button
+            type="button"
+            onClick={handleYoutubeUpload}
+            className="bg-green-500 text-white font-semibold py-2 rounded-md hover:bg-green-600 transition duration-200 transform hover:scale-105"
+          >
+            Enviar Vídeo
+          </button>
+        </div>
+        )}
+
         {message.includes("90MB") && !isYoutubeUpload && (
           <div>
             <p className="text-red-500 text-sm">
