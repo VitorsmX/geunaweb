@@ -97,22 +97,15 @@ const UploadComponent: React.FC = () => {
       formData.append("file", file);
 
       try {
-        const existingFile = files.find((item) => item.public_id === file.name);
+        // Obter a URL de upload do Cloudinary do backend
+        const response = await axios.get(`/api/upload-url?slug=${selectedSlug}`);
+        const uploadUrl = response.data.upload_url;
 
-        if (existingFile) {
-          setMessage("Arquivo já existe. Por favor, faça o upload de um arquivo diferente.");
-          return;
-        }
-
-        const response = await axios.post(`/api/upload?slug=${selectedSlug}`, formData, {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        });
+        const cloudinaryResponse = await axios.post(uploadUrl, formData);
 
         setFiles((prevFiles) => [
           ...prevFiles,
-          { url: response.data.secure_url, public_id: response.data.public_id, type: file.type, name: file.name },
+          { url: cloudinaryResponse.data.secure_url, public_id: cloudinaryResponse.data.public_id, type: file.type, name: file.name },
         ]);
         setMessage("Upload bem-sucedido!");
         setFile(null);
@@ -139,26 +132,6 @@ const UploadComponent: React.FC = () => {
       }
     } else {
       setMessage("Selecione um arquivo ou insira uma URL do YouTube.");
-    }
-  };
-
-  // Lidar com a exclusão de vídeos
-  const handleDelete = async (public_id: string) => {
-    try {
-      // Deletar vídeo usando a API
-      const response = await axios.delete(`/api/delete/youtube/${selectedSlug}`, {
-        data: { url: public_id }, // Usamos o `public_id` ou `url` para identificar o vídeo
-      });
-
-      if (response.status === 200) {
-        setYoutubeVideos((prevVideos) => prevVideos.filter((video) => video !== public_id));
-        setMessage("Vídeo excluído com sucesso.");
-      } else {
-        setMessage("Falha ao excluir o vídeo.");
-      }
-    } catch (error) {
-      console.error("Deletion error:", error);
-      setMessage("Falha na exclusão.");
     }
   };
 
@@ -203,11 +176,10 @@ const UploadComponent: React.FC = () => {
 
       {message && <p className="mt-4 text-center text-gray-700">{message}</p>}
 
+      {/* Exibir arquivos carregados */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-h-[86%] overflow-y-scroll">
-        {/* Exibindo Arquivos Comuns */}
         {files.length === 0 && youtubeVideos.length === 0 && <p className="text-center">Nenhum arquivo ou vídeo carregado.</p>}
-        
-        {/* Arquivos Comuns */}
+        {/* Arquivos carregados */}
         {files.map((item) => (
           <div key={item.public_id} className="relative overflow-hidden border rounded-md shadow-md">
             {item.name}
@@ -219,30 +191,6 @@ const UploadComponent: React.FC = () => {
                 Seu navegador não suporta vídeos.
               </video>
             ) : null}
-            <button
-              onClick={() => handleDelete(item.public_id)}
-              className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition duration-200"
-            >
-              Excluir
-            </button>
-          </div>
-        ))}
-
-        {/* Vídeos do YouTube */}
-        {youtubeVideos.map((videoUrl, index) => (
-          <div key={index} className="relative overflow-hidden border rounded-md shadow-md">
-            <iframe
-              className="w-full h-32 object-cover"
-              src={`https://www.youtube.com/embed/${new URL(videoUrl).searchParams.get('v')}`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            <button
-              onClick={() => handleDelete(videoUrl)}
-              className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition duration-200"
-            >
-              Excluir
-            </button>
           </div>
         ))}
       </div>
