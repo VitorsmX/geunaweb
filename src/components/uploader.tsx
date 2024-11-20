@@ -108,7 +108,7 @@ const UploadComponent: React.FC = () => {
 
         const params = {
           file,
-          api_key: process.env.CLOUDINARY_API_KEY,
+          api_key: process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY,
           signature,
           timestamp,
           upload_preset,
