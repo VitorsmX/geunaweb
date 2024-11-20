@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
       throw new Error(error.message);
     }
 
-    return NextResponse.json({ message: 'Vídeo adicionado com sucesso!', video: data[0] }, { status: 200 });
+    return NextResponse.json({ message: 'Vídeo adicionado com sucesso!', video: data?.[0] }, { status: 200 });
   } catch (error) {
     console.error('Erro ao adicionar vídeo:', error);
     return NextResponse.json({ error: 'Falha ao adicionar o vídeo' }, { status: 500 });
