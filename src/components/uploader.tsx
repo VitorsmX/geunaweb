@@ -23,9 +23,12 @@ const UploadComponent: React.FC = () => {
   const [message, setMessage] = useState<string>("");
   const [files, setFiles] = useState<FileItem[]>([]); // Arquivos comuns
   const [youtubeVideos, setYoutubeVideos] = useState<string[]>([]); // Vídeos do YouTube
-  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
-  const [selectedSlug, setSelectedSlug] = useState<string>("");
+  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]); 
+  const [selectedSlug, setSelectedSlug] = useState<string>(""); 
   const [youtubeUrl, setYoutubeUrl] = useState<string>("");
+
+  // Definir limite de tamanho de arquivo
+  const FILE_SIZE_LIMIT = 90 * 1024 * 1024; // 90MB
 
   // Buscar arquivos da galeria ao mudar o 'slug'
   useEffect(() => {
@@ -74,7 +77,14 @@ const UploadComponent: React.FC = () => {
 
   // Lidar com mudanças no arquivo selecionado
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFile(event.target.files?.[0] || null);
+    const selectedFile = event.target.files?.[0] || null;
+    setFile(selectedFile);
+
+    if (selectedFile && selectedFile.size > FILE_SIZE_LIMIT) {
+      setMessage("O arquivo é muito grande para o Cloudinary. Por favor, insira uma URL do YouTube.");
+    } else {
+      setMessage(""); // Limpar mensagem caso o arquivo seja válido
+    }
   };
 
   // Lidar com o upload
@@ -86,13 +96,26 @@ const UploadComponent: React.FC = () => {
       return;
     }
 
-    // Verificar se o arquivo é muito grande (maior que 5MB)
-    if (file) {
-      if (file.size >= 4950000) {  // 5MB
-        setMessage("O vídeo é maior que 5MB. Por favor, insira a URL do YouTube ou faça o upload de outro arquivo.");
-        return;
-      }
+    // Se o arquivo for maior que 90MB, apenas o upload do YouTube é permitido
+    if (file && file.size > FILE_SIZE_LIMIT) {
+      // Realizar o upload do YouTube
+      try {
+        const response = await axios.post(`/api/youtube-upload?slug=${selectedSlug}`, {
+          url: youtubeUrl,
+        });
 
+        setYoutubeVideos((prevVideos) => [
+          ...prevVideos,
+          youtubeUrl,
+        ]);
+        setMessage("Vídeo do YouTube inserido com sucesso!");
+        setYoutubeUrl("");
+      } catch (error) {
+        console.error("YouTube upload error:", error);
+        setMessage("Falha ao inserir o vídeo do YouTube.");
+      }
+    } else if (file) {
+      // Caso o arquivo seja válido para upload no Cloudinary
       const formData = new FormData();
       formData.append("file", file);
 
@@ -153,9 +176,9 @@ const UploadComponent: React.FC = () => {
           className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
         />
 
-        {message.includes("5MB") && (
+        {message.includes("90MB") && (
           <div>
-            <p className="text-red-500 text-sm">Vídeos maiores que 5MB não podem ser enviados. Você pode inserir uma URL do YouTube:</p>
+            <p className="text-red-500 text-sm">Arquivos maiores que 90MB só podem ser enviados via YouTube:</p>
             <input
               type="url"
               value={youtubeUrl}
