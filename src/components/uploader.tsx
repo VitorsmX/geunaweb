@@ -84,9 +84,6 @@ const UploadComponent: React.FC = () => {
     }
   };
 
-  // Lidar com o upload
-  import axios from "axios";
-
 const handleUpload = async (file: any, selectedSlug: any) => {
   const timestamp = Math.floor(Date.now() / 1000).toString();
 
@@ -148,7 +145,7 @@ const handleUpload = async (file: any, selectedSlug: any) => {
           <option key={item.slug} value={item.slug}>{item.title}</option>
         ))}
       </select>
-
+      {/*@ts-ignore*/}
       <form onSubmit={handleUpload} className="flex flex-col space-y-4">
         <input
           type="file"
