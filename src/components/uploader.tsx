@@ -145,8 +145,7 @@ const handleUpload = async (file: any, selectedSlug: any) => {
           <option key={item.slug} value={item.slug}>{item.title}</option>
         ))}
       </select>
-      {/*@ts-ignore*/}
-      <form onSubmit={handleUpload} className="flex flex-col space-y-4">
+      <form onSubmit={() => handleUpload(file, selectedSlug)} className="flex flex-col space-y-4">
         <input
           type="file"
           onChange={handleFileChange}
