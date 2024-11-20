@@ -12,9 +12,14 @@ cloudinary.v2.config({
 export async function GET(req: NextRequest) {
   const url = new URL(req.url);
   const slug = url.searchParams.get("slug");
+  const filename = url.searchParams.get("filename");
 
   if (!slug) {
     return NextResponse.json({ error: "No slug provided" }, { status: 400 });
+  }
+
+  if (!filename) {
+    return NextResponse.json({ error: "No filename provided" }, { status: 400 });
   }
 
   try {
@@ -27,9 +32,11 @@ export async function GET(req: NextRequest) {
     const signatureParams = {
       folder: uploadFolder,
       timestamp: timestamp,
+      public_id: `geunaweb/${slug}/${filename.split('.')[0]}`, // Remover a extensão do arquivo
+      upload_preset: 'ml_default', // Ou usar um preset específico conforme o tipo de arquivo
     };
 
-    const apiSecret = process.env.CLOUDINARY_API_SECRET || ''
+    const apiSecret = process.env.CLOUDINARY_API_SECRET || '';
 
     const signature = cloudinary.v2.utils.api_sign_request(signatureParams, apiSecret);
 
@@ -37,7 +44,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       signature,
       timestamp,
-      upload_preset: "ersgh60l",
+      upload_preset: "ml_default",
       cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
       folder: uploadFolder,
     });
