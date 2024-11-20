@@ -254,6 +254,37 @@ const UploadComponent: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-h-[86%] overflow-y-scroll">
         {files.length === 0 && youtubeVideos.length === 0 && <p className="text-center">Nenhum arquivo ou vídeo carregado.</p>}
 
+
+        {/* Exibir arquivos carregados */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-h-[86%] overflow-y-scroll">
+        {files.map((item) => (
+          <div key={item.public_id} className="relative overflow-hidden border rounded-md shadow-md">
+            {loadingFile === item.name ? (
+              <div className="w-full h-32 flex items-center justify-center bg-gray-200">
+                <div className="spinner-border animate-spin border-t-4 border-blue-500 rounded-full w-8 h-8"></div>
+              </div>
+            ) : (
+              <>
+                {item.type.startsWith("image/") ? (
+                  <img src={item.url} alt="Uploaded" className="w-full h-32 object-cover" />
+                ) : item.type.startsWith("video/") ? (
+                  <video controls className="w-full h-32 object-cover">
+                    <source src={item.url} type={item.type} />
+                    Seu navegador não suporta vídeos.
+                  </video>
+                ) : null}
+              </>
+            )}
+            <button
+              onClick={() => handleRemoveFile(item.public_id)}
+              className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full"
+            >
+              Remover
+            </button>
+          </div>
+        ))}
+        </div>
+
         {/* Exibir vídeos do YouTube */}
         {youtubeVideos.map((videoUrl) => (
           <div key={videoUrl} className="relative overflow-hidden border rounded-md shadow-md">
