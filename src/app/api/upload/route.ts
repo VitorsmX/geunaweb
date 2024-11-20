@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       signature,
       timestamp,
-      upload_preset: "ml_default", // Se você estiver usando um "upload preset"
+      upload_preset: "ersgh60l",
       cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
       folder: uploadFolder,
     });
