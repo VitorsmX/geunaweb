@@ -152,8 +152,8 @@ const UploadComponent: React.FC = () => {
     try {
       // Enviar a URL do YouTube para o backend
       const response = await axios.post(
-        `/api/youtube-upload?slug=${selectedSlug}`,
-        { url: youtubeUrl }
+        `/api/youtube-upload`,
+        { url: youtubeUrl, slug: selectedSlug }
       );
       if (response.status === 200) {
         setMessage("Vídeo adicionado com sucesso!");
