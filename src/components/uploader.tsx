@@ -119,7 +119,7 @@ const UploadComponent: React.FC = () => {
       // Se o arquivo for válido para upload no Cloudinary
       try {
         // Obter a URL de upload e assinatura do Cloudinary do backend
-        const response = await axios.get(`/api/upload-url?slug=${selectedSlug}`);
+        const response = await axios.get(`/api/upload?slug=${selectedSlug}`);
         const { upload_url, signature, timestamp, cloud_name } = response.data;
 
         // Criar o FormData para enviar o arquivo
