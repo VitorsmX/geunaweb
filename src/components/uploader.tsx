@@ -27,6 +27,7 @@ const UploadComponent: React.FC = () => {
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
   const [selectedSlug, setSelectedSlug] = useState<string>("");
   const [youtubeUrl, setYoutubeUrl] = useState<string>("");
+  const [isYoutubeUpload, setIsYoutubeUpload] = useState<boolean>(false); // Controle para escolher entre Cloudinary ou YouTube
 
   const FILE_SIZE_LIMIT = 90 * 1024 * 1024; // 90MB
 
@@ -118,8 +119,8 @@ const UploadComponent: React.FC = () => {
       params.append("folder", folder);
       params.append(
         "public_id",
-        `geunaweb/${selectedSlug}/${file.name.split(".")[0]}`
-      ); // Remover a extensão
+        `geunaweb/${selectedSlug}/${file.name.split(".")[0]}` // Remover a extensão
+      );
 
       // Fazer o upload para o Cloudinary
       const cloudinaryResponse = await axios.post(uploadUrl, params, {
@@ -135,8 +136,7 @@ const UploadComponent: React.FC = () => {
       console.error("Erro ao enviar o arquivo", error);
       setMessage("Erro ao enviar o arquivo");
     } finally {
-      // Depois do upload (sucesso ou falha), remover o arquivo da lista de "loading"
-      setLoadingFile(null);
+      setLoadingFile(null); // Remover o arquivo da lista de "loading"
     }
   };
 
@@ -222,8 +222,10 @@ const UploadComponent: React.FC = () => {
   // Função para prevenir o submit e realizar o upload
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault(); // Impede o refresh da página
-    if (file) {
-      handleUpload(file, selectedSlug); // Realiza o upload
+    if (file && !isYoutubeUpload) {
+      handleUpload(file, selectedSlug); // Realiza o upload para o Cloudinary
+    } else if (youtubeUrl && isYoutubeUpload) {
+      handleYoutubeUpload(); // Realiza o upload para o YouTube
     }
   };
 
@@ -252,7 +254,18 @@ const UploadComponent: React.FC = () => {
           className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
         />
 
-        {message.includes("90MB") && (
+        {/* Opção para escolher entre YouTube ou upload normal */}
+        <div className="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            checked={isYoutubeUpload}
+            onChange={() => setIsYoutubeUpload((prev) => !prev)}
+            className="focus:ring-blue-500"
+          />
+          <label className="text-sm">Enviar via YouTube</label>
+        </div>
+
+        {message.includes("90MB") && !isYoutubeUpload && (
           <div>
             <p className="text-red-500 text-sm">
               Arquivos maiores que 90MB só podem ser enviados via YouTube:
