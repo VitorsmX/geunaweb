@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -22,6 +22,7 @@ const UploadComponent: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [message, setMessage] = useState<string>("");
   const [files, setFiles] = useState<FileItem[]>([]); // Arquivos comuns
+  const [loadingFile, setLoadingFile] = useState<string | null>(null); // Arquivo sendo carregado
   const [youtubeVideos, setYoutubeVideos] = useState<string[]>([]); // Vídeos do YouTube
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
   const [selectedSlug, setSelectedSlug] = useState<string>("");
@@ -89,6 +90,9 @@ const UploadComponent: React.FC = () => {
     const timestamp = Math.floor(Date.now() / 1000).toString();
 
     try {
+      // Definir que o arquivo está em "loading"
+      setLoadingFile(file.name);
+
       // Obter a assinatura e outros parâmetros do backend
       const response = await axios.get(`/api/upload?slug=${selectedSlug}&filename=${file.name}`);
       const { signature, cloud_name, folder } = response.data;
@@ -111,12 +115,16 @@ const UploadComponent: React.FC = () => {
       });
 
       console.log("Arquivo enviado com sucesso", cloudinaryResponse.data);
+
       // Adicionar o arquivo enviado à lista de arquivos
       setFiles((prevFiles) => [...prevFiles, cloudinaryResponse.data]);
       setMessage("Arquivo enviado com sucesso!");
     } catch (error) {
       console.error("Erro ao enviar o arquivo", error);
       setMessage("Erro ao enviar o arquivo");
+    } finally {
+      // Depois do upload (sucesso ou falha), remover o arquivo da lista de "loading"
+      setLoadingFile(null);
     }
   };
 
@@ -192,15 +200,24 @@ const UploadComponent: React.FC = () => {
         {files.length === 0 && youtubeVideos.length === 0 && <p className="text-center">Nenhum arquivo ou vídeo carregado.</p>}
         {files.map((item) => (
           <div key={item.public_id} className="relative overflow-hidden border rounded-md shadow-md">
-            {item.name}
-            {item.type.startsWith("image/") ? (
-              <img src={item.url} alt="Uploaded" className="w-full h-32 object-cover" />
-            ) : item.type.startsWith("video/") ? (
-              <video controls className="w-full h-32 object-cover">
-                <source src={item.url} type={item.type} />
-                Seu navegador não suporta vídeos.
-              </video>
-            ) : null}
+            {/* Mostrar loading enquanto o arquivo está sendo carregado */}
+            {loadingFile === item.name ? (
+              <div className="w-full h-32 flex justify-center items-center">
+                <div className="animate-spin border-4 border-t-4 border-blue-500 rounded-full w-8 h-8"></div> {/* Spinner */}
+              </div>
+            ) : (
+              <>
+                {item.name}
+                {item.type.startsWith("image/") ? (
+                  <img src={item.url} alt="Uploaded" className="w-full h-32 object-cover" />
+                ) : item.type.startsWith("video/") ? (
+                  <video controls className="w-full h-32 object-cover">
+                    <source src={item.url} type={item.type} />
+                    Seu navegador não suporta vídeos.
+                  </video>
+                ) : null}
+              </>
+            )}
             <button
               onClick={() => handleRemoveFile(item.public_id)}
               className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full"
