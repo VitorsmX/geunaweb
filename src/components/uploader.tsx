@@ -27,7 +27,6 @@ const UploadComponent: React.FC = () => {
   const [selectedSlug, setSelectedSlug] = useState<string>("");
   const [youtubeUrl, setYoutubeUrl] = useState<string>("");
 
-  // Definir limite de tamanho de arquivo
   const FILE_SIZE_LIMIT = 90 * 1024 * 1024; // 90MB
 
   // Buscar arquivos da galeria ao mudar o 'slug'
@@ -36,7 +35,6 @@ const UploadComponent: React.FC = () => {
       if (!selectedSlug) return;
 
       try {
-        // Buscar arquivos da API para o slug
         const response = await axios.get(`/api/files/${selectedSlug}`);
         if (response.data?.length) {
           setFiles(response.data);
@@ -44,7 +42,6 @@ const UploadComponent: React.FC = () => {
           console.log("Nenhum arquivo encontrado para o slug.");
         }
 
-        // Buscar vídeos do YouTube
         const youtubeResponse = await axios.get(`/api/files/youtube/${selectedSlug}`);
         if (youtubeResponse.data?.videos?.length) {
           setYoutubeVideos(youtubeResponse.data.videos);
@@ -96,53 +93,41 @@ const UploadComponent: React.FC = () => {
       return;
     }
 
-    // Verificar se o arquivo é muito grande (maior que 90MB)
-    if (file && file.size > FILE_SIZE_LIMIT) {
-      // Redirecionar para o YouTube em vez de fazer upload para o Cloudinary
-      if (youtubeUrl) {
-        try {
-          const response = await axios.post(`/api/youtube-upload?slug=${selectedSlug}`, {
-            url: youtubeUrl,
-          });
+    if (file) {
+      const formData = new FormData();
+      formData.append("file", file);
 
-          setYoutubeVideos((prevVideos) => [...prevVideos, youtubeUrl]);
-          setMessage("Vídeo do YouTube inserido com sucesso!");
-          setYoutubeUrl("");
-        } catch (error) {
-          console.error("YouTube upload error:", error);
-          setMessage("Falha ao inserir o vídeo do YouTube.");
-        }
-      } else {
-        setMessage("Por favor, insira uma URL do YouTube.");
-      }
-    } else if (file) {
-      // Se o arquivo for válido para upload no Cloudinary
       try {
-        // Obter a URL de upload e assinatura do Cloudinary do backend
-        const response = await axios.get(`/api/upload?slug=${selectedSlug}`);
-        const { upload_url, signature, timestamp, cloud_name } = response.data;
+        const response = await axios.get(`/api/upload-url?slug=${selectedSlug}`);
+        const { signature, timestamp, upload_preset, cloud_name, folder } = response.data;
 
-        // Criar o FormData para enviar o arquivo
-        const formData = new FormData();
-        formData.append("file", file);
-        formData.append("api_key", process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY!); // Coloque a chave pública
-        formData.append("timestamp", timestamp);
-        formData.append("signature", signature);
-        formData.append("folder", `geunaweb/${selectedSlug}`); // Direcionar para o diretório correto
+        const uploadUrl =
+          file.type.startsWith("image/") ?
+          `https://api.cloudinary.com/v1_1/${cloud_name}/image/upload` :
+          `https://api.cloudinary.com/v1_1/${cloud_name}/video/upload`;
 
-        // Verifique se a URL de upload é válida antes de tentar o upload
-        if (!upload_url || !upload_url.startsWith("https://")) {
-          throw new Error("A URL de upload do Cloudinary é inválida.");
-        }
+        const params = {
+          file,
+          api_key: process.env.CLOUDINARY_API_KEY,
+          signature,
+          timestamp,
+          upload_preset,
+          folder,
+          public_id: `geunaweb/${selectedSlug}/${file.name}`,
+        };
 
-        // Realizar o upload para o Cloudinary
-        const cloudinaryResponse = await axios.post(upload_url, formData, {
+        const cloudinaryResponse = await axios.post(uploadUrl, params, {
           headers: { "Content-Type": "multipart/form-data" },
         });
 
         setFiles((prevFiles) => [
           ...prevFiles,
-          { url: cloudinaryResponse.data.secure_url, public_id: cloudinaryResponse.data.public_id, type: file.type, name: file.name },
+          {
+            url: cloudinaryResponse.data.secure_url,
+            public_id: cloudinaryResponse.data.public_id,
+            type: file.type,
+            name: file.name,
+          },
         ]);
         setMessage("Upload bem-sucedido!");
         setFile(null);
@@ -150,8 +135,40 @@ const UploadComponent: React.FC = () => {
         console.error("Upload error:", error);
         setMessage("Falha no upload.");
       }
+    } else if (youtubeUrl) {
+      try {
+        const response = await axios.post(`/api/youtube-upload?slug=${selectedSlug}`, {
+          url: youtubeUrl,
+        });
+
+        setYoutubeVideos((prevVideos) => [...prevVideos, youtubeUrl]);
+        setMessage("Vídeo do YouTube inserido com sucesso!");
+        setYoutubeUrl("");
+      } catch (error) {
+        console.error("YouTube upload error:", error);
+        setMessage("Falha ao inserir o vídeo do YouTube.");
+      }
     } else {
       setMessage("Selecione um arquivo ou insira uma URL do YouTube.");
+    }
+  };
+
+  // Remover arquivo
+  const handleRemoveFile = async (public_id: string) => {
+    try {
+      const response = await axios.delete(`/api/delete/remove`, {
+        data: { public_id },
+      });
+
+      if (response.status === 200) {
+        setFiles((prevFiles) => prevFiles.filter((file) => file.public_id !== public_id));
+        setMessage("Arquivo removido com sucesso!");
+      } else {
+        setMessage("Falha ao remover o arquivo.");
+      }
+    } catch (error) {
+      console.error("Error removing file:", error);
+      setMessage("Falha ao remover o arquivo.");
     }
   };
 
@@ -199,7 +216,6 @@ const UploadComponent: React.FC = () => {
       {/* Exibir arquivos carregados */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-h-[86%] overflow-y-scroll">
         {files.length === 0 && youtubeVideos.length === 0 && <p className="text-center">Nenhum arquivo ou vídeo carregado.</p>}
-        {/* Arquivos carregados */}
         {files.map((item) => (
           <div key={item.public_id} className="relative overflow-hidden border rounded-md shadow-md">
             {item.name}
@@ -211,6 +227,12 @@ const UploadComponent: React.FC = () => {
                 Seu navegador não suporta vídeos.
               </video>
             ) : null}
+            <button
+              onClick={() => handleRemoveFile(item.public_id)}
+              className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full"
+            >
+              Remover
+            </button>
           </div>
         ))}
       </div>
