@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import cloudinary from "cloudinary";
 
-// Configurar o Cloudinary (utilizando variáveis de ambiente)
+// Configurar o Cloudinary com as variáveis de ambiente
 cloudinary.v2.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
@@ -33,18 +33,17 @@ export async function GET(req: NextRequest) {
       folder: uploadFolder,
       timestamp: timestamp,
       public_id: `geunaweb/${slug}/${filename.split('.')[0]}`, // Remover a extensão do arquivo
-      upload_preset: 'ml_default', // Ou usar um preset específico conforme o tipo de arquivo
     };
 
     const apiSecret = process.env.CLOUDINARY_API_SECRET || '';
 
+    // Gerar a assinatura
     const signature = cloudinary.v2.utils.api_sign_request(signatureParams, apiSecret);
 
     // Retornar os dados necessários para o frontend (signature, timestamp, etc.)
     return NextResponse.json({
       signature,
       timestamp,
-      upload_preset: "ml_default",
       cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
       folder: uploadFolder,
     });

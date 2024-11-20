@@ -85,73 +85,39 @@ const UploadComponent: React.FC = () => {
   };
 
   // Lidar com o upload
-  const handleUpload = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  import axios from "axios";
 
-    if (!selectedSlug) {
-      setMessage("Por favor, selecione uma galeria.");
-      return;
-    }
+const handleUpload = async (file: any, selectedSlug: any) => {
+  const timestamp = Math.floor(Date.now() / 1000).toString();
 
-    if (file) {
-      const formData = new FormData();
-      formData.append("file", file);
+  try {
+    // Obter a assinatura e outros parâmetros do backend
+    const response = await axios.get(`/api/upload?slug=${selectedSlug}&filename=${file.name}`);
+    const { signature, cloud_name, folder } = response.data;
 
-      try {
-        const response = await axios.get(`/api/upload?slug=${selectedSlug}&filename=${file.name}`);
-        const { signature, timestamp, upload_preset, cloud_name, folder } = response.data;
+    // Definir a URL de upload do Cloudinary
+    const uploadUrl = `https://api.cloudinary.com/v1_1/${cloud_name}/upload`;
 
-        const uploadUrl =
-          file.type.startsWith("image/") ?
-          `https://api.cloudinary.com/v1_1/${cloud_name}/image/upload` :
-          `https://api.cloudinary.com/v1_1/${cloud_name}/video/upload`;
+    // Montar os parâmetros para o upload
+    const params = new FormData();
+    params.append("file", file);
+    params.append("api_key", process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY || '');
+    params.append("timestamp", timestamp);
+    params.append("signature", signature);
+    params.append("folder", folder);
+    params.append("public_id", `geunaweb/${selectedSlug}/${file.name.split('.')[0]}`); // Remover a extensão
 
-        const params = {
-          file,
-          api_key: process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY,
-          signature,
-          timestamp,
-          upload_preset,
-          folder,
-          public_id: `geunaweb/${selectedSlug}/${file.name}`,
-        };
+    // Fazer o upload para o Cloudinary
+    const cloudinaryResponse = await axios.post(uploadUrl, params, {
+      headers: { "Content-Type": "multipart/form-data" },
+    });
 
-        const cloudinaryResponse = await axios.post(uploadUrl, params, {
-          headers: { "Content-Type": "multipart/form-data" },
-        });
+    console.log("Arquivo enviado com sucesso", cloudinaryResponse.data);
+  } catch (error) {
+    console.error("Erro ao enviar o arquivo", error);
+  }
+};
 
-        setFiles((prevFiles) => [
-          ...prevFiles,
-          {
-            url: cloudinaryResponse.data.secure_url,
-            public_id: cloudinaryResponse.data.public_id,
-            type: file.type,
-            name: file.name,
-          },
-        ]);
-        setMessage("Upload bem-sucedido!");
-        setFile(null);
-      } catch (error) {
-        console.error("Upload error:", error);
-        setMessage("Falha no upload.");
-      }
-    } else if (youtubeUrl) {
-      try {
-        const response = await axios.post(`/api/youtube-upload?slug=${selectedSlug}`, {
-          url: youtubeUrl,
-        });
-
-        setYoutubeVideos((prevVideos) => [...prevVideos, youtubeUrl]);
-        setMessage("Vídeo do YouTube inserido com sucesso!");
-        setYoutubeUrl("");
-      } catch (error) {
-        console.error("YouTube upload error:", error);
-        setMessage("Falha ao inserir o vídeo do YouTube.");
-      }
-    } else {
-      setMessage("Selecione um arquivo ou insira uma URL do YouTube.");
-    }
-  };
 
   // Remover arquivo
   const handleRemoveFile = async (public_id: string) => {
