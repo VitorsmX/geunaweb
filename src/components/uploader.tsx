@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -84,37 +82,41 @@ const UploadComponent: React.FC = () => {
     }
   };
 
-const handleUpload = async (file: any, selectedSlug: any) => {
-  const timestamp = Math.floor(Date.now() / 1000).toString();
+  // Função de upload
+  const handleUpload = async (file: any, selectedSlug: any) => {
+    const timestamp = Math.floor(Date.now() / 1000).toString();
 
-  try {
-    // Obter a assinatura e outros parâmetros do backend
-    const response = await axios.get(`/api/upload?slug=${selectedSlug}&filename=${file.name}`);
-    const { signature, cloud_name, folder } = response.data;
+    try {
+      // Obter a assinatura e outros parâmetros do backend
+      const response = await axios.get(`/api/upload?slug=${selectedSlug}&filename=${file.name}`);
+      const { signature, cloud_name, folder } = response.data;
 
-    // Definir a URL de upload do Cloudinary
-    const uploadUrl = `https://api.cloudinary.com/v1_1/${cloud_name}/upload`;
+      // Definir a URL de upload do Cloudinary
+      const uploadUrl = `https://api.cloudinary.com/v1_1/${cloud_name}/upload`;
 
-    // Montar os parâmetros para o upload
-    const params = new FormData();
-    params.append("file", file);
-    params.append("api_key", process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY || '');
-    params.append("timestamp", timestamp);
-    params.append("signature", signature);
-    params.append("folder", folder);
-    params.append("public_id", `geunaweb/${selectedSlug}/${file.name.split('.')[0]}`); // Remover a extensão
+      // Montar os parâmetros para o upload
+      const params = new FormData();
+      params.append("file", file);
+      params.append("api_key", process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY || '');
+      params.append("timestamp", timestamp);
+      params.append("signature", signature);
+      params.append("folder", folder);
+      params.append("public_id", `geunaweb/${selectedSlug}/${file.name.split('.')[0]}`); // Remover a extensão
 
-    // Fazer o upload para o Cloudinary
-    const cloudinaryResponse = await axios.post(uploadUrl, params, {
-      headers: { "Content-Type": "multipart/form-data" },
-    });
+      // Fazer o upload para o Cloudinary
+      const cloudinaryResponse = await axios.post(uploadUrl, params, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
 
-    console.log("Arquivo enviado com sucesso", cloudinaryResponse.data);
-  } catch (error) {
-    console.error("Erro ao enviar o arquivo", error);
-  }
-};
-
+      console.log("Arquivo enviado com sucesso", cloudinaryResponse.data);
+      // Adicionar o arquivo enviado à lista de arquivos
+      setFiles((prevFiles) => [...prevFiles, cloudinaryResponse.data]);
+      setMessage("Arquivo enviado com sucesso!");
+    } catch (error) {
+      console.error("Erro ao enviar o arquivo", error);
+      setMessage("Erro ao enviar o arquivo");
+    }
+  };
 
   // Remover arquivo
   const handleRemoveFile = async (public_id: string) => {
@@ -135,6 +137,14 @@ const handleUpload = async (file: any, selectedSlug: any) => {
     }
   };
 
+  // Função para prevenir o submit e realizar o upload
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault(); // Impede o refresh da página
+    if (file) {
+      handleUpload(file, selectedSlug); // Realiza o upload
+    }
+  };
+
   return (
     <div className="max-w-full mx-auto bg-white rounded-lg shadow-md p-6 mt-10 transition-transform transform hover:scale-105">
       <h2 className="text-2xl font-semibold text-center mb-4">Upload de Imagem ou Vídeo</h2>
@@ -145,7 +155,7 @@ const handleUpload = async (file: any, selectedSlug: any) => {
           <option key={item.slug} value={item.slug}>{item.title}</option>
         ))}
       </select>
-      <form onSubmit={() => handleUpload(file, selectedSlug)} className="flex flex-col space-y-4">
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <input
           type="file"
           onChange={handleFileChange}
