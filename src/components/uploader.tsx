@@ -85,7 +85,7 @@ const UploadComponent: React.FC = () => {
     }
   };
 
-  // Função de upload
+  // Função de upload para o Cloudinary
   const handleUpload = async (file: any, selectedSlug: any) => {
     const timestamp = Math.floor(Date.now() / 1000).toString();
 
@@ -125,6 +125,54 @@ const UploadComponent: React.FC = () => {
     } finally {
       // Depois do upload (sucesso ou falha), remover o arquivo da lista de "loading"
       setLoadingFile(null);
+    }
+  };
+
+  // Função para fazer o upload do vídeo do YouTube
+  const handleYoutubeUpload = async () => {
+    if (!youtubeUrl || !selectedSlug) {
+      setMessage("Por favor, forneça uma URL do YouTube e selecione uma galeria.");
+      return;
+    }
+
+    try {
+      // Enviar a URL do YouTube para o backend
+      const response = await axios.post(`/api/youtube-upload?slug=${selectedSlug}`, { url: youtubeUrl });
+      if (response.status === 200) {
+        setMessage("Vídeo adicionado com sucesso!");
+        setYoutubeVideos((prevVideos) => [...prevVideos, youtubeUrl]);
+        setYoutubeUrl(""); // Limpar o campo após o sucesso
+      } else {
+        setMessage(`Erro: ${response.data.error}`);
+      }
+    } catch (error) {
+      console.error("Erro ao adicionar vídeo:", error);
+      setMessage("Falha ao adicionar vídeo.");
+    }
+  };
+
+  // Função para deletar um vídeo do YouTube
+  const handleDeleteYoutubeVideo = async (videoUrl: string) => {
+    if (!selectedSlug) {
+      setMessage("Selecione uma galeria antes de deletar.");
+      return;
+    }
+
+    try {
+      const response = await axios.delete(`/api/delete/youtube/${selectedSlug}`, {
+        data: { url: videoUrl },
+      });
+
+      if (response.status === 200) {
+        // Atualizar a lista de vídeos removendo o vídeo deletado
+        setYoutubeVideos((prevVideos) => prevVideos.filter((video) => video !== videoUrl));
+        setMessage("Vídeo deletado com sucesso!");
+      } else {
+        setMessage(`Erro: ${response.data.error}`);
+      }
+    } catch (error) {
+      console.error("Erro ao deletar vídeo:", error);
+      setMessage("Falha ao deletar vídeo.");
     }
   };
 
@@ -182,6 +230,13 @@ const UploadComponent: React.FC = () => {
               className="border border-gray-300 rounded-md p-2 mt-2"
               placeholder="Insira a URL do YouTube"
             />
+            <button
+              type="button"
+              onClick={handleYoutubeUpload}
+              className="bg-green-500 text-white font-semibold py-2 rounded-md hover:bg-green-600 transition duration-200 transform hover:scale-105"
+            >
+              Enviar Vídeo
+            </button>
           </div>
         )}
 
@@ -198,28 +253,15 @@ const UploadComponent: React.FC = () => {
       {/* Exibir arquivos carregados */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-h-[86%] overflow-y-scroll">
         {files.length === 0 && youtubeVideos.length === 0 && <p className="text-center">Nenhum arquivo ou vídeo carregado.</p>}
-        {files.map((item) => (
-          <div key={item.public_id} className="relative overflow-hidden border rounded-md shadow-md">
-            {/* Mostrar loading enquanto o arquivo está sendo carregado */}
-            {loadingFile === item.name ? (
-              <div className="w-full h-32 flex justify-center items-center">
-                <div className="animate-spin border-4 border-t-4 border-blue-500 rounded-full w-8 h-8"></div> {/* Spinner */}
-              </div>
-            ) : (
-              <>
-                {item.name}
-                {item.type.startsWith("image/") ? (
-                  <img src={item.url} alt="Uploaded" className="w-full h-32 object-cover" />
-                ) : item.type.startsWith("video/") ? (
-                  <video controls className="w-full h-32 object-cover">
-                    <source src={item.url} type={item.type} />
-                    Seu navegador não suporta vídeos.
-                  </video>
-                ) : null}
-              </>
-            )}
+
+        {/* Exibir vídeos do YouTube */}
+        {youtubeVideos.map((videoUrl) => (
+          <div key={videoUrl} className="relative overflow-hidden border rounded-md shadow-md">
+            <div className="w-full h-32 flex items-center justify-center bg-gray-200">
+              <span>{videoUrl}</span>
+            </div>
             <button
-              onClick={() => handleRemoveFile(item.public_id)}
+              onClick={() => handleDeleteYoutubeVideo(videoUrl)}
               className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full"
             >
               Remover

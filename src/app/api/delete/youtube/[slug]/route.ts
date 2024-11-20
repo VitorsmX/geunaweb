@@ -1,4 +1,4 @@
-// app/api/youtube-upload/[slug]/delete-video/route.ts
+// api/delete/youtube/[slug]/route.ts
 
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
