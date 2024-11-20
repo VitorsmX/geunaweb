@@ -23,8 +23,8 @@ const UploadComponent: React.FC = () => {
   const [message, setMessage] = useState<string>("");
   const [files, setFiles] = useState<FileItem[]>([]); // Arquivos comuns
   const [youtubeVideos, setYoutubeVideos] = useState<string[]>([]); // Vídeos do YouTube
-  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]); 
-  const [selectedSlug, setSelectedSlug] = useState<string>(""); 
+  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
+  const [selectedSlug, setSelectedSlug] = useState<string>("");
   const [youtubeUrl, setYoutubeUrl] = useState<string>("");
 
   // Definir limite de tamanho de arquivo
@@ -90,48 +90,56 @@ const UploadComponent: React.FC = () => {
   // Lidar com o upload
   const handleUpload = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-  
+
     if (!selectedSlug) {
       setMessage("Por favor, selecione uma galeria.");
       return;
     }
-  
+
     // Verificar se o arquivo é muito grande (maior que 90MB)
-    if (file && file.size > 90 * 1024 * 1024) {
+    if (file && file.size > FILE_SIZE_LIMIT) {
       // Redirecionar para o YouTube em vez de fazer upload para o Cloudinary
-      try {
-        const response = await axios.post(`/api/youtube-upload?slug=${selectedSlug}`, {
-          url: youtubeUrl,
-        });
-  
-        setYoutubeVideos((prevVideos) => [...prevVideos, youtubeUrl]);
-        setMessage("Vídeo do YouTube inserido com sucesso!");
-        setYoutubeUrl("");
-      } catch (error) {
-        console.error("YouTube upload error:", error);
-        setMessage("Falha ao inserir o vídeo do YouTube.");
+      if (youtubeUrl) {
+        try {
+          const response = await axios.post(`/api/youtube-upload?slug=${selectedSlug}`, {
+            url: youtubeUrl,
+          });
+
+          setYoutubeVideos((prevVideos) => [...prevVideos, youtubeUrl]);
+          setMessage("Vídeo do YouTube inserido com sucesso!");
+          setYoutubeUrl("");
+        } catch (error) {
+          console.error("YouTube upload error:", error);
+          setMessage("Falha ao inserir o vídeo do YouTube.");
+        }
+      } else {
+        setMessage("Por favor, insira uma URL do YouTube.");
       }
     } else if (file) {
       // Se o arquivo for válido para upload no Cloudinary
-      const formData = new FormData();
-      formData.append("file", file);
-  
       try {
-        // Obter a URL de upload do Cloudinary do backend
+        // Obter a URL de upload e assinatura do Cloudinary do backend
         const response = await axios.get(`/api/upload-url?slug=${selectedSlug}`);
-        const uploadUrl = response.data.upload_url;
-  
-        // Verifique se a URL é válida antes de tentar o upload
-        if (!uploadUrl || !uploadUrl.startsWith("https://")) {
+        const { upload_url, signature, timestamp, cloud_name } = response.data;
+
+        // Criar o FormData para enviar o arquivo
+        const formData = new FormData();
+        formData.append("file", file);
+        formData.append("api_key", process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY!); // Coloque a chave pública
+        formData.append("timestamp", timestamp);
+        formData.append("signature", signature);
+        formData.append("folder", `geunaweb/${selectedSlug}`); // Direcionar para o diretório correto
+
+        // Verifique se a URL de upload é válida antes de tentar o upload
+        if (!upload_url || !upload_url.startsWith("https://")) {
           throw new Error("A URL de upload do Cloudinary é inválida.");
         }
-  
-        console.log("URL de upload Cloudinary:", uploadUrl); // Verifique o log aqui
-  
-        const cloudinaryResponse = await axios.post(uploadUrl, formData, {
+
+        // Realizar o upload para o Cloudinary
+        const cloudinaryResponse = await axios.post(upload_url, formData, {
           headers: { "Content-Type": "multipart/form-data" },
         });
-  
+
         setFiles((prevFiles) => [
           ...prevFiles,
           { url: cloudinaryResponse.data.secure_url, public_id: cloudinaryResponse.data.public_id, type: file.type, name: file.name },
@@ -142,24 +150,10 @@ const UploadComponent: React.FC = () => {
         console.error("Upload error:", error);
         setMessage("Falha no upload.");
       }
-    } else if (youtubeUrl) {
-      try {
-        const response = await axios.post(`/api/youtube-upload?slug=${selectedSlug}`, {
-          url: youtubeUrl,
-        });
-  
-        setYoutubeVideos((prevVideos) => [...prevVideos, youtubeUrl]);
-        setMessage("Vídeo do YouTube inserido com sucesso!");
-        setYoutubeUrl("");
-      } catch (error) {
-        console.error("YouTube upload error:", error);
-        setMessage("Falha ao inserir o vídeo do YouTube.");
-      }
     } else {
       setMessage("Selecione um arquivo ou insira uma URL do YouTube.");
     }
   };
-  
 
   return (
     <div className="max-w-full mx-auto bg-white rounded-lg shadow-md p-6 mt-10 transition-transform transform hover:scale-105">

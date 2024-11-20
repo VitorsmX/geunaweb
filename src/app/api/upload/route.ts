@@ -1,14 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import cloudinary from "cloudinary";
 
-// Configurar o Cloudinary
+// Configurar o Cloudinary (utilizando variáveis de ambiente)
 cloudinary.v2.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// Endpoint para gerar a URL de upload do Cloudinary
+// Função para gerar a assinatura de upload
 export async function GET(req: NextRequest) {
   const url = new URL(req.url);
   const slug = url.searchParams.get("slug");
@@ -18,19 +18,31 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    // Gerar uma URL de upload usando o Cloudinary
-    const uploadUrl = cloudinary.v2.uploader.upload_url({
-      folder: `geunaweb/${slug}`, // A pasta onde os arquivos serão salvos
-      resource_type: 'auto', // Detecta automaticamente o tipo de mídia
+    const timestamp = Math.floor(Date.now() / 1000); // Timestamp para garantir a validade da assinatura
+
+    // Definir o diretório de upload
+    const uploadFolder = `geunaweb/${slug}`;
+
+    // Gerar a assinatura de upload do Cloudinary
+    const signatureParams = {
+      folder: uploadFolder,
+      timestamp: timestamp,
+    };
+
+    const apiSecret = process.env.CLOUDINARY_API_SECRET || ''
+
+    const signature = cloudinary.v2.utils.api_sign_request(signatureParams, apiSecret);
+
+    // Retornar os dados necessários para o frontend (signature, timestamp, etc.)
+    return NextResponse.json({
+      signature,
+      timestamp,
+      upload_preset: "ml_default", // Se você estiver usando um "upload preset"
+      cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+      folder: uploadFolder,
     });
-
-    if (!uploadUrl) {
-      throw new Error("Erro ao gerar URL de upload");
-    }
-
-    return NextResponse.json({ upload_url: uploadUrl });
   } catch (error) {
-    console.error("Error generating upload URL:", error);
-    return NextResponse.json({ error: "Erro ao gerar URL de upload" }, { status: 500 });
+    console.error("Error generating upload signature:", error);
+    return NextResponse.json({ error: "Erro ao gerar a assinatura do upload" }, { status: 500 });
   }
 }
