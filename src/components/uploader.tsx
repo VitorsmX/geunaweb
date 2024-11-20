@@ -98,7 +98,7 @@ const UploadComponent: React.FC = () => {
       formData.append("file", file);
 
       try {
-        const response = await axios.get(`/api/upload-url?slug=${selectedSlug}`);
+        const response = await axios.get(`/api/upload?slug=${selectedSlug}`);
         const { signature, timestamp, upload_preset, cloud_name, folder } = response.data;
 
         const uploadUrl =
