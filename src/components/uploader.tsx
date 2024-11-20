@@ -121,7 +121,7 @@ const UploadComponent: React.FC = () => {
 
       try {
         // Obter a URL de upload do Cloudinary do backend
-        const response = await axios.get(`/api/upload-url?slug=${selectedSlug}`);
+        const response = await axios.get(`/api/upload?slug=${selectedSlug}`);
         const uploadUrl = response.data.upload_url;
 
         const cloudinaryResponse = await axios.post(uploadUrl, formData);
