@@ -35,23 +35,23 @@ const MediaCard = ({ slug }: { slug: string }) => {
     const fetchMediaItems = async () => {
       try {
         // Carregar os arquivos do servidor de acordo com o slug
-        const response = await axios.get(`/api/files/${slug}`);
-        if (response.status === 200) {
-          setMediaItems(response.data);
-        } else {
+        const response = await fetch(`/api/files/${slug}`);
+        if (!response.ok) {
           console.log("Nenhum arquivo encontrado ou erro ao buscar arquivos.");
+        } else {
+          const data: MediaItem[] = await response.json();
+          setMediaItems(data);
         }
 
-        // Carregar os vídeos do YouTube, ignorando se não houver vídeos ou a pasta não existir
+        // Requisição para a API Route do servidor para obter vídeos do YouTube
         const youtubeResponse = await axios.get(`/api/files/youtube/${slug}`);
-        if (youtubeResponse.data?.videos?.length) {
+        if (youtubeResponse.data.videos.length > 0) {
           setYoutubeVideos(youtubeResponse.data.videos || []);
-          console.log(youtubeVideos)
         } else {
-          console.log("Nenhum vídeo do YouTube encontrado ou erro ao buscar vídeos.");
+          console.log('Erro ao buscar vídeos do YouTube.');
         }
       } catch (error) {
-        console.error('Erro ao buscar mídias:', error);
+        console.error('Error fetching media items:', error);
         setMessage('Falha ao carregar mídias.');
       }
     };
