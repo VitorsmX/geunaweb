@@ -5,6 +5,7 @@ import "@/styles/index.css";
 import { Metadata } from "next";
 import { SessionProvider } from "@/components/SessionContext"
 import AffiliateBanner from "@/components/AffiliateBanner";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.geuuniao.com.br"),
@@ -79,6 +80,7 @@ export default function RootLayout({
             <AffiliateBanner/>
             <div className="relative font-body max-w-6xl mx-auto px-5 h-full pt-28 sm:pt-20 md:py-24 backdrop-blur-md rounded-md">
               {children}
+              <Analytics />
             </div>
             <Footer />
           </ThemeProvider>
