@@ -11,6 +11,8 @@ export async function GET(req: NextRequest, { params }: { params: { slug: string
       .select('url')
       .eq('slug', slug);
 
+      console.log(data)
+
     if (error) {
       throw new Error(error.message);
     }

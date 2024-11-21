@@ -165,7 +165,6 @@ const MediaCard = ({ slug }: { slug: string }) => {
                 height="315"
                 src={videoUrl}
                 title={`YouTube Video ${index}`}
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full object-cover"
