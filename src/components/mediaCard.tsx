@@ -162,7 +162,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
           </button>
           {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
             <div key={index}>{videoUrl}</div>
-          )}
+          )) : null}
           {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
             <div key={index} className="video-container w-full">
               <iframe
