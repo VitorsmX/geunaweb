@@ -14,6 +14,7 @@ export async function GET(req: NextRequest, { params }: { params: { slug: string
       .eq('slug', slug);
 
       console.log(data)
+      console.log(error)
 
     if (error) {
       throw new Error(error.message);
