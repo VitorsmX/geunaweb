@@ -161,7 +161,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
             Carregar vídeo do YouTube
           </button>
           {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
-            <div key={index}>{videoUrl}</div>
+            <div key={index} onClick={() => console.log(videoUrl)}>click here</div>
           )) : null}
           {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
             <div key={index} className="video-container w-full">
