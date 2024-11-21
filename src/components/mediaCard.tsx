@@ -6,6 +6,7 @@ import Image from 'next/image';
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useSession } from './SessionContext';
+import axios from 'axios';  // Importando o axios
 
 type MediaItem = {
   url: string;
@@ -34,33 +35,29 @@ const MediaCard = ({ slug }: { slug: string }) => {
     const fetchMediaItems = async () => {
       try {
         // Carregar os arquivos do servidor de acordo com o slug
-        const response = await fetch(`/api/files/${slug}`);
-        if (!response.ok) {
-          // Caso não haja arquivos ou pasta, ignore a falha
+        const response = await axios.get(`/api/files/${slug}`);
+        if (response.status === 200) {
+          setMediaItems(response.data);
+        } else {
           console.log("Nenhum arquivo encontrado ou erro ao buscar arquivos.");
-        } else {
-          const data: MediaItem[] = await response.json();
-          setMediaItems(data);
         }
-  
+
         // Carregar os vídeos do YouTube, ignorando se não houver vídeos ou a pasta não existir
-        const youtubeResponse = await fetch(`/api/files/youtube/${slug}`);
-        if (!youtubeResponse.ok) {
-          // Caso não haja vídeos do YouTube ou erro na resposta, ignore a falha
-          console.log("Nenhum vídeo do YouTube encontrado ou erro ao buscar vídeos.");
+        const youtubeResponse = await axios.get(`/api/files/youtube/${slug}`);
+        if (youtubeResponse.status === 200) {
+          setYoutubeVideos(youtubeResponse.data.videos || []);
         } else {
-          const youtubeData: { videos: string[] } = await youtubeResponse.json();
-          setYoutubeVideos(youtubeData.videos || []);
+          console.log("Nenhum vídeo do YouTube encontrado ou erro ao buscar vídeos.");
         }
       } catch (error) {
-        console.error('Error fetching media items:', error);
+        console.error('Erro ao buscar mídias:', error);
         setMessage('Falha ao carregar mídias.');
       }
     };
-  
+
     fetchMediaItems();
   }, [slug]);
-  
+
   const openModal = useCallback((media: MediaItem) => {
     setSelectedMedia(media);
   }, []);
@@ -158,7 +155,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
       <div className="youtube-videos mt-10">
         <h3 className="text-2xl font-semibold mb-4">Vídeos do YouTube</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {youtubeVideos.map((videoUrl, index) => (
+          {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
             <div key={index} className="video-container w-full">
               <iframe
                 width="100%"
@@ -170,7 +167,9 @@ const MediaCard = ({ slug }: { slug: string }) => {
                 className="w-full h-full object-cover"
               />
             </div>
-          ))}
+          )) : (
+            <p>Nenhum vídeo do YouTube encontrado para o evento.</p>
+          )}
         </div>
       </div>
 
