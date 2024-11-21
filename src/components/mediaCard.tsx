@@ -44,8 +44,9 @@ const MediaCard = ({ slug }: { slug: string }) => {
 
         // Carregar os vídeos do YouTube, ignorando se não houver vídeos ou a pasta não existir
         const youtubeResponse = await axios.get(`/api/files/youtube/${slug}`);
-        if (youtubeResponse.status === 200) {
+        if (youtubeResponse.data?.videos?.length) {
           setYoutubeVideos(youtubeResponse.data.videos || []);
+          console.log(youtubeVideos)
         } else {
           console.log("Nenhum vídeo do YouTube encontrado ou erro ao buscar vídeos.");
         }
