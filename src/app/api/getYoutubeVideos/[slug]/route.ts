@@ -1,8 +1,9 @@
 import { createClient } from "@supabase/supabase-js";
-import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
-const appURL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+const supabaseUrl = process.env.SUPABASE_URL || ''; // Usar variável de ambiente do Supabase
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || ''; // Use a chave de serviço (não exposta no front-end)
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function GET(
   req: NextRequest,
@@ -14,12 +15,14 @@ export async function GET(
 
   try {
     // Buscar todas as URLs de vídeos do YouTube para o slug específico
-    const response = await axios.get(`${appURL}/api/getYoutubeVideos/${slug}`);
-    const { data } = response;
+    const { data, error } = await supabase
+      .from("youtube_videos")
+      .select("url")
+      .eq("slug", slug);
 
-    if (response.status !== 200) {
-      console.error("Erro na consulta:", response.statusText);
-      throw new Error( response.statusText);
+    if (error) {
+      console.error("Erro na consulta:", error);
+      throw new Error(error.message);
     }
 
     if (!data || data.length === 0) {
