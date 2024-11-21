@@ -18,7 +18,7 @@ export default async function Index() {
   return (
     <>
       <div className="flex flex-col w-full h-full overflow-hidden mb-16 md:mb-28 bg-gradient-to-b from-[#cef1ff79] via-[#43c3ff60] to-[#0a91ff4d]">
-        <div className="w-full h-auto mx-0 z-0 top-0 flex justify-center items-center hover:scale-[1.02] transition-all duration-700 ease-in">
+        <div className="w-full h-auto mx-0 z-0 top-0 flex justify-center items-center hover:scale-[1.02] transition-all duration-700 ease-in animate-[animate-[enter_1s_ease-in-out_backwards]]">
           <Image
             src={coverImage ? coverImage : bannerImagem}
             alt="Banner Geu"
@@ -27,13 +27,13 @@ export default async function Index() {
             className="h-full object-cover"
           />
         </div>
-        <section className="mb-16 md:min-h-[calc(100vh-256px)] items-center flex z-10 backdrop-blur-lg bg-[#294b7210] p-4 rounded-b-lg gap-x-8">
+        <section className="mb-16 md:min-h-[calc(100vh-256px)] items-center flex z-10 backdrop-blur-lg bg-[#294b7210] p-4 rounded-b-lg gap-x-8 animate-[animate-[enter_1s_ease-in-out_backwards] delay-100">
           <div
             className="prose lg:prose-2xl home-intro prose-outstatic home-hero-fade"
             dangerouslySetInnerHTML={{ __html: content }}
           />
           {instagram && (
-            <div className="flex flex-col justify-center items-center gap-y-2 self-start bg-[#2fff0556] py-3 px-3 sm:px-6 rounded-lg">
+            <div className="flex flex-col justify-center items-center gap-y-2 self-start bg-[#9e7a4456] py-3 px-3 sm:px-6 rounded-lg">
               <p className="text-center text-xl font-semibold mb-2 sm:mb-8 underline underline-offset-2">Redes Sociais</p>
               <a
                 className="flex items-center gap-2 mx-auto mt-8 mb-4 md:mb-0 md:mt-0"

@@ -100,11 +100,11 @@
   @apply text-3xl md:text-5xl font-thin md:leading-tight;
 
   a {
-    @apply before:-z-10 relative before:bg-secondary font-normal no-underline transition-all inline-block before:content-normal before:absolute before:w-0 before:transition-all before:duration-300 before:h-full before:-left-1 before:top-1;
+    @apply before:-z-10 relative before:bg-secondary font-normal no-underline shadow-inner shadow-slate-100 transition-all inline-block before:content-normal before:absolute before:w-0 before:transition-all before:duration-300 before:h-full before:-left-1 before:top-1;
   }
 
   a:hover {
-    @apply before:w-[calc(100%+0.5rem)];
+    @apply before:w-[calc(100%+0.5rem)] shadow-md;
   }
 }
 
@@ -205,13 +205,13 @@
   @apply animate-fade-up opacity-0;
 
   &:nth-child(1) {
-    animation-delay: 0.1s;
+    animation-delay: 0.2s;
   }
   &:nth-child(2) {
-    animation-delay: 0.3s;
+    animation-delay: 0.4s;
   }
   &:nth-child(3) {
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
   }
 }
 
