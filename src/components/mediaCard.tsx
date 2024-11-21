@@ -157,7 +157,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
       <div className="youtube-videos mt-10">
         <h3 className="text-2xl font-semibold mb-4">Vídeos do YouTube</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <button onClick={() => fetchYoutubeVideosUrl()} className="md:hidden w-full mt-4">
+          <button onClick={() => fetchYoutubeVideosUrl()} className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full mt-4">
             Carregar vídeo do YouTube
           </button>
           {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
