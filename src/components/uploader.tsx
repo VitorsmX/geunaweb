@@ -48,7 +48,7 @@ const UploadComponent: React.FC = () => {
           `/api/files/youtube/${selectedSlug}`
         );
         if (youtubeResponse.data?.videos?.length) {
-          setYoutubeVideos(youtubeResponse.data.videos);
+          setYoutubeVideos(youtubeResponse.data.videos.map((video: any) => video.url));
         } else {
           console.log("Nenhum vídeo do YouTube encontrado para o slug.");
         }

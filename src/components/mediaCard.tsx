@@ -16,7 +16,7 @@ type MediaItem = {
 
 const MediaCard = ({ slug }: { slug: string }) => {
   const [mediaItems, setMediaItems] = useState<MediaItem[]>([]);
-  const [youtubeVideos, setYoutubeVideos] = useState<string[]>([]); // Para armazenar URLs dos vídeos do YouTube
+  const [youtubeVideos, setYoutubeVideos] = useState<any[]>([]); // Para armazenar URLs dos vídeos do YouTube
   const [message, setMessage] = useState<string>('');
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
   const [emblaRef, embla] = useEmblaCarousel({ loop: true, skipSnaps: false });
@@ -155,31 +155,31 @@ const MediaCard = ({ slug }: { slug: string }) => {
 
       {/* Exibição de vídeos do YouTube */}
       <div className="youtube-videos mt-10">
-        <h3 className="text-2xl font-semibold mb-4">Vídeos do YouTube</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <button onClick={() => fetchYoutubeVideosUrl()} className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full mt-4">
-            Carregar vídeo do YouTube
-          </button>
-          {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
-            <div key={index} onClick={() => console.log(videoUrl)}>click here</div>
-          )) : null}
-          {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
-            <div key={index} className="video-container w-full">
-              <iframe
-                width="100%"
-                height="315"
-                src={videoUrl}
-                title={`YouTube Video ${index}`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full object-cover"
-              />
-            </div>
-          )) : (
-            <p>Nenhum vídeo do YouTube encontrado para o evento.</p>
-          )}
-        </div>
+  <h3 className="text-2xl font-semibold mb-4">Vídeos do YouTube</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <button onClick={() => fetchYoutubeVideosUrl()} className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full mt-4">
+      Carregar vídeo do YouTube
+    </button>
+
+    {youtubeVideos ? youtubeVideos.map((videoUrlObj, index) => (
+      <div key={index} className="video-container w-full">
+        <iframe
+          width="100%"
+          height="315"
+          // Aqui, você precisa acessar o videoUrlObj.url, pois videoUrlObj é um objeto
+          src={videoUrlObj.url} 
+          title={`YouTube Video ${index}`}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full h-full object-cover"
+        />
       </div>
+    )) : (
+      <p>Nenhum vídeo do YouTube encontrado para o evento.</p>
+    )}
+  </div>
+</div>
+
 
       {/* Modal de visualização */}
       {selectedMedia && (
