@@ -4,6 +4,8 @@ import supabase from '@/lib/supabaseClient';
 export async function GET(req: NextRequest, { params }: { params: { slug: string } }) {
   const { slug } = params;
 
+  console.log(slug)
+
   try {
     // Buscar todas as URLs de vídeos do YouTube para o slug específico
     const { data, error } = await supabase
