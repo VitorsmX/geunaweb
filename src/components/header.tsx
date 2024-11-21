@@ -18,7 +18,7 @@ const Header = async () => {
   const { pages, collections } = data;
 
   return (
-    <header className="py-4 fixed border-t md:bottom-auto md:top-0 w-full z-20 border-b bg-gradient-to-r from-[#84d7f8f8] via-[#579bf5ef] to-[#0084ffda] animate-accordion-down fill-mode-backwards">
+    <header className="py-4 fixed border-t md:bottom-auto md:top-0 w-full z-20 border-b bg-gradient-to-r from-[#84d7f8f8] via-[#579bf5ef] to-[#0084ffda]">
       <nav className="max-w-6xl mx-auto w-full layout flex items-center justify-between">
         <Link
           href="/"
@@ -30,7 +30,7 @@ const Header = async () => {
             width={40}
             height={40}
           />
-          <span className="ml-2 text-zinc-900 font-primary">Grupo Espírita União <i className="font-secondary">(Página Oficial)</i></span>
+          <span className="ml-2 text-zinc-900 font-primary animate-fade-in duration-300">Grupo Espírita União <i className="font-secondary">(Página Oficial)</i></span>
         </Link>
         <ul className="hidden md:flex items-center justify-between space-x-3 text-xs md:space-x-4 md:text-base">
           {pages.map(({ title, slug }) => (
