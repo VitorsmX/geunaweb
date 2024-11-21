@@ -28,7 +28,7 @@ export async function GET(
       console.log("Dados retornados:", data);
     }
 
-    return NextResponse.json({ videos: data }, { status: 200 });
+    return NextResponse.json({ videos: data.videos }, { status: 200 });
   } catch (error) {
     console.error("Erro ao buscar vídeos:", error);
     return NextResponse.json(
