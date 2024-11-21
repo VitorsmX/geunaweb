@@ -31,6 +31,15 @@ const MediaCard = ({ slug }: { slug: string }) => {
     );
   }
 
+  const fetchYoutubeVideosUrl = async () => {
+    const youtubeResponse = await axios.get(`/api/files/youtube/${slug}`);
+        if (youtubeResponse.data.videos.length > 0) {
+          setYoutubeVideos(youtubeResponse.data.videos || []);
+        } else {
+          console.log('Erro ao buscar vídeos do YouTube.');
+        }
+  }
+
   useEffect(() => {
     const fetchMediaItems = async () => {
       try {
@@ -41,14 +50,6 @@ const MediaCard = ({ slug }: { slug: string }) => {
         } else {
           const data: MediaItem[] = await response.json();
           setMediaItems(data);
-        }
-
-        // Requisição para a API Route do servidor para obter vídeos do YouTube
-        const youtubeResponse = await axios.get(`/api/files/youtube/${slug}`);
-        if (youtubeResponse.data.videos.length > 0) {
-          setYoutubeVideos(youtubeResponse.data.videos || []);
-        } else {
-          console.log('Erro ao buscar vídeos do YouTube.');
         }
       } catch (error) {
         console.error('Error fetching media items:', error);
@@ -156,6 +157,9 @@ const MediaCard = ({ slug }: { slug: string }) => {
       <div className="youtube-videos mt-10">
         <h3 className="text-2xl font-semibold mb-4">Vídeos do YouTube</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <button onClick={() => fetchYoutubeVideosUrl()} className="md:hidden w-full mt-4">
+            Carregar vídeo do YouTube
+          </button>
           {youtubeVideos ? youtubeVideos.map((videoUrl, index) => (
             <div key={index} className="video-container w-full">
               <iframe
