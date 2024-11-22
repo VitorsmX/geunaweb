@@ -1,6 +1,6 @@
 {
-  "commit": "8343d4b4b7e6b80c11f1b640bfea2bf44ffd8d49",
-  "generated": "2024-11-19T20:33:27.228Z",
+  "commit": "8bcba0f79e08fa8cde157138ad1569526969b7d1",
+  "generated": "2024-11-21T17:56:36.552Z",
   "metadata": [
     {
       "__outstatic": {
@@ -116,26 +116,6 @@
       "slug": "proposito-do-grupo-espirita-uniao",
       "status": "published",
       "title": "Propósito do Grupo Espírita União 🎯"
-    },
-    {
-      "__outstatic": {
-        "commit": "40ea845ad2f7798614914aa0d27877eab4d07390",
-        "hash": "198086122",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "bannerImagem": "https://i.imgur.com/6jOHpVH.jpeg",
-      "collection": "pages",
-      "coverImage": "/images/hero-bg-geu_20241113_144225_0000-E5Mj.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
     },
     {
       "__outstatic": {
@@ -482,6 +462,26 @@
       "slug": "dia-das-criancas-de-2024",
       "status": "published",
       "title": "Dia das Crianças de 2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "8bcba0f79e08fa8cde157138ad1569526969b7d1",
+        "hash": "4146707838",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "https://res.cloudinary.com/dla6w0tbp/image/upload/v1732211766/kkhnf5stobxgpworfdnu.jpg",
+      "collection": "pages",
+      "coverImage": "/images/hero-bg-geu-v1-kxNT.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
     }
   ]
 }
