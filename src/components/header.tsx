@@ -30,7 +30,7 @@ const Header = async () => {
             width={40}
             height={40}
           />
-          <span className="ml-2 text-zinc-900 font-primary animate-fade-in duration-300">Grupo Espírita União <i className="font-secondary">(Página Oficial)</i></span>
+          <span className="ml-2 text-zinc-800 font-primary animate-fade-in duration-1000">Grupo Espírita União <i className="font-secondary text-xs">- Página Oficial</i></span>
         </Link>
         <ul className="hidden md:flex items-center justify-between space-x-3 text-xs md:space-x-4 md:text-base">
           {pages.map(({ title, slug }) => (

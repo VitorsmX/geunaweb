@@ -33,7 +33,10 @@ export default async function Index() {
             dangerouslySetInnerHTML={{ __html: content }}
           />
           {instagram && (
-            <div className="flex flex-col justify-center items-center gap-y-2 self-start py-3 px-3 sm:px-6 rounded-lg shadow-md hover:shadow-xl transition-all">
+            <div className="flex flex-col justify-center items-center gap-y-2 self-start py-3 px-3 sm:px-6 rounded-lg shadow-md hover:shadow-2xl transition-all duration-700">
+              <div>
+                <p className="text-center text-sm leading-none font-secondary">Acompanhe nas redes</p>
+              </div>
               <div>
                 <MoveDown width={30} height={30} fill="black" stroke="black" />
               </div>
