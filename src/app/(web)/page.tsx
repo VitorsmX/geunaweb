@@ -18,7 +18,7 @@ export default async function Index() {
   return (
     <>
       <div className="flex flex-col w-full h-full overflow-hidden mb-16 md:mb-28 bg-gradient-to-b from-[#cef1ff79] via-[#43c3ff60] to-[#0a91ff4d] rounded-b-2xl">
-        <div className="w-full h-auto mx-0 z-0 top-0 flex justify-center items-center hover:scale-[1.01] transition-all duration-700 ease-in">
+        <div className="w-full h-auto mx-0 z-0 top-0 flex justify-center items-center hover:scale-[1.01] transition-all duration-1000 animate-fade-in delay-100">
           <Image
             src={coverImage ? coverImage : bannerImagem}
             alt="Banner Geu"
