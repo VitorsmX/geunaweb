@@ -1,7 +1,7 @@
 import AffiliateBanner from "@/components/AffiliateBanner";
 import ContentGrid from "@/components/content-grid";
 import markdownToHtml from "@/lib/markdownToHtml";
-import { InstagramIcon } from "lucide-react";
+import { InstagramIcon, MoveDown } from "lucide-react";
 import Image from "next/image";
 import { load } from "outstatic/server";
 
@@ -33,16 +33,18 @@ export default async function Index() {
             dangerouslySetInnerHTML={{ __html: content }}
           />
           {instagram && (
-            <div className="flex flex-col justify-center items-center gap-y-2 self-start bg-[#e3caca56] py-3 px-3 sm:px-6 rounded-lg">
-              <p className="text-center text-xl font-semibold mb-2 sm:mb-8 underline underline-offset-2">Redes Sociais</p>
+            <div className="flex flex-col justify-center items-center gap-y-2 self-start py-3 px-3 sm:px-6 rounded-lg shadow-md hover:shadow-xl transition-all">
+              <div>
+                <MoveDown width={30} height={30} fill="black" stroke="black" />
+              </div>
               <a
-                className="flex items-center gap-2 mx-auto mt-8 mb-4 md:mb-0 md:mt-0"
+                className="flex items-center gap-2 mx-auto mt-5 mb-4 md:mb-0 md:mt-0"
                 href={instagram}
                 target="_blank"
                 title="Instagram"
                 rel="noopener noreferrer"
               >
-                <InstagramIcon width={50} height={50} fill="#d4175fc2" className="max-sm:w-8 max-sm:h-8 fill-[#d4175fc2]" />
+                <InstagramIcon width={60} height={60} fill="#a91850c2" stroke="#3f091ec2" className="max-sm:w-8 max-sm:h-8 fill-[#a91850c2] stroke-[#3f091ec2]" />
               </a>
             </div>
           )}
