@@ -1,6 +1,6 @@
 {
-  "commit": "8bcba0f79e08fa8cde157138ad1569526969b7d1",
-  "generated": "2024-11-21T17:56:36.552Z",
+  "commit": "1852b4038279fdc0887d80132565f0c6d3be640b",
+  "generated": "2024-11-24T17:05:23.997Z",
   "metadata": [
     {
       "__outstatic": {
@@ -60,26 +60,6 @@
       "slug": "natal-geu-2022",
       "status": "published",
       "title": "Natal GEU 2022"
-    },
-    {
-      "__outstatic": {
-        "commit": "471cfa963b69e58ec5861283ce26ad6dd0280fda",
-        "hash": "1839218202",
-        "path": "outstatic/content/pages/sobre.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "bannerImagem": "",
-      "collection": "pages",
-      "coverImage": "/images/centro-esp-rita-terceira-revela--o-banner_20241113_150504_0000-k5OD.jpg",
-      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
-      "instagram": "",
-      "publishedAt": "2023-12-28T18:49:02.348Z",
-      "slug": "sobre",
-      "status": "published",
-      "title": "Sobre Nós"
     },
     {
       "__outstatic": {
@@ -465,8 +445,8 @@
     },
     {
       "__outstatic": {
-        "commit": "8bcba0f79e08fa8cde157138ad1569526969b7d1",
-        "hash": "4146707838",
+        "commit": "adb458ac961811556bae30d19e603177294ba58d",
+        "hash": "3418911837",
         "path": "outstatic/content/pages/home.md"
       },
       "author": {
@@ -482,6 +462,26 @@
       "slug": "home",
       "status": "published",
       "title": "Inicio"
+    },
+    {
+      "__outstatic": {
+        "commit": "1852b4038279fdc0887d80132565f0c6d3be640b",
+        "hash": "728869981",
+        "path": "outstatic/content/pages/sobre.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "",
+      "collection": "pages",
+      "coverImage": "/images/centro-esp-rita-terceira-revela--o-banner_20241113_150504_0000-k5OD.jpg",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "instagram": "",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "sobre",
+      "status": "published",
+      "title": "Sobre Nós"
     }
   ]
 }
