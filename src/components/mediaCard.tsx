@@ -106,7 +106,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
               key={item.public_id}
               className="embla__slide flex flex-col gap-y-0 justify-evenly max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.01] bg-[#d6e9ff36] py-2 px-1 h-[60vh] my-0 w-full min-w-[230px] sm:min-w-[250px]"
             >
-              <div className="my-0 w-fit h-48 max-w-[50%] max-h-[50%]">
+              <div className="my-0 w-fit self-center h-72 max-w-[95%] max-h-[95%]">
                 {item.type.startsWith('image/') ? (
                   <Image
                     src={item.url}
@@ -119,7 +119,7 @@ const MediaCard = ({ slug }: { slug: string }) => {
                     loading="lazy"
                   />
                 ) : (
-                  <video src={item.url} controls className="my-0 w-fit h-48 object-cover max-w-[50%] max-h-[50%]" />
+                  <video src={item.url} controls className="my-0 w-fit h-72 object-cover max-w-[80%] max-h-[80%]" />
                 )}
               </div>
               <button
