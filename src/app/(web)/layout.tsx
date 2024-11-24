@@ -2,21 +2,34 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/index.css";
-import { Metadata } from "next";
 import { SessionProvider } from "@/components/SessionContext"
 import AffiliateBanner from "@/components/AffiliateBanner";
 import { Analytics } from '@vercel/analytics/next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.geuuniao.com.br"),
   title: {
-    default: "Espiritismo na Web - Grupo Espírita União",
+    default: "Grupo Espírita União: Espiritismo na Internet",
     template: "%s | Seção do website do Grupo Espírita União",
   },
   description:
     "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
+  applicationName: "Grupo Espírita União: Espiritismo na Internet",
+  generator: "Next.js",
+  keywords: ["Espiritismo", "Livros Espíritas", "Projetos Sociais", "Divulgação Espírita", "Religião", "Fé", "Chico Xavier", "Nosso Lar", "Divaldo Franco", "Allan Kardec"],
+  authors: [
+    { name: "Grupo Espírita União", url: "https://www.geuuniao.com.br" },
+    { name: "Equipe de Desenvolvimento", url: "https://visoteckgo.vercel.app" },
+  ],
+  robots: "index, follow",
+  referrer: "origin",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+  ],
   openGraph: {
-    title: "Espiritismo na Web - Grupo Espírita União",
+    title: "Grupo Espírita União: Espiritismo na Internet",
     description:
       "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
     url: "https://www.geuuniao.com.br",
@@ -46,20 +59,46 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Espiritismo na Web - Grupo Espírita União",
+    title: "Grupo Espírita União: Espiritismo na Internet",
     description:
       "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
     images: [
       "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
       "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
-      "https://www.geuuniao.com.br/images/ogimagegeumenor.jpg"
+      "https://www.geuuniao.com.br/images/ogimagegeumenor.jpg",
     ],
+    site: "@geuuniao",
+    creator: "@geuuniao",
   },
   icons: {
-    icon: [{ url: "/favicon/logo-geu.png" }],
-    apple: [{ url: "/favicon/logo-geu.png" }],
+    icon: [{ url: "/images/logo-geu-transp.png" }],
+    apple: [{ url: "/images/logo-geu-transp.png" }],
+  },
+  manifest: "/manifest.json",
+  facebook: {
+    appId: "1234567890",
+  },
+  verification: {
+    google: "google-site-verification-code",
+    yandex: "yandex-site-verification-code",
+    me: "my-own-site-verification-code",
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Grupo Espírita União",
+    statusBarStyle: "black-translucent",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  category: "Espiritismo",
+  classification: "Religião",
+  alternates: {
+    canonical: "https://www.geuuniao.com.br",
   },
 };
+
+
 
 export default function RootLayout({
   children,
