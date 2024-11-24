@@ -16,7 +16,7 @@ module.exports = {
   priority: 0.8,
   sitemapSize: 5000,
   exclude: ['/outstatic/*', '/api/*'],
-  generateIndexSitemap: false,
+  generateIndexSitemap: true,
   autoLastmod: true,
   lastmodDate: true,
 };
