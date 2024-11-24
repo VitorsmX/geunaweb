@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: 
 Crawl-delay: 5
+Allow: /
 Disallow: /api/
 Disallow: /outstatic/
 Sitemap: https://www.geuuniao.com.br/sitemap-0.xml
