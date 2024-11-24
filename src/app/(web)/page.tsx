@@ -53,7 +53,7 @@ export default async function Index() {
           )}
         </section>
       </div>
-      <div className="my-5 hover:shadow-lg shadow-sky-400 rounded-full p-3 transition-all">
+      <div className="my-5 hover:shadow-2xl shadow-sky-400 shadow-none rounded-full p-3 transition-all">
         <h1 className="text-4xl font-extrabold italic hover:animate-bounce">Espiritismo em Artigos, Livros, Palestras e Eventos</h1>
       </div>
       <div className="animate-fade-in delay-1000 opacity-0 duration-500">
