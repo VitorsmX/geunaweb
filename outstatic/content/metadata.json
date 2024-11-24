@@ -1,6 +1,6 @@
 {
-  "commit": "1852b4038279fdc0887d80132565f0c6d3be640b",
-  "generated": "2024-11-24T17:05:23.997Z",
+  "commit": "a7d507c5bbf1ee56aff228096ecb86a38f14afd8",
+  "generated": "2024-11-24T17:56:03.478Z",
   "metadata": [
     {
       "__outstatic": {
@@ -445,26 +445,6 @@
     },
     {
       "__outstatic": {
-        "commit": "adb458ac961811556bae30d19e603177294ba58d",
-        "hash": "3418911837",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "bannerImagem": "https://res.cloudinary.com/dla6w0tbp/image/upload/v1732211766/kkhnf5stobxgpworfdnu.jpg",
-      "collection": "pages",
-      "coverImage": "/images/hero-bg-geu-v1-kxNT.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
-    },
-    {
-      "__outstatic": {
         "commit": "1852b4038279fdc0887d80132565f0c6d3be640b",
         "hash": "728869981",
         "path": "outstatic/content/pages/sobre.md"
@@ -482,6 +462,26 @@
       "slug": "sobre",
       "status": "published",
       "title": "Sobre Nós"
+    },
+    {
+      "__outstatic": {
+        "commit": "a7d507c5bbf1ee56aff228096ecb86a38f14afd8",
+        "hash": "376469385",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "https://res.cloudinary.com/dla6w0tbp/image/upload/v1732211766/kkhnf5stobxgpworfdnu.jpg",
+      "collection": "pages",
+      "coverImage": "/images/hero-bg-geu-v1-kxNT.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
     }
   ]
 }
