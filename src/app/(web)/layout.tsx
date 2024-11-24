@@ -17,7 +17,10 @@ export const metadata: Metadata = {
     "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
   applicationName: "Grupo Espírita União: Espiritismo na Internet",
   generator: "Next.js",
-  keywords: ["Espiritismo", "Livros Espíritas", "Projetos Sociais", "Divulgação Espírita", "Religião", "Fé", "Chico Xavier", "Nosso Lar", "Divaldo Franco", "Allan Kardec"],
+  keywords: [
+    "Espiritismo", "Livros Espíritas", "Projetos Sociais", "Divulgação Espírita",
+    "Religião", "Fé", "Chico Xavier", "Nosso Lar", "Divaldo Franco", "Allan Kardec"
+  ],
   authors: [
     { name: "Grupo Espírita União", url: "https://www.geuuniao.com.br" },
     { name: "Equipe de Desenvolvimento", url: "https://visoteckgo.vercel.app" },
@@ -76,7 +79,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   facebook: {
-    appId: "1234567890",
+    appId: "1234567890", // Substitua com o seu App ID real, se necessário
   },
   verification: {
     google: "google-site-verification-code",
@@ -89,7 +92,7 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   formatDetection: {
-    telephone: true,
+    telephone: false,
   },
   category: "Espiritismo",
   classification: "Religião",
@@ -97,6 +100,7 @@ export const metadata: Metadata = {
     canonical: "https://www.geuuniao.com.br",
   },
 };
+
 
 
 
