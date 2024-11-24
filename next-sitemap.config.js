@@ -3,7 +3,7 @@ module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_APP_URL || 'https://www.geuuniao.com.br',
   generateRobotsTxt: true,
   robotsTxtOptions: {
-    policy: [{ userAgent: '*', disallow: ['/outstatic/', '/api/'] }]
+    policy: [{ userAgent: '*', allow: "/", disallow: ['/outstatic/', '/api/'] }]
   },
   changefreq: 'daily',
   priority: 0.8,
