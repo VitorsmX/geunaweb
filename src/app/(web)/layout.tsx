@@ -27,10 +27,6 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   referrer: "origin",
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-  ],
   openGraph: {
     title: "Grupo Espírita União: Espiritismo na Internet",
     description:
