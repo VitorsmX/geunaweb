@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   formatDetection: {
-    telephone: false,
+    telephone: true,
   },
   category: "Espiritismo",
   classification: "Religião",
