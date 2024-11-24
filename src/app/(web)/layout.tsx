@@ -5,72 +5,39 @@ import "@/styles/index.css";
 import { SessionProvider } from "@/components/SessionContext"
 import AffiliateBanner from "@/components/AffiliateBanner";
 import { Analytics } from '@vercel/analytics/next';
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.geuuniao.com.br"),
-  title: {
-    default: "Grupo Espírita União: Espiritismo na Internet",
-    template: "%s | Seção do website do Grupo Espírita União",
-  },
+  title: "Grupo Espírita União: Espiritismo na Internet",
   description: "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
-  applicationName: "Grupo Espírita União: Espiritismo na Internet",
-  keywords: [
-    "Espiritismo", "Livros Espíritas", "Projetos Sociais", "Divulgação Espírita",
-    "Religião", "Fé", "Chico Xavier", "Nosso Lar", "Divaldo Franco", "Allan Kardec"
-  ],
-  authors: [
-    { name: "Grupo Espírita União", url: "https://www.geuuniao.com.br" },
-    { name: "Equipe de Desenvolvimento", url: "https://visoteckgo.vercel.app" },
-  ],
-  robots: "index, follow",
-  referrer: "origin",
+  metadataBase: new URL("https://www.geuuniao.com.br"), // URL base do site
   openGraph: {
     title: "Grupo Espírita União: Espiritismo na Internet",
     description: "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
     url: "https://www.geuuniao.com.br",
-    siteName: "Grupo Espírita União",
     images: [
       {
         url: "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
-        width: 1640,
-        height: 856,
-        alt: "Imagem representando o Grupo Espírita União maior (Modo Paisagem)",
-      },
-      {
-        url: "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
-        width: 1600,
+        width: 800, // Ajuste das dimensões para simplificação
         height: 800,
-        alt: "Imagem representando o Grupo Espírita União menor (Modo Paisagem)",
-      },
-      {
-        url: "https://www.geuuniao.com.br/images/ogimagegeumenor.jpg",
-        width: 800,
-        height: 800,
-        alt: "Imagem representando o Grupo Espírita União (Quadrada)",
+        alt: "Imagem representando o Grupo Espírita União",
       },
     ],
     locale: "pt_BR",
     type: "website",
   },
-  icons: {
-    icon: [{ url: "/images/logo-geu-transp.png" }],
-    apple: [{ url: "/images/logo-geu-transp.png" }],
+  twitter: {
+    card: "summary_large_image", // Tipo de card para o Twitter
+    title: "Grupo Espírita União: Espiritismo na Internet",
+    description: "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
+    images: ["https://www.geuuniao.com.br/images/ogimagegeu.jpg"],
   },
-  appleWebApp: {
-    capable: true,
-    title: "Grupo Espírita União",
-    statusBarStyle: "black-translucent",
-  },
-  formatDetection: {
-    telephone: true,
-  },
-  category: "Espiritismo",
-  classification: "Religião",
-  alternates: {
-    canonical: "https://www.geuuniao.com.br",
-  },
+  icons: [
+    { rel: "icon", url: "/images/logo-geu-transp.png" }, // Ícone do site
+    { rel: "apple-touch-icon", url: "/images/logo-geu-transp.png" }, // Ícone para dispositivos Apple
+  ],
 };
+
 
 export default function RootLayout({
   children,
