@@ -78,9 +78,6 @@ export const metadata: Metadata = {
     apple: [{ url: "/images/logo-geu-transp.png" }],
   },
   manifest: "/manifest.json",
-  facebook: {
-    appId: "1234567890", // Substitua com o seu App ID real, se necessário
-  },
   verification: {
     google: "google-site-verification-code",
     yandex: "yandex-site-verification-code",
