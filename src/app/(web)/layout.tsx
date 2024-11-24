@@ -13,10 +13,8 @@ export const metadata: Metadata = {
     default: "Grupo Espírita União: Espiritismo na Internet",
     template: "%s | Seção do website do Grupo Espírita União",
   },
-  description:
-    "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
+  description: "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
   applicationName: "Grupo Espírita União: Espiritismo na Internet",
-  generator: "Next.js",
   keywords: [
     "Espiritismo", "Livros Espíritas", "Projetos Sociais", "Divulgação Espírita",
     "Religião", "Fé", "Chico Xavier", "Nosso Lar", "Divaldo Franco", "Allan Kardec"
@@ -29,8 +27,7 @@ export const metadata: Metadata = {
   referrer: "origin",
   openGraph: {
     title: "Grupo Espírita União: Espiritismo na Internet",
-    description:
-      "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
+    description: "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
     url: "https://www.geuuniao.com.br",
     siteName: "Grupo Espírita União",
     images: [
@@ -56,28 +53,9 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Grupo Espírita União: Espiritismo na Internet",
-    description:
-      "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
-    images: [
-      "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
-      "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
-      "https://www.geuuniao.com.br/images/ogimagegeumenor.jpg",
-    ],
-    site: "@geuuniao",
-    creator: "@geuuniao",
-  },
   icons: {
     icon: [{ url: "/images/logo-geu-transp.png" }],
     apple: [{ url: "/images/logo-geu-transp.png" }],
-  },
-  manifest: "/manifest.json",
-  verification: {
-    google: "google-site-verification-code",
-    yandex: "yandex-site-verification-code",
-    me: "my-own-site-verification-code",
   },
   appleWebApp: {
     capable: true,
@@ -85,7 +63,7 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   formatDetection: {
-    telephone: false,
+    telephone: true,
   },
   category: "Espiritismo",
   classification: "Religião",
@@ -93,9 +71,6 @@ export const metadata: Metadata = {
     canonical: "https://www.geuuniao.com.br",
   },
 };
-
-
-
 
 export default function RootLayout({
   children,
