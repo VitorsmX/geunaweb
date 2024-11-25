@@ -1,11 +1,11 @@
+import { Metadata } from "next";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
-import "@/styles/index.css";
 import { SessionProvider } from "@/components/SessionContext";
 import AffiliateBanner from "@/components/AffiliateBanner";
 import { Analytics } from "@vercel/analytics/next";
-import type { Metadata } from "next";
+import "@/styles/index.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.geuuniao.com.br"),

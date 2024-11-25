@@ -17,7 +17,6 @@ interface Params {
   };
 }
 
-export const revalidate = 100;
 export async function generateMetadata(params: Params): Promise<Metadata> {
   const post = await getData(params);
 

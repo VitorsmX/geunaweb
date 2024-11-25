@@ -5,8 +5,6 @@ import { InstagramIcon, MoveDown } from "lucide-react";
 import Image from "next/image";
 import { load } from "outstatic/server";
 
-export const revalidate = 200;
-
 export default async function Index() {
   const { content, allPosts, otherCollections, otherPageElements } =
     await getData();
