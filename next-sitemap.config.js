@@ -19,7 +19,7 @@ module.exports = {
   exclude: ['/outstatic/*', '/api/*'],
 
   // Gerar sitemap índice (se habilitado, cria um arquivo sitemap.xml que indexa outros sitemaps)
-  generateIndexSitemap: true,
+  generateIndexSitemap: false,
 
   // Adicionar a tag <lastmod/> automaticamente nas páginas do sitemap
   autoLastmod: true,
