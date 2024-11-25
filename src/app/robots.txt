@@ -1,4 +1,2 @@
 User-Agent: *
 Allow: /
-Disallow: /outstatic/
-Sitemap: https://www.geuuniao.com.br/sitemap-0.xml
