@@ -8,34 +8,33 @@ import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Grupo Espírita União: Espiritismo na Internet",
-  description: "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
-  metadataBase: new URL("https://www.geuuniao.com.br"), // URL base do site
+  metadataBase: new URL("https://www.geuuniao.com.br"),
+  title: {
+    default: "Grupo Espírita União - Espiritismo na Rede.",
+    template: "%s | GEU",
+  },
+  description:
+    "Livros Espíritas, Eventos, Palestras e muitos mais Espiritismo para você.",
   openGraph: {
-    title: "Grupo Espírita União: Espiritismo na Internet",
-    description: "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
-    url: "https://www.geuuniao.com.br",
+    title: "Grupo Espírita União - Espiritismo na Rede.",
+    description:
+      "Livros Espíritas, Eventos, Palestras e muitos mais Espiritismo para você.",
+    url: "/",
+    siteName: "geuuniao.com.br",
     images: [
       {
-        url: "https://www.geuuniao.com.br/images/ogimagegeu.jpg",
-        width: 800, // Ajuste das dimensões para simplificação
+        url: "https://www.geuuniao.com.br/images/ogimagegeumenor.jpg",
+        width: 800,
         height: 800,
-        alt: "Imagem representando o Grupo Espírita União",
       },
     ],
     locale: "pt_BR",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image", // Tipo de card para o Twitter
-    title: "Grupo Espírita União: Espiritismo na Internet",
-    description: "Descubra Livros Espíritas, participe de Projetos Sociais e explore a Divulgação do Espiritismo.",
-    images: ["https://www.geuuniao.com.br/images/ogimagegeu.jpg"],
+  icons: {
+    icon: [{ url: "/favicon/logo-geu.png" }],
+    apple: [{ url: "/favicon/logo-geu.png" }],
   },
-  icons: [
-    { rel: "icon", url: "/images/logo-geu-transp.png" }, // Ícone do site
-    { rel: "apple-touch-icon", url: "/images/logo-geu-transp.png" }, // Ícone para dispositivos Apple
-  ],
 };
 
 
