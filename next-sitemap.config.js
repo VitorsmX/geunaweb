@@ -4,24 +4,7 @@ module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_APP_URL || 'https://www.geuuniao.com.br',
 
   // Gerar o arquivo robots.txt automaticamente
-  generateRobotsTxt: true,
-
-  // Configurações do robots.txt
-  robotsTxtOptions: {
-    // Definir políticas para os crawlers
-    policies: [
-      {
-        userAgent: '*',
-        allow: '/',
-        disallow: ['/outstatic/', '/api/'], // Bloquear diretórios específicos
-        crawlDelay: 5, // Delay para evitar sobrecarga no servidor
-      },
-    ],
-    // Adicionar mapas de site adicionais (se houver)
-    additionalSitemaps: [
-      'https://www.geuuniao.com.br/sitemap-0.xml',
-    ],
-  },
+  generateRobotsTxt: false,
 
   // Frequência de atualização do conteúdo
   changefreq: 'daily',
