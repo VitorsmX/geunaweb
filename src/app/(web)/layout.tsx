@@ -2,9 +2,9 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/index.css";
-import { SessionProvider } from "@/components/SessionContext"
+import { SessionProvider } from "@/components/SessionContext";
 import AffiliateBanner from "@/components/AffiliateBanner";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://www.geuuniao.com.br/images/ogimagegeumenor.jpg",
-        width: 800,
-        height: 800,
+        width: 600,
+        height: 600,
       },
     ],
     locale: "pt_BR",
@@ -37,14 +37,20 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" translate="no" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        <meta property="og:image" content="https://www.geuuniao.com.br/images/ogimagegeumenor.jpg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:description" content="Livros Espíritas, Eventos, Palestras e muitos mais Espiritismo para você." />
+      </head>
       <body className="relative pb-56 md:pb-36 min-h-screen bg-stripePattern">
         <SessionProvider>
           <ThemeProvider
@@ -54,7 +60,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Header />
-            <AffiliateBanner/>
+            <AffiliateBanner />
             <div className="relative font-body max-w-6xl mx-auto px-5 h-full pt-28 sm:pt-20 md:py-24 backdrop-blur-md rounded-md">
               {children}
               <Analytics />
