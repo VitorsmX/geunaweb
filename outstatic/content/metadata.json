@@ -1,7 +1,297 @@
 {
-  "commit": "a7d507c5bbf1ee56aff228096ecb86a38f14afd8",
-  "generated": "2024-11-24T17:56:03.478Z",
+  "commit": "bca399cd8d5137b2bfb1d60aeefb7425d40757fc",
+  "generated": "Mon, 25 Nov 2024 01:30:48 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "24ddc12061fd7bd36b69996ac4c72b491b6ffefe",
+        "hash": "1767742523",
+        "path": "outstatic/content/biblioteca/mediunidade-estudo-e-pratica-programa-2.md"
+      },
+      "author": {
+        "name": "Marta Antunes de Moura",
+        "picture": "/images/marta-antunes-I4MT.png"
+      },
+      "autorDesencarnado": "",
+      "autorEncarnado": "Marta Antunes de Moura",
+      "collection": "biblioteca",
+      "coverImage": "/images/mediunidade-est-prat-2-AzND.jpg",
+      "dataDaPublicacao": "2019",
+      "description": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.",
+      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9788584850310.jpg?cccfc=2529d164",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://www.uemmg.org.br/sites/default/files/public/download/arquivo/mep_apostila_feb-ii.pdf",
+      "linkParaComprar": "https://amzn.to/3ZbnyXp",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "34,50",
+      "publishedAt": "2024-11-13T16:16:19.989Z",
+      "quantidadeDePaginas": "248",
+      "sinopse": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.  Totalmente revisado e atualizado, o material foi dividido em quatro partes: fundamentação espírita, prática mediúnica, atividade complementar e culminância do módulo. São roteiros de estudos teóricos, sugestões e avaliações para reuniões mediúnicas, além de exercícios relacionados a textos que se reportam a atitudes e ao comportamento do espírita. Um verdadeiro manual de conduta para todos aqueles que buscam a evolução do espírito e a expiação dos erros do passado.",
+      "slug": "mediunidade-estudo-e-pratica-programa-2",
+      "status": "published",
+      "title": "Mediunidade: estudo e prática - Programa II - Marta Antunes de Moura"
+    },
+    {
+      "__outstatic": {
+        "commit": "678ff8438fbb9482f2453287ea2336e341eb2386",
+        "hash": "1502673222",
+        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
+      },
+      "author": {
+        "name": "André Luiz",
+        "picture": "/images/andre-gxNj.jpg"
+      },
+      "autorDesencarnado": "André Luiz",
+      "autorEncarnado": "Francisco Cândido Chico Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/9788573289442-QzNj.jpg",
+      "dataDaPublicacao": "1944",
+      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
+      "imagemDoLivro": "",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
+      "linkParaComprar": "https://amzn.to/3ALR3Wx",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "42,00",
+      "publishedAt": "2024-10-28T19:18:17.461Z",
+      "quantidadeDePaginas": "320",
+      "sinopse": "",
+      "slug": "livro-nosso-lar",
+      "status": "published",
+      "title": "Nosso Lar - Chico Xavier"
+    },
+    {
+      "__outstatic": {
+        "commit": "9b2c50120e8ce3e00fe9dd4a0519a903acc80edd",
+        "hash": "1116235598",
+        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
+      },
+      "author": {
+        "name": "Miriam Dusi",
+        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
+      },
+      "autorDesencarnado": "Miriam Dusi",
+      "autorEncarnado": "Miriam Dusi",
+      "collection": "biblioteca",
+      "coverImage": "/images/9786555706376-AzMT.jpg",
+      "dataDaPublicacao": "2024",
+      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
+      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
+      "isstock": "",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://amzn.to/3Og5AwW",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "37,50",
+      "publishedAt": "2024-11-18T18:36:11.000Z",
+      "quantidadeDePaginas": "80",
+      "sinopse": "",
+      "slug": "livro-a-grande-viagem",
+      "status": "published",
+      "title": "A Grande Viagem - Miriam Dusi"
+    },
+    {
+      "__outstatic": {
+        "commit": "bcba29b9ab63d6d2655e56c9dc621dfe9d0dd80f",
+        "hash": "3884519989",
+        "path": "outstatic/content/biblioteca/estudando-nosso-lar-dr-inacio-ferreira-carlos-a-baccelli.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-I2Nz.png"
+      },
+      "autorDesencarnado": "Inácio Ferreira",
+      "autorEncarnado": "Carlos A. Baccelli",
+      "collection": "biblioteca",
+      "coverImage": "/images/estudando-nosso-lar-capa-livro-g4ND.jpg",
+      "dataDaPublicacao": "2020",
+      "description": "Neste livro, Dr. Inácio Ferreira trata de alguns dos temas que, de maneira magistral e inédita, são estudados por André Luiz na obra ´Nosso Lar´",
+      "imagemDoLivro": "https://m.media-amazon.com/images/I/51pOu4ij5hL._SY425_.jpg",
+      "isstock": "",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://amzn.to/3OchTdA",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "45,22 (Pode Ter Desconto na Amazon)",
+      "publishedAt": "2024-11-19T13:27:20.907Z",
+      "quantidadeDePaginas": "350",
+      "sinopse": "Neste livro, Dr. Inácio Ferreira trata de alguns dos temas que, de maneira magistral e inédita, são estudados por André Luiz na obra ´Nosso Lar´ - sem dúvida, depois de ´O Livro dos Espíritos´, o livro mais importante da bibliografia espírita! Você aprenderá como ´Nosso Lar´ deve ser estudado, a fim de conseguir atinar com as inúmeras revelações que ele contém sobre a vida no plano espiritual.",
+      "slug": "estudando-nosso-lar-dr-inacio-ferreira-carlos-a-baccelli",
+      "status": "published",
+      "title": "Estudando \"Nosso Lar\" - Dr. Inácio Ferreira & Carlos A. Baccelli"
+    },
+    {
+      "__outstatic": {
+        "commit": "76064c69b9d8e8fdae440d4fd490e7b08ac1fc06",
+        "hash": "3321061396",
+        "path": "outstatic/content/biblioteca/ave-cristo-chico-xavier.md"
+      },
+      "author": {
+        "name": "Emmanuel",
+        "picture": "/images/emmanuel-pseudosvg-ExMz.png"
+      },
+      "autorDesencarnado": "Emmanuel",
+      "autorEncarnado": "Francisco Cândido Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/ave-cristo-Q4ND.jpg",
+      "dataDaPublicacao": "1966",
+      "description": "“Ave, Cristo! Os que vão viver para sempre te glorificam e saúdam!” A parceria entre o médium Francisco Cândido Xavier e o Espírito Emmanuel traz à luz a história de Quinto Varro e Taciano, almas ligadas por várias reencarnações que se reencontram no terceiro século do Cristianismo, na região controlada pelo Império Romano. Como exemplo de simplicidade, confiança e amor, os pioneiros da Boa Nova entregaram-se ao serviço do Cristo tendo como sustento apenas sua poderosa e inquebrantável fé. Uma comovente narrativa que mostra quanto pode realizar o verdadeiro amor em suas manifestações de solidariedade a bem das criaturas humanas.",
+      "imagemDoLivro": "https://boanova.fbitsstatic.net/img/p/ave-cristo-novo-projeto-62772/229627.jpg?w=420&h=420&v=no-change&qs=ignore",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://centroespiritachicoxavier.org.br/livros/050.pdf",
+      "linkParaComprar": "https://amzn.to/3CI56wJ",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "47,85",
+      "publishedAt": "2024-11-13T16:04:48.273Z",
+      "quantidadeDePaginas": "312",
+      "sinopse": "“Ave, Cristo! Os que vão viver para sempre te glorificam e saúdam!” A parceria entre o médium Francisco Cândido Xavier e o Espírito Emmanuel traz à luz a história de Quinto Varro e Taciano, almas ligadas por várias reencarnações que se reencontram no terceiro século do Cristianismo, na região controlada pelo Império Romano. Como exemplo de simplicidade, confiança e amor, os pioneiros da Boa Nova entregaram-se ao serviço do Cristo tendo como sustento apenas sua poderosa e inquebrantável fé. Uma comovente narrativa que mostra quanto pode realizar o verdadeiro amor em suas manifestações de solidariedade a bem das criaturas humanas.",
+      "slug": "ave-cristo-chico-xavier",
+      "status": "published",
+      "title": "Ave Cristo - Chico Xavier"
+    },
+    {
+      "__outstatic": {
+        "commit": "3d6b829809d284fe9fffdf61b34c9c8d1bef88de",
+        "hash": "3872423299",
+        "path": "outstatic/content/biblioteca/os-mensageiros-colecao-a-vida-no-mundo-espiritual-livro-2-andre-luiz.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-c0Nj.png"
+      },
+      "autorDesencarnado": "André Luiz",
+      "autorEncarnado": "Chico Xavier",
+      "collection": "biblioteca",
+      "coverImage": "/images/mensageiros-Y4Mj.jpg",
+      "dataDaPublicacao": "2019",
+      "description": "Em Os mensageiros, o Espírito André Luiz relata experiências de Espíritos que reencarnaram com instruções específicas para atingir o aprimoramento pessoal, mas que nem sempre foram bem sucedidos em suas tarefas.",
+      "imagemDoLivro": "",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "",
+      "linkParaComprar": "https://amzn.to/4hPoN69",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "40,05",
+      "publishedAt": "2024-11-19T19:38:26.387Z",
+      "quantidadeDePaginas": "328",
+      "sinopse": "Escalado para prestar atendimento fraterno na Terra, ele aprende que o trabalho é fonte de renovação mental e grande passo rumo à construção do bem. Apresentando a morte física como apenas uma passagem rumo à vida espiritual em contínua evolução, os 51 capítulos, psicografados por Francisco Cândido Xavier neste segundo volume da coleção A vida no mundo espiritual, mostram a necessidade do estudo, da prática e do trabalho aplicados na esfera íntima de cada um, para que o retorno à pátria espiritual aconteça com a certeza do cumprimento dos compromissos assumidos antes de renascer.",
+      "slug": "os-mensageiros-colecao-a-vida-no-mundo-espiritual-livro-2-andre-luiz",
+      "status": "published",
+      "title": "Os Mensageiros: Coleção A vida no mundo espiritual - Livro 2 - André Luiz"
+    },
+    {
+      "__outstatic": {
+        "commit": "6d2462918fc296d30a00ceb7499900b6ca3fd424",
+        "hash": "2132419430",
+        "path": "outstatic/content/biblioteca/o-livro-dos-mediuns-um.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-I3OT.png"
+      },
+      "autorDesencarnado": "Vários",
+      "autorEncarnado": "Allan Kardec",
+      "collection": "biblioteca",
+      "coverImage": "/images/olivrodomediuns-k0MD.jpg",
+      "dataDaPublicacao": "1861",
+      "description": "Esta obra trata das manifestações espíritas e dos médiuns, portanto, da parte fenomênica do Espiritismo, e o caracteriza como ciência de observação que cuida das relações entre o mundo corpóreo e o mundo invisível ou espiritual. É um manual indispensável para todos aqueles que queiram participar das atividades mediúnicas, ou simplesmente queiram conhecer a natureza e os mecanismos da mediunidade. No final desta obra, há um Índice Analítico dos Assuntos, reunindo, em ordem alfabética, todos os verbetes que podem interessar aos estudiosos. Allan Kardec, quando redigiu seus livros, escreveu para o povo, em linguagem simples, e, sendo esta uma tradução literal, a linguagem simples original ficou preservada. Além disto, e principalmente, o tradutor respeitou a integridade do livro, que deve ser considerado sagrado, e não acrescentou nem sua opinião pessoal, nem notas de rodapé que não estavam no original.",
+      "imagemDoLivro": "https://m.media-amazon.com/images/I/61lxozKScgS._SY425_.jpg",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://espirito.org.br/wp-content/uploads/2017/05/O-Livro-dos-Me%CC%81diuns.pdf",
+      "linkParaComprar": "https://amzn.to/40TdvaK",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "11,67",
+      "publishedAt": "2024-11-19T19:20:28.629Z",
+      "quantidadeDePaginas": "368",
+      "sinopse": "É um manual indispensável para todos aqueles que queiram participar das atividades mediúnicas, ou simplesmente queiram conhecer a natureza e os mecanismos da mediunidade. No final desta obra, há um Índice Analítico dos Assuntos, reunindo, em ordem alfabética, todos os verbetes que podem interessar aos estudiosos. Allan Kardec, quando redigiu seus livros, escreveu para o povo, em linguagem simples, e, sendo esta uma tradução literal, a linguagem simples original ficou preservada. Além disto, e principalmente, o tradutor respeitou a integridade do livro, que deve ser considerado sagrado, e não acrescentou nem sua opinião pessoal, nem notas de rodapé que não estavam no original.",
+      "slug": "o-livro-dos-mediuns-um",
+      "status": "published",
+      "title": "O Livro dos Médiuns: 14x21"
+    },
+    {
+      "__outstatic": {
+        "commit": "49ab1014c00e080c1650ba76ba1ef6d200f1751a",
+        "hash": "3273468429",
+        "path": "outstatic/content/biblioteca/o-livro-dos-espiritos-edicao-economica.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-gxMT.png"
+      },
+      "autorDesencarnado": "Vários",
+      "autorEncarnado": "Allan Kardec",
+      "collection": "biblioteca",
+      "coverImage": "/images/olivrodosespiritosbookcover-AyNj.jpg",
+      "dataDaPublicacao": "1857",
+      "description": "Dos cinco livros que compõem a Codificação do Espiritismo, este foi o primeiro, reunindo os ensinos dos Espíritos superiores através de médiuns de várias partes do mundo. ",
+      "imagemDoLivro": "",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://www.febnet.org.br/wp-content/uploads/2012/07/WEB-Livro-dos-Esp%C3%ADritos-Guillon-1.pdf",
+      "linkParaComprar": "https://amzn.to/3ZcXEm9",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "11,05",
+      "publishedAt": "2024-11-19T19:11:25.756Z",
+      "quantidadeDePaginas": "376",
+      "sinopse": "Ele é o marco inicial de uma Doutrina que trouxe uma profunda repercussão no pensamento e na visão de vida de considerável parcela da Humanidade, desde 1857, data da primeira edição francesa. Estruturado em quatro partes e contendo 1.019 perguntas formuladas pelo Codificador, aborda os ensinamentos espíritas, de uma forma lógica e racional, sob os aspectos científico, filosófico e religioso. Independentemente de crença ou convicção religiosa, a leitura de O livro dos espíritos será de imenso valor para todos, porque trata de Deus, da imortalidade da alma, da natureza dos Espíritos, de suas relações com os homens, das leis morais, da vida presente, da vida futura e do porvir da Humanidade, assuntos de interesse geral e de grande atualidade.",
+      "slug": "o-livro-dos-espiritos-edicao-economica",
+      "status": "published",
+      "title": "O Livro dos Espíritos (Edição Econômica)"
+    },
+    {
+      "__outstatic": {
+        "commit": "8f3e1bf4ef3634ffd5d5263d3939475c31536383",
+        "hash": "1187455653",
+        "path": "outstatic/content/biblioteca/o-evangelho-segundo-o-espiritismo-allan-kardec.md"
+      },
+      "author": {
+        "name": "Allan Kardec",
+        "picture": "/images/kardec-imagem-gwND.png"
+      },
+      "autorDesencarnado": "Vários",
+      "autorEncarnado": "Hippolyte Léon Denizard Rivail",
+      "collection": "biblioteca",
+      "coverImage": "/images/81fortascll._sy425_-g2Nz.jpg",
+      "dataDaPublicacao": "1864",
+      "description": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
+      "imagemDoLivro": "https://m.media-amazon.com/images/I/81FoRtasClL._SY425_.jpg",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://febnet.org.br/wp-content/themes/portalfeb-grid/obras/evangelho-guillon.pdf",
+      "linkParaComprar": "https://amzn.to/3AII88n",
+      "linkParaSolicitar": "https://wa.link/4v0tbn",
+      "precoNaInternet": "20,93",
+      "publishedAt": "2024-11-13T16:24:48.604Z",
+      "quantidadeDePaginas": "416",
+      "sinopse": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
+      "slug": "o-evangelho-segundo-o-espiritismo-allan-kardec",
+      "status": "published",
+      "title": "O Evangelho Segundo o Espiritismo - Allan Kardec"
+    },
+    {
+      "__outstatic": {
+        "commit": "9672338d77943992e869d79d00880961d0e42eef",
+        "hash": "3247095279",
+        "path": "outstatic/content/biblioteca/o-ceu-e-o-inferno-allan-kardec.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-YzNj.png"
+      },
+      "autorDesencarnado": "Vários",
+      "autorEncarnado": "Allan Kardec",
+      "collection": "biblioteca",
+      "coverImage": "/images/ceuinfer-M2OT.jpg",
+      "dataDaPublicacao": "1865",
+      "description": "Qual o destino do homem após a morte física? Quais as causas do temor da morte? Existem o Céu e o Inferno? A antiga crença nos anjos e demônios merece crédito? Como procede a Justiça Divina? Estas e outras questões correlatas são devidamente esclarecidas, na Primeira Parte desta obra, à luz da lógica e dos ensinamentos dos Espíritos.",
+      "imagemDoLivro": "",
+      "isstock": "true",
+      "linkDoLivroEmPdf": "https://espirito.org.br/wp-content/uploads/2017/05/O-Ce%CC%81u-e-o-Inferno.pdf",
+      "linkParaComprar": "https://amzn.to/48ZPz7H",
+      "linkParaSolicitar": "",
+      "precoNaInternet": "21,30",
+      "publishedAt": "2024-11-19T19:28:58.535Z",
+      "quantidadeDePaginas": "320",
+      "sinopse": "O céu e o inferno ou A justiça divina segundo o Espiritismo. Como afirmou Kardec, o título desta obra indica claramente o seu objetivo. A primeira parte contém o exame comparado das diversas crenças sobre o céu e o inferno, os anjos e os demônios, as penas e recompensas futuras. O dogma das penas eternas é encarado de maneira especial e refutado por argumentos tirados das leis da natureza. A segunda parte apresenta numerosos exemplos, sendo que de cada ponto jorra uma luz sobre a situação da alma após a morte, e a passagem, até então tão obscura e tão temida, da vida corporal à vida espiritual. É o guia do viajor, antes de entrar em país novo! Edição com sobrecapa plástica.",
+      "slug": "o-ceu-e-o-inferno-allan-kardec",
+      "status": "published",
+      "title": "O Céu e o Inferno - Allan Kardec"
+    },
     {
       "__outstatic": {
         "commit": "5b7d9a3b4999be7af5f04cf081651648318ce179",
@@ -63,6 +353,44 @@
     },
     {
       "__outstatic": {
+        "commit": "df27237e6ff76d77f259a17a50ff5555cb5345f0",
+        "hash": "2316552884",
+        "path": "outstatic/content/galeriaitens/dia-das-criancas-de-2024.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-M2Nz.png"
+      },
+      "collection": "galeriaitens",
+      "coverImage": "/images/img-20241019-wa0038-Q5MT.jpg",
+      "date": "2024",
+      "description": "Neste dia tivemos a oportunidade de comemorar o dia das crianças com a comunidade, através de atividades lúdicas e divertidas, também houve distribuição de brinquedos",
+      "publishedAt": "2024-11-19T20:04:59.709Z",
+      "slug": "dia-das-criancas-de-2024",
+      "status": "published",
+      "title": "Dia das Crianças de 2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "c31ce6c3fa42a3a36543f4dd03cf9366204dd708",
+        "hash": "3454976329",
+        "path": "outstatic/content/galeriaitens/30-anos-aniversario-do-grupo-espirita-uniao.md"
+      },
+      "author": {
+        "name": "Grupo-Espirita-Uniao",
+        "picture": "/images/logo-geu-transp-U4Mj.png"
+      },
+      "collection": "galeriaitens",
+      "coverImage": "/images/img-20240817-wa0085-UyMT.jpg",
+      "date": "17 de Agosto de 2024",
+      "description": "No dia 17 de Agosto de 2024, nos reunimos em fraternidade para comemorar 30 anos da fundação do Grupo Espírita União",
+      "publishedAt": "2024-11-19T19:45:41.029Z",
+      "slug": "30-anos-aniversario-do-grupo-espirita-uniao",
+      "status": "published",
+      "title": "30 ANOS - Aniversário do Grupo Espírita União"
+    },
+    {
+      "__outstatic": {
         "commit": "9d8df1f2835ebf1fae46db5930b3a336d3ca0e5e",
         "hash": "2887519050",
         "path": "outstatic/content/projetos-sociais/sopa-fraterna.md"
@@ -78,6 +406,46 @@
       "slug": "sopa-fraterna",
       "status": "published",
       "title": "Sopa Fraterna"
+    },
+    {
+      "__outstatic": {
+        "commit": "02cd8197deabda48ff8ec81cbbc4a39af79f64e7",
+        "hash": "728869981",
+        "path": "outstatic/content/pages/sobre.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "",
+      "collection": "pages",
+      "coverImage": "/images/centro-esp-rita-terceira-revela--o-banner_20241113_150504_0000-k5OD.jpg",
+      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
+      "instagram": "",
+      "publishedAt": "2023-12-28T18:49:02.348Z",
+      "slug": "sobre",
+      "status": "published",
+      "title": "Sobre Nós"
+    },
+    {
+      "__outstatic": {
+        "commit": "e912178dc9f28c8fc9aede98d151c8f68b6ea0b2",
+        "hash": "376469385",
+        "path": "outstatic/content/pages/home.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": "/images/logo-geu.png"
+      },
+      "bannerImagem": "https://res.cloudinary.com/dla6w0tbp/image/upload/v1732211766/kkhnf5stobxgpworfdnu.jpg",
+      "collection": "pages",
+      "coverImage": "/images/hero-bg-geu-v1-kxNT.jpg",
+      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
+      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "home",
+      "status": "published",
+      "title": "Inicio"
     },
     {
       "__outstatic": {
@@ -99,7 +467,7 @@
     },
     {
       "__outstatic": {
-        "commit": "22fcd0e8908524818a78a6f62bc3a4b2f6d43b94",
+        "commit": "6cb2ddfe31126471b72454057dc04a78e0a2882d",
         "hash": "2960368833",
         "path": "outstatic/content/postagens/postagem-inaugural.md"
       },
@@ -114,374 +482,6 @@
       "slug": "postagem-inaugural",
       "status": "published",
       "title": "Novo Portal do Grupo Espírita União!"
-    },
-    {
-      "__outstatic": {
-        "commit": "8ac6bcc9fd14f760ff14c739a6da1b1af7beb271",
-        "hash": "3321061396",
-        "path": "outstatic/content/biblioteca/ave-cristo-chico-xavier.md"
-      },
-      "author": {
-        "name": "Emmanuel",
-        "picture": "/images/emmanuel-pseudosvg-ExMz.png"
-      },
-      "autorDesencarnado": "Emmanuel",
-      "autorEncarnado": "Francisco Cândido Xavier",
-      "collection": "biblioteca",
-      "coverImage": "/images/ave-cristo-Q4ND.jpg",
-      "dataDaPublicacao": "1966",
-      "description": "“Ave, Cristo! Os que vão viver para sempre te glorificam e saúdam!” A parceria entre o médium Francisco Cândido Xavier e o Espírito Emmanuel traz à luz a história de Quinto Varro e Taciano, almas ligadas por várias reencarnações que se reencontram no terceiro século do Cristianismo, na região controlada pelo Império Romano. Como exemplo de simplicidade, confiança e amor, os pioneiros da Boa Nova entregaram-se ao serviço do Cristo tendo como sustento apenas sua poderosa e inquebrantável fé. Uma comovente narrativa que mostra quanto pode realizar o verdadeiro amor em suas manifestações de solidariedade a bem das criaturas humanas.",
-      "imagemDoLivro": "https://boanova.fbitsstatic.net/img/p/ave-cristo-novo-projeto-62772/229627.jpg?w=420&h=420&v=no-change&qs=ignore",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://centroespiritachicoxavier.org.br/livros/050.pdf",
-      "linkParaComprar": "https://amzn.to/3CI56wJ",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "47,85",
-      "publishedAt": "2024-11-13T16:04:48.273Z",
-      "quantidadeDePaginas": "312",
-      "sinopse": "“Ave, Cristo! Os que vão viver para sempre te glorificam e saúdam!” A parceria entre o médium Francisco Cândido Xavier e o Espírito Emmanuel traz à luz a história de Quinto Varro e Taciano, almas ligadas por várias reencarnações que se reencontram no terceiro século do Cristianismo, na região controlada pelo Império Romano. Como exemplo de simplicidade, confiança e amor, os pioneiros da Boa Nova entregaram-se ao serviço do Cristo tendo como sustento apenas sua poderosa e inquebrantável fé. Uma comovente narrativa que mostra quanto pode realizar o verdadeiro amor em suas manifestações de solidariedade a bem das criaturas humanas.",
-      "slug": "ave-cristo-chico-xavier",
-      "status": "published",
-      "title": "Ave Cristo - Chico Xavier"
-    },
-    {
-      "__outstatic": {
-        "commit": "82b8b1a0528829766c667db5adb980abe6c814f8",
-        "hash": "1767742523",
-        "path": "outstatic/content/biblioteca/mediunidade-estudo-e-pratica-programa-2.md"
-      },
-      "author": {
-        "name": "Marta Antunes de Moura",
-        "picture": "/images/marta-antunes-I4MT.png"
-      },
-      "autorDesencarnado": "",
-      "autorEncarnado": "Marta Antunes de Moura",
-      "collection": "biblioteca",
-      "coverImage": "/images/mediunidade-est-prat-2-AzND.jpg",
-      "dataDaPublicacao": "2019",
-      "description": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.",
-      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9788584850310.jpg?cccfc=2529d164",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://www.uemmg.org.br/sites/default/files/public/download/arquivo/mep_apostila_feb-ii.pdf",
-      "linkParaComprar": "https://amzn.to/3ZbnyXp",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "34,50",
-      "publishedAt": "2024-11-13T16:16:19.989Z",
-      "quantidadeDePaginas": "248",
-      "sinopse": "Complementando os temas do primeiro volume de mesmo nome, o programa II de Mediunidade: estudo e prática foca seu conteúdo nas atividades da reunião mediúnica, priorizando a formação do trabalhador que atua ou pretende participar de grupos de trabalhos mediúnicos no futuro.  Totalmente revisado e atualizado, o material foi dividido em quatro partes: fundamentação espírita, prática mediúnica, atividade complementar e culminância do módulo. São roteiros de estudos teóricos, sugestões e avaliações para reuniões mediúnicas, além de exercícios relacionados a textos que se reportam a atitudes e ao comportamento do espírita. Um verdadeiro manual de conduta para todos aqueles que buscam a evolução do espírito e a expiação dos erros do passado.",
-      "slug": "mediunidade-estudo-e-pratica-programa-2",
-      "status": "published",
-      "title": "Mediunidade: estudo e prática - Programa II - Marta Antunes de Moura"
-    },
-    {
-      "__outstatic": {
-        "commit": "ea49709d4ef941117af147ccf16102f12a6071f9",
-        "hash": "1187455653",
-        "path": "outstatic/content/biblioteca/o-evangelho-segundo-o-espiritismo-allan-kardec.md"
-      },
-      "author": {
-        "name": "Allan Kardec",
-        "picture": "/images/kardec-imagem-gwND.png"
-      },
-      "autorDesencarnado": "Vários",
-      "autorEncarnado": "Hippolyte Léon Denizard Rivail",
-      "collection": "biblioteca",
-      "coverImage": "/images/81fortascll._sy425_-g2Nz.jpg",
-      "dataDaPublicacao": "1864",
-      "description": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
-      "imagemDoLivro": "https://m.media-amazon.com/images/I/81FoRtasClL._SY425_.jpg",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://febnet.org.br/wp-content/themes/portalfeb-grid/obras/evangelho-guillon.pdf",
-      "linkParaComprar": "https://amzn.to/3AII88n",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "20,93",
-      "publishedAt": "2024-11-13T16:24:48.604Z",
-      "quantidadeDePaginas": "416",
-      "sinopse": "Baseado em instruções de Espíritos Superiores, sempre registradas nos finais dos Capítulos, Kardec explica as máximas morais de Jesus, convidando-nos a vivenciá-las no nosso dia-a-dia. Expondo com clareza e simplicidade à razão e ao coração, é o livro de cabeceira de milhares e milhares de criaturas. A sua introdução define o objetivo desta obra: abordar exclusivamente o ensinamento moral do Evangelho, pois esse código divino “é, acima de tudo, o caminho infalível da felicidade esperada”.",
-      "slug": "o-evangelho-segundo-o-espiritismo-allan-kardec",
-      "status": "published",
-      "title": "O Evangelho Segundo o Espiritismo - Allan Kardec"
-    },
-    {
-      "__outstatic": {
-        "commit": "8a04ca5cf6a698f802fc326683684d49b4f0c645",
-        "hash": "1116235598",
-        "path": "outstatic/content/biblioteca/livro-a-grande-viagem.md"
-      },
-      "author": {
-        "name": "Miriam Dusi",
-        "picture": "/images/seminario-miriam-dusi-I1MD.jpeg"
-      },
-      "autorDesencarnado": "Miriam Dusi",
-      "autorEncarnado": "Miriam Dusi",
-      "collection": "biblioteca",
-      "coverImage": "/images/9786555706376-AzMT.jpg",
-      "dataDaPublicacao": "2024",
-      "description": "Conheça a história de Beto, um simpático garoto que se prepara para reencarnar na Terra. Para a grande viagem, ele recebe uma maleta especial, repleta de acessórios importantes que trazem grandes ensinamentos. O que uma lanterna, um capacete, uma luva ou uma luneta podem ensinar? Embarque nessa interessante história e descubra com Beto preciosas lições de vida! Tenha uma boa leitura e uma ótima viagem!",
-      "imagemDoLivro": "https://www.febeditora.com.br/lojas/00040427/prod/9786555706376.jpg",
-      "isstock": "",
-      "linkDoLivroEmPdf": "",
-      "linkParaComprar": "https://amzn.to/3Og5AwW",
-      "linkParaSolicitar": "",
-      "precoNaInternet": "37,50",
-      "publishedAt": "2024-11-18T18:36:11.000Z",
-      "quantidadeDePaginas": "80",
-      "sinopse": "",
-      "slug": "livro-a-grande-viagem",
-      "status": "published",
-      "title": "A Grande Viagem - Miriam Dusi"
-    },
-    {
-      "__outstatic": {
-        "commit": "003d793281402281a0a4501e66d807e7d63b8f70",
-        "hash": "1502673222",
-        "path": "outstatic/content/biblioteca/livro-nosso-lar.md"
-      },
-      "author": {
-        "name": "André Luiz",
-        "picture": "/images/andre-gxNj.jpg"
-      },
-      "autorDesencarnado": "André Luiz",
-      "autorEncarnado": "Francisco Cândido Chico Xavier",
-      "collection": "biblioteca",
-      "coverImage": "/images/9788573289442-QzNj.jpg",
-      "dataDaPublicacao": "1944",
-      "description": "Livro: Nosso lar de André Luiz por Chico Xavier",
-      "imagemDoLivro": "",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://www.oconsolador.com.br/linkfixo/bibliotecavirtual/chicoxavier/nossolar.pdf",
-      "linkParaComprar": "https://amzn.to/3ALR3Wx",
-      "linkParaSolicitar": "https://wa.link/4v0tbn",
-      "precoNaInternet": "42,00",
-      "publishedAt": "2024-10-28T19:18:17.461Z",
-      "quantidadeDePaginas": "320",
-      "sinopse": "",
-      "slug": "livro-nosso-lar",
-      "status": "published",
-      "title": "Nosso Lar - Chico Xavier"
-    },
-    {
-      "__outstatic": {
-        "commit": "607da21b1ddadd60b086c9dc72e1fa015dafb928",
-        "hash": "3884519989",
-        "path": "outstatic/content/biblioteca/estudando-nosso-lar-dr-inacio-ferreira-carlos-a-baccelli.md"
-      },
-      "author": {
-        "name": "Grupo-Espirita-Uniao",
-        "picture": "/images/logo-geu-transp-I2Nz.png"
-      },
-      "autorDesencarnado": "Inácio Ferreira",
-      "autorEncarnado": "Carlos A. Baccelli",
-      "collection": "biblioteca",
-      "coverImage": "/images/estudando-nosso-lar-capa-livro-g4ND.jpg",
-      "dataDaPublicacao": "2020",
-      "description": "Neste livro, Dr. Inácio Ferreira trata de alguns dos temas que, de maneira magistral e inédita, são estudados por André Luiz na obra ´Nosso Lar´",
-      "imagemDoLivro": "https://m.media-amazon.com/images/I/51pOu4ij5hL._SY425_.jpg",
-      "isstock": "",
-      "linkDoLivroEmPdf": "",
-      "linkParaComprar": "https://amzn.to/3OchTdA",
-      "linkParaSolicitar": "",
-      "precoNaInternet": "45,22 (Pode Ter Desconto na Amazon)",
-      "publishedAt": "2024-11-19T13:27:20.907Z",
-      "quantidadeDePaginas": "350",
-      "sinopse": "Neste livro, Dr. Inácio Ferreira trata de alguns dos temas que, de maneira magistral e inédita, são estudados por André Luiz na obra ´Nosso Lar´ - sem dúvida, depois de ´O Livro dos Espíritos´, o livro mais importante da bibliografia espírita! Você aprenderá como ´Nosso Lar´ deve ser estudado, a fim de conseguir atinar com as inúmeras revelações que ele contém sobre a vida no plano espiritual.",
-      "slug": "estudando-nosso-lar-dr-inacio-ferreira-carlos-a-baccelli",
-      "status": "published",
-      "title": "Estudando \"Nosso Lar\" - Dr. Inácio Ferreira & Carlos A. Baccelli"
-    },
-    {
-      "__outstatic": {
-        "commit": "55b3ff959b7e9b07c104ff4cf149558cd868daf0",
-        "hash": "3273468429",
-        "path": "outstatic/content/biblioteca/o-livro-dos-espiritos-edicao-economica.md"
-      },
-      "author": {
-        "name": "Grupo-Espirita-Uniao",
-        "picture": "/images/logo-geu-transp-gxMT.png"
-      },
-      "autorDesencarnado": "Vários",
-      "autorEncarnado": "Allan Kardec",
-      "collection": "biblioteca",
-      "coverImage": "/images/olivrodosespiritosbookcover-AyNj.jpg",
-      "dataDaPublicacao": "1857",
-      "description": "Dos cinco livros que compõem a Codificação do Espiritismo, este foi o primeiro, reunindo os ensinos dos Espíritos superiores através de médiuns de várias partes do mundo. ",
-      "imagemDoLivro": "",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://www.febnet.org.br/wp-content/uploads/2012/07/WEB-Livro-dos-Esp%C3%ADritos-Guillon-1.pdf",
-      "linkParaComprar": "https://amzn.to/3ZcXEm9",
-      "linkParaSolicitar": "",
-      "precoNaInternet": "11,05",
-      "publishedAt": "2024-11-19T19:11:25.756Z",
-      "quantidadeDePaginas": "376",
-      "sinopse": "Ele é o marco inicial de uma Doutrina que trouxe uma profunda repercussão no pensamento e na visão de vida de considerável parcela da Humanidade, desde 1857, data da primeira edição francesa. Estruturado em quatro partes e contendo 1.019 perguntas formuladas pelo Codificador, aborda os ensinamentos espíritas, de uma forma lógica e racional, sob os aspectos científico, filosófico e religioso. Independentemente de crença ou convicção religiosa, a leitura de O livro dos espíritos será de imenso valor para todos, porque trata de Deus, da imortalidade da alma, da natureza dos Espíritos, de suas relações com os homens, das leis morais, da vida presente, da vida futura e do porvir da Humanidade, assuntos de interesse geral e de grande atualidade.",
-      "slug": "o-livro-dos-espiritos-edicao-economica",
-      "status": "published",
-      "title": "O Livro dos Espíritos (Edição Econômica)"
-    },
-    {
-      "__outstatic": {
-        "commit": "bab25f93821278bfd6fdefbf7309b32b173b307b",
-        "hash": "2132419430",
-        "path": "outstatic/content/biblioteca/o-livro-dos-mediuns-um.md"
-      },
-      "author": {
-        "name": "Grupo-Espirita-Uniao",
-        "picture": "/images/logo-geu-transp-I3OT.png"
-      },
-      "autorDesencarnado": "Vários",
-      "autorEncarnado": "Allan Kardec",
-      "collection": "biblioteca",
-      "coverImage": "/images/olivrodomediuns-k0MD.jpg",
-      "dataDaPublicacao": "1861",
-      "description": "Esta obra trata das manifestações espíritas e dos médiuns, portanto, da parte fenomênica do Espiritismo, e o caracteriza como ciência de observação que cuida das relações entre o mundo corpóreo e o mundo invisível ou espiritual. É um manual indispensável para todos aqueles que queiram participar das atividades mediúnicas, ou simplesmente queiram conhecer a natureza e os mecanismos da mediunidade. No final desta obra, há um Índice Analítico dos Assuntos, reunindo, em ordem alfabética, todos os verbetes que podem interessar aos estudiosos. Allan Kardec, quando redigiu seus livros, escreveu para o povo, em linguagem simples, e, sendo esta uma tradução literal, a linguagem simples original ficou preservada. Além disto, e principalmente, o tradutor respeitou a integridade do livro, que deve ser considerado sagrado, e não acrescentou nem sua opinião pessoal, nem notas de rodapé que não estavam no original.",
-      "imagemDoLivro": "https://m.media-amazon.com/images/I/61lxozKScgS._SY425_.jpg",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://espirito.org.br/wp-content/uploads/2017/05/O-Livro-dos-Me%CC%81diuns.pdf",
-      "linkParaComprar": "https://amzn.to/40TdvaK",
-      "linkParaSolicitar": "",
-      "precoNaInternet": "11,67",
-      "publishedAt": "2024-11-19T19:20:28.629Z",
-      "quantidadeDePaginas": "368",
-      "sinopse": "É um manual indispensável para todos aqueles que queiram participar das atividades mediúnicas, ou simplesmente queiram conhecer a natureza e os mecanismos da mediunidade. No final desta obra, há um Índice Analítico dos Assuntos, reunindo, em ordem alfabética, todos os verbetes que podem interessar aos estudiosos. Allan Kardec, quando redigiu seus livros, escreveu para o povo, em linguagem simples, e, sendo esta uma tradução literal, a linguagem simples original ficou preservada. Além disto, e principalmente, o tradutor respeitou a integridade do livro, que deve ser considerado sagrado, e não acrescentou nem sua opinião pessoal, nem notas de rodapé que não estavam no original.",
-      "slug": "o-livro-dos-mediuns-um",
-      "status": "published",
-      "title": "O Livro dos Médiuns: 14x21"
-    },
-    {
-      "__outstatic": {
-        "commit": "0256a6f4f441b2138538f2f15153dbe8a9a85417",
-        "hash": "3247095279",
-        "path": "outstatic/content/biblioteca/o-ceu-e-o-inferno-allan-kardec.md"
-      },
-      "author": {
-        "name": "Grupo-Espirita-Uniao",
-        "picture": "/images/logo-geu-transp-YzNj.png"
-      },
-      "autorDesencarnado": "Vários",
-      "autorEncarnado": "Allan Kardec",
-      "collection": "biblioteca",
-      "coverImage": "/images/ceuinfer-M2OT.jpg",
-      "dataDaPublicacao": "1865",
-      "description": "Qual o destino do homem após a morte física? Quais as causas do temor da morte? Existem o Céu e o Inferno? A antiga crença nos anjos e demônios merece crédito? Como procede a Justiça Divina? Estas e outras questões correlatas são devidamente esclarecidas, na Primeira Parte desta obra, à luz da lógica e dos ensinamentos dos Espíritos.",
-      "imagemDoLivro": "",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "https://espirito.org.br/wp-content/uploads/2017/05/O-Ce%CC%81u-e-o-Inferno.pdf",
-      "linkParaComprar": "https://amzn.to/48ZPz7H",
-      "linkParaSolicitar": "",
-      "precoNaInternet": "21,30",
-      "publishedAt": "2024-11-19T19:28:58.535Z",
-      "quantidadeDePaginas": "320",
-      "sinopse": "O céu e o inferno ou A justiça divina segundo o Espiritismo. Como afirmou Kardec, o título desta obra indica claramente o seu objetivo. A primeira parte contém o exame comparado das diversas crenças sobre o céu e o inferno, os anjos e os demônios, as penas e recompensas futuras. O dogma das penas eternas é encarado de maneira especial e refutado por argumentos tirados das leis da natureza. A segunda parte apresenta numerosos exemplos, sendo que de cada ponto jorra uma luz sobre a situação da alma após a morte, e a passagem, até então tão obscura e tão temida, da vida corporal à vida espiritual. É o guia do viajor, antes de entrar em país novo! Edição com sobrecapa plástica.",
-      "slug": "o-ceu-e-o-inferno-allan-kardec",
-      "status": "published",
-      "title": "O Céu e o Inferno - Allan Kardec"
-    },
-    {
-      "__outstatic": {
-        "commit": "e11a925d6278835e1c942887df86d7e7cbadacf6",
-        "hash": "3872423299",
-        "path": "outstatic/content/biblioteca/os-mensageiros-colecao-a-vida-no-mundo-espiritual-livro-2-andre-luiz.md"
-      },
-      "author": {
-        "name": "Grupo-Espirita-Uniao",
-        "picture": "/images/logo-geu-transp-c0Nj.png"
-      },
-      "autorDesencarnado": "André Luiz",
-      "autorEncarnado": "Chico Xavier",
-      "collection": "biblioteca",
-      "coverImage": "/images/mensageiros-Y4Mj.jpg",
-      "dataDaPublicacao": "2019",
-      "description": "Em Os mensageiros, o Espírito André Luiz relata experiências de Espíritos que reencarnaram com instruções específicas para atingir o aprimoramento pessoal, mas que nem sempre foram bem sucedidos em suas tarefas.",
-      "imagemDoLivro": "",
-      "isstock": "true",
-      "linkDoLivroEmPdf": "",
-      "linkParaComprar": "https://amzn.to/4hPoN69",
-      "linkParaSolicitar": "",
-      "precoNaInternet": "40,05",
-      "publishedAt": "2024-11-19T19:38:26.387Z",
-      "quantidadeDePaginas": "328",
-      "sinopse": "Escalado para prestar atendimento fraterno na Terra, ele aprende que o trabalho é fonte de renovação mental e grande passo rumo à construção do bem. Apresentando a morte física como apenas uma passagem rumo à vida espiritual em contínua evolução, os 51 capítulos, psicografados por Francisco Cândido Xavier neste segundo volume da coleção A vida no mundo espiritual, mostram a necessidade do estudo, da prática e do trabalho aplicados na esfera íntima de cada um, para que o retorno à pátria espiritual aconteça com a certeza do cumprimento dos compromissos assumidos antes de renascer.",
-      "slug": "os-mensageiros-colecao-a-vida-no-mundo-espiritual-livro-2-andre-luiz",
-      "status": "published",
-      "title": "Os Mensageiros: Coleção A vida no mundo espiritual - Livro 2 - André Luiz"
-    },
-    {
-      "__outstatic": {
-        "commit": "14eb263b92a2edc7442aa60b54651c96332bc61d",
-        "hash": "3454976329",
-        "path": "outstatic/content/galeriaitens/30-anos-aniversario-do-grupo-espirita-uniao.md"
-      },
-      "author": {
-        "name": "Grupo-Espirita-Uniao",
-        "picture": "/images/logo-geu-transp-U4Mj.png"
-      },
-      "collection": "galeriaitens",
-      "coverImage": "/images/img-20240817-wa0085-UyMT.jpg",
-      "date": "17 de Agosto de 2024",
-      "description": "No dia 17 de Agosto de 2024, nos reunimos em fraternidade para comemorar 30 anos da fundação do Grupo Espírita União",
-      "publishedAt": "2024-11-19T19:45:41.029Z",
-      "slug": "30-anos-aniversario-do-grupo-espirita-uniao",
-      "status": "published",
-      "title": "30 ANOS - Aniversário do Grupo Espírita União"
-    },
-    {
-      "__outstatic": {
-        "commit": "8343d4b4b7e6b80c11f1b640bfea2bf44ffd8d49",
-        "hash": "2316552884",
-        "path": "outstatic/content/galeriaitens/dia-das-criancas-de-2024.md"
-      },
-      "author": {
-        "name": "Grupo-Espirita-Uniao",
-        "picture": "/images/logo-geu-transp-M2Nz.png"
-      },
-      "collection": "galeriaitens",
-      "coverImage": "/images/img-20241019-wa0038-Q5MT.jpg",
-      "date": "2024",
-      "description": "Neste dia tivemos a oportunidade de comemorar o dia das crianças com a comunidade, através de atividades lúdicas e divertidas, também houve distribuição de brinquedos",
-      "publishedAt": "2024-11-19T20:04:59.709Z",
-      "slug": "dia-das-criancas-de-2024",
-      "status": "published",
-      "title": "Dia das Crianças de 2024"
-    },
-    {
-      "__outstatic": {
-        "commit": "1852b4038279fdc0887d80132565f0c6d3be640b",
-        "hash": "728869981",
-        "path": "outstatic/content/pages/sobre.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "bannerImagem": "",
-      "collection": "pages",
-      "coverImage": "/images/centro-esp-rita-terceira-revela--o-banner_20241113_150504_0000-k5OD.jpg",
-      "description": "Somos um Grupo Espírita que trabalha com amor acima de tudo.",
-      "instagram": "",
-      "publishedAt": "2023-12-28T18:49:02.348Z",
-      "slug": "sobre",
-      "status": "published",
-      "title": "Sobre Nós"
-    },
-    {
-      "__outstatic": {
-        "commit": "a7d507c5bbf1ee56aff228096ecb86a38f14afd8",
-        "hash": "376469385",
-        "path": "outstatic/content/pages/home.md"
-      },
-      "author": {
-        "name": "Grupo Espírita União",
-        "picture": "/images/logo-geu.png"
-      },
-      "bannerImagem": "https://res.cloudinary.com/dla6w0tbp/image/upload/v1732211766/kkhnf5stobxgpworfdnu.jpg",
-      "collection": "pages",
-      "coverImage": "/images/hero-bg-geu-v1-kxNT.jpg",
-      "description": "Site Oficial do Grupo Espírita União, livros espíritas e programação.",
-      "instagram": "https://www.instagram.com/geu.grupo_espirita_uniao/",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "home",
-      "status": "published",
-      "title": "Inicio"
     }
   ]
 }
