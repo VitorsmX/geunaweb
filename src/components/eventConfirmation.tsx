@@ -4,11 +4,13 @@ import { useEffect, useState, useRef } from "react";
 import { Heart, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { useSession } from "./SessionContext";
+import useCopyToClipboard from "@/hooks/useCopyToClipboard";
 
 const EventConfirmationBanner = ({ uuid }: { uuid: string }) => {
   const paramEventId = useSession();
   const { isEventGuest } = paramEventId;
   const id = isEventGuest ? uuid : false;
+  const [setItem, item] = useCopyToClipboard()
 
   // Inicializa o estado do modal como ABERTO se houver um ID válido
   const [isOpen, setIsOpen] = useState(true);
@@ -79,7 +81,8 @@ const EventConfirmationBanner = ({ uuid }: { uuid: string }) => {
                 PARABÉNS!
               </h2>
               <p className="text-lg leading-relaxed opacity-90 mb-6 text-gray-700">
-                Por participar do NOSSO EVENTO
+                Por participar do NOSSO EVENTO{"\n"}
+                Preencha para gerar seu comprovante de participação
               </p>
 
               {/* Campos de entrada */}
@@ -108,6 +111,8 @@ const EventConfirmationBanner = ({ uuid }: { uuid: string }) => {
                   <div className="bg-zinc-900 text-white px-4 py-2 rounded-lg text-base break-all">
                     <strong>Comprovante:</strong> {finalCode}
                   </div>
+                    {item && <p className="absolute inset-0 bg-black/30 rounded-2xl w-fit h-fit text-3xl top-[45%] right-[45%] py-2 px-4 m-2">Código copiado: {item}</p>}
+                  <button className="p-3 bg-orange-400 rounded-lg" onClick={() => setItem(`${finalCode}`)}>Copiar</button>
                   <p className="hover:scale-110 text-sm font-mono p-2">*Válido somente mediante apresentação do ticket impresso e carimbado</p>
                 </div>
               )}
