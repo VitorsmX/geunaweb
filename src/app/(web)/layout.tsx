@@ -6,6 +6,8 @@ import { SessionProvider } from "@/components/SessionContext";
 import AffiliateBanner from "@/components/AffiliateBanner";
 import { Analytics } from "@vercel/analytics/next";
 import "@/styles/index.css";
+import EventConfirmationBanner from "@/components/eventConfirmation";
+import { v4 as uuidv4 } from 'uuid';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.geuuniao.com.br"),
@@ -72,11 +74,18 @@ export const metadata: Metadata = {
   },
 };
 
+function generateUUID() {
+  return uuidv4();
+}
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+  const eventId = generateUUID();
+
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
@@ -96,6 +105,7 @@ export default function RootLayout({
           >
             <Header />
             <AffiliateBanner />
+            <EventConfirmationBanner uuid={eventId} />
             <div className="relative font-body max-w-6xl mx-auto px-5 h-full pt-28 sm:pt-20 md:py-24 backdrop-blur-md rounded-md">
               {children}
               <Analytics />

@@ -2,6 +2,8 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import Loading from "./loading";
+import { useSearchParams } from "next/navigation";
+import validateEventId from "@/actions/validateEvent";
 
 // Função para gerar um UUID
 function generateUUID() {
@@ -21,33 +23,49 @@ function setUUIDToCookie(uuid: string) {
 // Defina o contexto e o hook para acessar o UUID
 interface SessionContextType {
   uuid: string;
+  isEventGuest: boolean;
 }
 
 const SessionContext = createContext<SessionContextType | undefined>(undefined);
 
 // Provider que gerencia a sessão e o cookie
 export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const searchParams = useSearchParams();
+  const paramEventId = searchParams.get("eventid");
+
   const [uuid, setUuid] = useState<string>("");
+  const [isEventGuest, setIsEventGuest] = useState<boolean>(false);
 
   useEffect(() => {
-    let storedUUID = getUUIDFromCookie(); // Tenta ler o UUID do cookie
+    let storedUUID = getUUIDFromCookie();
     if (!storedUUID) {
-      storedUUID = generateUUID(); // Gera um UUID se não encontrado
-      setUUIDToCookie(storedUUID); // Armazena o UUID no cookie
+      storedUUID = generateUUID();
+      setUUIDToCookie(storedUUID);
     }
-    setUuid(storedUUID); // Armazena no estado para disponibilizar no contexto
+    setUuid(storedUUID);
   }, []);
 
+  useEffect(() => {
+    const checkEventGuest = async () => {
+      if (paramEventId) {
+        const isValid = await validateEventId(paramEventId); // Aguarda a resolução da Promise
+        setIsEventGuest(isValid);
+      }
+    };
+    checkEventGuest();
+  }, [paramEventId]);
+
   if (!uuid) {
-    return <Loading/>; // Pode retornar um loading até a verificação estar completa
+    return <Loading />;
   }
 
   return (
-    <SessionContext.Provider value={{ uuid }}>
+    <SessionContext.Provider value={{ uuid, isEventGuest }}>
       {children}
     </SessionContext.Provider>
   );
 };
+
 
 // Hook para acessar o contexto
 export function useSession() {

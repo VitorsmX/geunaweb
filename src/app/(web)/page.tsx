@@ -1,4 +1,3 @@
-import AffiliateBanner from "@/components/AffiliateBanner";
 import ContentGrid from "@/components/content-grid";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { InstagramIcon, MoveDown } from "lucide-react";
