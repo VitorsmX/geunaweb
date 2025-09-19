@@ -1,6 +1,6 @@
 {
-  "commit": "bca399cd8d5137b2bfb1d60aeefb7425d40757fc",
-  "generated": "Mon, 25 Nov 2024 01:30:48 GMT",
+  "commit": "9d113cb0414eab203685582d47984bb9f7412e50",
+  "generated": "2025-09-19T22:22:12.467Z",
   "metadata": [
     {
       "__outstatic": {
@@ -482,6 +482,24 @@
       "slug": "postagem-inaugural",
       "status": "published",
       "title": "Novo Portal do Grupo Espírita União!"
+    },
+    {
+      "__outstatic": {
+        "commit": "9d113cb0414eab203685582d47984bb9f7412e50",
+        "hash": "149226823",
+        "path": "outstatic/content/postagens/bem-vindos-a-juventude-espirita-do-grupo-espirita-uniao.md"
+      },
+      "author": {
+        "name": "Juventude do Grupo Espírita União",
+        "picture": "/images/postagens_geu_2.1--tamanho-original---3--M1Mz.png"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/juv-1-capa-AxOT.png",
+      "description": "Lançamento do Estudo da Juventude Espírita de Capanema Pará, com conteúdo da aula, roteiro e material didático",
+      "publishedAt": "2025-09-19T21:41:56.126Z",
+      "slug": "bem-vindos-a-juventude-espirita-do-grupo-espirita-uniao",
+      "status": "published",
+      "title": "Bem vindos a Juventude Espírita do Grupo Espírita União!"
     }
   ]
 }
