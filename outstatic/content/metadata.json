@@ -1,6 +1,6 @@
 {
-  "commit": "9d113cb0414eab203685582d47984bb9f7412e50",
-  "generated": "2025-09-19T22:22:12.467Z",
+  "commit": "e5f0f0a7c72df6b057519cd2f16b36f1911d4a90",
+  "generated": "2025-09-19T22:40:45.958Z",
   "metadata": [
     {
       "__outstatic": {
@@ -500,6 +500,24 @@
       "slug": "bem-vindos-a-juventude-espirita-do-grupo-espirita-uniao",
       "status": "published",
       "title": "Bem vindos a Juventude Espírita do Grupo Espírita União!"
+    },
+    {
+      "__outstatic": {
+        "commit": "e5f0f0a7c72df6b057519cd2f16b36f1911d4a90",
+        "hash": "3347977382",
+        "path": "outstatic/content/postagens/juventude-espirita-do-grupo-espirita-uniao-parte-2-conteudos-da-aula.md"
+      },
+      "author": {
+        "name": "Juventude do Grupo Espírita União",
+        "picture": "/images/postagens_geu_2.1--tamanho-original---3--I4Mz.png"
+      },
+      "collection": "postagens",
+      "coverImage": "/images/9788573287660-cyOD.jpg",
+      "description": "Conteúdo de continuação da aula primeira do Grupo de Estudos da Juventude de Capanema PA - Grupo Espírita União",
+      "publishedAt": "2025-09-19T22:05:35.759Z",
+      "slug": "juventude-espirita-do-grupo-espirita-uniao-parte-2-conteudos-da-aula",
+      "status": "published",
+      "title": "Bem vindos a Juventude Espírita do Grupo Espírita União! (parte 2 - conteúdos da aula)"
     }
   ]
 }
