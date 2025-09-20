@@ -1,6 +1,6 @@
 {
-  "commit": "2c1d394d84660975bb54437fd6f9c93661bcd6f1",
-  "generated": "2025-09-20T16:02:27.110Z",
+  "commit": "aaaf40e6fbfefc0dd48fd4f22c3a9c33cb6161dd",
+  "generated": "2025-09-20T16:08:05.503Z",
   "metadata": [
     {
       "__outstatic": {
@@ -521,8 +521,8 @@
     },
     {
       "__outstatic": {
-        "commit": "2c1d394d84660975bb54437fd6f9c93661bcd6f1",
-        "hash": "2256125673",
+        "commit": "aaaf40e6fbfefc0dd48fd4f22c3a9c33cb6161dd",
+        "hash": "1723674040",
         "path": "outstatic/content/projetos-sociais/juventude-grupo-de-estudos-do-grupo-espirita-uniao.md"
       },
       "author": {
@@ -530,7 +530,7 @@
         "picture": "/images/juventude-geu-2025-c2MT.jpeg"
       },
       "collection": "projetos-sociais",
-      "coverImage": "/images/juv-1-g1MD.jpeg",
+      "coverImage": "/images/juv-1-A3Nz.jpeg",
       "description": "Um estudo dinâmico e acessível sobre o Espiritismo para almas jovens",
       "publishedAt": "2025-09-20T15:22:36.257Z",
       "slug": "juventude-grupo-de-estudos-do-grupo-espirita-uniao",

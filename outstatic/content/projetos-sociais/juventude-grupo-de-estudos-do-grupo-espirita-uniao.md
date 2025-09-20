@@ -6,7 +6,7 @@ author:
   picture: '/images/juventude-geu-2025-c2MT.jpeg'
 slug: 'juventude-grupo-de-estudos-do-grupo-espirita-uniao'
 description: 'Um estudo dinâmico e acessível sobre o Espiritismo para almas jovens'
-coverImage: '/images/juv-1-g1MD.jpeg'
+coverImage: '/images/juv-1-A3Nz.jpeg'
 publishedAt: '2025-09-20T15:22:36.257Z'
 ---
 
