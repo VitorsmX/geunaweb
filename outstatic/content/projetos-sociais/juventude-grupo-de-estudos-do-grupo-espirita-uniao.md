@@ -23,15 +23,13 @@ No decorrer do ano neste grupo de estudos, iremos abordar:
 
 Local: Centro Espírita Terceira Revelação Dia: Todo sábado às 18:00 Coordenação: [@alekzan\_](https://www.instagram.com/alekzan_/) e [@vitorsm10](https://www.instagram.com/vitorsm10/)
 
-Localização (Google Maps): <https://maps.app.goo.gl/5GUrUqacmg6Th8Ae8>
+[Localização (Google Maps)](https://maps.app.goo.gl/5GUrUqacmg6Th8Ae8)
 
-Instagram do Grupo Espírita União: <https://www.instagram.com/p/DOzC6MEkb6E/?igsh=MWZlOXBsNjlmcm5nYg==>
+[Instagram do Grupo Espírita União](https://www.instagram.com/p/DOzC6MEkb6E/?igsh=MWZlOXBsNjlmcm5nYg==)
 
-Links do primeiro estudo - comece por aqui: 
+Links do primeiro estudo - comece por aqui:
 
 - [AULA 1 (CLIQUE AQUI)](https://www.geuuniao.com.br/postagens/juventude-espirita-do-grupo-espirita-uniao-parte-2-conteudos-da-aula)
 - [ESTUDO COMPLEMENTAR (CLIQUE AQUI)](https://www.geuuniao.com.br/postagens/bem-vindos-a-juventude-espirita-do-grupo-espirita-uniao)
 
 Te esperamos hoje a noite às 18:00 (20/09/2025) para o primeiro estudo no Centro Espírita Terceira Revelação
-
- 
