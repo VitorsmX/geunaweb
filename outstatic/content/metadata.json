@@ -1,6 +1,6 @@
 {
-  "commit": "e5f0f0a7c72df6b057519cd2f16b36f1911d4a90",
-  "generated": "2025-09-19T22:40:45.958Z",
+  "commit": "2323391ed8fd3b06163be6b9cc98da24573fc9b0",
+  "generated": "2025-09-20T15:55:00.171Z",
   "metadata": [
     {
       "__outstatic": {
@@ -518,6 +518,24 @@
       "slug": "juventude-espirita-do-grupo-espirita-uniao-parte-2-conteudos-da-aula",
       "status": "published",
       "title": "Bem vindos a Juventude Espírita do Grupo Espírita União! (parte 2 - conteúdos da aula)"
+    },
+    {
+      "__outstatic": {
+        "commit": "2323391ed8fd3b06163be6b9cc98da24573fc9b0",
+        "hash": "2718828360",
+        "path": "outstatic/content/projetos-sociais/juventude-grupo-de-estudos-do-grupo-espirita-uniao.md"
+      },
+      "author": {
+        "name": "Juventude do Grupo Espírita União",
+        "picture": "/images/juventude-geu-2025-c2MT.jpeg"
+      },
+      "collection": "projetos-sociais",
+      "coverImage": "/images/juv-1-g1MD.jpeg",
+      "description": "Um estudo dinâmico e acessível sobre o Espiritismo para almas jovens",
+      "publishedAt": "2025-09-20T15:22:36.257Z",
+      "slug": "juventude-grupo-de-estudos-do-grupo-espirita-uniao",
+      "status": "published",
+      "title": "Juventude: Grupo de Estudos do Grupo Espírita União"
     }
   ]
 }
