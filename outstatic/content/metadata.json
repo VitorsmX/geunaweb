@@ -1,6 +1,6 @@
 {
-  "commit": "aaaf40e6fbfefc0dd48fd4f22c3a9c33cb6161dd",
-  "generated": "2025-09-20T16:08:05.503Z",
+  "commit": "17732a79c1fb0e66532b3520dc39a6983449792b",
+  "generated": "2025-09-26T01:54:41.886Z",
   "metadata": [
     {
       "__outstatic": {
@@ -536,6 +536,24 @@
       "slug": "juventude-grupo-de-estudos-do-grupo-espirita-uniao",
       "status": "published",
       "title": "Juventude: Grupo de Estudos do Grupo Espírita União"
+    },
+    {
+      "__outstatic": {
+        "commit": "17732a79c1fb0e66532b3520dc39a6983449792b",
+        "hash": "1893450331",
+        "path": "outstatic/content/postagens/setembro-amarelo-ciencia-e-espiritismo-na-prevencao-do-suicidio-estudo-2-grupo-de-estudos-do-espiritismo-jovem.md"
+      },
+      "author": {
+        "name": "Juventude do Grupo Espírita União",
+        "picture": ""
+      },
+      "collection": "postagens",
+      "coverImage": "/images/gratidao-MwMj.jpg",
+      "description": "Neste estudo, iremos abordar uma visão espírita em apoio com a ciência sobre o suicídio, de forma que possamos entender como a ideia de que a  vida continua pode nos ser uma fonte de consolo e força nos momentos difíceis",
+      "publishedAt": "2025-09-26T01:24:22.400Z",
+      "slug": "setembro-amarelo-ciencia-e-espiritismo-na-prevencao-do-suicidio-estudo-2-grupo-de-estudos-do-espiritismo-jovem",
+      "status": "published",
+      "title": "🌻 Setembro Amarelo: Ciência e Espiritismo na Prevenção do Suicídio (Estudo 2 - Grupo de Estudos do Espiritismo Jovem)"
     }
   ]
 }
