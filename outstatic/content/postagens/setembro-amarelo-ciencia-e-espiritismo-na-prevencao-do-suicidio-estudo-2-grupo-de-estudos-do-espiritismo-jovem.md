@@ -180,9 +180,4 @@ Se você ou alguém próximo estiver em sofrimento:
 
 ---
 
-## 🌟 Conclusão
-
-O suicídio não é o fim.\
-Pelo olhar da ciência, é um problema de saúde que pode ser prevenido. Pelo olhar do Espiritismo, é apenas uma pausa em uma caminhada eterna, nunca o término.
-
 💙 **Você não está sozinho. Há sempre ajuda disponível, na Terra e no Céu.**
