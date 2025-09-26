@@ -10,7 +10,7 @@ coverImage: '/images/gratidao-MwMj.jpg'
 publishedAt: '2025-09-26T01:24:22.400Z'
 ---
 
-Neste estudo, iremos abordar uma visão espírita em apoio com a ciência sobre o suicídio, de forma que possamos entender como a ideia de que a  vida continua pode nos ser uma fonte de consolo e força nos momentos difíceis
+Neste estudo, iremos abordar uma visão espírita em apoio com a ciência sobre o suicídio, de forma que possamos entender como a ideia de que a vida continua pode nos ser uma fonte de consolo e força nos momentos difíceis
 
 ![gratidão](/images/gratidao-Q0Nj.jpg)
 
@@ -176,7 +176,7 @@ Se você ou alguém próximo estiver em sofrimento:
 
 - 📖 Richard Simonetti – *A Vida Continua*.
 
-- 🌐 OMS – Organização Mundial da Saúde: <https://www.who.int>
+- 🌐 OMS – Organização Mundial da Saúde: [link](https://www.who.int)
 
 ---
 
