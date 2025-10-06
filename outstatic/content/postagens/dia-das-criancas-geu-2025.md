@@ -6,13 +6,13 @@ author:
   picture: ''
 slug: 'dia-das-criancas-geu-2025'
 description: 'O Grupo Espírita União, convida todos os trabalhadores e amigos para participarem com doações de brinquedos para as crianças assistidas pelo Evangelho Infantil, realizado aos sábados. Iremos realizar um momento especial com lanche e entrega dos brinquedos no dia 11 de outubro, contamos com sua presença e apoio para espalhar sorrisos e amor fraterno.'
-coverImage: '/images/post-criancas-geu-v2-M1OD.png'
+coverImage: '/images/post-criancas-geu-v3-pequeno-UxNz.jpg'
 publishedAt: '2025-10-06T13:02:57.163Z'
 ---
 
 Dia das crianças fraterno do Grupo Espírita União, confira mais detalhes abaixo!
 
-![](/images/img-20240817-wa0085-Q0MD.jpg)
+![](/images/img-20250118-wa0066-YxOD.jpg)
 
 O Grupo Espírita União, convida todos os trabalhadores e amigos para participarem com doações de brinquedos para as crianças assistidas pelo Evangelho Infantil, realizado aos sábados.\
 Iremos realizar um momento especial com lanche e entrega dos brinquedos no dia 11 de outubro, contamos com sua presença e apoio para espalhar sorrisos e amor fraterno.

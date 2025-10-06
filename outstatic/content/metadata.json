@@ -1,6 +1,6 @@
 {
-  "commit": "e8c9ba60dce08fcf495814e25677644f46e677e2",
-  "generated": "2025-10-06T13:40:07.201Z",
+  "commit": "9cd7fd72ac079057d150f418098fb6aecba76e5b",
+  "generated": "2025-10-06T13:47:21.715Z",
   "metadata": [
     {
       "__outstatic": {
@@ -557,8 +557,8 @@
     },
     {
       "__outstatic": {
-        "commit": "e8c9ba60dce08fcf495814e25677644f46e677e2",
-        "hash": "2815760513",
+        "commit": "9cd7fd72ac079057d150f418098fb6aecba76e5b",
+        "hash": "203684547",
         "path": "outstatic/content/postagens/dia-das-criancas-geu-2025.md"
       },
       "author": {
@@ -566,7 +566,7 @@
         "picture": ""
       },
       "collection": "postagens",
-      "coverImage": "/images/post-criancas-geu-v2-M1OD.png",
+      "coverImage": "/images/post-criancas-geu-v3-pequeno-UxNz.jpg",
       "description": "O Grupo Espírita União, convida todos os trabalhadores e amigos para participarem com doações de brinquedos para as crianças assistidas pelo Evangelho Infantil, realizado aos sábados. Iremos realizar um momento especial com lanche e entrega dos brinquedos no dia 11 de outubro, contamos com sua presença e apoio para espalhar sorrisos e amor fraterno.",
       "publishedAt": "2025-10-06T13:02:57.163Z",
       "slug": "dia-das-criancas-geu-2025",
