@@ -1,6 +1,6 @@
 {
-  "commit": "213f22ed292715a567919139904ae7b2996c8904",
-  "generated": "2025-09-26T01:55:54.592Z",
+  "commit": "f1f8acc1efd5b8649b8bcb8456e88bc4f0e95f62",
+  "generated": "2025-10-06T13:34:46.619Z",
   "metadata": [
     {
       "__outstatic": {
@@ -554,6 +554,24 @@
       "slug": "setembro-amarelo-ciencia-e-espiritismo-na-prevencao-do-suicidio-estudo-2-grupo-de-estudos-do-espiritismo-jovem",
       "status": "published",
       "title": "🌻 Setembro Amarelo: Ciência e Espiritismo na Prevenção do Suicídio (Estudo 2 - Grupo de Estudos do Espiritismo Jovem)"
+    },
+    {
+      "__outstatic": {
+        "commit": "f1f8acc1efd5b8649b8bcb8456e88bc4f0e95f62",
+        "hash": "433063577",
+        "path": "outstatic/content/postagens/dia-das-criancas-geu-2025.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": ""
+      },
+      "collection": "postagens",
+      "coverImage": "/images/post-criancas-geu-v2-M1OD.png",
+      "description": "O Grupo Espírita União, convida todos os trabalhadores e amigos para participarem com doações de brinquedos para as crianças assistidas pelo Evangelho Infantil, realizado aos sábados. Iremos realizar um momento especial com lanche e entrega dos brinquedos no dia 11 de outubro, contamos com sua presença e apoio para espalhar sorrisos e amor fraterno.",
+      "publishedAt": "2025-10-06T13:02:57.163Z",
+      "slug": "dia-das-criancas-geu-2025",
+      "status": "published",
+      "title": "Dia Das Crianças Fraterno Do GEU - Faça uma criança sorrir!"
     }
   ]
 }
