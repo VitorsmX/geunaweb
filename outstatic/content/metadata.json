@@ -1,6 +1,6 @@
 {
-  "commit": "f1f8acc1efd5b8649b8bcb8456e88bc4f0e95f62",
-  "generated": "2025-10-06T13:34:46.619Z",
+  "commit": "e8c9ba60dce08fcf495814e25677644f46e677e2",
+  "generated": "2025-10-06T13:40:07.201Z",
   "metadata": [
     {
       "__outstatic": {
@@ -557,8 +557,8 @@
     },
     {
       "__outstatic": {
-        "commit": "f1f8acc1efd5b8649b8bcb8456e88bc4f0e95f62",
-        "hash": "433063577",
+        "commit": "e8c9ba60dce08fcf495814e25677644f46e677e2",
+        "hash": "2815760513",
         "path": "outstatic/content/postagens/dia-das-criancas-geu-2025.md"
       },
       "author": {
