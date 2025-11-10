@@ -1,6 +1,6 @@
 {
-  "commit": "b376cb6252534528026ad64d7e6eafbba953f18c",
-  "generated": "2025-11-10T12:43:05.286Z",
+  "commit": "207c5ba8b8c0c30205248e38e3c8407679d93c4f",
+  "generated": "2025-11-10T12:49:24.148Z",
   "metadata": [
     {
       "__outstatic": {
@@ -575,8 +575,8 @@
     },
     {
       "__outstatic": {
-        "commit": "b376cb6252534528026ad64d7e6eafbba953f18c",
-        "hash": "2590987054",
+        "commit": "207c5ba8b8c0c30205248e38e3c8407679d93c4f",
+        "hash": "964461728",
         "path": "outstatic/content/postagens/natal-geu-2025.md"
       },
       "author": {
@@ -584,7 +584,7 @@
         "picture": ""
       },
       "collection": "postagens",
-      "coverImage": "/images/whatsapp-image-2024-12-21-at-15.44.19--1--Y0ND.jpeg",
+      "coverImage": "/images/natal-geu-banner-Q1Mj.jpg",
       "description": "Venha participar do Natal do Grupo Espírita União. Saiba mais  clicando aqui...",
       "publishedAt": "2025-11-10T12:03:19.989Z",
       "slug": "natal-geu-2025",

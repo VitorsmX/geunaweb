@@ -6,7 +6,7 @@ author:
   picture: ''
 slug: 'natal-geu-2025'
 description: 'Venha participar do Natal do Grupo Espírita União. Saiba mais  clicando aqui...'
-coverImage: '/images/whatsapp-image-2024-12-21-at-15.44.19--1--Y0ND.jpeg'
+coverImage: '/images/natal-geu-banner-Q1Mj.jpg'
 publishedAt: '2025-11-10T12:03:19.989Z'
 ---
 
@@ -44,3 +44,5 @@ Doe via PIX:
 ![](/images/qrdoegeu-e5mt-gxMz.png)
 
 **CHAVE PIX**: `03796553000190` (CNPJ)
+
+O GRUPO ESPÍRITA UNIÃO AGRADECE DO FUNDO DO CORAÇÃO!
