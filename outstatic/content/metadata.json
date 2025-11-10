@@ -1,6 +1,6 @@
 {
-  "commit": "9cd7fd72ac079057d150f418098fb6aecba76e5b",
-  "generated": "2025-10-06T13:47:21.715Z",
+  "commit": "510a856dd314ef19879b7d674b2ef12b63a5d484",
+  "generated": "2025-11-10T12:41:02.062Z",
   "metadata": [
     {
       "__outstatic": {
@@ -572,6 +572,24 @@
       "slug": "dia-das-criancas-geu-2025",
       "status": "published",
       "title": "Dia Das Crianças Fraterno Do GEU - Faça uma criança sorrir!"
+    },
+    {
+      "__outstatic": {
+        "commit": "510a856dd314ef19879b7d674b2ef12b63a5d484",
+        "hash": "1066877695",
+        "path": "outstatic/content/postagens/natal-geu-2025.md"
+      },
+      "author": {
+        "name": "Grupo Espírita União",
+        "picture": ""
+      },
+      "collection": "postagens",
+      "coverImage": "/images/whatsapp-image-2024-12-21-at-15.44.19--1--Y0ND.jpeg",
+      "description": "Venha participar do Natal do Grupo Espírita União. Saiba mais  clicando aqui...",
+      "publishedAt": "2025-11-10T12:03:19.989Z",
+      "slug": "natal-geu-2025",
+      "status": "published",
+      "title": "Natal Fraterno GEU 2025"
     }
   ]
 }
