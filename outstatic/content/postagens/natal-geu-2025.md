@@ -26,8 +26,8 @@ Mais informações do evento:
 
 - Local: Grupo Espírita União (Centro Espírita)
 
-
 - Endereço: Passagem Deodoro Mendonça, S/N, Bairro São Raimundo (Antigo CAIC)
+
 - ![Foto do Natal do Grupo Espírita União de 2024](/images/whatsapp-image-2024-12-21-at-15.44.18-k5Mj.jpeg)
 
 ## Para combinar doações, é muito fácil...
@@ -39,7 +39,7 @@ Entre em contato com os números e informe que deseja combinar doações para o 
 
 ou...
 
-Doe via PIX: 
+Doe via PIX:
 
 ![](/images/qrdoegeu-e5mt-gxMz.png)
 

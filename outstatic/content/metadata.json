@@ -1,6 +1,6 @@
 {
-  "commit": "510a856dd314ef19879b7d674b2ef12b63a5d484",
-  "generated": "2025-11-10T12:41:02.062Z",
+  "commit": "b376cb6252534528026ad64d7e6eafbba953f18c",
+  "generated": "2025-11-10T12:43:05.286Z",
   "metadata": [
     {
       "__outstatic": {
@@ -575,8 +575,8 @@
     },
     {
       "__outstatic": {
-        "commit": "510a856dd314ef19879b7d674b2ef12b63a5d484",
-        "hash": "1066877695",
+        "commit": "b376cb6252534528026ad64d7e6eafbba953f18c",
+        "hash": "2590987054",
         "path": "outstatic/content/postagens/natal-geu-2025.md"
       },
       "author": {
