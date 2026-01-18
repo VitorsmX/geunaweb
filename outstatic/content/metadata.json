@@ -1,6 +1,6 @@
 {
-  "commit": "c428841538deffc6f842e99cc3899a515ace6cf0",
-  "generated": "2026-01-18T15:48:39.425Z",
+  "commit": "176a5fd39b2ae7a1558edb46810dfe7f35751996",
+  "generated": "2026-01-18T15:50:14.104Z",
   "metadata": [
     {
       "__outstatic": {
@@ -611,7 +611,7 @@
     },
     {
       "__outstatic": {
-        "commit": "c428841538deffc6f842e99cc3899a515ace6cf0",
+        "commit": "176a5fd39b2ae7a1558edb46810dfe7f35751996",
         "hash": "3095657859",
         "path": "outstatic/content/postagens/rpg-da-luz.md"
       },
