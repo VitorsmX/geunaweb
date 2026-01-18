@@ -1,6 +1,6 @@
 {
-  "commit": "207c5ba8b8c0c30205248e38e3c8407679d93c4f",
-  "generated": "2025-11-10T12:49:24.148Z",
+  "commit": "eeb614c30d210a240448612bd0107fe4565786f2",
+  "generated": "2026-01-18T15:43:36.443Z",
   "metadata": [
     {
       "__outstatic": {
@@ -590,6 +590,24 @@
       "slug": "natal-geu-2025",
       "status": "published",
       "title": "Natal Fraterno GEU 2025"
+    },
+    {
+      "__outstatic": {
+        "commit": "eeb614c30d210a240448612bd0107fe4565786f2",
+        "hash": "1141296821",
+        "path": "outstatic/content/postagens/novo-jogo-online-espirita-rpg-da-luz-autoria-geu.md"
+      },
+      "author": {
+        "name": "Vitor Sousa Mesquita",
+        "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
+      },
+      "collection": "postagens",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2026-01-18T15:15:09.162Z",
+      "slug": "novo-jogo-online-espirita-rpg-da-luz-autoria-geu",
+      "status": "draft",
+      "title": "Novo Jogo Online Espírita: RPG da Luz - Autoria GEU"
     }
   ]
 }
