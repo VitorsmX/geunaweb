@@ -4,9 +4,9 @@ status: 'draft'
 author:
   name: 'Vitor Sousa Mesquita'
   picture: 'https://avatars.githubusercontent.com/u/72332412?v=4'
-slug: 'novo-jogo-online-espirita-rpg-da-luz-autoria-geu'
-description: ''
-coverImage: ''
+slug: 'rpg-da-luz'
+description: 'Jogue o novo Jogo de RPG, uma narrativa interativa em que você pode vivenciar a vida de grandes expoentes do Movimento espírita, trazendo aprendizados reais para a vida.'
+coverImage: '/images/screenshot_20260118-124442-956-Y1Mj.png'
 publishedAt: '2026-01-18T15:15:09.162Z'
 ---
 

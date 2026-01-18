@@ -1,6 +1,6 @@
 {
-  "commit": "eeb614c30d210a240448612bd0107fe4565786f2",
-  "generated": "2026-01-18T15:43:36.443Z",
+  "commit": "97896886e0c0c9a80aa8f377be5999a3ee0b51da",
+  "generated": "2026-01-18T15:47:50.383Z",
   "metadata": [
     {
       "__outstatic": {
@@ -593,19 +593,19 @@
     },
     {
       "__outstatic": {
-        "commit": "eeb614c30d210a240448612bd0107fe4565786f2",
-        "hash": "1141296821",
-        "path": "outstatic/content/postagens/novo-jogo-online-espirita-rpg-da-luz-autoria-geu.md"
+        "commit": "97896886e0c0c9a80aa8f377be5999a3ee0b51da",
+        "hash": "3095657859",
+        "path": "outstatic/content/postagens/rpg-da-luz.md"
       },
       "author": {
         "name": "Vitor Sousa Mesquita",
         "picture": "https://avatars.githubusercontent.com/u/72332412?v=4"
       },
       "collection": "postagens",
-      "coverImage": "",
-      "description": "",
+      "coverImage": "/images/screenshot_20260118-124442-956-Y1Mj.png",
+      "description": "Jogue o novo Jogo de RPG, uma narrativa interativa em que você pode vivenciar a vida de grandes expoentes do Movimento espírita, trazendo aprendizados reais para a vida.",
       "publishedAt": "2026-01-18T15:15:09.162Z",
-      "slug": "novo-jogo-online-espirita-rpg-da-luz-autoria-geu",
+      "slug": "rpg-da-luz",
       "status": "draft",
       "title": "Novo Jogo Online Espírita: RPG da Luz - Autoria GEU"
     }
